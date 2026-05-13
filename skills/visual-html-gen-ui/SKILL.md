@@ -58,6 +58,21 @@ Capital markets, investment research, portfolio analytics, risk, and private-mar
 - [Unit Economics](finance/unit-economics/index.html) - Compare CAC, LTV, payback, gross margin, and burn efficiency.
 - [VaR Stress Test](finance/var-stress-test/index.html) - Show expected loss bands under normal and stressed scenarios.
 
+### Office
+
+Workplace productivity, meetings, task execution, communication, approvals, and team operations.
+
+- [Meeting Load Timeline](office/meeting-load-timeline/index.html) - Show how meeting hours change by week or team.
+- [Task Status Stacked Bar](office/task-status-stacked-bar/index.html) - Break planned work into done, in progress, blocked, and deferred states.
+- [Calendar Heatmap](office/calendar-heatmap/index.html) - Reveal high-pressure days for meetings, deadlines, or handoffs.
+- [Email Response Funnel](office/email-response-funnel/index.html) - Track message conversion from sent to opened, replied, and resolved.
+- [Document Flow Sankey](office/document-flow-sankey/index.html) - Visualize how documents move between draft, review, approval, and archive.
+- [Team Capacity Bars](office/team-capacity-bars/index.html) - Compare available capacity against committed workload by team.
+- [Approval Waterfall](office/approval-waterfall/index.html) - Explain cycle-time additions from review, legal, finance, and executive approval.
+- [Workspace Utilization Heatmap](office/workspace-utilization-heatmap/index.html) - Show desk, room, or location utilization patterns.
+- [Knowledge Base Treemap](office/knowledge-base-treemap/index.html) - Map documentation coverage by department or topic area.
+- [Workload Risk Radar](office/workload-risk-radar/index.html) - Score teams across urgency, ambiguity, dependency, load, and morale risk.
+
 ## Maintenance
 
 Maintainers should edit `catalog.json`, run

@@ -75,6 +75,35 @@ without loading every example into context.
 - [ ] Add remaining requested domains one domain per commit.
 - [ ] Run final validation and completion audit.
 
+## Domain Completion Log
+
+- [x] Finance
+- [x] Office
+- [ ] Education
+- [ ] Health
+- [ ] Ecommerce
+- [ ] Social
+- [ ] Entertainment
+- [ ] Gaming
+- [ ] Content Creation
+- [ ] Enterprise Services
+- [ ] Cybersecurity
+- [ ] AI Agent
+- [ ] Real Estate
+- [ ] HR
+- [ ] Mobility
+- [ ] Travel
+- [ ] Biotech
+- [ ] Legal
+- [ ] Government
+- [ ] Manufacturing
+- [ ] Energy
+- [ ] Retail
+- [ ] Crypto
+- [ ] Fashion
+- [ ] Sports
+- [ ] Pets
+
 ## Decision Log
 
 - 2026-05-13: Use generated standalone HTML under

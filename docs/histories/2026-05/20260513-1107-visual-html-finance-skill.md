@@ -17,7 +17,7 @@
 - Area: `skills/visual-html-gen-ui`
 - Key actions:
   - Added a catalog-driven skill scaffold.
-  - Generated 30 standalone finance chart HTML examples.
+  - Generated 40 standalone chart HTML examples across 2 domains.
   - Added generation and validation scripts.
   - Wired skill validation into CI.
   - Updated repository docs to describe the actual skill architecture.
@@ -30,6 +30,11 @@ only the chart example they need. Chart examples are generated from
 The visual treatment follows the local `html-effectiveness` examples: ivory
 paper background, restrained serif headings, mono metadata, 1.5px borders, and
 low-saturation clay/olive/oat/slate colors.
+
+### Completed Domains
+
+- Finance
+- Office
 
 ### Files Modified
 

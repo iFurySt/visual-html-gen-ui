@@ -27,9 +27,8 @@ make ci
 
 ## Current Catalog
 
-- Finance: 30 chart examples covering time series, allocation, trading,
-  risk, portfolio construction, private-market funnels, cap tables, cohorts,
-  and operating efficiency.
+- Finance: 30 chart examples.
+- Office: 10 chart examples.
 
 ## License
 
