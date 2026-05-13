@@ -197,16 +197,16 @@ B2B sales, delivery, support, customer success, implementation, and account heal
 
 Threat detection, incidents, vulnerability management, risk posture, response operations, and control health.
 
-- [Incident Line](cybersecurity/incident-line.html) - Track incidents, alerts, or suspicious activity through time.
-- [Severity Stacked Bar](cybersecurity/severity-stacked-bar.html) - Break findings into critical, high, medium, and low severity.
-- [Attack Path Sankey](cybersecurity/attack-path-sankey.html) - Show attacker movement from entry vector to lateral movement and objective.
-- [Vulnerability Heatmap](cybersecurity/vulnerability-heatmap.html) - Map vulnerability count or risk by asset class and severity.
-- [Response Funnel](cybersecurity/response-funnel.html) - Track alerts from triggered to triaged, investigated, contained, and resolved.
-- [Asset Risk Treemap](cybersecurity/asset-risk-treemap.html) - Map risk contribution by application, host, or business unit.
-- [Control Maturity Radar](cybersecurity/control-maturity-radar.html) - Score identity, endpoint, network, detection, backup, and training controls.
-- [Phishing Calendar](cybersecurity/phishing-calendar.html) - Reveal phishing activity or training completion by day.
-- [Risk Reduction Waterfall](cybersecurity/risk-reduction-waterfall.html) - Explain risk movement from new findings, patches, compensating controls, and exceptions.
-- [Breach Stress Test](cybersecurity/breach-stress-test.html) - Compare estimated losses under baseline, ransomware, data leak, and outage scenarios.
+- [Incident Line](cybersecurity/incident-line.html) - Track confirmed incidents and high-fidelity alerts across releases, campaigns, and response shifts.
+- [Severity Stacked Bar](cybersecurity/severity-stacked-bar.html) - Break open findings by severity across endpoint, identity, cloud, and application remediation waves.
+- [Attack Path Sankey](cybersecurity/attack-path-sankey.html) - Show likely attacker movement from phishing or exposed services into lateral movement and data access.
+- [Vulnerability Heatmap](cybersecurity/vulnerability-heatmap.html) - Map vulnerability risk by asset class, exploitability, and remediation priority.
+- [Response Funnel](cybersecurity/response-funnel.html) - Track alert handling from trigger through triage, investigation, containment, eradication, and closure.
+- [Asset Risk Treemap](cybersecurity/asset-risk-treemap.html) - Map residual cyber risk by critical application, host group, and business unit.
+- [Control Maturity Radar](cybersecurity/control-maturity-radar.html) - Score core control maturity across identity, endpoint, network, detection, backup, and training.
+- [Phishing Calendar](cybersecurity/phishing-calendar.html) - Reveal phishing simulations, reported messages, and training completion pressure by day.
+- [Risk Reduction Waterfall](cybersecurity/risk-reduction-waterfall.html) - Explain residual risk movement from new findings, patches, control improvements, exceptions, and accepted risk.
+- [Breach Stress Test](cybersecurity/breach-stress-test.html) - Compare estimated loss, downtime, and response capacity under ransomware, data leak, and outage scenarios.
 
 ### AI Agent
 

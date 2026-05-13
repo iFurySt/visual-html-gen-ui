@@ -27609,8 +27609,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Incident Line example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Cybersecurity Incident Line for open risk&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative risk points / cybersecurity sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Security incident trend by detection window&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;confirmed incidents and high-fidelity alerts by week with response-load context&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;cybersecurity/incident-line&lt;/div&gt;
     &lt;/div&gt;
@@ -27633,13 +27633,13 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Track incidents, alerts, or suspicious activity through time.&lt;/p&gt;
+        &lt;p&gt;Track confirmed incidents and high-fidelity alerts across releases, campaigns, and response shifts.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;trend&lt;/li&gt;
-&lt;li&gt;spike&lt;/li&gt;
+          &lt;li&gt;alert spike&lt;/li&gt;
+&lt;li&gt;incident trend&lt;/li&gt;
 &lt;li&gt;response load&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
@@ -27651,8 +27651,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Incident Line</div>
-          <div class="desc">Track incidents, alerts, or suspicious activity through time.</div>
-          <div class="signals"><span>incident</span><span>line</span></div>
+          <div class="desc">Track confirmed incidents and high-fidelity alerts across releases, campaigns, and response shifts.</div>
+          <div class="signals"><span>alerts</span><span>incidents</span><span>response</span></div>
           <div class="file"><span>cybersecurity/incident-line.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -27828,8 +27828,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Severity Stacked Bar example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Cybersecurity severity stacked bar example&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative risk points / cybersecurity sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Open findings by severity and remediation wave&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;critical, high, medium, and low findings across patch and exception cycles&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;cybersecurity/severity-stacked-bar&lt;/div&gt;
     &lt;/div&gt;
@@ -27865,14 +27865,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Break findings into critical, high, medium, and low severity.&lt;/p&gt;
+        &lt;p&gt;Break open findings by severity across endpoint, identity, cloud, and application remediation waves.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;risk mix&lt;/li&gt;
-&lt;li&gt;volume&lt;/li&gt;
-&lt;li&gt;trend&lt;/li&gt;
+          &lt;li&gt;critical backlog&lt;/li&gt;
+&lt;li&gt;severity mix&lt;/li&gt;
+&lt;li&gt;remediation trend&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -27883,8 +27883,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Severity Stacked Bar</div>
-          <div class="desc">Break findings into critical, high, medium, and low severity.</div>
-          <div class="signals"><span>severity</span><span>stacked</span><span>bar</span></div>
+          <div class="desc">Break open findings by severity across endpoint, identity, cloud, and application remediation waves.</div>
+          <div class="signals"><span>critical</span><span>patches</span><span>exceptions</span></div>
           <div class="file"><span>cybersecurity/severity-stacked-bar.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -28060,8 +28060,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Attack Path Sankey example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Cybersecurity flow between high and critical&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative risk points / cybersecurity sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Attack path from entry vector to business impact&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;paths from phishing and exposed services into privilege escalation, lateral movement, and data access&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;cybersecurity/attack-path-sankey&lt;/div&gt;
     &lt;/div&gt;
@@ -28082,12 +28082,12 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Show attacker movement from entry vector to lateral movement and objective.&lt;/p&gt;
+        &lt;p&gt;Show likely attacker movement from phishing or exposed services into lateral movement and data access.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;path&lt;/li&gt;
+          &lt;li&gt;entry vector&lt;/li&gt;
 &lt;li&gt;control gap&lt;/li&gt;
 &lt;li&gt;blast radius&lt;/li&gt;
         &lt;/ul&gt;
@@ -28100,8 +28100,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Attack Path Sankey</div>
-          <div class="desc">Show attacker movement from entry vector to lateral movement and objective.</div>
-          <div class="signals"><span>attack</span><span>path</span><span>sankey</span></div>
+          <div class="desc">Show likely attacker movement from phishing or exposed services into lateral movement and data access.</div>
+          <div class="signals"><span>phishing</span><span>lateral</span><span>data</span></div>
           <div class="file"><span>cybersecurity/attack-path-sankey.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -28277,8 +28277,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Vulnerability Heatmap example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Cybersecurity vulnerability heatmap example&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative risk points / cybersecurity sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Vulnerability exposure by asset class and severity&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;risk heat across endpoint, cloud, identity, application, and vendor assets&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;cybersecurity/vulnerability-heatmap&lt;/div&gt;
     &lt;/div&gt;
@@ -28329,14 +28329,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Map vulnerability count or risk by asset class and severity.&lt;/p&gt;
+        &lt;p&gt;Map vulnerability risk by asset class, exploitability, and remediation priority.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;exposure&lt;/li&gt;
-&lt;li&gt;hotspot&lt;/li&gt;
-&lt;li&gt;priority&lt;/li&gt;
+          &lt;li&gt;exploitable exposure&lt;/li&gt;
+&lt;li&gt;asset hotspot&lt;/li&gt;
+&lt;li&gt;patch priority&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -28347,8 +28347,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Vulnerability Heatmap</div>
-          <div class="desc">Map vulnerability count or risk by asset class and severity.</div>
-          <div class="signals"><span>vulnerability</span><span>heatmap</span></div>
+          <div class="desc">Map vulnerability risk by asset class, exploitability, and remediation priority.</div>
+          <div class="signals"><span>exposure</span><span>assets</span><span>patching</span></div>
           <div class="file"><span>cybersecurity/vulnerability-heatmap.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -28524,8 +28524,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Response Funnel example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Cybersecurity critical to accepted&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative risk points / cybersecurity sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;SOC response funnel from alert to closure&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;alert movement through triage, investigation, containment, eradication, and resolved stages&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;cybersecurity/response-funnel&lt;/div&gt;
     &lt;/div&gt;
@@ -28540,14 +28540,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Track alerts from triggered to triaged, investigated, contained, and resolved.&lt;/p&gt;
+        &lt;p&gt;Track alert handling from trigger through triage, investigation, containment, eradication, and closure.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
           &lt;li&gt;triage loss&lt;/li&gt;
-&lt;li&gt;response flow&lt;/li&gt;
-&lt;li&gt;bottleneck&lt;/li&gt;
+&lt;li&gt;containment speed&lt;/li&gt;
+&lt;li&gt;closure bottleneck&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -28558,8 +28558,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Response Funnel</div>
-          <div class="desc">Track alerts from triggered to triaged, investigated, contained, and resolved.</div>
-          <div class="signals"><span>response</span><span>funnel</span></div>
+          <div class="desc">Track alert handling from trigger through triage, investigation, containment, eradication, and closure.</div>
+          <div class="signals"><span>triage</span><span>contain</span><span>close</span></div>
           <div class="file"><span>cybersecurity/response-funnel.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -28735,8 +28735,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Asset Risk Treemap example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Cybersecurity asset risk treemap example&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative risk points / cybersecurity sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Residual risk contribution by critical asset&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;risk contribution across cloud apps, identity, endpoints, data stores, vendors, and crown jewels&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;cybersecurity/asset-risk-treemap&lt;/div&gt;
     &lt;/div&gt;
@@ -28752,14 +28752,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Map risk contribution by application, host, or business unit.&lt;/p&gt;
+        &lt;p&gt;Map residual cyber risk by critical application, host group, and business unit.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;concentration&lt;/li&gt;
+          &lt;li&gt;risk concentration&lt;/li&gt;
 &lt;li&gt;critical asset&lt;/li&gt;
-&lt;li&gt;coverage&lt;/li&gt;
+&lt;li&gt;coverage gap&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -28770,8 +28770,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Asset Risk Treemap</div>
-          <div class="desc">Map risk contribution by application, host, or business unit.</div>
-          <div class="signals"><span>asset</span><span>risk</span><span>treemap</span></div>
+          <div class="desc">Map residual cyber risk by critical application, host group, and business unit.</div>
+          <div class="signals"><span>assets</span><span>risk</span><span>coverage</span></div>
           <div class="file"><span>cybersecurity/asset-risk-treemap.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -28947,8 +28947,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Control Maturity Radar example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Cybersecurity control maturity radar example&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative risk points / cybersecurity sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Security control maturity review profile&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;identity, endpoint, network, detection, backup, and training maturity scores&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;cybersecurity/control-maturity-radar&lt;/div&gt;
     &lt;/div&gt;
@@ -28968,14 +28968,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Score identity, endpoint, network, detection, backup, and training controls.&lt;/p&gt;
+        &lt;p&gt;Score core control maturity across identity, endpoint, network, detection, backup, and training.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;maturity&lt;/li&gt;
-&lt;li&gt;weak control&lt;/li&gt;
-&lt;li&gt;balance&lt;/li&gt;
+          &lt;li&gt;identity gap&lt;/li&gt;
+&lt;li&gt;detection maturity&lt;/li&gt;
+&lt;li&gt;backup readiness&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -28986,8 +28986,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Control Maturity Radar</div>
-          <div class="desc">Score identity, endpoint, network, detection, backup, and training controls.</div>
-          <div class="signals"><span>control</span><span>maturity</span><span>radar</span></div>
+          <div class="desc">Score core control maturity across identity, endpoint, network, detection, backup, and training.</div>
+          <div class="signals"><span>identity</span><span>detection</span><span>backup</span></div>
           <div class="file"><span>cybersecurity/control-maturity-radar.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -29163,8 +29163,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Phishing Calendar example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Cybersecurity phishing calendar example&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative risk points / cybersecurity sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Phishing simulation and training calendar&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;daily pressure from phishing campaigns, reported messages, and awareness training&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;cybersecurity/phishing-calendar&lt;/div&gt;
     &lt;/div&gt;
@@ -29240,14 +29240,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Reveal phishing activity or training completion by day.&lt;/p&gt;
+        &lt;p&gt;Reveal phishing simulations, reported messages, and training completion pressure by day.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
           &lt;li&gt;campaign cluster&lt;/li&gt;
+&lt;li&gt;reporting lift&lt;/li&gt;
 &lt;li&gt;training load&lt;/li&gt;
-&lt;li&gt;seasonality&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -29258,8 +29258,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Phishing Calendar</div>
-          <div class="desc">Reveal phishing activity or training completion by day.</div>
-          <div class="signals"><span>phishing</span><span>calendar</span></div>
+          <div class="desc">Reveal phishing simulations, reported messages, and training completion pressure by day.</div>
+          <div class="signals"><span>phishing</span><span>reports</span><span>training</span></div>
           <div class="file"><span>cybersecurity/phishing-calendar.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -29435,8 +29435,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Risk Reduction Waterfall example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Cybersecurity risk reduction waterfall example&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative risk points / cybersecurity sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Residual risk bridge after remediation sprint&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;risk movement from new findings, patching, compensating controls, exceptions, and accepted risk&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;cybersecurity/risk-reduction-waterfall&lt;/div&gt;
     &lt;/div&gt;
@@ -29459,14 +29459,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Explain risk movement from new findings, patches, compensating controls, and exceptions.&lt;/p&gt;
+        &lt;p&gt;Explain residual risk movement from new findings, patches, control improvements, exceptions, and accepted risk.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;driver&lt;/li&gt;
+          &lt;li&gt;patch impact&lt;/li&gt;
+&lt;li&gt;exception drag&lt;/li&gt;
 &lt;li&gt;residual risk&lt;/li&gt;
-&lt;li&gt;control impact&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -29477,8 +29477,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Risk Reduction Waterfall</div>
-          <div class="desc">Explain risk movement from new findings, patches, compensating controls, and exceptions.</div>
-          <div class="signals"><span>risk</span><span>reduction</span><span>waterfall</span></div>
+          <div class="desc">Explain residual risk movement from new findings, patches, control improvements, exceptions, and accepted risk.</div>
+          <div class="signals"><span>patches</span><span>exceptions</span><span>residual</span></div>
           <div class="file"><span>cybersecurity/risk-reduction-waterfall.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -29654,8 +29654,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Breach Stress Test example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Cybersecurity scenario stress test&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative risk points / cybersecurity sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Breach loss stress test by scenario&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;estimated loss exposure across baseline, ransomware, data leak, and outage scenarios&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;cybersecurity/breach-stress-test&lt;/div&gt;
     &lt;/div&gt;
@@ -29677,14 +29677,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Compare estimated losses under baseline, ransomware, data leak, and outage scenarios.&lt;/p&gt;
+        &lt;p&gt;Compare estimated loss, downtime, and response capacity under ransomware, data leak, and outage scenarios.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
           &lt;li&gt;tail loss&lt;/li&gt;
-&lt;li&gt;scenario gap&lt;/li&gt;
-&lt;li&gt;capital need&lt;/li&gt;
+&lt;li&gt;downtime exposure&lt;/li&gt;
+&lt;li&gt;response capacity&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -29695,8 +29695,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Breach Stress Test</div>
-          <div class="desc">Compare estimated losses under baseline, ransomware, data leak, and outage scenarios.</div>
-          <div class="signals"><span>breach</span><span>stress</span><span>test</span></div>
+          <div class="desc">Compare estimated loss, downtime, and response capacity under ransomware, data leak, and outage scenarios.</div>
+          <div class="signals"><span>ransomware</span><span>data leak</span><span>outage</span></div>
           <div class="file"><span>cybersecurity/breach-stress-test.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
