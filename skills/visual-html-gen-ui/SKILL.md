@@ -392,16 +392,16 @@ Token markets, DeFi liquidity, wallets, protocol revenue, on-chain behavior, ris
 
 Collections, merchandising, trend signals, inventory, brand performance, runway, and customer style analytics.
 
-- [Trend Line](fashion/trend-line.html) - Track search, sell-through, or social buzz for a style trend.
-- [Collection Mix Donut](fashion/collection-mix-donut.html) - Summarize assortment by category, fabric, color, or price tier.
-- [Sell Through Stacked Bar](fashion/sell-through-stacked-bar.html) - Break sales by collection, channel, or lifecycle stage.
-- [Color Heatmap](fashion/color-heatmap.html) - Map color demand by region, month, or product line.
-- [Runway To Retail Funnel](fashion/runway-to-retail-funnel.html) - Track looks from concept to sample, buy, launch, and sold-through.
-- [Assortment Treemap](fashion/assortment-treemap.html) - Map revenue or units by style, category, or collection.
-- [Customer Cohort Retention](fashion/customer-cohort-retention.html) - Track repeat purchase behavior by customer cohort.
-- [Brand Affinity Sankey](fashion/brand-affinity-sankey.html) - Show movement between inspiration, category, collection, and purchase.
-- [Markdown Waterfall](fashion/markdown-waterfall.html) - Explain margin movement from full price through markdown, returns, and inventory cost.
-- [Style Score Radar](fashion/style-score-radar.html) - Score a look across trend, fit, margin, availability, and brand fit.
+- [Trend Line](fashion/trend-line.html) - Track search demand, social buzz, sell-through, wishlist adds, waitlist depth, and markdown risk for a trend.
+- [Collection Mix Donut](fashion/collection-mix-donut.html) - Summarize assortment by category, fabric, color family, price tier, size curve, and sustainability claim.
+- [Sell Through Stacked Bar](fashion/sell-through-stacked-bar.html) - Break sales, inventory, sell-through, markdown units, and replenishment need by collection, channel, and lifecycle stage.
+- [Color Heatmap](fashion/color-heatmap.html) - Map color demand, sell-through, returns, regional preference, and seasonal palette gaps by region, month, and product line.
+- [Runway To Retail Funnel](fashion/runway-to-retail-funnel.html) - Track looks from concept through sample, costing, merchant buy, allocation, launch, sell-through, and reorder decision.
+- [Assortment Treemap](fashion/assortment-treemap.html) - Map revenue, units, margin, inventory depth, return rate, and markdown exposure by style, category, and collection.
+- [Customer Cohort Retention](fashion/customer-cohort-retention.html) - Track repeat purchase, category expansion, average order value, returns, loyalty tier movement, and churn by customer cohort.
+- [Brand Affinity Sankey](fashion/brand-affinity-sankey.html) - Show movement from inspiration source through category browse, collection preference, size availability, cart, and purchase.
+- [Markdown Waterfall](fashion/markdown-waterfall.html) - Explain margin movement from full-price sales through markdowns, returns, inventory carrying cost, freight, duties, and liquidation.
+- [Style Score Radar](fashion/style-score-radar.html) - Score a look across trend relevance, fit confidence, gross margin, availability, size coverage, brand fit, and return risk.
 
 ### Sports
 
