@@ -77,16 +77,16 @@ Workplace productivity, meetings, task execution, communication, approvals, and 
 
 Learning progress, classroom operations, curriculum quality, assessment, and student support analytics.
 
-- [Learning Progress Line](education/learning-progress-line.html) - Show mastery or completion growth across a semester.
-- [Grade Distribution Bars](education/grade-distribution-bars.html) - Compare score bands across classes, sections, or terms.
-- [Mastery Heatmap](education/mastery-heatmap.html) - Map skill mastery by module and learner group.
-- [Attendance Calendar](education/attendance-calendar.html) - Reveal daily attendance, absence, or participation intensity.
-- [Learner Cohort Retention](education/cohort-retention.html) - Track student retention or course completion by intake cohort.
-- [Curriculum Coverage Treemap](education/curriculum-coverage-treemap.html) - Show instructional time or content weight by curriculum area.
-- [Intervention Funnel](education/intervention-funnel.html) - Track students from flagged risk to outreach, support, and recovery.
-- [Learning Path Sankey](education/learning-path-sankey.html) - Show how learners move across tracks, modules, and outcomes.
-- [Rubric Score Radar](education/rubric-score-radar.html) - Summarize student or class performance across rubric dimensions.
-- [Assessment Stress Test](education/assessment-stress-test.html) - Compare performance under standard, timed, and advanced assessment conditions.
+- [Learning Progress Line](education/learning-progress-line.html) - Track standards mastery growth across a semester and expose plateaus before finals.
+- [Grade Distribution Bars](education/grade-distribution-bars.html) - Compare proficiency bands across class sections after a shared assessment.
+- [Mastery Heatmap](education/mastery-heatmap.html) - Map concept mastery by learner group so teachers can plan reteach blocks.
+- [Attendance Calendar](education/attendance-calendar.html) - Reveal absence, tardy, and participation pressure across a school month.
+- [Learner Cohort Retention](education/cohort-retention.html) - Track course completion and continued participation by enrollment cohort.
+- [Curriculum Coverage Treemap](education/curriculum-coverage-treemap.html) - Show instructional time and assessment weight by standards cluster.
+- [Intervention Funnel](education/intervention-funnel.html) - Track students from risk flag to family outreach, tutoring, practice, and recovery.
+- [Learning Path Sankey](education/learning-path-sankey.html) - Show learners moving from diagnostic placement through modules, retakes, and outcomes.
+- [Rubric Score Radar](education/rubric-score-radar.html) - Summarize writing or project performance across rubric dimensions.
+- [Assessment Stress Test](education/assessment-stress-test.html) - Compare expected performance under timed, supported, remote, and advanced assessment conditions.
 
 ### Health
 
