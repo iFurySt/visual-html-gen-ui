@@ -332,16 +332,16 @@ Public services, budgets, case queues, civic operations, policy outcomes, and in
 
 Production, quality, supply chain, maintenance, throughput, yield, and factory operations analytics.
 
-- [Production Line](manufacturing/production-line.html) - Track output, yield, or throughput over shifts and weeks.
-- [Quality Stacked Bar](manufacturing/quality-stacked-bar.html) - Break production into pass, rework, scrap, and hold states.
-- [Defect Heatmap](manufacturing/defect-heatmap.html) - Map defect rate by station and defect type.
-- [Supply Flow Sankey](manufacturing/supply-flow-sankey.html) - Show material flow from suppliers to lines, inventory, and shipment.
-- [OEE KPI](manufacturing/oee-kpi.html) - Compare availability, performance, quality, cycle time, and scrap efficiency.
-- [Line Utilization Calendar](manufacturing/line-utilization-calendar.html) - Reveal shift utilization or downtime by day.
-- [Product Mix Treemap](manufacturing/product-mix-treemap.html) - Map output, revenue, or margin by product family.
-- [Maintenance Funnel](manufacturing/maintenance-funnel.html) - Track work orders from created to triaged, scheduled, completed, and verified.
-- [Cost Waterfall](manufacturing/cost-waterfall.html) - Explain cost movement from materials, labor, energy, rework, and logistics.
-- [Factory Risk Radar](manufacturing/factory-risk-radar.html) - Score a plant across safety, quality, capacity, maintenance, supply, and cost.
+- [Production Line](manufacturing/production-line.html) - Track planned output, actual units, first-pass yield, takt adherence, downtime loss, and overtime recovery by shift and week.
+- [Quality Stacked Bar](manufacturing/quality-stacked-bar.html) - Break production into pass, rework, scrap, quarantine, hold, and customer-return states by line and product.
+- [Defect Heatmap](manufacturing/defect-heatmap.html) - Map defect rate, severity, recurrence, and suspected root cause by station, shift, and defect type.
+- [Supply Flow Sankey](manufacturing/supply-flow-sankey.html) - Show material flow from suppliers through receiving, inspection, inventory, line-side staging, production lines, finished goods, and shipment.
+- [OEE KPI](manufacturing/oee-kpi.html) - Compare availability, performance, quality, changeover time, minor stops, scrap loss, and cycle-time variance.
+- [Line Utilization Calendar](manufacturing/line-utilization-calendar.html) - Reveal line utilization, planned downtime, changeovers, overtime, sanitation, and unplanned stops by day and shift.
+- [Product Mix Treemap](manufacturing/product-mix-treemap.html) - Map output volume, revenue, margin, changeover burden, and quality loss by product family and SKU.
+- [Maintenance Funnel](manufacturing/maintenance-funnel.html) - Track maintenance work orders from detection through triage, parts readiness, scheduling, completion, verification, and recurrence monitoring.
+- [Cost Waterfall](manufacturing/cost-waterfall.html) - Explain unit cost movement from material price, labor efficiency, energy, scrap, rework, freight, overtime, and yield recovery.
+- [Factory Risk Radar](manufacturing/factory-risk-radar.html) - Score a plant across safety incidents, quality risk, capacity headroom, maintenance health, supply resilience, cost pressure, and staffing coverage.
 
 ### Energy
 

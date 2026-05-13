@@ -47686,8 +47686,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Production Line example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Manufacturing Production Line for production output&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative units / manufacturing sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Production output and yield trend by shift&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;planned vs actual output, first-pass yield, takt adherence, downtime loss, and overtime recovery&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;manufacturing/production-line&lt;/div&gt;
     &lt;/div&gt;
@@ -47710,14 +47710,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Track output, yield, or throughput over shifts and weeks.&lt;/p&gt;
+        &lt;p&gt;Track planned output, actual units, first-pass yield, takt adherence, downtime loss, and overtime recovery by shift and week.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;throughput&lt;/li&gt;
-&lt;li&gt;trend&lt;/li&gt;
-&lt;li&gt;downtime impact&lt;/li&gt;
+          &lt;li&gt;throughput trend&lt;/li&gt;
+&lt;li&gt;yield drag&lt;/li&gt;
+&lt;li&gt;downtime loss&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -47728,8 +47728,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Production Line</div>
-          <div class="desc">Track output, yield, or throughput over shifts and weeks.</div>
-          <div class="signals"><span>production</span><span>line</span></div>
+          <div class="desc">Track planned output, actual units, first-pass yield, takt adherence, downtime loss, and overtime recovery by shift and week.</div>
+          <div class="signals"><span>output</span><span>yield</span><span>downtime</span></div>
           <div class="file"><span>manufacturing/production-line.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -47905,8 +47905,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Quality Stacked Bar example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Manufacturing quality stacked bar example&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative units / manufacturing sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Quality disposition mix by line and product&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;pass, rework, scrap, quarantine, hold, and customer return volume&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;manufacturing/quality-stacked-bar&lt;/div&gt;
     &lt;/div&gt;
@@ -47942,14 +47942,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Break production into pass, rework, scrap, and hold states.&lt;/p&gt;
+        &lt;p&gt;Break production into pass, rework, scrap, quarantine, hold, and customer-return states by line and product.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;quality mix&lt;/li&gt;
-&lt;li&gt;scrap&lt;/li&gt;
-&lt;li&gt;process shift&lt;/li&gt;
+          &lt;li&gt;first-pass yield&lt;/li&gt;
+&lt;li&gt;rework load&lt;/li&gt;
+&lt;li&gt;scrap exposure&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -47960,8 +47960,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Quality Stacked Bar</div>
-          <div class="desc">Break production into pass, rework, scrap, and hold states.</div>
-          <div class="signals"><span>quality</span><span>stacked</span><span>bar</span></div>
+          <div class="desc">Break production into pass, rework, scrap, quarantine, hold, and customer-return states by line and product.</div>
+          <div class="signals"><span>pass</span><span>rework</span><span>scrap</span></div>
           <div class="file"><span>manufacturing/quality-stacked-bar.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -48137,8 +48137,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Defect Heatmap example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Manufacturing defect heatmap example&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative units / manufacturing sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Defect hotspot heatmap by station and cause&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;defect rate, severity, recurrence, and root-cause patterns by station and shift&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;manufacturing/defect-heatmap&lt;/div&gt;
     &lt;/div&gt;
@@ -48189,14 +48189,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Map defect rate by station and defect type.&lt;/p&gt;
+        &lt;p&gt;Map defect rate, severity, recurrence, and suspected root cause by station, shift, and defect type.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;hotspot&lt;/li&gt;
+          &lt;li&gt;defect hotspot&lt;/li&gt;
+&lt;li&gt;recurrence risk&lt;/li&gt;
 &lt;li&gt;root cause&lt;/li&gt;
-&lt;li&gt;priority&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -48207,8 +48207,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Defect Heatmap</div>
-          <div class="desc">Map defect rate by station and defect type.</div>
-          <div class="signals"><span>defect</span><span>heatmap</span></div>
+          <div class="desc">Map defect rate, severity, recurrence, and suspected root cause by station, shift, and defect type.</div>
+          <div class="signals"><span>defects</span><span>stations</span><span>causes</span></div>
           <div class="file"><span>manufacturing/defect-heatmap.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -48384,8 +48384,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Supply Flow Sankey example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Manufacturing flow between line a and scheduled&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative units / manufacturing sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Material flow from supplier to shipment&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;material movement through suppliers, receiving, inspection, inventory, line-side staging, production, finished goods, and shipment&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;manufacturing/supply-flow-sankey&lt;/div&gt;
     &lt;/div&gt;
@@ -48406,14 +48406,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Show material flow from suppliers to lines, inventory, and shipment.&lt;/p&gt;
+        &lt;p&gt;Show material flow from suppliers through receiving, inspection, inventory, line-side staging, production lines, finished goods, and shipment.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;flow&lt;/li&gt;
-&lt;li&gt;constraint&lt;/li&gt;
-&lt;li&gt;leakage&lt;/li&gt;
+          &lt;li&gt;supplier constraint&lt;/li&gt;
+&lt;li&gt;inspection loss&lt;/li&gt;
+&lt;li&gt;shipment path&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -48424,8 +48424,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Supply Flow Sankey</div>
-          <div class="desc">Show material flow from suppliers to lines, inventory, and shipment.</div>
-          <div class="signals"><span>supply</span><span>flow</span><span>sankey</span></div>
+          <div class="desc">Show material flow from suppliers through receiving, inspection, inventory, line-side staging, production lines, finished goods, and shipment.</div>
+          <div class="signals"><span>suppliers</span><span>inventory</span><span>shipment</span></div>
           <div class="file"><span>manufacturing/supply-flow-sankey.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -48601,8 +48601,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;OEE KPI example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Manufacturing operating KPI snapshot&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative units / manufacturing sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;OEE loss profile across availability performance and quality&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;availability, performance, quality, changeover time, minor stops, scrap loss, and cycle-time variance&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;manufacturing/oee-kpi&lt;/div&gt;
     &lt;/div&gt;
@@ -48621,14 +48621,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Compare availability, performance, quality, cycle time, and scrap efficiency.&lt;/p&gt;
+        &lt;p&gt;Compare availability, performance, quality, changeover time, minor stops, scrap loss, and cycle-time variance.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;efficiency&lt;/li&gt;
-&lt;li&gt;loss&lt;/li&gt;
-&lt;li&gt;quality&lt;/li&gt;
+          &lt;li&gt;availability loss&lt;/li&gt;
+&lt;li&gt;performance loss&lt;/li&gt;
+&lt;li&gt;quality loss&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -48639,8 +48639,8 @@ body {
         </div>
         <div class="body">
           <div class="title">OEE KPI</div>
-          <div class="desc">Compare availability, performance, quality, cycle time, and scrap efficiency.</div>
-          <div class="signals"><span>oee</span><span>kpi</span></div>
+          <div class="desc">Compare availability, performance, quality, changeover time, minor stops, scrap loss, and cycle-time variance.</div>
+          <div class="signals"><span>availability</span><span>performance</span><span>quality</span></div>
           <div class="file"><span>manufacturing/oee-kpi.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -48816,8 +48816,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Line Utilization Calendar example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Manufacturing line utilization calendar example&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative units / manufacturing sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Line utilization and downtime calendar&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;daily line utilization, planned downtime, changeovers, overtime, sanitation, and unplanned stops&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;manufacturing/line-utilization-calendar&lt;/div&gt;
     &lt;/div&gt;
@@ -48893,14 +48893,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Reveal shift utilization or downtime by day.&lt;/p&gt;
+        &lt;p&gt;Reveal line utilization, planned downtime, changeovers, overtime, sanitation, and unplanned stops by day and shift.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;utilization&lt;/li&gt;
-&lt;li&gt;downtime cluster&lt;/li&gt;
-&lt;li&gt;capacity&lt;/li&gt;
+          &lt;li&gt;downtime cluster&lt;/li&gt;
+&lt;li&gt;changeover load&lt;/li&gt;
+&lt;li&gt;capacity risk&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -48911,8 +48911,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Line Utilization Calendar</div>
-          <div class="desc">Reveal shift utilization or downtime by day.</div>
-          <div class="signals"><span>line</span><span>utilization</span><span>calendar</span></div>
+          <div class="desc">Reveal line utilization, planned downtime, changeovers, overtime, sanitation, and unplanned stops by day and shift.</div>
+          <div class="signals"><span>downtime</span><span>changeovers</span><span>capacity</span></div>
           <div class="file"><span>manufacturing/line-utilization-calendar.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -49088,8 +49088,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Product Mix Treemap example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Manufacturing product mix treemap example&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative units / manufacturing sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Product mix by output margin and complexity&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;output volume, revenue, margin, changeover burden, and quality loss by product family and SKU&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;manufacturing/product-mix-treemap&lt;/div&gt;
     &lt;/div&gt;
@@ -49105,14 +49105,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Map output, revenue, or margin by product family.&lt;/p&gt;
+        &lt;p&gt;Map output volume, revenue, margin, changeover burden, and quality loss by product family and SKU.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;mix&lt;/li&gt;
-&lt;li&gt;concentration&lt;/li&gt;
-&lt;li&gt;portfolio&lt;/li&gt;
+          &lt;li&gt;margin mix&lt;/li&gt;
+&lt;li&gt;changeover burden&lt;/li&gt;
+&lt;li&gt;SKU concentration&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -49123,8 +49123,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Product Mix Treemap</div>
-          <div class="desc">Map output, revenue, or margin by product family.</div>
-          <div class="signals"><span>product</span><span>mix</span><span>treemap</span></div>
+          <div class="desc">Map output volume, revenue, margin, changeover burden, and quality loss by product family and SKU.</div>
+          <div class="signals"><span>margin</span><span>SKUs</span><span>changeovers</span></div>
           <div class="file"><span>manufacturing/product-mix-treemap.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -49300,8 +49300,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Maintenance Funnel example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Manufacturing created to verified&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative units / manufacturing sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Maintenance work order funnel from detection to verification&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;work orders through detection, triage, parts readiness, scheduling, completion, verification, and recurrence monitoring&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;manufacturing/maintenance-funnel&lt;/div&gt;
     &lt;/div&gt;
@@ -49316,14 +49316,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Track work orders from created to triaged, scheduled, completed, and verified.&lt;/p&gt;
+        &lt;p&gt;Track maintenance work orders from detection through triage, parts readiness, scheduling, completion, verification, and recurrence monitoring.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;maintenance flow&lt;/li&gt;
-&lt;li&gt;backlog&lt;/li&gt;
-&lt;li&gt;bottleneck&lt;/li&gt;
+          &lt;li&gt;parts wait&lt;/li&gt;
+&lt;li&gt;schedule backlog&lt;/li&gt;
+&lt;li&gt;verification yield&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -49334,8 +49334,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Maintenance Funnel</div>
-          <div class="desc">Track work orders from created to triaged, scheduled, completed, and verified.</div>
-          <div class="signals"><span>maintenance</span><span>funnel</span></div>
+          <div class="desc">Track maintenance work orders from detection through triage, parts readiness, scheduling, completion, verification, and recurrence monitoring.</div>
+          <div class="signals"><span>parts</span><span>backlog</span><span>verified</span></div>
           <div class="file"><span>manufacturing/maintenance-funnel.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -49511,8 +49511,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Cost Waterfall example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Manufacturing cost waterfall example&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative units / manufacturing sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Manufacturing unit cost bridge by driver&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;material price, labor efficiency, energy, scrap, rework, freight, overtime, and yield recovery&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;manufacturing/cost-waterfall&lt;/div&gt;
     &lt;/div&gt;
@@ -49535,14 +49535,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Explain cost movement from materials, labor, energy, rework, and logistics.&lt;/p&gt;
+        &lt;p&gt;Explain unit cost movement from material price, labor efficiency, energy, scrap, rework, freight, overtime, and yield recovery.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;cost driver&lt;/li&gt;
-&lt;li&gt;margin impact&lt;/li&gt;
-&lt;li&gt;waste&lt;/li&gt;
+          &lt;li&gt;material inflation&lt;/li&gt;
+&lt;li&gt;labor efficiency&lt;/li&gt;
+&lt;li&gt;scrap cost&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -49553,8 +49553,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Cost Waterfall</div>
-          <div class="desc">Explain cost movement from materials, labor, energy, rework, and logistics.</div>
-          <div class="signals"><span>cost</span><span>waterfall</span></div>
+          <div class="desc">Explain unit cost movement from material price, labor efficiency, energy, scrap, rework, freight, overtime, and yield recovery.</div>
+          <div class="signals"><span>material</span><span>labor</span><span>scrap</span></div>
           <div class="file"><span>manufacturing/cost-waterfall.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -49730,8 +49730,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Factory Risk Radar example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Manufacturing factory risk radar example&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative units / manufacturing sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Factory risk scorecard across safety quality and supply&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;safety incidents, quality risk, capacity headroom, maintenance health, supply resilience, cost pressure, and staffing coverage&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;manufacturing/factory-risk-radar&lt;/div&gt;
     &lt;/div&gt;
@@ -49751,14 +49751,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Score a plant across safety, quality, capacity, maintenance, supply, and cost.&lt;/p&gt;
+        &lt;p&gt;Score a plant across safety incidents, quality risk, capacity headroom, maintenance health, supply resilience, cost pressure, and staffing coverage.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;risk profile&lt;/li&gt;
-&lt;li&gt;balance&lt;/li&gt;
-&lt;li&gt;weak dimension&lt;/li&gt;
+          &lt;li&gt;safety risk&lt;/li&gt;
+&lt;li&gt;supply resilience&lt;/li&gt;
+&lt;li&gt;staffing gap&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -49769,8 +49769,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Factory Risk Radar</div>
-          <div class="desc">Score a plant across safety, quality, capacity, maintenance, supply, and cost.</div>
-          <div class="signals"><span>factory</span><span>risk</span><span>radar</span></div>
+          <div class="desc">Score a plant across safety incidents, quality risk, capacity headroom, maintenance health, supply resilience, cost pressure, and staffing coverage.</div>
+          <div class="signals"><span>safety</span><span>supply</span><span>staffing</span></div>
           <div class="file"><span>manufacturing/factory-risk-radar.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>

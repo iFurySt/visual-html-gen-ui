@@ -155,7 +155,7 @@
     <div>
       <div class="eyebrow">Manufacturing / sankey</div>
       <h1>Supply Flow Sankey</h1>
-      <p class="purpose">Show material flow from suppliers to lines, inventory, and shipment.</p>
+      <p class="purpose">Show material flow from suppliers through receiving, inspection, inventory, line-side staging, production lines, finished goods, and shipment.</p>
     </div>
     <div class="stamp">standalone html</div>
   </header>
@@ -163,8 +163,8 @@
   <section id="chart-preview" class="frame" aria-label="Supply Flow Sankey example">
     <div class="chart-head">
       <div>
-        <h2 class="chart-title">Manufacturing flow between line a and scheduled</h2>
-        <div class="chart-meta">illustrative units / manufacturing sample data</div>
+        <h2 class="chart-title">Material flow from supplier to shipment</h2>
+        <div class="chart-meta">material movement through suppliers, receiving, inspection, inventory, line-side staging, production, finished goods, and shipment</div>
       </div>
       <div class="chart-meta">manufacturing/supply-flow-sankey</div>
     </div>
@@ -185,14 +185,14 @@
     <div class="note-grid">
       <div class="note">
         <h2>Use When</h2>
-        <p>Show material flow from suppliers to lines, inventory, and shipment.</p>
+        <p>Show material flow from suppliers through receiving, inspection, inventory, line-side staging, production lines, finished goods, and shipment.</p>
       </div>
       <div class="note">
         <h2>Signals</h2>
         <ul>
-          <li>flow</li>
-<li>constraint</li>
-<li>leakage</li>
+          <li>supplier constraint</li>
+<li>inspection loss</li>
+<li>shipment path</li>
         </ul>
       </div>
     </div>
