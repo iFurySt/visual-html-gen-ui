@@ -38,6 +38,7 @@ make ci
 - Content Creation: 10 chart examples.
 - Enterprise Services: 10 chart examples.
 - Cybersecurity: 10 chart examples.
+- AI Agent: 10 chart examples.
 
 ## License
 

@@ -44,6 +44,7 @@ low-saturation clay/olive/oat/slate colors.
 - Content Creation
 - Enterprise Services
 - Cybersecurity
+- AI Agent
 
 ### Files Modified
 

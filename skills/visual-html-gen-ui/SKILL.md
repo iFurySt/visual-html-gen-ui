@@ -208,6 +208,21 @@ Threat detection, incidents, vulnerability management, risk posture, response op
 - [Risk Reduction Waterfall](cybersecurity/risk-reduction-waterfall/index.html) - Explain risk movement from new findings, patches, compensating controls, and exceptions.
 - [Breach Stress Test](cybersecurity/breach-stress-test/index.html) - Compare estimated losses under baseline, ransomware, data leak, and outage scenarios.
 
+### AI Agent
+
+Agent workflows, model performance, tool use, evaluation, cost, latency, safety, and autonomy analytics.
+
+- [Task Success Line](ai-agent/task-success-line/index.html) - Track agent task success rate across eval runs or product releases.
+- [Latency Area](ai-agent/latency-area/index.html) - Emphasize cumulative latency or runtime cost across workflow stages.
+- [Tool Use Sankey](ai-agent/tool-use-sankey/index.html) - Show agent movement between planning, search, code, browser, and verification tools.
+- [Eval Heatmap](ai-agent/eval-heatmap/index.html) - Map pass rate by task family and capability dimension.
+- [Failure Funnel](ai-agent/failure-funnel/index.html) - Track failures from detected issue to repro, root cause, fix, and verified pass.
+- [Model Cost Scatter](ai-agent/model-cost-scatter/index.html) - Position models or prompts by quality and cost.
+- [Agent Cohort Retention](ai-agent/agent-cohort-retention/index.html) - Track repeat workflow success by task cohort over versions.
+- [Capability Radar](ai-agent/capability-radar/index.html) - Score an agent across planning, tool use, coding, browsing, safety, and memory.
+- [Token Waterfall](ai-agent/token-waterfall/index.html) - Explain token use from system context, retrieved docs, reasoning, tool output, and answer.
+- [Safety Stress Test](ai-agent/safety-stress-test/index.html) - Compare failure rates under normal, adversarial, long-context, and tool-error scenarios.
+
 ## Maintenance
 
 Maintainers should edit `catalog.json`, run

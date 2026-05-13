@@ -1511,6 +1511,123 @@
           ]
         }
       ]
+    },
+    {
+      "slug": "ai-agent",
+      "name": "AI Agent",
+      "summary": "Agent workflows, model performance, tool use, evaluation, cost, latency, safety, and autonomy analytics.",
+      "charts": [
+        {
+          "slug": "task-success-line",
+          "title": "Task Success Line",
+          "type": "line",
+          "purpose": "Track agent task success rate across eval runs or product releases.",
+          "signals": [
+            "quality trend",
+            "regression",
+            "release impact"
+          ]
+        },
+        {
+          "slug": "latency-area",
+          "title": "Latency Area",
+          "type": "area",
+          "purpose": "Emphasize cumulative latency or runtime cost across workflow stages.",
+          "signals": [
+            "runtime",
+            "cost load",
+            "bottleneck"
+          ]
+        },
+        {
+          "slug": "tool-use-sankey",
+          "title": "Tool Use Sankey",
+          "type": "sankey",
+          "purpose": "Show agent movement between planning, search, code, browser, and verification tools.",
+          "signals": [
+            "workflow",
+            "tool mix",
+            "looping"
+          ]
+        },
+        {
+          "slug": "eval-heatmap",
+          "title": "Eval Heatmap",
+          "type": "heatmap",
+          "purpose": "Map pass rate by task family and capability dimension.",
+          "signals": [
+            "capability gap",
+            "coverage",
+            "regression"
+          ]
+        },
+        {
+          "slug": "failure-funnel",
+          "title": "Failure Funnel",
+          "type": "funnel",
+          "purpose": "Track failures from detected issue to repro, root cause, fix, and verified pass.",
+          "signals": [
+            "debug flow",
+            "drop-off",
+            "quality loop"
+          ]
+        },
+        {
+          "slug": "model-cost-scatter",
+          "title": "Model Cost Scatter",
+          "type": "scatter",
+          "purpose": "Position models or prompts by quality and cost.",
+          "signals": [
+            "frontier",
+            "tradeoff",
+            "outlier"
+          ]
+        },
+        {
+          "slug": "agent-cohort-retention",
+          "title": "Agent Cohort Retention",
+          "type": "cohort",
+          "purpose": "Track repeat workflow success by task cohort over versions.",
+          "signals": [
+            "retention",
+            "stability",
+            "quality"
+          ]
+        },
+        {
+          "slug": "capability-radar",
+          "title": "Capability Radar",
+          "type": "radar",
+          "purpose": "Score an agent across planning, tool use, coding, browsing, safety, and memory.",
+          "signals": [
+            "capability profile",
+            "balance",
+            "weak skill"
+          ]
+        },
+        {
+          "slug": "token-waterfall",
+          "title": "Token Waterfall",
+          "type": "waterfall",
+          "purpose": "Explain token use from system context, retrieved docs, reasoning, tool output, and answer.",
+          "signals": [
+            "token driver",
+            "context pressure",
+            "optimization"
+          ]
+        },
+        {
+          "slug": "safety-stress-test",
+          "title": "Safety Stress Test",
+          "type": "stress",
+          "purpose": "Compare failure rates under normal, adversarial, long-context, and tool-error scenarios.",
+          "signals": [
+            "robustness",
+            "tail failure",
+            "guardrail gap"
+          ]
+        }
+      ]
     }
   ]
 }

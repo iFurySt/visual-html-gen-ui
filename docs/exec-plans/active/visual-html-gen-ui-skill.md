@@ -88,7 +88,7 @@ without loading every example into context.
 - [x] Content Creation
 - [x] Enterprise Services
 - [x] Cybersecurity
-- [ ] AI Agent
+- [x] AI Agent
 - [ ] Real Estate
 - [ ] HR
 - [ ] Mobility
