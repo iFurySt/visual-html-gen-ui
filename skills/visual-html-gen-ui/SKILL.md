@@ -317,16 +317,16 @@ Matter management, contracts, litigation, compliance, risk, billing, and legal o
 
 Public services, budgets, case queues, civic operations, policy outcomes, and infrastructure programs.
 
-- [Service Demand Line](government/service-demand-line.html) - Track public service requests, permits, or cases over time.
-- [Budget Allocation Donut](government/budget-allocation-donut.html) - Summarize budget by agency, program, or funding source.
-- [Permit Funnel](government/permit-funnel.html) - Track applications through submitted, reviewed, corrected, approved, and issued.
-- [Case Flow Sankey](government/case-flow-sankey.html) - Show case movement across intake, eligibility, review, service, and close.
-- [District Heatmap](government/district-heatmap.html) - Map service need or outcome metrics by district and topic.
-- [Program Treemap](government/program-treemap.html) - Map spend or outcomes by program area.
-- [Deadline Calendar](government/deadline-calendar.html) - Show public hearings, filing deadlines, grant windows, and reporting dates.
-- [Outcome Cohort](government/outcome-cohort.html) - Track participant outcomes by intake cohort.
-- [Policy Score Radar](government/policy-score-radar.html) - Score policy options across cost, reach, equity, feasibility, and risk.
-- [Budget Stress Test](government/budget-stress-test.html) - Compare budget gap under inflation, revenue decline, demand spike, and disaster scenarios.
+- [Service Demand Line](government/service-demand-line.html) - Track service requests, permit intake, case openings, SLA misses, and closure capacity by week or month.
+- [Budget Allocation Donut](government/budget-allocation-donut.html) - Summarize adopted budget by agency, program, fund source, restricted dollars, and discretionary capacity.
+- [Permit Funnel](government/permit-funnel.html) - Track permit applications from precheck through submission, completeness review, correction, approval, payment, and issuance.
+- [Case Flow Sankey](government/case-flow-sankey.html) - Show constituent case movement across intake, eligibility, triage, assignment, service delivery, referral, and closure.
+- [District Heatmap](government/district-heatmap.html) - Map service demand, response time, complaint rate, equity gap, and outcome attainment by district and topic.
+- [Program Treemap](government/program-treemap.html) - Map program spend, beneficiaries served, outcome yield, grant dependency, and administrative load by portfolio area.
+- [Deadline Calendar](government/deadline-calendar.html) - Show hearings, filing cutoffs, grant windows, council votes, reporting dates, and public comment periods.
+- [Outcome Cohort](government/outcome-cohort.html) - Track participant outcomes, recertification, benefits continuity, service completion, and follow-up by intake cohort.
+- [Policy Score Radar](government/policy-score-radar.html) - Score policy options across cost, coverage, equity impact, implementation complexity, legal risk, and public acceptance.
+- [Budget Stress Test](government/budget-stress-test.html) - Compare fund balance, service capacity, reserve draw, and deficit risk under inflation, revenue decline, demand spike, disaster response, and grant loss scenarios.
 
 ### Manufacturing
 
