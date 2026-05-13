@@ -422,16 +422,16 @@ Team performance, player development, game operations, fan engagement, training,
 
 Pet health, care routines, marketplace behavior, adoption, insurance, services, and owner engagement.
 
-- [Wellness Line](pets/wellness-line.html) - Track weight, activity, symptoms, or wellness score over time.
-- [Care Calendar](pets/care-calendar.html) - Show feeding, medication, grooming, vaccination, or visit adherence by day.
-- [Adoption Funnel](pets/adoption-funnel.html) - Track pets from listed to viewed, applied, visited, approved, and adopted.
-- [Service Mix Donut](pets/service-mix-donut.html) - Summarize spending or bookings by grooming, vet, food, insurance, and toys.
-- [Clinic Flow Sankey](pets/clinic-flow-sankey.html) - Show movement from appointment reason to diagnosis, treatment, and follow-up.
-- [Breed Health Heatmap](pets/breed-health-heatmap.html) - Map common risk or care metrics by breed and age group.
-- [Subscription Cohort Retention](pets/subscription-cohort-retention.html) - Track repeat orders or plan retention by signup cohort.
-- [Product Treemap](pets/product-treemap.html) - Map pet product revenue by category or brand.
-- [Claim Waterfall](pets/claim-waterfall.html) - Explain insurance claim value from invoice, deductible, exclusions, copay, and reimbursement.
-- [Pet Profile Radar](pets/pet-profile-radar.html) - Score care needs across activity, diet, grooming, medical, training, and socialization.
+- [Wellness Line](pets/wellness-line.html) - Track weight, activity minutes, appetite, symptoms, medication adherence, and wellness score over time.
+- [Care Calendar](pets/care-calendar.html) - Show feeding, medication, grooming, vaccination, parasite prevention, training, and vet visit adherence by day.
+- [Adoption Funnel](pets/adoption-funnel.html) - Track pets from intake and listing through views, inquiries, applications, meet-and-greet visits, approval, adoption, and follow-up.
+- [Service Mix Donut](pets/service-mix-donut.html) - Summarize spend and bookings by grooming, veterinary, food, insurance, training, boarding, toys, and wellness plans.
+- [Clinic Flow Sankey](pets/clinic-flow-sankey.html) - Show movement from appointment reason through triage, diagnosis, treatment, pharmacy, follow-up, and outcome.
+- [Breed Health Heatmap](pets/breed-health-heatmap.html) - Map condition risk, preventive care, activity, weight trend, claims, and age patterns by breed and age group.
+- [Subscription Cohort Retention](pets/subscription-cohort-retention.html) - Track repeat orders, plan retention, skip frequency, churn, upsell, and replenishment timing by signup cohort.
+- [Product Treemap](pets/product-treemap.html) - Map product revenue, units, margin, repeat purchase, inventory risk, and brand concentration by category.
+- [Claim Waterfall](pets/claim-waterfall.html) - Explain claim value from invoice through deductible, exclusions, copay, policy limit, reimbursement, and owner out-of-pocket.
+- [Pet Profile Radar](pets/pet-profile-radar.html) - Score care needs across activity, diet, grooming, medical risk, behavior training, socialization, and preventive care.
 
 ## Maintenance
 

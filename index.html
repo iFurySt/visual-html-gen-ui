@@ -61101,8 +61101,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Wellness Line example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Pets Wellness Line for wellness score&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative care score / pets sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Pet wellness trend across activity symptoms and adherence&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;weight, activity minutes, appetite, symptoms, medication adherence, and wellness score&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;pets/wellness-line&lt;/div&gt;
     &lt;/div&gt;
@@ -61125,13 +61125,13 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Track weight, activity, symptoms, or wellness score over time.&lt;/p&gt;
+        &lt;p&gt;Track weight, activity minutes, appetite, symptoms, medication adherence, and wellness score over time.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;trend&lt;/li&gt;
-&lt;li&gt;threshold&lt;/li&gt;
+          &lt;li&gt;wellness trend&lt;/li&gt;
+&lt;li&gt;symptom threshold&lt;/li&gt;
 &lt;li&gt;routine impact&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
@@ -61143,8 +61143,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Wellness Line</div>
-          <div class="desc">Track weight, activity, symptoms, or wellness score over time.</div>
-          <div class="signals"><span>wellness</span><span>line</span></div>
+          <div class="desc">Track weight, activity minutes, appetite, symptoms, medication adherence, and wellness score over time.</div>
+          <div class="signals"><span>activity</span><span>symptoms</span><span>meds</span></div>
           <div class="file"><span>pets/wellness-line.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -61320,8 +61320,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Care Calendar example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Pets care calendar example&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative care score / pets sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Care routine adherence calendar&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;feeding, medication, grooming, vaccination, parasite prevention, training, and vet visits by day&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;pets/care-calendar&lt;/div&gt;
     &lt;/div&gt;
@@ -61397,14 +61397,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Show feeding, medication, grooming, vaccination, or visit adherence by day.&lt;/p&gt;
+        &lt;p&gt;Show feeding, medication, grooming, vaccination, parasite prevention, training, and vet visit adherence by day.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;adherence&lt;/li&gt;
-&lt;li&gt;routine gap&lt;/li&gt;
-&lt;li&gt;cluster&lt;/li&gt;
+          &lt;li&gt;adherence gap&lt;/li&gt;
+&lt;li&gt;routine cluster&lt;/li&gt;
+&lt;li&gt;overdue care&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -61415,8 +61415,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Care Calendar</div>
-          <div class="desc">Show feeding, medication, grooming, vaccination, or visit adherence by day.</div>
-          <div class="signals"><span>care</span><span>calendar</span></div>
+          <div class="desc">Show feeding, medication, grooming, vaccination, parasite prevention, training, and vet visit adherence by day.</div>
+          <div class="signals"><span>feeding</span><span>meds</span><span>visits</span></div>
           <div class="file"><span>pets/care-calendar.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -61592,8 +61592,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Adoption Funnel example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Pets viewed to listed&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative care score / pets sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Adoption funnel from listing to placement&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;pets through intake, listing, view, inquiry, application, visit, approval, adoption, and follow-up&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;pets/adoption-funnel&lt;/div&gt;
     &lt;/div&gt;
@@ -61608,14 +61608,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Track pets from listed to viewed, applied, visited, approved, and adopted.&lt;/p&gt;
+        &lt;p&gt;Track pets from intake and listing through views, inquiries, applications, meet-and-greet visits, approval, adoption, and follow-up.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;conversion&lt;/li&gt;
-&lt;li&gt;drop-off&lt;/li&gt;
-&lt;li&gt;adoption flow&lt;/li&gt;
+          &lt;li&gt;application yield&lt;/li&gt;
+&lt;li&gt;visit drop-off&lt;/li&gt;
+&lt;li&gt;placement rate&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -61626,8 +61626,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Adoption Funnel</div>
-          <div class="desc">Track pets from listed to viewed, applied, visited, approved, and adopted.</div>
-          <div class="signals"><span>adoption</span><span>funnel</span></div>
+          <div class="desc">Track pets from intake and listing through views, inquiries, applications, meet-and-greet visits, approval, adoption, and follow-up.</div>
+          <div class="signals"><span>listings</span><span>visits</span><span>adoption</span></div>
           <div class="file"><span>pets/adoption-funnel.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -61803,8 +61803,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Service Mix Donut example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Pets service mix donut example&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative care score / pets sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Pet care service mix by spend and booking&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;spend and bookings across grooming, veterinary, food, insurance, training, boarding, toys, and wellness plans&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;pets/service-mix-donut&lt;/div&gt;
     &lt;/div&gt;
@@ -61825,14 +61825,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Summarize spending or bookings by grooming, vet, food, insurance, and toys.&lt;/p&gt;
+        &lt;p&gt;Summarize spend and bookings by grooming, veterinary, food, insurance, training, boarding, toys, and wellness plans.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
           &lt;li&gt;spend mix&lt;/li&gt;
-&lt;li&gt;balance&lt;/li&gt;
-&lt;li&gt;need&lt;/li&gt;
+&lt;li&gt;care need&lt;/li&gt;
+&lt;li&gt;service balance&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -61843,8 +61843,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Service Mix Donut</div>
-          <div class="desc">Summarize spending or bookings by grooming, vet, food, insurance, and toys.</div>
-          <div class="signals"><span>service</span><span>mix</span><span>donut</span></div>
+          <div class="desc">Summarize spend and bookings by grooming, veterinary, food, insurance, training, boarding, toys, and wellness plans.</div>
+          <div class="signals"><span>vet</span><span>grooming</span><span>plans</span></div>
           <div class="file"><span>pets/service-mix-donut.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -62020,8 +62020,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Clinic Flow Sankey example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Pets flow between viewed and listed&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative care score / pets sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Clinic visit flow from reason to follow-up&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;appointment reason, triage, diagnosis, treatment, pharmacy, follow-up, and outcome movement&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;pets/clinic-flow-sankey&lt;/div&gt;
     &lt;/div&gt;
@@ -62042,14 +62042,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Show movement from appointment reason to diagnosis, treatment, and follow-up.&lt;/p&gt;
+        &lt;p&gt;Show movement from appointment reason through triage, diagnosis, treatment, pharmacy, follow-up, and outcome.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;care path&lt;/li&gt;
-&lt;li&gt;handoff&lt;/li&gt;
-&lt;li&gt;follow-up&lt;/li&gt;
+          &lt;li&gt;triage path&lt;/li&gt;
+&lt;li&gt;treatment handoff&lt;/li&gt;
+&lt;li&gt;follow-up capture&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -62060,8 +62060,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Clinic Flow Sankey</div>
-          <div class="desc">Show movement from appointment reason to diagnosis, treatment, and follow-up.</div>
-          <div class="signals"><span>clinic</span><span>flow</span><span>sankey</span></div>
+          <div class="desc">Show movement from appointment reason through triage, diagnosis, treatment, pharmacy, follow-up, and outcome.</div>
+          <div class="signals"><span>triage</span><span>treatment</span><span>follow-up</span></div>
           <div class="file"><span>pets/clinic-flow-sankey.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -62237,8 +62237,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Breed Health Heatmap example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Pets breed health heatmap example&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative care score / pets sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Breed health risk heatmap by age group&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;condition risk, preventive care, activity, weight trend, claims, and age patterns by breed&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;pets/breed-health-heatmap&lt;/div&gt;
     &lt;/div&gt;
@@ -62289,14 +62289,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Map common risk or care metrics by breed and age group.&lt;/p&gt;
+        &lt;p&gt;Map condition risk, preventive care, activity, weight trend, claims, and age patterns by breed and age group.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
           &lt;li&gt;risk hotspot&lt;/li&gt;
 &lt;li&gt;age pattern&lt;/li&gt;
-&lt;li&gt;prevention&lt;/li&gt;
+&lt;li&gt;prevention gap&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -62307,8 +62307,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Breed Health Heatmap</div>
-          <div class="desc">Map common risk or care metrics by breed and age group.</div>
-          <div class="signals"><span>breed</span><span>health</span><span>heatmap</span></div>
+          <div class="desc">Map condition risk, preventive care, activity, weight trend, claims, and age patterns by breed and age group.</div>
+          <div class="signals"><span>breed</span><span>age</span><span>prevention</span></div>
           <div class="file"><span>pets/breed-health-heatmap.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -62484,8 +62484,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Subscription Cohort Retention example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Pets subscription cohort retention example&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative care score / pets sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Subscription retention by signup cohort&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;repeat orders, plan retention, skip frequency, churn, upsell, and replenishment timing by cohort&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;pets/subscription-cohort-retention&lt;/div&gt;
     &lt;/div&gt;
@@ -62501,14 +62501,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Track repeat orders or plan retention by signup cohort.&lt;/p&gt;
+        &lt;p&gt;Track repeat orders, plan retention, skip frequency, churn, upsell, and replenishment timing by signup cohort.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;retention&lt;/li&gt;
-&lt;li&gt;loyalty&lt;/li&gt;
-&lt;li&gt;cohort quality&lt;/li&gt;
+          &lt;li&gt;retention curve&lt;/li&gt;
+&lt;li&gt;skip risk&lt;/li&gt;
+&lt;li&gt;upsell path&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -62519,8 +62519,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Subscription Cohort Retention</div>
-          <div class="desc">Track repeat orders or plan retention by signup cohort.</div>
-          <div class="signals"><span>subscription</span><span>cohort</span><span>retention</span></div>
+          <div class="desc">Track repeat orders, plan retention, skip frequency, churn, upsell, and replenishment timing by signup cohort.</div>
+          <div class="signals"><span>retention</span><span>skips</span><span>upsell</span></div>
           <div class="file"><span>pets/subscription-cohort-retention.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -62696,8 +62696,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Product Treemap example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Pets product treemap example&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative care score / pets sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Pet product portfolio by revenue margin and repeat&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;product revenue, units, margin, repeat purchase, inventory risk, and brand concentration&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;pets/product-treemap&lt;/div&gt;
     &lt;/div&gt;
@@ -62713,14 +62713,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Map pet product revenue by category or brand.&lt;/p&gt;
+        &lt;p&gt;Map product revenue, units, margin, repeat purchase, inventory risk, and brand concentration by category.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
           &lt;li&gt;category weight&lt;/li&gt;
 &lt;li&gt;hero SKU&lt;/li&gt;
-&lt;li&gt;long tail&lt;/li&gt;
+&lt;li&gt;repeat demand&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -62731,8 +62731,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Product Treemap</div>
-          <div class="desc">Map pet product revenue by category or brand.</div>
-          <div class="signals"><span>product</span><span>treemap</span></div>
+          <div class="desc">Map product revenue, units, margin, repeat purchase, inventory risk, and brand concentration by category.</div>
+          <div class="signals"><span>revenue</span><span>margin</span><span>repeat</span></div>
           <div class="file"><span>pets/product-treemap.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -62908,8 +62908,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Claim Waterfall example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Pets claim waterfall example&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative care score / pets sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Pet insurance claim bridge to reimbursement&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;invoice value, deductible, exclusions, copay, policy limit, reimbursement, and owner out-of-pocket&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;pets/claim-waterfall&lt;/div&gt;
     &lt;/div&gt;
@@ -62932,14 +62932,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Explain insurance claim value from invoice, deductible, exclusions, copay, and reimbursement.&lt;/p&gt;
+        &lt;p&gt;Explain claim value from invoice through deductible, exclusions, copay, policy limit, reimbursement, and owner out-of-pocket.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;claim driver&lt;/li&gt;
-&lt;li&gt;coverage gap&lt;/li&gt;
-&lt;li&gt;reimbursement&lt;/li&gt;
+          &lt;li&gt;coverage gap&lt;/li&gt;
+&lt;li&gt;deductible impact&lt;/li&gt;
+&lt;li&gt;reimbursement yield&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -62950,8 +62950,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Claim Waterfall</div>
-          <div class="desc">Explain insurance claim value from invoice, deductible, exclusions, copay, and reimbursement.</div>
-          <div class="signals"><span>claim</span><span>waterfall</span></div>
+          <div class="desc">Explain claim value from invoice through deductible, exclusions, copay, policy limit, reimbursement, and owner out-of-pocket.</div>
+          <div class="signals"><span>deductible</span><span>coverage</span><span>payout</span></div>
           <div class="file"><span>pets/claim-waterfall.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -63127,8 +63127,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Pet Profile Radar example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Pets pet profile radar example&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative care score / pets sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Pet care profile across wellness behavior and risk&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;activity, diet, grooming, medical risk, behavior training, socialization, and preventive care needs&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;pets/pet-profile-radar&lt;/div&gt;
     &lt;/div&gt;
@@ -63148,14 +63148,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Score care needs across activity, diet, grooming, medical, training, and socialization.&lt;/p&gt;
+        &lt;p&gt;Score care needs across activity, diet, grooming, medical risk, behavior training, socialization, and preventive care.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;care profile&lt;/li&gt;
-&lt;li&gt;balance&lt;/li&gt;
-&lt;li&gt;weak dimension&lt;/li&gt;
+          &lt;li&gt;medical risk&lt;/li&gt;
+&lt;li&gt;behavior need&lt;/li&gt;
+&lt;li&gt;prevention priority&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -63166,8 +63166,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Pet Profile Radar</div>
-          <div class="desc">Score care needs across activity, diet, grooming, medical, training, and socialization.</div>
-          <div class="signals"><span>pet</span><span>profile</span><span>radar</span></div>
+          <div class="desc">Score care needs across activity, diet, grooming, medical risk, behavior training, socialization, and preventive care.</div>
+          <div class="signals"><span>medical</span><span>behavior</span><span>prevention</span></div>
           <div class="file"><span>pets/pet-profile-radar.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
