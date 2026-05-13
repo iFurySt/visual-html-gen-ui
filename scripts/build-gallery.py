@@ -52,6 +52,7 @@ def render_page(catalog: dict) -> str:
     --serif: ui-serif, Georgia, "Times New Roman", Times, serif;
     --sans: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     --mono: ui-monospace, "SF Mono", Menlo, Monaco, Consolas, monospace;
+    --toc-offset: 190px;
   }}
   * {{ box-sizing: border-box; }}
   html {{ scroll-behavior: smooth; }}
@@ -195,22 +196,23 @@ def render_page(catalog: dict) -> str:
   .b4 {{ height: 36px; background: var(--slate); }}
   nav.toc {{
     position: sticky;
-    top: 0;
+    top: 12px;
     z-index: 20;
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
-    padding: 16px 0;
-    margin: 0 0 10px;
+    padding: 14px 16px;
+    margin: 18px -16px 10px;
     background: rgba(250, 249, 245, .94);
-    border-bottom: 1.5px solid transparent;
+    border: 1.5px solid var(--g300);
+    border-radius: 10px;
     backdrop-filter: blur(12px);
-    transition: padding 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+    transition: padding 180ms ease, border-color 180ms ease, box-shadow 180ms ease, background 180ms ease;
   }}
   nav.toc.is-stuck {{
-    padding: 10px 0;
-    border-bottom-color: var(--g300);
-    box-shadow: 0 10px 24px rgba(20,20,19,.07);
+    padding: 10px 12px;
+    background: rgba(250, 249, 245, .97);
+    box-shadow: 0 12px 30px rgba(20,20,19,.09);
   }}
   nav.toc a {{
     font-size: 12.5px;
@@ -276,7 +278,7 @@ def render_page(catalog: dict) -> str:
   }}
   details.domain-section {{
     margin-top: 72px;
-    scroll-margin-top: 76px;
+    scroll-margin-top: var(--toc-offset);
   }}
   .domain-summary {{
     display: block;
@@ -329,27 +331,38 @@ def render_page(catalog: dict) -> str:
     height: 30px;
     border: 1.5px solid var(--g300);
     border-radius: 999px;
-    background: var(--paper);
-    color: var(--g700);
+    background: var(--ivory);
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    position: relative;
     flex-shrink: 0;
-    transition: transform 160ms ease, border-color 160ms ease, color 160ms ease;
+    transition: background 160ms ease, border-color 160ms ease;
   }}
-  .toggle::before {{
-    content: "+";
-    font-family: var(--mono);
-    font-size: 17px;
-    line-height: 1;
+  .toggle::before,
+  .toggle::after {{
+    content: "";
+    position: absolute;
+    left: 8px;
+    right: 8px;
+    top: 50%;
+    height: 1.5px;
+    background: var(--g700);
+    border-radius: 999px;
+    transform: translateY(-50%);
+    transition: opacity 140ms ease, transform 160ms ease, background 160ms ease;
   }}
-  details[open] .toggle {{
-    border-color: var(--slate);
-    color: var(--slate);
+  .toggle::after {{
+    transform: translateY(-50%) rotate(90deg);
   }}
-  details[open] .toggle::before {{ content: "-"; }}
-  .domain-summary:hover .toggle {{ transform: rotate(90deg); }}
-  details[open] .domain-summary:hover .toggle {{ transform: none; }}
+  details[open] .toggle {{ background: var(--g100); }}
+  details[open] .toggle::after {{
+    opacity: 0;
+    transform: translateY(-50%) rotate(90deg) scaleX(.2);
+  }}
+  .domain-summary:hover .toggle {{ border-color: var(--g500); }}
+  .domain-summary:hover .toggle::before,
+  .domain-summary:hover .toggle::after {{ background: var(--slate); }}
   .sec-intro {{
     font-size: 14.5px;
     color: var(--g700);
@@ -485,6 +498,7 @@ def render_page(catalog: dict) -> str:
     header.masthead {{ padding: 52px 0 38px; }}
     h1 {{ font-size: 38px; }}
     .summary {{ grid-template-columns: 1fr; }}
+    nav.toc {{ margin-left: 0; margin-right: 0; }}
     .sec-intro, .grid {{ margin-left: 0; }}
     .sec-head {{ gap: 10px; flex-wrap: wrap; }}
     .sec-head .idx {{ width: auto; }}
@@ -550,13 +564,26 @@ def render_page(catalog: dict) -> str:
   const domains = [...document.querySelectorAll(".domain-section")];
 
   if (toc && sentinel) {{
+    const updateTocOffset = () => {{
+      document.documentElement.style.setProperty("--toc-offset", `${{toc.offsetHeight + 34}}px`);
+    }};
     const updateTocState = () => {{
       toc.classList.toggle("is-stuck", window.scrollY > sentinel.offsetTop);
     }};
+    updateTocOffset();
     updateTocState();
     window.addEventListener("scroll", updateTocState, {{ passive: true }});
-    window.addEventListener("resize", updateTocState);
+    window.addEventListener("resize", () => {{
+      updateTocOffset();
+      updateTocState();
+    }});
   }}
+
+  const scrollToDomain = (target, behavior = "smooth") => {{
+    const offset = (toc?.offsetHeight || 0) + 34;
+    const top = target.getBoundingClientRect().top + window.scrollY - offset;
+    window.scrollTo({{ top: Math.max(0, top), behavior }});
+  }};
 
   tocLinks.forEach((link) => {{
     link.addEventListener("click", (event) => {{
@@ -565,10 +592,7 @@ def render_page(catalog: dict) -> str:
       if (target && "open" in target) {{
         target.open = true;
         history.pushState(null, "", link.hash);
-        const delta = target.getBoundingClientRect().top - ((toc?.offsetHeight || 0) + 18);
-        setTimeout(() => {{
-          window.scrollBy({{ top: delta, behavior: "instant" }});
-        }}, 0);
+        scrollToDomain(target, "smooth");
         toc?.classList.add("is-stuck");
         tocLinks.forEach((item) => item.classList.remove("is-active"));
         link.classList.add("is-active");
@@ -576,12 +600,29 @@ def render_page(catalog: dict) -> str:
     }});
   }});
 
-  if (location.hash) {{
+  const openHashedDomain = () => {{
+    if (!location.hash) {{
+      return null;
+    }}
     const target = document.querySelector(location.hash);
     if (target && "open" in target) {{
       target.open = true;
+      return target;
     }}
-  }}
+    return null;
+  }};
+
+  const alignToHash = () => {{
+    const target = openHashedDomain();
+    if (!target) {{
+      return;
+    }}
+    setTimeout(() => scrollToDomain(target, "auto"), 0);
+    setTimeout(() => scrollToDomain(target, "auto"), 250);
+  }};
+
+  alignToHash();
+  window.addEventListener("hashchange", alignToHash);
 
   if (tocLinks.length && domains.length) {{
     const activeById = new Map(tocLinks.map((link) => [link.hash.slice(1), link]));

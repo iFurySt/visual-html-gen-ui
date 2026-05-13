@@ -30,6 +30,12 @@ def main() -> int:
         failures.append("index.html should keep the gallery title on one line")
     if 'class="toc-sentinel"' not in index or 'toc.classList.toggle("is-stuck"' not in index:
         failures.append("index.html is missing sticky domain tag behavior")
+    if "border: 1.5px solid var(--g300);" not in index or "border-radius: 10px;" not in index:
+        failures.append("index.html should render the sticky tag bar as a framed surface")
+    if "history.pushState(null, \"\", link.hash)" not in index or "alignToHash();" not in index:
+        failures.append("index.html should preserve hash navigation and refresh alignment")
+    if ".toggle::before,\n  .toggle::after" not in index or "details[open] .toggle::after" not in index:
+        failures.append("index.html should render the fold toggle with CSS line icons")
 
     expected_links = {
         f"skills/visual-html-gen-ui/{domain['slug']}/{chart['slug']}.html"
