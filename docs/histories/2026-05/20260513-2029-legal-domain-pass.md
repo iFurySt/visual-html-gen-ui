@@ -3,7 +3,7 @@
 ## Summary
 
 - Rewrote Legal chart purposes, preview titles, metadata, and signal labels around concrete legal operations workflows.
-- Updated the Legal entries in the skill catalog and gallery cards to match the manually curated examples.
+- Updated the Legal entries in the skill index and gallery cards to match the manually curated examples.
 - Kept the change scoped to the Legal domain so each remaining domain can be reviewed and committed independently.
 
 ## Validation

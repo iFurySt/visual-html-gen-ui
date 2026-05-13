@@ -3,7 +3,7 @@
 ## Summary
 
 - Rewrote Energy chart purposes, preview titles, metadata, and signal labels around load, dispatch, fuel mix, grid congestion, assets, price risk, emissions, project sensitivity, and supply resilience workflows.
-- Updated the Energy entries in the skill catalog and gallery cards to match the manually curated examples.
+- Updated the Energy entries in the skill index and gallery cards to match the manually curated examples.
 - Kept the change scoped to the Energy domain so each remaining domain can be reviewed and committed independently.
 
 ## Validation

@@ -3,7 +3,7 @@
 ## Summary
 
 - Rewrote Crypto chart purposes, preview titles, metadata, and signal labels around token price, order-book depth, wallet retention, DeFi flows, protocol TVL, chain activity, treasury allocation, yield risk, liquidations, and protocol stress workflows.
-- Updated the Crypto entries in the skill catalog and gallery cards to match the manually curated examples.
+- Updated the Crypto entries in the skill index and gallery cards to match the manually curated examples.
 - Kept the change scoped to the Crypto domain so each remaining domain can be reviewed and committed independently.
 
 ## Validation

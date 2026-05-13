@@ -3,7 +3,7 @@
 ## Summary
 
 - Rewrote Pets chart purposes, preview titles, metadata, and signal labels around wellness, care adherence, adoption, service mix, clinic flow, breed health, subscription retention, product revenue, insurance claims, and care profile workflows.
-- Updated the Pets entries in the skill catalog and gallery cards to match the manually curated examples.
+- Updated the Pets entries in the skill index and gallery cards to match the manually curated examples.
 - Completed the remaining manually curated domain pass after removing catalog-driven generation.
 
 ## Validation
