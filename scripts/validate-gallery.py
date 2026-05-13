@@ -34,6 +34,8 @@ def main() -> int:
         failures.append("index.html should render the sticky tag bar as a framed surface")
     if "history.pushState(null, \"\", link.hash)" not in index or "alignToHash();" not in index:
         failures.append("index.html should preserve hash navigation and refresh alignment")
+    if "const getTocOffset = () =>" not in index or "const stickyOffset = getTocOffset() + 2" not in index:
+        failures.append("index.html should share scroll and active tag offset logic")
     if ".toggle::before,\n  .toggle::after" not in index or "details[open] .toggle::after" not in index:
         failures.append("index.html should render the fold toggle with CSS line icons")
 

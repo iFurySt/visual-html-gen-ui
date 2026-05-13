@@ -562,10 +562,11 @@ def render_page(catalog: dict) -> str:
   const sentinel = document.querySelector(".toc-sentinel");
   const tocLinks = [...document.querySelectorAll(".toc a")];
   const domains = [...document.querySelectorAll(".domain-section")];
+  const getTocOffset = () => (toc?.offsetHeight || 0) + 34;
 
   if (toc && sentinel) {{
     const updateTocOffset = () => {{
-      document.documentElement.style.setProperty("--toc-offset", `${{toc.offsetHeight + 34}}px`);
+      document.documentElement.style.setProperty("--toc-offset", `${{getTocOffset()}}px`);
     }};
     const updateTocState = () => {{
       toc.classList.toggle("is-stuck", window.scrollY > sentinel.offsetTop);
@@ -580,8 +581,7 @@ def render_page(catalog: dict) -> str:
   }}
 
   const scrollToDomain = (target, behavior = "smooth") => {{
-    const offset = (toc?.offsetHeight || 0) + 34;
-    const top = target.getBoundingClientRect().top + window.scrollY - offset;
+    const top = target.getBoundingClientRect().top + window.scrollY - getTocOffset();
     window.scrollTo({{ top: Math.max(0, top), behavior }});
   }};
 
@@ -631,7 +631,7 @@ def render_page(catalog: dict) -> str:
       activeById.get(domain.id)?.classList.add("is-active");
     }};
     const updateActiveDomain = () => {{
-      const stickyOffset = (toc?.offsetHeight || 0) + 28;
+      const stickyOffset = getTocOffset() + 2;
       const current = domains
         .filter((domain) => domain.getBoundingClientRect().top <= stickyOffset)
         .at(-1) || domains[0];
