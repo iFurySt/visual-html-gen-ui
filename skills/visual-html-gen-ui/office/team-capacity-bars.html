@@ -155,7 +155,7 @@
     <div>
       <div class="eyebrow">Office / grouped-bar</div>
       <h1>Team Capacity Bars</h1>
-      <p class="purpose">Compare available capacity against committed workload by team.</p>
+      <p class="purpose">Compare available hours, committed work, and interruptions by team.</p>
     </div>
     <div class="stamp">standalone html</div>
   </header>
@@ -163,8 +163,8 @@
   <section id="chart-preview" class="frame" aria-label="Team Capacity Bars example">
     <div class="chart-head">
       <div>
-        <h2 class="chart-title">Office team capacity bars example</h2>
-        <div class="chart-meta">illustrative hours per teammate / office sample data</div>
+        <h2 class="chart-title">Committed work vs available capacity</h2>
+        <div class="chart-meta">planned weekly hours by team and interruption class</div>
       </div>
       <div class="chart-meta">office/team-capacity-bars</div>
     </div>
@@ -177,37 +177,37 @@
   <line class="grid" x1="82" y1="354.0" x2="842" y2="354.0"/>
   <line class="axis" x1="82" y1="354" x2="842" y2="354"/>
   <line class="axis" x1="82" y1="54" x2="82" y2="354"/>
-  <text class="label" x="142" y="386">Ship</text>
+  <text class="label" x="142" y="386">Product</text>
   <rect x="110" y="197.3" width="26" height="156.7" rx="4" fill="#4D8A8B"/>
   <rect x="144" y="174.0" width="26" height="180.0" rx="4" fill="#D97757"/>
   <rect x="178" y="150.7" width="26" height="203.3" rx="4" fill="#788C5D"/>
-  <text class="label" x="322" y="386">Mon</text>
+  <text class="label" x="322" y="386">Ops</text>
   <rect x="290" y="177.3" width="26" height="176.7" rx="4" fill="#4D8A8B"/>
   <rect x="324" y="157.3" width="26" height="196.7" rx="4" fill="#D97757"/>
   <rect x="358" y="137.3" width="26" height="216.7" rx="4" fill="#788C5D"/>
-  <text class="label" x="502" y="386">Tue</text>
+  <text class="label" x="502" y="386">People</text>
   <rect x="470" y="160.7" width="26" height="193.3" rx="4" fill="#4D8A8B"/>
   <rect x="504" y="144.0" width="26" height="210.0" rx="4" fill="#D97757"/>
   <rect x="538" y="127.3" width="26" height="226.7" rx="4" fill="#788C5D"/>
-  <text class="label" x="682" y="386">Wed</text>
+  <text class="label" x="682" y="386">Support</text>
   <rect x="650" y="140.7" width="26" height="213.3" rx="4" fill="#4D8A8B"/>
   <rect x="684" y="127.3" width="26" height="226.7" rx="4" fill="#D97757"/>
   <rect x="718" y="114.0" width="26" height="240.0" rx="4" fill="#788C5D"/>
-  <rect x="612" y="30" width="14" height="14" rx="3" fill="#4D8A8B"/><text class="label" x="632" y="42">Deep work</text>
-  <rect x="704" y="30" width="14" height="14" rx="3" fill="#D97757"/><text class="label" x="724" y="42">Approvals</text>
-  <rect x="796" y="30" width="14" height="14" rx="3" fill="#788C5D"/><text class="label" x="816" y="42">Docs</text>
+  <rect x="612" y="30" width="14" height="14" rx="3" fill="#4D8A8B"/><text class="label" x="632" y="42">Available</text>
+  <rect x="704" y="30" width="14" height="14" rx="3" fill="#D97757"/><text class="label" x="724" y="42">Committed</text>
+  <rect x="796" y="30" width="14" height="14" rx="3" fill="#788C5D"/><text class="label" x="816" y="42">Interrupts</text>
 </svg>
     <div class="note-grid">
       <div class="note">
         <h2>Use When</h2>
-        <p>Compare available capacity against committed workload by team.</p>
+        <p>Use this before committing sprint plans or internal SLAs so teams can see where interruptions already consume the buffer.</p>
       </div>
       <div class="note">
         <h2>Signals</h2>
         <ul>
-          <li>capacity</li>
-<li>overload</li>
-<li>resource gap</li>
+          <li>available hours</li>
+<li>commit pressure</li>
+<li>interrupt load</li>
         </ul>
       </div>
     </div>

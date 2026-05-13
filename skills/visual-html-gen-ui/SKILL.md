@@ -62,16 +62,16 @@ Capital markets, investment research, portfolio analytics, risk, and private-mar
 
 Workplace productivity, meetings, task execution, communication, approvals, and team operations.
 
-- [Meeting Load Timeline](office/meeting-load-timeline.html) - Show how meeting hours change by week or team.
-- [Task Status Stacked Bar](office/task-status-stacked-bar.html) - Break planned work into done, in progress, blocked, and deferred states.
-- [Workspace Calendar Heatmap](office/calendar-heatmap.html) - Reveal high-pressure days for meetings, deadlines, or handoffs.
-- [Email Response Funnel](office/email-response-funnel.html) - Track message conversion from sent to opened, replied, and resolved.
-- [Document Flow Sankey](office/document-flow-sankey.html) - Visualize how documents move between draft, review, approval, and archive.
-- [Team Capacity Bars](office/team-capacity-bars.html) - Compare available capacity against committed workload by team.
-- [Approval Waterfall](office/approval-waterfall.html) - Explain cycle-time additions from review, legal, finance, and executive approval.
-- [Workspace Utilization Heatmap](office/workspace-utilization-heatmap.html) - Show desk, room, or location utilization patterns.
-- [Knowledge Base Treemap](office/knowledge-base-treemap.html) - Map documentation coverage by department or topic area.
-- [Workload Risk Radar](office/workload-risk-radar.html) - Score teams across urgency, ambiguity, dependency, load, and morale risk.
+- [Meeting Load Timeline](office/meeting-load-timeline.html) - Track recurring and ad hoc meeting load against protected focus time.
+- [Task Status Stacked Bar](office/task-status-stacked-bar.html) - Break internal operating queues into done, active, blocked, and waiting states.
+- [Workspace Calendar Heatmap](office/calendar-heatmap.html) - Reveal high-pressure days where reviews, deadlines, and handoffs collide.
+- [Email Response Funnel](office/email-response-funnel.html) - Track high-priority announcements from sent to resolved follow-up.
+- [Document Flow Sankey](office/document-flow-sankey.html) - Visualize policy or operating documents moving through owner, review, approval, and rework paths.
+- [Team Capacity Bars](office/team-capacity-bars.html) - Compare available hours, committed work, and interruptions by team.
+- [Approval Waterfall](office/approval-waterfall.html) - Explain business days added by manager, legal, finance, and executive gates.
+- [Workspace Utilization Heatmap](office/workspace-utilization-heatmap.html) - Show room, desk, and focus-space usage by daypart.
+- [Knowledge Base Treemap](office/knowledge-base-treemap.html) - Map documentation coverage, stale-doc risk, and ownership gaps by operating area.
+- [Workload Risk Radar](office/workload-risk-radar.html) - Score operating risk across urgency, ambiguity, dependencies, load, focus, and morale.
 
 ### Education
 
