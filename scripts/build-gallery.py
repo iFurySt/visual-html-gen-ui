@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import html
 import json
+import re
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
@@ -494,9 +495,10 @@ def render_card(domain: dict, chart: dict) -> str:
         f"<span>{html.escape(signal)}</span>" for signal in chart.get("signals", [])[:3]
     )
     file_label = f"{domain['slug']}/{chart['slug']}.html"
+    preview_doc = chart_preview_srcdoc(href)
     return f"""      <a class="card" href="{html.escape(href)}">
         <div class="thumb">
-          <iframe class="preview-frame" src="{html.escape(href)}#chart-preview" loading="lazy" title="{html.escape(chart['title'])} preview" tabindex="-1"></iframe>
+          <iframe class="preview-frame" srcdoc="{html.escape(preview_doc, quote=True)}" loading="lazy" title="{html.escape(chart['title'])} preview" tabindex="-1"></iframe>
           <span class="preview-shade" aria-hidden="true"></span>
         </div>
         <div class="body">
@@ -506,6 +508,47 @@ def render_card(domain: dict, chart: dict) -> str:
           <div class="file"><span>{html.escape(file_label)}</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>"""
+
+
+def chart_preview_srcdoc(href: str) -> str:
+    chart_html = (REPO_ROOT / href).read_text(encoding="utf-8")
+    style_match = re.search(r"<style>(.*?)</style>", chart_html, re.S)
+    section_match = re.search(
+        r'(<section id="chart-preview" class="frame"[\s\S]*?</section>)',
+        chart_html,
+    )
+    if not style_match or not section_match:
+        raise ValueError(f"unable to extract preview from {href}")
+
+    base_style = style_match.group(1)
+    section_html = section_match.group(1)
+    return f"""<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+{base_style}
+html {{
+  overflow: hidden;
+}}
+body {{
+  margin: 0;
+  padding: 14px;
+  background: var(--ivory);
+}}
+.frame {{
+  border-radius: 8px;
+  padding: 18px;
+}}
+.note-grid {{
+  display: none;
+}}
+</style>
+</head>
+<body>
+{section_html}
+</body>
+</html>"""
 
 
 if __name__ == "__main__":

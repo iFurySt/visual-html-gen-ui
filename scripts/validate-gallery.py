@@ -31,19 +31,22 @@ def main() -> int:
         for chart in domain["charts"]
     }
     actual_links = set(re.findall(r'href="(skills/visual-html-gen-ui/[^"]+\.html)"', index))
-    actual_previews = {
-        src.removesuffix("#chart-preview")
-        for src in re.findall(r'src="(skills/visual-html-gen-ui/[^"]+\.html#chart-preview)"', index)
-    }
+    preview_count = len(re.findall(r'<iframe class="preview-frame" srcdoc=', index))
+    navigating_previews = re.findall(
+        r'<iframe class="preview-frame"[^>]+src="([^"]+)"',
+        index,
+    )
 
     for link in sorted(expected_links - actual_links):
         failures.append(f"missing gallery link: {link}")
     for link in sorted(actual_links - expected_links):
         failures.append(f"unknown gallery link: {link}")
-    for link in sorted(expected_links - actual_previews):
-        failures.append(f"missing gallery preview iframe: {link}#chart-preview")
-    for link in sorted(actual_previews - expected_links):
-        failures.append(f"unknown gallery preview iframe: {link}#chart-preview")
+    if preview_count != len(expected_links):
+        failures.append(
+            f"gallery preview iframe count mismatch: expected {len(expected_links)}, got {preview_count}"
+        )
+    for src in navigating_previews:
+        failures.append(f"gallery preview iframe must use srcdoc, not src: {src}")
     for link in sorted(actual_links):
         if not (REPO_ROOT / link).is_file():
             failures.append(f"gallery link target does not exist: {link}")
