@@ -2915,6 +2915,123 @@
           ]
         }
       ]
+    },
+    {
+      "slug": "fashion",
+      "name": "Fashion",
+      "summary": "Collections, merchandising, trend signals, inventory, brand performance, runway, and customer style analytics.",
+      "charts": [
+        {
+          "slug": "trend-line",
+          "title": "Trend Line",
+          "type": "line",
+          "purpose": "Track search, sell-through, or social buzz for a style trend.",
+          "signals": [
+            "trend",
+            "seasonality",
+            "momentum"
+          ]
+        },
+        {
+          "slug": "collection-mix-donut",
+          "title": "Collection Mix Donut",
+          "type": "donut",
+          "purpose": "Summarize assortment by category, fabric, color, or price tier.",
+          "signals": [
+            "mix",
+            "balance",
+            "assortment"
+          ]
+        },
+        {
+          "slug": "sell-through-stacked-bar",
+          "title": "Sell Through Stacked Bar",
+          "type": "stacked-bar",
+          "purpose": "Break sales by collection, channel, or lifecycle stage.",
+          "signals": [
+            "sell-through",
+            "mix",
+            "shift"
+          ]
+        },
+        {
+          "slug": "color-heatmap",
+          "title": "Color Heatmap",
+          "type": "heatmap",
+          "purpose": "Map color demand by region, month, or product line.",
+          "signals": [
+            "palette demand",
+            "seasonality",
+            "regional signal"
+          ]
+        },
+        {
+          "slug": "runway-to-retail-funnel",
+          "title": "Runway To Retail Funnel",
+          "type": "funnel",
+          "purpose": "Track looks from concept to sample, buy, launch, and sold-through.",
+          "signals": [
+            "conversion",
+            "selection",
+            "drop-off"
+          ]
+        },
+        {
+          "slug": "assortment-treemap",
+          "title": "Assortment Treemap",
+          "type": "treemap",
+          "purpose": "Map revenue or units by style, category, or collection.",
+          "signals": [
+            "assortment weight",
+            "hero item",
+            "long tail"
+          ]
+        },
+        {
+          "slug": "customer-cohort-retention",
+          "title": "Customer Cohort Retention",
+          "type": "cohort",
+          "purpose": "Track repeat purchase behavior by customer cohort.",
+          "signals": [
+            "retention",
+            "loyalty",
+            "cohort quality"
+          ]
+        },
+        {
+          "slug": "brand-affinity-sankey",
+          "title": "Brand Affinity Sankey",
+          "type": "sankey",
+          "purpose": "Show movement between inspiration, category, collection, and purchase.",
+          "signals": [
+            "journey",
+            "affinity",
+            "cross-sell"
+          ]
+        },
+        {
+          "slug": "markdown-waterfall",
+          "title": "Markdown Waterfall",
+          "type": "waterfall",
+          "purpose": "Explain margin movement from full price through markdown, returns, and inventory cost.",
+          "signals": [
+            "margin driver",
+            "markdown risk",
+            "profitability"
+          ]
+        },
+        {
+          "slug": "style-score-radar",
+          "title": "Style Score Radar",
+          "type": "radar",
+          "purpose": "Score a look across trend, fit, margin, availability, and brand fit.",
+          "signals": [
+            "style profile",
+            "tradeoff",
+            "weak dimension"
+          ]
+        }
+      ]
     }
   ]
 }

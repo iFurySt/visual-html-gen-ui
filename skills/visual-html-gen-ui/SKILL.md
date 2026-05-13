@@ -388,6 +388,21 @@ Token markets, DeFi liquidity, wallets, protocol revenue, on-chain behavior, ris
 - [Liquidation Waterfall](crypto/liquidation-waterfall/index.html) - Explain collateral movement from price shock, margin call, liquidation, fees, and residual.
 - [Protocol Stress Test](crypto/protocol-stress-test/index.html) - Compare losses under depeg, oracle failure, bridge exploit, and liquidity drain scenarios.
 
+### Fashion
+
+Collections, merchandising, trend signals, inventory, brand performance, runway, and customer style analytics.
+
+- [Trend Line](fashion/trend-line/index.html) - Track search, sell-through, or social buzz for a style trend.
+- [Collection Mix Donut](fashion/collection-mix-donut/index.html) - Summarize assortment by category, fabric, color, or price tier.
+- [Sell Through Stacked Bar](fashion/sell-through-stacked-bar/index.html) - Break sales by collection, channel, or lifecycle stage.
+- [Color Heatmap](fashion/color-heatmap/index.html) - Map color demand by region, month, or product line.
+- [Runway To Retail Funnel](fashion/runway-to-retail-funnel/index.html) - Track looks from concept to sample, buy, launch, and sold-through.
+- [Assortment Treemap](fashion/assortment-treemap/index.html) - Map revenue or units by style, category, or collection.
+- [Customer Cohort Retention](fashion/customer-cohort-retention/index.html) - Track repeat purchase behavior by customer cohort.
+- [Brand Affinity Sankey](fashion/brand-affinity-sankey/index.html) - Show movement between inspiration, category, collection, and purchase.
+- [Markdown Waterfall](fashion/markdown-waterfall/index.html) - Explain margin movement from full price through markdown, returns, and inventory cost.
+- [Style Score Radar](fashion/style-score-radar/index.html) - Score a look across trend, fit, margin, availability, and brand fit.
+
 ## Maintenance
 
 Maintainers should edit `catalog.json`, run

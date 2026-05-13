@@ -100,7 +100,7 @@ without loading every example into context.
 - [x] Energy
 - [x] Retail
 - [x] Crypto
-- [ ] Fashion
+- [x] Fashion
 - [ ] Sports
 - [ ] Pets
 
