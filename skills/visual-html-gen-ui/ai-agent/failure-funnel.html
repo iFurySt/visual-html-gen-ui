@@ -155,7 +155,7 @@
     <div>
       <div class="eyebrow">AI Agent / funnel</div>
       <h1>Failure Funnel</h1>
-      <p class="purpose">Track failures from detected issue to repro, root cause, fix, and verified pass.</p>
+      <p class="purpose">Track agent failures from detection through reproduction, root cause, fix, rerun, and verified pass.</p>
     </div>
     <div class="stamp">standalone html</div>
   </header>
@@ -163,8 +163,8 @@
   <section id="chart-preview" class="frame" aria-label="Failure Funnel example">
     <div class="chart-head">
       <div>
-        <h2 class="chart-title">AI Agent cost to latency</h2>
-        <div class="chart-meta">illustrative eval pass rate / ai-agent sample data</div>
+        <h2 class="chart-title">Failure triage funnel from detection to verified pass</h2>
+        <div class="chart-meta">failed evals moving through repro, root cause, fix, rerun, and verified pass stages</div>
       </div>
       <div class="chart-meta">ai-agent/failure-funnel</div>
     </div>
@@ -179,14 +179,14 @@
     <div class="note-grid">
       <div class="note">
         <h2>Use When</h2>
-        <p>Track failures from detected issue to repro, root cause, fix, and verified pass.</p>
+        <p>Track agent failures from detection through reproduction, root cause, fix, rerun, and verified pass.</p>
       </div>
       <div class="note">
         <h2>Signals</h2>
         <ul>
-          <li>debug flow</li>
-<li>drop-off</li>
-<li>quality loop</li>
+          <li>repro rate</li>
+<li>root-cause gap</li>
+<li>verified pass</li>
         </ul>
       </div>
     </div>

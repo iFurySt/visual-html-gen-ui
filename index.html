@@ -29881,8 +29881,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Task Success Line example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;AI Agent Task Success Line for task success rate&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative eval pass rate / ai-agent sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Agent task success across release evals&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;pass rate trend across eval suites, prompt revisions, model upgrades, and product releases&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;ai-agent/task-success-line&lt;/div&gt;
     &lt;/div&gt;
@@ -29905,14 +29905,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Track agent task success rate across eval runs or product releases.&lt;/p&gt;
+        &lt;p&gt;Track agent task success rate across eval suites, product releases, and prompt or model changes.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;quality trend&lt;/li&gt;
-&lt;li&gt;regression&lt;/li&gt;
-&lt;li&gt;release impact&lt;/li&gt;
+          &lt;li&gt;eval trend&lt;/li&gt;
+&lt;li&gt;release regression&lt;/li&gt;
+&lt;li&gt;model impact&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -29923,8 +29923,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Task Success Line</div>
-          <div class="desc">Track agent task success rate across eval runs or product releases.</div>
-          <div class="signals"><span>task</span><span>success</span><span>line</span></div>
+          <div class="desc">Track agent task success rate across eval suites, product releases, and prompt or model changes.</div>
+          <div class="signals"><span>evals</span><span>release</span><span>model</span></div>
           <div class="file"><span>ai-agent/task-success-line.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -30100,8 +30100,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Latency Area example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;AI Agent cumulative task success rate&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative eval pass rate / ai-agent sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Cumulative runtime cost by agent workflow stage&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;latency accumulation across planning, tools, code execution, browser work, and verification&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;ai-agent/latency-area&lt;/div&gt;
     &lt;/div&gt;
@@ -30124,14 +30124,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Emphasize cumulative latency or runtime cost across workflow stages.&lt;/p&gt;
+        &lt;p&gt;Emphasize cumulative runtime and cost across planning, tool calls, code execution, browser work, and verification.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;runtime&lt;/li&gt;
-&lt;li&gt;cost load&lt;/li&gt;
-&lt;li&gt;bottleneck&lt;/li&gt;
+          &lt;li&gt;tool latency&lt;/li&gt;
+&lt;li&gt;runtime cost&lt;/li&gt;
+&lt;li&gt;verification bottleneck&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -30142,8 +30142,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Latency Area</div>
-          <div class="desc">Emphasize cumulative latency or runtime cost across workflow stages.</div>
-          <div class="signals"><span>latency</span><span>area</span></div>
+          <div class="desc">Emphasize cumulative runtime and cost across planning, tool calls, code execution, browser work, and verification.</div>
+          <div class="signals"><span>latency</span><span>tools</span><span>verify</span></div>
           <div class="file"><span>ai-agent/latency-area.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -30319,8 +30319,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Tool Use Sankey example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;AI Agent flow between planning and latency&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative eval pass rate / ai-agent sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Agent tool path from planning to verification&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;workflow movement between planning, search, code, browser, tests, and verification tools&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;ai-agent/tool-use-sankey&lt;/div&gt;
     &lt;/div&gt;
@@ -30341,14 +30341,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Show agent movement between planning, search, code, browser, and verification tools.&lt;/p&gt;
+        &lt;p&gt;Show how agent work moves from planning into search, code edits, browser checks, tests, and final verification.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;workflow&lt;/li&gt;
-&lt;li&gt;tool mix&lt;/li&gt;
-&lt;li&gt;looping&lt;/li&gt;
+          &lt;li&gt;tool mix&lt;/li&gt;
+&lt;li&gt;verification loop&lt;/li&gt;
+&lt;li&gt;browser dependency&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -30359,8 +30359,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Tool Use Sankey</div>
-          <div class="desc">Show agent movement between planning, search, code, browser, and verification tools.</div>
-          <div class="signals"><span>tool</span><span>use</span><span>sankey</span></div>
+          <div class="desc">Show how agent work moves from planning into search, code edits, browser checks, tests, and final verification.</div>
+          <div class="signals"><span>tools</span><span>browser</span><span>tests</span></div>
           <div class="file"><span>ai-agent/tool-use-sankey.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -30536,8 +30536,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Eval Heatmap example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;AI Agent eval heatmap example&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative eval pass rate / ai-agent sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Eval pass-rate heatmap by capability area&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;task-family pass rates across planning, coding, browsing, tool use, safety, and memory dimensions&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;ai-agent/eval-heatmap&lt;/div&gt;
     &lt;/div&gt;
@@ -30588,14 +30588,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Map pass rate by task family and capability dimension.&lt;/p&gt;
+        &lt;p&gt;Map pass rate by task family and capability dimension to expose regressions and coverage gaps.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
           &lt;li&gt;capability gap&lt;/li&gt;
-&lt;li&gt;coverage&lt;/li&gt;
-&lt;li&gt;regression&lt;/li&gt;
+&lt;li&gt;coverage gap&lt;/li&gt;
+&lt;li&gt;regression cell&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -30606,8 +30606,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Eval Heatmap</div>
-          <div class="desc">Map pass rate by task family and capability dimension.</div>
-          <div class="signals"><span>eval</span><span>heatmap</span></div>
+          <div class="desc">Map pass rate by task family and capability dimension to expose regressions and coverage gaps.</div>
+          <div class="signals"><span>pass rate</span><span>coverage</span><span>regressions</span></div>
           <div class="file"><span>ai-agent/eval-heatmap.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -30783,8 +30783,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Failure Funnel example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;AI Agent cost to latency&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative eval pass rate / ai-agent sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Failure triage funnel from detection to verified pass&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;failed evals moving through repro, root cause, fix, rerun, and verified pass stages&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;ai-agent/failure-funnel&lt;/div&gt;
     &lt;/div&gt;
@@ -30799,14 +30799,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Track failures from detected issue to repro, root cause, fix, and verified pass.&lt;/p&gt;
+        &lt;p&gt;Track agent failures from detection through reproduction, root cause, fix, rerun, and verified pass.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;debug flow&lt;/li&gt;
-&lt;li&gt;drop-off&lt;/li&gt;
-&lt;li&gt;quality loop&lt;/li&gt;
+          &lt;li&gt;repro rate&lt;/li&gt;
+&lt;li&gt;root-cause gap&lt;/li&gt;
+&lt;li&gt;verified pass&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -30817,8 +30817,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Failure Funnel</div>
-          <div class="desc">Track failures from detected issue to repro, root cause, fix, and verified pass.</div>
-          <div class="signals"><span>failure</span><span>funnel</span></div>
+          <div class="desc">Track agent failures from detection through reproduction, root cause, fix, rerun, and verified pass.</div>
+          <div class="signals"><span>repro</span><span>root cause</span><span>verified</span></div>
           <div class="file"><span>ai-agent/failure-funnel.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -30994,8 +30994,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Model Cost Scatter example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;AI Agent model cost scatter example&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative eval pass rate / ai-agent sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Model quality versus token cost frontier&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;model and prompt variants positioned by pass rate, latency, and cost per task&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;ai-agent/model-cost-scatter&lt;/div&gt;
     &lt;/div&gt;
@@ -31015,14 +31015,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Position models or prompts by quality and cost.&lt;/p&gt;
+        &lt;p&gt;Position model and prompt variants by eval quality, latency, token cost, and production fit.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;frontier&lt;/li&gt;
-&lt;li&gt;tradeoff&lt;/li&gt;
-&lt;li&gt;outlier&lt;/li&gt;
+          &lt;li&gt;quality frontier&lt;/li&gt;
+&lt;li&gt;cost tradeoff&lt;/li&gt;
+&lt;li&gt;latency outlier&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -31033,8 +31033,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Model Cost Scatter</div>
-          <div class="desc">Position models or prompts by quality and cost.</div>
-          <div class="signals"><span>model</span><span>cost</span><span>scatter</span></div>
+          <div class="desc">Position model and prompt variants by eval quality, latency, token cost, and production fit.</div>
+          <div class="signals"><span>quality</span><span>cost</span><span>latency</span></div>
           <div class="file"><span>ai-agent/model-cost-scatter.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -31210,8 +31210,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Agent Cohort Retention example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;AI Agent agent cohort retention example&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative eval pass rate / ai-agent sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Workflow success retention by agent version&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;task cohort pass rates across version, prompt, and tool-policy changes&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;ai-agent/agent-cohort-retention&lt;/div&gt;
     &lt;/div&gt;
@@ -31227,14 +31227,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Track repeat workflow success by task cohort over versions.&lt;/p&gt;
+        &lt;p&gt;Track repeat workflow success for task cohorts across agent versions, prompts, and tool policies.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;retention&lt;/li&gt;
-&lt;li&gt;stability&lt;/li&gt;
-&lt;li&gt;quality&lt;/li&gt;
+          &lt;li&gt;version stability&lt;/li&gt;
+&lt;li&gt;cohort decay&lt;/li&gt;
+&lt;li&gt;tool-policy impact&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -31245,8 +31245,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Agent Cohort Retention</div>
-          <div class="desc">Track repeat workflow success by task cohort over versions.</div>
-          <div class="signals"><span>agent</span><span>cohort</span><span>retention</span></div>
+          <div class="desc">Track repeat workflow success for task cohorts across agent versions, prompts, and tool policies.</div>
+          <div class="signals"><span>versions</span><span>prompts</span><span>tools</span></div>
           <div class="file"><span>ai-agent/agent-cohort-retention.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -31422,8 +31422,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Capability Radar example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;AI Agent capability radar example&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative eval pass rate / ai-agent sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Agent capability profile for release review&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;planning, tool use, coding, browsing, safety, memory, and verification capability scores&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;ai-agent/capability-radar&lt;/div&gt;
     &lt;/div&gt;
@@ -31443,14 +31443,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Score an agent across planning, tool use, coding, browsing, safety, and memory.&lt;/p&gt;
+        &lt;p&gt;Score an agent across planning, tool use, coding, browsing, safety, memory, and verification.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;capability profile&lt;/li&gt;
-&lt;li&gt;balance&lt;/li&gt;
-&lt;li&gt;weak skill&lt;/li&gt;
+          &lt;li&gt;planning strength&lt;/li&gt;
+&lt;li&gt;tool-use gap&lt;/li&gt;
+&lt;li&gt;safety margin&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -31461,8 +31461,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Capability Radar</div>
-          <div class="desc">Score an agent across planning, tool use, coding, browsing, safety, and memory.</div>
-          <div class="signals"><span>capability</span><span>radar</span></div>
+          <div class="desc">Score an agent across planning, tool use, coding, browsing, safety, memory, and verification.</div>
+          <div class="signals"><span>planning</span><span>tools</span><span>safety</span></div>
           <div class="file"><span>ai-agent/capability-radar.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -31638,8 +31638,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Token Waterfall example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;AI Agent token waterfall example&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative eval pass rate / ai-agent sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Token budget bridge across agent context&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;token use from instructions, retrieved docs, reasoning, tool output, state, and answer&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;ai-agent/token-waterfall&lt;/div&gt;
     &lt;/div&gt;
@@ -31662,14 +31662,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Explain token use from system context, retrieved docs, reasoning, tool output, and answer.&lt;/p&gt;
+        &lt;p&gt;Explain token use from system context, retrieved docs, reasoning, tool output, scratch state, and final answer.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;token driver&lt;/li&gt;
-&lt;li&gt;context pressure&lt;/li&gt;
-&lt;li&gt;optimization&lt;/li&gt;
+          &lt;li&gt;context driver&lt;/li&gt;
+&lt;li&gt;tool-output pressure&lt;/li&gt;
+&lt;li&gt;summary opportunity&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -31680,8 +31680,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Token Waterfall</div>
-          <div class="desc">Explain token use from system context, retrieved docs, reasoning, tool output, and answer.</div>
-          <div class="signals"><span>token</span><span>waterfall</span></div>
+          <div class="desc">Explain token use from system context, retrieved docs, reasoning, tool output, scratch state, and final answer.</div>
+          <div class="signals"><span>context</span><span>tool output</span><span>summary</span></div>
           <div class="file"><span>ai-agent/token-waterfall.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -31857,8 +31857,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Safety Stress Test example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;AI Agent scenario stress test&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative eval pass rate / ai-agent sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Agent safety and robustness stress test&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;failure exposure under normal, adversarial, long-context, stale-context, and tool-error scenarios&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;ai-agent/safety-stress-test&lt;/div&gt;
     &lt;/div&gt;
@@ -31880,14 +31880,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Compare failure rates under normal, adversarial, long-context, and tool-error scenarios.&lt;/p&gt;
+        &lt;p&gt;Compare failure rates under normal, adversarial, long-context, stale-context, and tool-error scenarios.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;robustness&lt;/li&gt;
-&lt;li&gt;tail failure&lt;/li&gt;
-&lt;li&gt;guardrail gap&lt;/li&gt;
+          &lt;li&gt;adversarial gap&lt;/li&gt;
+&lt;li&gt;tool-error recovery&lt;/li&gt;
+&lt;li&gt;long-context risk&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -31898,8 +31898,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Safety Stress Test</div>
-          <div class="desc">Compare failure rates under normal, adversarial, long-context, and tool-error scenarios.</div>
-          <div class="signals"><span>safety</span><span>stress</span><span>test</span></div>
+          <div class="desc">Compare failure rates under normal, adversarial, long-context, stale-context, and tool-error scenarios.</div>
+          <div class="signals"><span>adversarial</span><span>tools</span><span>context</span></div>
           <div class="file"><span>ai-agent/safety-stress-test.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>

@@ -155,7 +155,7 @@
     <div>
       <div class="eyebrow">AI Agent / heatmap</div>
       <h1>Eval Heatmap</h1>
-      <p class="purpose">Map pass rate by task family and capability dimension.</p>
+      <p class="purpose">Map pass rate by task family and capability dimension to expose regressions and coverage gaps.</p>
     </div>
     <div class="stamp">standalone html</div>
   </header>
@@ -163,8 +163,8 @@
   <section id="chart-preview" class="frame" aria-label="Eval Heatmap example">
     <div class="chart-head">
       <div>
-        <h2 class="chart-title">AI Agent eval heatmap example</h2>
-        <div class="chart-meta">illustrative eval pass rate / ai-agent sample data</div>
+        <h2 class="chart-title">Eval pass-rate heatmap by capability area</h2>
+        <div class="chart-meta">task-family pass rates across planning, coding, browsing, tool use, safety, and memory dimensions</div>
       </div>
       <div class="chart-meta">ai-agent/eval-heatmap</div>
     </div>
@@ -215,14 +215,14 @@
     <div class="note-grid">
       <div class="note">
         <h2>Use When</h2>
-        <p>Map pass rate by task family and capability dimension.</p>
+        <p>Map pass rate by task family and capability dimension to expose regressions and coverage gaps.</p>
       </div>
       <div class="note">
         <h2>Signals</h2>
         <ul>
           <li>capability gap</li>
-<li>coverage</li>
-<li>regression</li>
+<li>coverage gap</li>
+<li>regression cell</li>
         </ul>
       </div>
     </div>

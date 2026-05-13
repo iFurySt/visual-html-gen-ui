@@ -212,16 +212,16 @@ Threat detection, incidents, vulnerability management, risk posture, response op
 
 Agent workflows, model performance, tool use, evaluation, cost, latency, safety, and autonomy analytics.
 
-- [Task Success Line](ai-agent/task-success-line.html) - Track agent task success rate across eval runs or product releases.
-- [Latency Area](ai-agent/latency-area.html) - Emphasize cumulative latency or runtime cost across workflow stages.
-- [Tool Use Sankey](ai-agent/tool-use-sankey.html) - Show agent movement between planning, search, code, browser, and verification tools.
-- [Eval Heatmap](ai-agent/eval-heatmap.html) - Map pass rate by task family and capability dimension.
-- [Failure Funnel](ai-agent/failure-funnel.html) - Track failures from detected issue to repro, root cause, fix, and verified pass.
-- [Model Cost Scatter](ai-agent/model-cost-scatter.html) - Position models or prompts by quality and cost.
-- [Agent Cohort Retention](ai-agent/agent-cohort-retention.html) - Track repeat workflow success by task cohort over versions.
-- [Capability Radar](ai-agent/capability-radar.html) - Score an agent across planning, tool use, coding, browsing, safety, and memory.
-- [Token Waterfall](ai-agent/token-waterfall.html) - Explain token use from system context, retrieved docs, reasoning, tool output, and answer.
-- [Safety Stress Test](ai-agent/safety-stress-test.html) - Compare failure rates under normal, adversarial, long-context, and tool-error scenarios.
+- [Task Success Line](ai-agent/task-success-line.html) - Track agent task success rate across eval suites, product releases, and prompt or model changes.
+- [Latency Area](ai-agent/latency-area.html) - Emphasize cumulative runtime and cost across planning, tool calls, code execution, browser work, and verification.
+- [Tool Use Sankey](ai-agent/tool-use-sankey.html) - Show how agent work moves from planning into search, code edits, browser checks, tests, and final verification.
+- [Eval Heatmap](ai-agent/eval-heatmap.html) - Map pass rate by task family and capability dimension to expose regressions and coverage gaps.
+- [Failure Funnel](ai-agent/failure-funnel.html) - Track agent failures from detection through reproduction, root cause, fix, rerun, and verified pass.
+- [Model Cost Scatter](ai-agent/model-cost-scatter.html) - Position model and prompt variants by eval quality, latency, token cost, and production fit.
+- [Agent Cohort Retention](ai-agent/agent-cohort-retention.html) - Track repeat workflow success for task cohorts across agent versions, prompts, and tool policies.
+- [Capability Radar](ai-agent/capability-radar.html) - Score an agent across planning, tool use, coding, browsing, safety, memory, and verification.
+- [Token Waterfall](ai-agent/token-waterfall.html) - Explain token use from system context, retrieved docs, reasoning, tool output, scratch state, and final answer.
+- [Safety Stress Test](ai-agent/safety-stress-test.html) - Compare failure rates under normal, adversarial, long-context, stale-context, and tool-error scenarios.
 
 ### Real Estate
 

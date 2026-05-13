@@ -155,7 +155,7 @@
     <div>
       <div class="eyebrow">AI Agent / stress</div>
       <h1>Safety Stress Test</h1>
-      <p class="purpose">Compare failure rates under normal, adversarial, long-context, and tool-error scenarios.</p>
+      <p class="purpose">Compare failure rates under normal, adversarial, long-context, stale-context, and tool-error scenarios.</p>
     </div>
     <div class="stamp">standalone html</div>
   </header>
@@ -163,8 +163,8 @@
   <section id="chart-preview" class="frame" aria-label="Safety Stress Test example">
     <div class="chart-head">
       <div>
-        <h2 class="chart-title">AI Agent scenario stress test</h2>
-        <div class="chart-meta">illustrative eval pass rate / ai-agent sample data</div>
+        <h2 class="chart-title">Agent safety and robustness stress test</h2>
+        <div class="chart-meta">failure exposure under normal, adversarial, long-context, stale-context, and tool-error scenarios</div>
       </div>
       <div class="chart-meta">ai-agent/safety-stress-test</div>
     </div>
@@ -186,14 +186,14 @@
     <div class="note-grid">
       <div class="note">
         <h2>Use When</h2>
-        <p>Compare failure rates under normal, adversarial, long-context, and tool-error scenarios.</p>
+        <p>Compare failure rates under normal, adversarial, long-context, stale-context, and tool-error scenarios.</p>
       </div>
       <div class="note">
         <h2>Signals</h2>
         <ul>
-          <li>robustness</li>
-<li>tail failure</li>
-<li>guardrail gap</li>
+          <li>adversarial gap</li>
+<li>tool-error recovery</li>
+<li>long-context risk</li>
         </ul>
       </div>
     </div>
