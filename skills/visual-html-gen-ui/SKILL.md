@@ -152,16 +152,16 @@ Streaming, music, film, live events, audience behavior, releases, and catalog pe
 
 Game telemetry, player progression, economy balance, monetization, matchmaking, and live ops.
 
-- [DAU Line](gaming/dau-line.html) - Track active players through seasons, patches, and events.
-- [Level Progression Funnel](gaming/level-progression-funnel.html) - Show players advancing through tutorial, early levels, and core loop.
-- [Economy Sankey](gaming/economy-sankey.html) - Visualize currency sources, sinks, and player inventory flow.
-- [Session Calendar](gaming/session-calendar.html) - Reveal play session intensity by day.
-- [Mode Popularity Stacked Bar](gaming/mode-popularity-stacked-bar.html) - Break playtime by game mode or playlist.
-- [Matchmaking Heatmap](gaming/matchmaking-heatmap.html) - Show queue time or match quality by skill band and region.
-- [Player Retention Cohort](gaming/player-retention-cohort.html) - Track retention by install cohort and lifecycle day.
-- [Item Sales Treemap](gaming/item-sales-treemap.html) - Map item, skin, or bundle revenue contribution.
-- [Balance Tornado](gaming/balance-tornado.html) - Rank tuning variables by effect on win rate or progression speed.
-- [Player Segment Radar](gaming/player-segment-radar.html) - Compare player segments across skill, spend, social, completion, and risk.
+- [DAU Line](gaming/dau-line.html) - Track daily active players across season launch, finale event, patch, and D7 return windows.
+- [Level Progression Funnel](gaming/level-progression-funnel.html) - Find where new players drop from tutorial completion through first PvP or co-op session and core-loop return.
+- [Economy Sankey](gaming/economy-sankey.html) - Visualize premium currency and crafted-item movement between store, crafting, inventory, sinks, and wallet balances.
+- [Session Calendar](gaming/session-calendar.html) - Reveal session intensity around season, finale, patch, event, and retention checkpoints.
+- [Mode Popularity Stacked Bar](gaming/mode-popularity-stacked-bar.html) - Break engagement mix by boosts, events, and inventory activity across live-ops beats.
+- [Matchmaking Heatmap](gaming/matchmaking-heatmap.html) - Show friction and quality signals across onboarding, PvP, co-op, store, and guild touchpoints during season beats.
+- [Player Retention Cohort](gaming/player-retention-cohort.html) - Track retention for season, finale, patch, and early lifecycle cohorts through the first week.
+- [Item Sales Treemap](gaming/item-sales-treemap.html) - Map monetization contribution by mode and social surface to separate store demand from gameplay-driven purchases.
+- [Balance Tornado](gaming/balance-tornado.html) - Rank tuning variables by expected impact on match fairness, progression speed, and reward pacing.
+- [Player Segment Radar](gaming/player-segment-radar.html) - Compare target player segments across risk, retention, skill, spend, social behavior, and completion.
 
 ### Content Creation
 
