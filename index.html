@@ -40988,8 +40988,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Biomarker Line example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Biotech Biomarker Line for biomarker response&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative assay score / biotech sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Biomarker response by visit and dose arm&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;visit-level biomarker response, dose arm, responder threshold, and assay variability&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;biotech/biomarker-line&lt;/div&gt;
     &lt;/div&gt;
@@ -41012,14 +41012,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Track biomarker or assay response over study time.&lt;/p&gt;
+        &lt;p&gt;Track biomarker, assay, or pharmacodynamic response by visit, dose arm, and responder threshold.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;response&lt;/li&gt;
+          &lt;li&gt;biomarker response&lt;/li&gt;
 &lt;li&gt;threshold&lt;/li&gt;
-&lt;li&gt;trend&lt;/li&gt;
+&lt;li&gt;dose arm&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -41030,8 +41030,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Biomarker Line</div>
-          <div class="desc">Track biomarker or assay response over study time.</div>
-          <div class="signals"><span>biomarker</span><span>line</span></div>
+          <div class="desc">Track biomarker, assay, or pharmacodynamic response by visit, dose arm, and responder threshold.</div>
+          <div class="signals"><span>biomarker</span><span>threshold</span><span>dose</span></div>
           <div class="file"><span>biotech/biomarker-line.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -41207,8 +41207,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Trial Enrollment Funnel example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Biotech eligible to screened&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative assay score / biotech sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Trial enrollment funnel by site&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;subject flow through screened, eligible, consented, randomized, dosed, and completed stages&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;biotech/trial-enrollment-funnel&lt;/div&gt;
     &lt;/div&gt;
@@ -41223,14 +41223,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Track screened, eligible, consented, randomized, and completed subjects.&lt;/p&gt;
+        &lt;p&gt;Track screened, eligible, consented, randomized, dosed, and completed subjects by site and screen-failure reason.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;enrollment&lt;/li&gt;
-&lt;li&gt;drop-off&lt;/li&gt;
-&lt;li&gt;site efficiency&lt;/li&gt;
+          &lt;li&gt;screen failure&lt;/li&gt;
+&lt;li&gt;randomization&lt;/li&gt;
+&lt;li&gt;site yield&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -41241,8 +41241,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Trial Enrollment Funnel</div>
-          <div class="desc">Track screened, eligible, consented, randomized, and completed subjects.</div>
-          <div class="signals"><span>trial</span><span>enrollment</span><span>funnel</span></div>
+          <div class="desc">Track screened, eligible, consented, randomized, dosed, and completed subjects by site and screen-failure reason.</div>
+          <div class="signals"><span>screen failure</span><span>randomized</span><span>sites</span></div>
           <div class="file"><span>biotech/trial-enrollment-funnel.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -41418,8 +41418,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Pipeline Sankey example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Biotech flow between consented and eligible&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative assay score / biotech sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Therapeutic pipeline flow by stage&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;candidate movement across discovery, IND, phase, regulatory, approval, and discontinued paths&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;biotech/pipeline-sankey&lt;/div&gt;
     &lt;/div&gt;
@@ -41440,14 +41440,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Show candidate movement through discovery, preclinical, phase, and approval stages.&lt;/p&gt;
+        &lt;p&gt;Show asset movement through target validation, lead optimization, IND, clinical phases, regulatory review, and approval.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;pipeline path&lt;/li&gt;
-&lt;li&gt;attrition&lt;/li&gt;
-&lt;li&gt;stage mix&lt;/li&gt;
+          &lt;li&gt;stage attrition&lt;/li&gt;
+&lt;li&gt;IND flow&lt;/li&gt;
+&lt;li&gt;approval path&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -41458,8 +41458,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Pipeline Sankey</div>
-          <div class="desc">Show candidate movement through discovery, preclinical, phase, and approval stages.</div>
-          <div class="signals"><span>pipeline</span><span>sankey</span></div>
+          <div class="desc">Show asset movement through target validation, lead optimization, IND, clinical phases, regulatory review, and approval.</div>
+          <div class="signals"><span>pipeline</span><span>IND</span><span>attrition</span></div>
           <div class="file"><span>biotech/pipeline-sankey.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -41635,8 +41635,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Assay Heatmap example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Biotech assay heatmap example&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative assay score / biotech sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Assay response heatmap by compound and target&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;compound-target potency, selectivity, viability, batch, and off-target signals&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;biotech/assay-heatmap&lt;/div&gt;
     &lt;/div&gt;
@@ -41687,14 +41687,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Map assay response by compound and target.&lt;/p&gt;
+        &lt;p&gt;Map potency, selectivity, viability, and off-target response by compound, target, and assay batch.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;hit pattern&lt;/li&gt;
-&lt;li&gt;potency&lt;/li&gt;
-&lt;li&gt;cluster&lt;/li&gt;
+          &lt;li&gt;potency&lt;/li&gt;
+&lt;li&gt;selectivity&lt;/li&gt;
+&lt;li&gt;batch effect&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -41705,8 +41705,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Assay Heatmap</div>
-          <div class="desc">Map assay response by compound and target.</div>
-          <div class="signals"><span>assay</span><span>heatmap</span></div>
+          <div class="desc">Map potency, selectivity, viability, and off-target response by compound, target, and assay batch.</div>
+          <div class="signals"><span>potency</span><span>selectivity</span><span>batch</span></div>
           <div class="file"><span>biotech/assay-heatmap.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -41882,8 +41882,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Program Portfolio Treemap example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Biotech program portfolio treemap example&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative assay score / biotech sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;R&amp;D portfolio value and risk by program&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;program value, spend, modality, probability of success, and therapeutic-area exposure&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;biotech/portfolio-treemap&lt;/div&gt;
     &lt;/div&gt;
@@ -41899,14 +41899,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Map program value, risk, or spend by therapeutic area.&lt;/p&gt;
+        &lt;p&gt;Map program value, probability of technical success, spend, modality, and therapeutic-area exposure.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;portfolio weight&lt;/li&gt;
-&lt;li&gt;concentration&lt;/li&gt;
-&lt;li&gt;optionality&lt;/li&gt;
+          &lt;li&gt;PoTS&lt;/li&gt;
+&lt;li&gt;spend weight&lt;/li&gt;
+&lt;li&gt;modality mix&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -41917,8 +41917,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Program Portfolio Treemap</div>
-          <div class="desc">Map program value, risk, or spend by therapeutic area.</div>
-          <div class="signals"><span>portfolio</span><span>treemap</span></div>
+          <div class="desc">Map program value, probability of technical success, spend, modality, and therapeutic-area exposure.</div>
+          <div class="signals"><span>PoTS</span><span>spend</span><span>modality</span></div>
           <div class="file"><span>biotech/portfolio-treemap.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -42094,8 +42094,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Dose Response Scatter example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Biotech dose response scatter example&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative assay score / biotech sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Dose response and safety window&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;dose, exposure, efficacy response, adverse events, and therapeutic window by cohort&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;biotech/dose-response-scatter&lt;/div&gt;
     &lt;/div&gt;
@@ -42115,12 +42115,12 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Position cohorts by dose and response or adverse event rate.&lt;/p&gt;
+        &lt;p&gt;Position dose cohorts by efficacy response, adverse-event rate, exposure, and therapeutic window.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;response&lt;/li&gt;
+          &lt;li&gt;efficacy&lt;/li&gt;
 &lt;li&gt;toxicity&lt;/li&gt;
 &lt;li&gt;window&lt;/li&gt;
         &lt;/ul&gt;
@@ -42133,8 +42133,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Dose Response Scatter</div>
-          <div class="desc">Position cohorts by dose and response or adverse event rate.</div>
-          <div class="signals"><span>dose</span><span>response</span><span>scatter</span></div>
+          <div class="desc">Position dose cohorts by efficacy response, adverse-event rate, exposure, and therapeutic window.</div>
+          <div class="signals"><span>dose</span><span>efficacy</span><span>safety</span></div>
           <div class="file"><span>biotech/dose-response-scatter.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -42310,8 +42310,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Patient Cohort Retention example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Biotech patient cohort retention example&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative assay score / biotech sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Patient follow-up and endpoint capture&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;visit adherence, endpoint capture, protocol deviations, dropout, and follow-up quality by cohort&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;biotech/patient-cohort-retention&lt;/div&gt;
     &lt;/div&gt;
@@ -42327,14 +42327,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Track follow-up, adherence, or endpoint capture by cohort.&lt;/p&gt;
+        &lt;p&gt;Track visit adherence, follow-up completion, endpoint capture, protocol deviations, and dropout by cohort.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;retention&lt;/li&gt;
-&lt;li&gt;data quality&lt;/li&gt;
-&lt;li&gt;adherence&lt;/li&gt;
+          &lt;li&gt;endpoint capture&lt;/li&gt;
+&lt;li&gt;deviations&lt;/li&gt;
+&lt;li&gt;dropout&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -42345,8 +42345,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Patient Cohort Retention</div>
-          <div class="desc">Track follow-up, adherence, or endpoint capture by cohort.</div>
-          <div class="signals"><span>patient</span><span>cohort</span><span>retention</span></div>
+          <div class="desc">Track visit adherence, follow-up completion, endpoint capture, protocol deviations, and dropout by cohort.</div>
+          <div class="signals"><span>endpoint</span><span>adherence</span><span>dropout</span></div>
           <div class="file"><span>biotech/patient-cohort-retention.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -42522,8 +42522,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;R and D Waterfall example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Biotech r and d waterfall example&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative assay score / biotech sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;R&amp;D runway bridge from financing to burn&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;financing, trial spend, CMC cost, milestones, grants, partnership revenue, and runway impact&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;biotech/r-and-d-waterfall&lt;/div&gt;
     &lt;/div&gt;
@@ -42551,9 +42551,9 @@ body {
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;cash driver&lt;/li&gt;
-&lt;li&gt;runway&lt;/li&gt;
-&lt;li&gt;milestone impact&lt;/li&gt;
+          &lt;li&gt;runway&lt;/li&gt;
+&lt;li&gt;trial spend&lt;/li&gt;
+&lt;li&gt;milestones&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -42563,9 +42563,9 @@ body {
           <span class="preview-shade" aria-hidden="true"></span>
         </div>
         <div class="body">
-          <div class="title">R and D Waterfall</div>
-          <div class="desc">Explain R&amp;D cash movement from funding, spend, milestones, grants, and runway.</div>
-          <div class="signals"><span>r</span><span>and</span><span>d</span></div>
+          <div class="title">R&D Runway Waterfall</div>
+          <div class="desc">Explain cash runway from financing, trial spend, CMC, milestones, grants, partnership revenue, and operating burn.</div>
+          <div class="signals"><span>runway</span><span>trial spend</span><span>milestones</span></div>
           <div class="file"><span>biotech/r-and-d-waterfall.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -42741,8 +42741,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Program Risk Radar example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Biotech program risk radar example&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative assay score / biotech sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Program risk profile for development review&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;efficacy, safety, CMC, regulatory, IP, competition, and market-fit risk scorecard&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;biotech/program-risk-radar&lt;/div&gt;
     &lt;/div&gt;
@@ -42762,14 +42762,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Score a program across efficacy, safety, CMC, regulatory, IP, and market fit.&lt;/p&gt;
+        &lt;p&gt;Score program risk across efficacy evidence, safety margin, CMC readiness, regulatory path, IP, competition, and market fit.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;risk profile&lt;/li&gt;
-&lt;li&gt;balance&lt;/li&gt;
-&lt;li&gt;weak dimension&lt;/li&gt;
+          &lt;li&gt;efficacy risk&lt;/li&gt;
+&lt;li&gt;CMC readiness&lt;/li&gt;
+&lt;li&gt;regulatory path&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -42780,8 +42780,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Program Risk Radar</div>
-          <div class="desc">Score a program across efficacy, safety, CMC, regulatory, IP, and market fit.</div>
-          <div class="signals"><span>program</span><span>risk</span><span>radar</span></div>
+          <div class="desc">Score program risk across efficacy evidence, safety margin, CMC readiness, regulatory path, IP, competition, and market fit.</div>
+          <div class="signals"><span>efficacy</span><span>CMC</span><span>regulatory</span></div>
           <div class="file"><span>biotech/program-risk-radar.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -42957,8 +42957,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Clinical Stress Test example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Biotech scenario stress test&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative assay score / biotech sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Clinical timeline and cash stress test&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;timeline, cash need, enrollment delay, safety signal, CMC slip, and regulatory hold scenarios&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;biotech/clinical-stress-test&lt;/div&gt;
     &lt;/div&gt;
@@ -42980,14 +42980,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Compare timeline or cash need under enrollment delay, safety signal, and regulatory scenarios.&lt;/p&gt;
+        &lt;p&gt;Compare timeline, cash need, and probability impact under enrollment delay, safety signal, CMC slip, and regulatory hold scenarios.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;tail risk&lt;/li&gt;
-&lt;li&gt;scenario gap&lt;/li&gt;
-&lt;li&gt;capital need&lt;/li&gt;
+          &lt;li&gt;enrollment delay&lt;/li&gt;
+&lt;li&gt;safety signal&lt;/li&gt;
+&lt;li&gt;cash need&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -42998,8 +42998,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Clinical Stress Test</div>
-          <div class="desc">Compare timeline or cash need under enrollment delay, safety signal, and regulatory scenarios.</div>
-          <div class="signals"><span>clinical</span><span>stress</span><span>test</span></div>
+          <div class="desc">Compare timeline, cash need, and probability impact under enrollment delay, safety signal, CMC slip, and regulatory hold scenarios.</div>
+          <div class="signals"><span>enrollment</span><span>safety</span><span>cash</span></div>
           <div class="file"><span>biotech/clinical-stress-test.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>

@@ -287,16 +287,16 @@ Trips, bookings, destinations, itinerary planning, hospitality, demand forecasti
 
 Drug discovery, clinical trials, lab operations, biomarkers, pipelines, safety, and R&D portfolio views.
 
-- [Biomarker Line](biotech/biomarker-line.html) - Track biomarker or assay response over study time.
-- [Trial Enrollment Funnel](biotech/trial-enrollment-funnel.html) - Track screened, eligible, consented, randomized, and completed subjects.
-- [Pipeline Sankey](biotech/pipeline-sankey.html) - Show candidate movement through discovery, preclinical, phase, and approval stages.
-- [Assay Heatmap](biotech/assay-heatmap.html) - Map assay response by compound and target.
-- [Program Portfolio Treemap](biotech/portfolio-treemap.html) - Map program value, risk, or spend by therapeutic area.
-- [Dose Response Scatter](biotech/dose-response-scatter.html) - Position cohorts by dose and response or adverse event rate.
-- [Patient Cohort Retention](biotech/patient-cohort-retention.html) - Track follow-up, adherence, or endpoint capture by cohort.
-- [R and D Waterfall](biotech/r-and-d-waterfall.html) - Explain R&D cash movement from funding, spend, milestones, grants, and runway.
-- [Program Risk Radar](biotech/program-risk-radar.html) - Score a program across efficacy, safety, CMC, regulatory, IP, and market fit.
-- [Clinical Stress Test](biotech/clinical-stress-test.html) - Compare timeline or cash need under enrollment delay, safety signal, and regulatory scenarios.
+- [Biomarker Line](biotech/biomarker-line.html) - Track biomarker, assay, or pharmacodynamic response by visit, dose arm, and responder threshold.
+- [Trial Enrollment Funnel](biotech/trial-enrollment-funnel.html) - Track screened, eligible, consented, randomized, dosed, and completed subjects by site and screen-failure reason.
+- [Pipeline Sankey](biotech/pipeline-sankey.html) - Show asset movement through target validation, lead optimization, IND, clinical phases, regulatory review, and approval.
+- [Assay Heatmap](biotech/assay-heatmap.html) - Map potency, selectivity, viability, and off-target response by compound, target, and assay batch.
+- [Program Portfolio Treemap](biotech/portfolio-treemap.html) - Map program value, probability of technical success, spend, modality, and therapeutic-area exposure.
+- [Dose Response Scatter](biotech/dose-response-scatter.html) - Position dose cohorts by efficacy response, adverse-event rate, exposure, and therapeutic window.
+- [Patient Cohort Retention](biotech/patient-cohort-retention.html) - Track visit adherence, follow-up completion, endpoint capture, protocol deviations, and dropout by cohort.
+- [R&D Runway Waterfall](biotech/r-and-d-waterfall.html) - Explain cash runway from financing, trial spend, CMC, milestones, grants, partnership revenue, and operating burn.
+- [Program Risk Radar](biotech/program-risk-radar.html) - Score program risk across efficacy evidence, safety margin, CMC readiness, regulatory path, IP, competition, and market fit.
+- [Clinical Stress Test](biotech/clinical-stress-test.html) - Compare timeline, cash need, and probability impact under enrollment delay, safety signal, CMC slip, and regulatory hold scenarios.
 
 ### Legal
 
