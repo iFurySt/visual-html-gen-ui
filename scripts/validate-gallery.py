@@ -31,11 +31,19 @@ def main() -> int:
         for chart in domain["charts"]
     }
     actual_links = set(re.findall(r'href="(skills/visual-html-gen-ui/[^"]+\.html)"', index))
+    actual_previews = {
+        src.removesuffix("#chart-preview")
+        for src in re.findall(r'src="(skills/visual-html-gen-ui/[^"]+\.html#chart-preview)"', index)
+    }
 
     for link in sorted(expected_links - actual_links):
         failures.append(f"missing gallery link: {link}")
     for link in sorted(actual_links - expected_links):
         failures.append(f"unknown gallery link: {link}")
+    for link in sorted(expected_links - actual_previews):
+        failures.append(f"missing gallery preview iframe: {link}#chart-preview")
+    for link in sorted(actual_previews - expected_links):
+        failures.append(f"unknown gallery preview iframe: {link}#chart-preview")
     for link in sorted(actual_links):
         if not (REPO_ROOT / link).is_file():
             failures.append(f"gallery link target does not exist: {link}")
@@ -43,6 +51,13 @@ def main() -> int:
     for domain in catalog["domains"]:
         if f'id="{domain["slug"]}"' not in index:
             failures.append(f"missing domain section: {domain['slug']}")
+
+    missing_preview_anchor = []
+    for link in sorted(expected_links):
+        if 'id="chart-preview"' not in (REPO_ROOT / link).read_text(encoding="utf-8"):
+            missing_preview_anchor.append(link)
+    for link in missing_preview_anchor:
+        failures.append(f"chart target missing #chart-preview anchor: {link}")
 
     return report(failures)
 

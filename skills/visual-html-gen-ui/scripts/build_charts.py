@@ -292,7 +292,7 @@ def render_chart_page(domain: dict, chart: dict) -> str:
     <div class="stamp">standalone html</div>
   </header>
 
-  <section class="frame" aria-label="{html.escape(chart['title'])} example">
+  <section id="chart-preview" class="frame" aria-label="{html.escape(chart['title'])} example">
     <div class="chart-head">
       <div>
         <h2 class="chart-title">{html.escape(sample_chart_title(chart))}</h2>

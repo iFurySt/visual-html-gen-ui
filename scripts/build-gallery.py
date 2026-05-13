@@ -5,7 +5,6 @@ from __future__ import annotations
 
 import html
 import json
-import re
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
@@ -309,26 +308,32 @@ def render_page(catalog: dict) -> str:
     border-color: var(--slate);
   }}
   .thumb {{
-    height: 132px;
-    background: var(--g100);
+    height: 178px;
+    background: var(--paper);
     border-bottom: 1.5px solid var(--g200);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 16px;
+    display: block;
+    padding: 0;
     transition: background 150ms ease;
+    overflow: hidden;
+    position: relative;
   }}
   a.card:hover .thumb {{ background: var(--oat); }}
-  .thumb svg {{ width: 100%; height: 100%; overflow: visible; }}
-  .thumb .st {{ stroke: var(--g500); fill: none; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }}
-  .thumb .fl {{ fill: var(--g300); }}
-  .thumb .cl {{ fill: var(--clay); }}
-  .thumb .ol {{ fill: var(--olive); }}
-  .thumb .te {{ fill: var(--teal); }}
-  .thumb .go {{ fill: var(--gold); }}
-  .thumb .oa {{ fill: var(--oat); stroke: var(--g500); stroke-width: 2.5; }}
-  .thumb .sl {{ fill: var(--slate); }}
-  .thumb .wh {{ fill: var(--paper); stroke: var(--g500); stroke-width: 2.5; }}
+  .preview-frame {{
+    width: 960px;
+    height: 540px;
+    border: 0;
+    transform: scale(0.34);
+    transform-origin: 0 0;
+    pointer-events: none;
+    background: var(--ivory);
+  }}
+  .preview-shade {{
+    position: absolute;
+    inset: auto 0 0;
+    height: 32px;
+    background: linear-gradient(to bottom, rgba(250,249,245,0), var(--paper));
+    pointer-events: none;
+  }}
   .body {{
     padding: 18px 20px 16px;
     display: flex;
@@ -490,7 +495,10 @@ def render_card(domain: dict, chart: dict) -> str:
     )
     file_label = f"{domain['slug']}/{chart['slug']}.html"
     return f"""      <a class="card" href="{html.escape(href)}">
-        <div class="thumb">{thumb_svg(chart["type"])}</div>
+        <div class="thumb">
+          <iframe class="preview-frame" src="{html.escape(href)}#chart-preview" loading="lazy" title="{html.escape(chart['title'])} preview" tabindex="-1"></iframe>
+          <span class="preview-shade" aria-hidden="true"></span>
+        </div>
         <div class="body">
           <div class="title">{html.escape(chart["title"])}</div>
           <div class="desc">{html.escape(chart["purpose"])}</div>
@@ -498,52 +506,6 @@ def render_card(domain: dict, chart: dict) -> str:
           <div class="file"><span>{html.escape(file_label)}</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>"""
-
-
-def thumb_svg(chart_type: str) -> str:
-    normalized = re.sub(r"[^a-z0-9]+", "-", chart_type.lower()).strip("-")
-    if normalized in {"line", "area", "drawdown", "frontier", "fan", "depth"}:
-        return """<svg viewBox="0 0 120 80" role="img" aria-hidden="true">
-          <line class="st" x1="10" y1="62" x2="110" y2="62"/><line class="st" x1="10" y1="14" x2="10" y2="62"/>
-          <path class="oa" d="M12 60 L30 52 L48 44 L66 34 L84 38 L108 20 L108 62 L12 62 Z"/>
-          <path class="st" d="M12 60 L30 52 L48 44 L66 34 L84 38 L108 20"/>
-          <circle class="cl" cx="108" cy="20" r="5"/>
-        </svg>"""
-    if normalized in {"grouped-bar", "stacked-bar", "horizontal-bar", "waterfall", "tornado", "stress"}:
-        return """<svg viewBox="0 0 120 80" role="img" aria-hidden="true">
-          <line class="st" x1="10" y1="64" x2="110" y2="64"/>
-          <rect class="ol" x="18" y="38" width="14" height="26" rx="3"/>
-          <rect class="cl" x="40" y="24" width="14" height="40" rx="3"/>
-          <rect class="go" x="62" y="32" width="14" height="32" rx="3"/>
-          <rect class="sl" x="84" y="16" width="14" height="48" rx="3"/>
-        </svg>"""
-    if normalized in {"heatmap", "matrix", "calendar", "cohort"}:
-        return """<svg viewBox="0 0 120 80" role="img" aria-hidden="true">
-          <rect class="wh" x="14" y="12" width="92" height="56" rx="5"/>
-          <rect class="fl" x="22" y="20" width="14" height="10" rx="2"/><rect class="ol" x="42" y="20" width="14" height="10" rx="2"/><rect class="cl" x="62" y="20" width="14" height="10" rx="2"/><rect class="te" x="82" y="20" width="14" height="10" rx="2"/>
-          <rect class="ol" x="22" y="36" width="14" height="10" rx="2"/><rect class="fl" x="42" y="36" width="14" height="10" rx="2"/><rect class="go" x="62" y="36" width="14" height="10" rx="2"/><rect class="cl" x="82" y="36" width="14" height="10" rx="2"/>
-          <rect class="cl" x="22" y="52" width="14" height="10" rx="2"/><rect class="te" x="42" y="52" width="14" height="10" rx="2"/><rect class="ol" x="62" y="52" width="14" height="10" rx="2"/><rect class="fl" x="82" y="52" width="14" height="10" rx="2"/>
-        </svg>"""
-    if normalized in {"donut", "radar", "scatter", "bubble"}:
-        return """<svg viewBox="0 0 120 80" role="img" aria-hidden="true">
-          <circle class="oa" cx="38" cy="40" r="24"/>
-          <circle fill="#FAF9F5" cx="38" cy="40" r="11"/>
-          <circle class="te" cx="78" cy="28" r="5"/><circle class="cl" cx="96" cy="42" r="8"/><circle class="ol" cx="72" cy="56" r="6"/>
-          <path class="st" d="M66 62 L104 18"/>
-        </svg>"""
-    if normalized in {"sankey", "funnel", "treemap"}:
-        return """<svg viewBox="0 0 120 80" role="img" aria-hidden="true">
-          <rect class="wh" x="8" y="12" width="28" height="18" rx="4"/>
-          <rect class="oa" x="44" y="31" width="32" height="18" rx="4"/>
-          <rect class="cl" x="84" y="12" width="28" height="18" rx="4"/>
-          <rect class="ol" x="84" y="50" width="28" height="18" rx="4"/>
-          <path class="st" d="M36 21 C48 21 40 40 44 40"/><path class="st" d="M76 40 C88 40 76 21 84 21"/><path class="st" d="M76 40 C88 40 76 59 84 59"/>
-        </svg>"""
-    return """<svg viewBox="0 0 120 80" role="img" aria-hidden="true">
-      <rect class="wh" x="10" y="10" width="100" height="60" rx="5"/>
-      <line class="st" x1="22" y1="26" x2="94" y2="26"/><line class="st" x1="22" y1="40" x2="84" y2="40"/><line class="st" x1="22" y1="54" x2="92" y2="54"/>
-      <circle class="cl" cx="96" cy="40" r="7"/>
-    </svg>"""
 
 
 if __name__ == "__main__":
