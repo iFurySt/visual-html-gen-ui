@@ -148,6 +148,21 @@ Streaming, music, film, live events, audience behavior, releases, and catalog pe
 - [Campaign Funnel](entertainment/campaign-funnel/index.html) - Track awareness, trailer views, follows, intent, and purchase.
 - [Title Portfolio Treemap](entertainment/title-portfolio-treemap/index.html) - Map catalog performance by title, franchise, or genre.
 
+### Gaming
+
+Game telemetry, player progression, economy balance, monetization, matchmaking, and live ops.
+
+- [DAU Line](gaming/dau-line/index.html) - Track active players through seasons, patches, and events.
+- [Level Progression Funnel](gaming/level-progression-funnel/index.html) - Show players advancing through tutorial, early levels, and core loop.
+- [Economy Sankey](gaming/economy-sankey/index.html) - Visualize currency sources, sinks, and player inventory flow.
+- [Session Calendar](gaming/session-calendar/index.html) - Reveal play session intensity by day.
+- [Mode Popularity Stacked Bar](gaming/mode-popularity-stacked-bar/index.html) - Break playtime by game mode or playlist.
+- [Matchmaking Heatmap](gaming/matchmaking-heatmap/index.html) - Show queue time or match quality by skill band and region.
+- [Player Retention Cohort](gaming/player-retention-cohort/index.html) - Track retention by install cohort and lifecycle day.
+- [Item Sales Treemap](gaming/item-sales-treemap/index.html) - Map item, skin, or bundle revenue contribution.
+- [Balance Tornado](gaming/balance-tornado/index.html) - Rank tuning variables by effect on win rate or progression speed.
+- [Player Segment Radar](gaming/player-segment-radar/index.html) - Compare player segments across skill, spend, social, completion, and risk.
+
 ## Maintenance
 
 Maintainers should edit `catalog.json`, run

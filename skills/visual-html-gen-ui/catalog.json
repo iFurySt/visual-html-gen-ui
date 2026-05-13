@@ -1043,6 +1043,123 @@
           ]
         }
       ]
+    },
+    {
+      "slug": "gaming",
+      "name": "Gaming",
+      "summary": "Game telemetry, player progression, economy balance, monetization, matchmaking, and live ops.",
+      "charts": [
+        {
+          "slug": "dau-line",
+          "title": "DAU Line",
+          "type": "line",
+          "purpose": "Track active players through seasons, patches, and events.",
+          "signals": [
+            "activity",
+            "seasonality",
+            "patch impact"
+          ]
+        },
+        {
+          "slug": "level-progression-funnel",
+          "title": "Level Progression Funnel",
+          "type": "funnel",
+          "purpose": "Show players advancing through tutorial, early levels, and core loop.",
+          "signals": [
+            "progression",
+            "drop-off",
+            "friction"
+          ]
+        },
+        {
+          "slug": "economy-sankey",
+          "title": "Economy Sankey",
+          "type": "sankey",
+          "purpose": "Visualize currency sources, sinks, and player inventory flow.",
+          "signals": [
+            "source sink",
+            "inflation",
+            "leakage"
+          ]
+        },
+        {
+          "slug": "session-calendar",
+          "title": "Session Calendar",
+          "type": "calendar",
+          "purpose": "Reveal play session intensity by day.",
+          "signals": [
+            "habit",
+            "event lift",
+            "downtime"
+          ]
+        },
+        {
+          "slug": "mode-popularity-stacked-bar",
+          "title": "Mode Popularity Stacked Bar",
+          "type": "stacked-bar",
+          "purpose": "Break playtime by game mode or playlist.",
+          "signals": [
+            "mode mix",
+            "content demand",
+            "shift"
+          ]
+        },
+        {
+          "slug": "matchmaking-heatmap",
+          "title": "Matchmaking Heatmap",
+          "type": "heatmap",
+          "purpose": "Show queue time or match quality by skill band and region.",
+          "signals": [
+            "queue health",
+            "imbalance",
+            "region risk"
+          ]
+        },
+        {
+          "slug": "player-retention-cohort",
+          "title": "Player Retention Cohort",
+          "type": "cohort",
+          "purpose": "Track retention by install cohort and lifecycle day.",
+          "signals": [
+            "D1 D7 D30",
+            "stickiness",
+            "cohort quality"
+          ]
+        },
+        {
+          "slug": "item-sales-treemap",
+          "title": "Item Sales Treemap",
+          "type": "treemap",
+          "purpose": "Map item, skin, or bundle revenue contribution.",
+          "signals": [
+            "monetization",
+            "hero item",
+            "long tail"
+          ]
+        },
+        {
+          "slug": "balance-tornado",
+          "title": "Balance Tornado",
+          "type": "tornado",
+          "purpose": "Rank tuning variables by effect on win rate or progression speed.",
+          "signals": [
+            "balance driver",
+            "sensitivity",
+            "risk"
+          ]
+        },
+        {
+          "slug": "player-segment-radar",
+          "title": "Player Segment Radar",
+          "type": "radar",
+          "purpose": "Compare player segments across skill, spend, social, completion, and risk.",
+          "signals": [
+            "segment profile",
+            "tradeoff",
+            "targeting"
+          ]
+        }
+      ]
     }
   ]
 }

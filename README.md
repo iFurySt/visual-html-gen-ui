@@ -34,6 +34,7 @@ make ci
 - Ecommerce: 10 chart examples.
 - Social: 10 chart examples.
 - Entertainment: 10 chart examples.
+- Gaming: 10 chart examples.
 
 ## License
 

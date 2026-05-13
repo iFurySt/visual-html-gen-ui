@@ -40,6 +40,7 @@ low-saturation clay/olive/oat/slate colors.
 - Ecommerce
 - Social
 - Entertainment
+- Gaming
 
 ### Files Modified
 

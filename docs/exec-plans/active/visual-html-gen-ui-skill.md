@@ -84,7 +84,7 @@ without loading every example into context.
 - [x] Ecommerce
 - [x] Social
 - [x] Entertainment
-- [ ] Gaming
+- [x] Gaming
 - [ ] Content Creation
 - [ ] Enterprise Services
 - [ ] Cybersecurity
