@@ -93,7 +93,7 @@ without loading every example into context.
 - [x] HR
 - [x] Mobility
 - [x] Travel
-- [ ] Biotech
+- [x] Biotech
 - [ ] Legal
 - [ ] Government
 - [ ] Manufacturing

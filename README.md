@@ -43,6 +43,7 @@ make ci
 - HR: 10 chart examples.
 - Mobility: 10 chart examples.
 - Travel: 10 chart examples.
+- Biotech: 10 chart examples.
 
 ## License
 

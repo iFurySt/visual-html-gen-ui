@@ -49,6 +49,7 @@ low-saturation clay/olive/oat/slate colors.
 - HR
 - Mobility
 - Travel
+- Biotech
 
 ### Files Modified
 

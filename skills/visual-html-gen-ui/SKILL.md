@@ -283,6 +283,21 @@ Trips, bookings, destinations, itinerary planning, hospitality, demand forecasti
 - [Trip Margin Waterfall](travel/trip-margin-waterfall/index.html) - Explain margin from gross booking through discounts, fees, supplier cost, and support.
 - [Experience Radar](travel/experience-radar/index.html) - Score travel experience across price, convenience, support, quality, and flexibility.
 
+### Biotech
+
+Drug discovery, clinical trials, lab operations, biomarkers, pipelines, safety, and R&D portfolio views.
+
+- [Biomarker Line](biotech/biomarker-line/index.html) - Track biomarker or assay response over study time.
+- [Trial Enrollment Funnel](biotech/trial-enrollment-funnel/index.html) - Track screened, eligible, consented, randomized, and completed subjects.
+- [Pipeline Sankey](biotech/pipeline-sankey/index.html) - Show candidate movement through discovery, preclinical, phase, and approval stages.
+- [Assay Heatmap](biotech/assay-heatmap/index.html) - Map assay response by compound and target.
+- [Portfolio Treemap](biotech/portfolio-treemap/index.html) - Map program value, risk, or spend by therapeutic area.
+- [Dose Response Scatter](biotech/dose-response-scatter/index.html) - Position cohorts by dose and response or adverse event rate.
+- [Patient Cohort Retention](biotech/patient-cohort-retention/index.html) - Track follow-up, adherence, or endpoint capture by cohort.
+- [R and D Waterfall](biotech/r-and-d-waterfall/index.html) - Explain R&D cash movement from funding, spend, milestones, grants, and runway.
+- [Program Risk Radar](biotech/program-risk-radar/index.html) - Score a program across efficacy, safety, CMC, regulatory, IP, and market fit.
+- [Clinical Stress Test](biotech/clinical-stress-test/index.html) - Compare timeline or cash need under enrollment delay, safety signal, and regulatory scenarios.
+
 ## Maintenance
 
 Maintainers should edit `catalog.json`, run

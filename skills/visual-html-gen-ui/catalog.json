@@ -2096,6 +2096,123 @@
           ]
         }
       ]
+    },
+    {
+      "slug": "biotech",
+      "name": "Biotech",
+      "summary": "Drug discovery, clinical trials, lab operations, biomarkers, pipelines, safety, and R&D portfolio views.",
+      "charts": [
+        {
+          "slug": "biomarker-line",
+          "title": "Biomarker Line",
+          "type": "line",
+          "purpose": "Track biomarker or assay response over study time.",
+          "signals": [
+            "response",
+            "threshold",
+            "trend"
+          ]
+        },
+        {
+          "slug": "trial-enrollment-funnel",
+          "title": "Trial Enrollment Funnel",
+          "type": "funnel",
+          "purpose": "Track screened, eligible, consented, randomized, and completed subjects.",
+          "signals": [
+            "enrollment",
+            "drop-off",
+            "site efficiency"
+          ]
+        },
+        {
+          "slug": "pipeline-sankey",
+          "title": "Pipeline Sankey",
+          "type": "sankey",
+          "purpose": "Show candidate movement through discovery, preclinical, phase, and approval stages.",
+          "signals": [
+            "pipeline path",
+            "attrition",
+            "stage mix"
+          ]
+        },
+        {
+          "slug": "assay-heatmap",
+          "title": "Assay Heatmap",
+          "type": "heatmap",
+          "purpose": "Map assay response by compound and target.",
+          "signals": [
+            "hit pattern",
+            "potency",
+            "cluster"
+          ]
+        },
+        {
+          "slug": "portfolio-treemap",
+          "title": "Portfolio Treemap",
+          "type": "treemap",
+          "purpose": "Map program value, risk, or spend by therapeutic area.",
+          "signals": [
+            "portfolio weight",
+            "concentration",
+            "optionality"
+          ]
+        },
+        {
+          "slug": "dose-response-scatter",
+          "title": "Dose Response Scatter",
+          "type": "scatter",
+          "purpose": "Position cohorts by dose and response or adverse event rate.",
+          "signals": [
+            "response",
+            "toxicity",
+            "window"
+          ]
+        },
+        {
+          "slug": "patient-cohort-retention",
+          "title": "Patient Cohort Retention",
+          "type": "cohort",
+          "purpose": "Track follow-up, adherence, or endpoint capture by cohort.",
+          "signals": [
+            "retention",
+            "data quality",
+            "adherence"
+          ]
+        },
+        {
+          "slug": "r-and-d-waterfall",
+          "title": "R and D Waterfall",
+          "type": "waterfall",
+          "purpose": "Explain R&D cash movement from funding, spend, milestones, grants, and runway.",
+          "signals": [
+            "cash driver",
+            "runway",
+            "milestone impact"
+          ]
+        },
+        {
+          "slug": "program-risk-radar",
+          "title": "Program Risk Radar",
+          "type": "radar",
+          "purpose": "Score a program across efficacy, safety, CMC, regulatory, IP, and market fit.",
+          "signals": [
+            "risk profile",
+            "balance",
+            "weak dimension"
+          ]
+        },
+        {
+          "slug": "clinical-stress-test",
+          "title": "Clinical Stress Test",
+          "type": "stress",
+          "purpose": "Compare timeline or cash need under enrollment delay, safety signal, and regulatory scenarios.",
+          "signals": [
+            "tail risk",
+            "scenario gap",
+            "capital need"
+          ]
+        }
+      ]
     }
   ]
 }
