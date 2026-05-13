@@ -32,8 +32,17 @@ def main() -> int:
         failures.append("index.html is missing sticky domain tag behavior")
     if "border: 1.5px solid var(--g300);" not in index or "border-radius: 10px;" not in index:
         failures.append("index.html should render the sticky tag bar as a framed surface")
-    if "history.pushState(null, \"\", link.hash)" not in index or "alignToHash();" not in index:
+    if (
+        "history.pushState(null, \"\", link.hash)" not in index
+        or 'history.scrollRestoration = "manual"' not in index
+        or "alignToHash();" not in index
+        or "window.setTimeout(() =>" not in index
+    ):
         failures.append("index.html should preserve hash navigation and refresh alignment")
+    if "html.is-restoring-hash body" not in index or "finishHashRestore()" not in index:
+        failures.append("index.html should hide transient hash restore jumps")
+    if "padding: 12px;" not in index or "transition: padding" in index:
+        failures.append("index.html should keep the sticky tag bar geometry stable while scrolling")
     if "const getTocOffset = () =>" not in index or "const stickyOffset = getTocOffset() + 2" not in index:
         failures.append("index.html should share scroll and active tag offset logic")
     if ".toggle::before,\n  .toggle::after" not in index or "details[open] .toggle::after" not in index:

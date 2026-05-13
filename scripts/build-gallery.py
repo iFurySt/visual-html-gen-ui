@@ -32,6 +32,14 @@ def render_page(catalog: dict) -> str:
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Visual HTML Gen UI - Chart Gallery</title>
+<script>
+  if ("scrollRestoration" in history) {{
+    history.scrollRestoration = "manual";
+  }}
+  if (location.hash) {{
+    document.documentElement.classList.add("is-restoring-hash");
+  }}
+</script>
 <style>
   :root {{
     --ivory:  #FAF9F5;
@@ -55,7 +63,17 @@ def render_page(catalog: dict) -> str:
     --toc-offset: 190px;
   }}
   * {{ box-sizing: border-box; }}
-  html {{ scroll-behavior: smooth; }}
+  html {{
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    scrollbar-gutter: stable;
+  }}
+  html.is-restoring-hash {{
+    scroll-behavior: auto;
+  }}
+  html.is-restoring-hash body {{
+    opacity: 0;
+  }}
   body {{
     margin: 0;
     background: var(--ivory);
@@ -201,16 +219,16 @@ def render_page(catalog: dict) -> str:
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
-    padding: 14px 16px;
-    margin: 18px -16px 10px;
+    padding: 12px;
+    margin: 18px 0 10px;
     background: rgba(250, 249, 245, .94);
     border: 1.5px solid var(--g300);
     border-radius: 10px;
     backdrop-filter: blur(12px);
-    transition: padding 180ms ease, border-color 180ms ease, box-shadow 180ms ease, background 180ms ease;
+    transform: translateZ(0);
+    transition: border-color 180ms ease, box-shadow 180ms ease, background 180ms ease;
   }}
   nav.toc.is-stuck {{
-    padding: 10px 12px;
     background: rgba(250, 249, 245, .97);
     box-shadow: 0 12px 30px rgba(20,20,19,.09);
   }}
@@ -563,14 +581,33 @@ def render_page(catalog: dict) -> str:
   const tocLinks = [...document.querySelectorAll(".toc a")];
   const domains = [...document.querySelectorAll(".domain-section")];
   const getTocOffset = () => (toc?.offsetHeight || 0) + 34;
+  const activeById = new Map(tocLinks.map((link) => [link.hash.slice(1), link]));
+  let activeLockUntil = 0;
+
+  const updateTocOffset = () => {{
+    document.documentElement.style.setProperty("--toc-offset", `${{getTocOffset()}}px`);
+  }};
+
+  const updateTocState = () => {{
+    if (!toc || !sentinel) {{
+      return;
+    }}
+    toc.classList.toggle("is-stuck", window.scrollY > sentinel.offsetTop);
+  }};
+
+  const setActiveDomain = (domain) => {{
+    if (!domain) {{
+      return;
+    }}
+    tocLinks.forEach((link) => link.classList.remove("is-active"));
+    activeById.get(domain.id)?.classList.add("is-active");
+  }};
+
+  const finishHashRestore = () => {{
+    document.documentElement.classList.remove("is-restoring-hash");
+  }};
 
   if (toc && sentinel) {{
-    const updateTocOffset = () => {{
-      document.documentElement.style.setProperty("--toc-offset", `${{getTocOffset()}}px`);
-    }};
-    const updateTocState = () => {{
-      toc.classList.toggle("is-stuck", window.scrollY > sentinel.offsetTop);
-    }};
     updateTocOffset();
     updateTocState();
     window.addEventListener("scroll", updateTocState, {{ passive: true }});
@@ -585,6 +622,17 @@ def render_page(catalog: dict) -> str:
     window.scrollTo({{ top: Math.max(0, top), behavior }});
   }};
 
+  const updateActiveDomain = () => {{
+    if (!tocLinks.length || !domains.length || performance.now() < activeLockUntil) {{
+      return;
+    }}
+    const stickyOffset = getTocOffset() + 2;
+    const current = domains
+      .filter((domain) => domain.getBoundingClientRect().top <= stickyOffset)
+      .at(-1) || domains[0];
+    setActiveDomain(current);
+  }};
+
   tocLinks.forEach((link) => {{
     link.addEventListener("click", (event) => {{
       event.preventDefault();
@@ -592,10 +640,11 @@ def render_page(catalog: dict) -> str:
       if (target && "open" in target) {{
         target.open = true;
         history.pushState(null, "", link.hash);
+        activeLockUntil = performance.now() + 700;
+        setActiveDomain(target);
         scrollToDomain(target, "smooth");
         toc?.classList.add("is-stuck");
-        tocLinks.forEach((item) => item.classList.remove("is-active"));
-        link.classList.add("is-active");
+        window.setTimeout(updateActiveDomain, 760);
       }}
     }});
   }});
@@ -615,28 +664,26 @@ def render_page(catalog: dict) -> str:
   const alignToHash = () => {{
     const target = openHashedDomain();
     if (!target) {{
+      finishHashRestore();
       return;
     }}
-    setTimeout(() => scrollToDomain(target, "auto"), 0);
-    setTimeout(() => scrollToDomain(target, "auto"), 250);
+    activeLockUntil = performance.now() + 240;
+    scrollToDomain(target, "auto");
+    setActiveDomain(target);
+    updateTocState();
+    window.setTimeout(() => {{
+      scrollToDomain(target, "auto");
+      setActiveDomain(target);
+      updateTocState();
+      finishHashRestore();
+      window.setTimeout(updateActiveDomain, 260);
+    }}, 0);
   }};
 
   alignToHash();
   window.addEventListener("hashchange", alignToHash);
 
   if (tocLinks.length && domains.length) {{
-    const activeById = new Map(tocLinks.map((link) => [link.hash.slice(1), link]));
-    const setActiveDomain = (domain) => {{
-      tocLinks.forEach((link) => link.classList.remove("is-active"));
-      activeById.get(domain.id)?.classList.add("is-active");
-    }};
-    const updateActiveDomain = () => {{
-      const stickyOffset = getTocOffset() + 2;
-      const current = domains
-        .filter((domain) => domain.getBoundingClientRect().top <= stickyOffset)
-        .at(-1) || domains[0];
-      setActiveDomain(current);
-    }};
     updateActiveDomain();
     window.addEventListener("scroll", updateActiveDomain, {{ passive: true }});
     window.addEventListener("resize", updateActiveDomain);
