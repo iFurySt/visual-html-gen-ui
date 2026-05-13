@@ -55,6 +55,7 @@ low-saturation clay/olive/oat/slate colors.
 - Manufacturing
 - Energy
 - Retail
+- Crypto
 
 ### Files Modified
 

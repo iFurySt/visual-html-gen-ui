@@ -99,7 +99,7 @@ without loading every example into context.
 - [x] Manufacturing
 - [x] Energy
 - [x] Retail
-- [ ] Crypto
+- [x] Crypto
 - [ ] Fashion
 - [ ] Sports
 - [ ] Pets

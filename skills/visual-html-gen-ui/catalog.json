@@ -2798,6 +2798,123 @@
           ]
         }
       ]
+    },
+    {
+      "slug": "crypto",
+      "name": "Crypto",
+      "summary": "Token markets, DeFi liquidity, wallets, protocol revenue, on-chain behavior, risk, and exchange operations.",
+      "charts": [
+        {
+          "slug": "token-price-line",
+          "title": "Token Price Line",
+          "type": "line",
+          "purpose": "Track token price, index level, or protocol metric over time.",
+          "signals": [
+            "trend",
+            "volatility",
+            "regime"
+          ]
+        },
+        {
+          "slug": "liquidity-depth-chart",
+          "title": "Liquidity Depth Chart",
+          "type": "depth",
+          "purpose": "Visualize bid and ask liquidity around the current token price.",
+          "signals": [
+            "liquidity wall",
+            "spread",
+            "slippage"
+          ]
+        },
+        {
+          "slug": "wallet-cohort-retention",
+          "title": "Wallet Cohort Retention",
+          "type": "cohort",
+          "purpose": "Track active wallet retention by first transaction cohort.",
+          "signals": [
+            "retention",
+            "stickiness",
+            "cohort quality"
+          ]
+        },
+        {
+          "slug": "defi-flow-sankey",
+          "title": "DeFi Flow Sankey",
+          "type": "sankey",
+          "purpose": "Show value movement between wallets, pools, bridges, and protocols.",
+          "signals": [
+            "flow",
+            "bridge path",
+            "leakage"
+          ]
+        },
+        {
+          "slug": "protocol-treemap",
+          "title": "Protocol Treemap",
+          "type": "treemap",
+          "purpose": "Map TVL, fees, or volume by protocol or chain.",
+          "signals": [
+            "concentration",
+            "ecosystem weight",
+            "long tail"
+          ]
+        },
+        {
+          "slug": "chain-heatmap",
+          "title": "Chain Heatmap",
+          "type": "heatmap",
+          "purpose": "Reveal transaction, gas, or fee intensity by chain and day.",
+          "signals": [
+            "activity",
+            "fee pressure",
+            "hotspot"
+          ]
+        },
+        {
+          "slug": "portfolio-donut",
+          "title": "Portfolio Donut",
+          "type": "donut",
+          "purpose": "Summarize wallet, fund, or treasury allocation by asset.",
+          "signals": [
+            "allocation",
+            "concentration",
+            "balance"
+          ]
+        },
+        {
+          "slug": "yield-risk-scatter",
+          "title": "Yield Risk Scatter",
+          "type": "scatter",
+          "purpose": "Position pools by yield and risk or impermanent loss.",
+          "signals": [
+            "yield",
+            "risk",
+            "outlier"
+          ]
+        },
+        {
+          "slug": "liquidation-waterfall",
+          "title": "Liquidation Waterfall",
+          "type": "waterfall",
+          "purpose": "Explain collateral movement from price shock, margin call, liquidation, fees, and residual.",
+          "signals": [
+            "loss driver",
+            "collateral gap",
+            "risk"
+          ]
+        },
+        {
+          "slug": "protocol-stress-test",
+          "title": "Protocol Stress Test",
+          "type": "stress",
+          "purpose": "Compare losses under depeg, oracle failure, bridge exploit, and liquidity drain scenarios.",
+          "signals": [
+            "tail loss",
+            "scenario gap",
+            "resilience"
+          ]
+        }
+      ]
     }
   ]
 }

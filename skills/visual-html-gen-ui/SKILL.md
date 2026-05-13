@@ -373,6 +373,21 @@ Store operations, category management, merchandising, footfall, inventory, promo
 - [Margin Waterfall](retail/margin-waterfall/index.html) - Explain gross margin from sales through markdowns, shrink, labor, and logistics.
 - [Store Score Radar](retail/store-score-radar/index.html) - Score a store across traffic, conversion, availability, service, and shrink.
 
+### Crypto
+
+Token markets, DeFi liquidity, wallets, protocol revenue, on-chain behavior, risk, and exchange operations.
+
+- [Token Price Line](crypto/token-price-line/index.html) - Track token price, index level, or protocol metric over time.
+- [Liquidity Depth Chart](crypto/liquidity-depth-chart/index.html) - Visualize bid and ask liquidity around the current token price.
+- [Wallet Cohort Retention](crypto/wallet-cohort-retention/index.html) - Track active wallet retention by first transaction cohort.
+- [DeFi Flow Sankey](crypto/defi-flow-sankey/index.html) - Show value movement between wallets, pools, bridges, and protocols.
+- [Protocol Treemap](crypto/protocol-treemap/index.html) - Map TVL, fees, or volume by protocol or chain.
+- [Chain Heatmap](crypto/chain-heatmap/index.html) - Reveal transaction, gas, or fee intensity by chain and day.
+- [Portfolio Donut](crypto/portfolio-donut/index.html) - Summarize wallet, fund, or treasury allocation by asset.
+- [Yield Risk Scatter](crypto/yield-risk-scatter/index.html) - Position pools by yield and risk or impermanent loss.
+- [Liquidation Waterfall](crypto/liquidation-waterfall/index.html) - Explain collateral movement from price shock, margin call, liquidation, fees, and residual.
+- [Protocol Stress Test](crypto/protocol-stress-test/index.html) - Compare losses under depeg, oracle failure, bridge exploit, and liquidity drain scenarios.
+
 ## Maintenance
 
 Maintainers should edit `catalog.json`, run

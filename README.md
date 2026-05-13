@@ -49,6 +49,7 @@ make ci
 - Manufacturing: 10 chart examples.
 - Energy: 10 chart examples.
 - Retail: 10 chart examples.
+- Crypto: 10 chart examples.
 
 ## License
 
