@@ -137,16 +137,16 @@ Community growth, engagement, creator networks, moderation, content propagation,
 
 Streaming, music, film, live events, audience behavior, releases, and catalog performance.
 
-- [Viewership Line](entertainment/viewership-line.html) - Track streams, tickets, or watch time around release windows.
-- [Catalog Share Donut](entertainment/catalog-share-donut.html) - Summarize watch time or revenue by genre, studio, or catalog segment.
-- [Box Office Stacked Bar](entertainment/box-office-stacked-bar.html) - Break revenue by market, format, or week.
-- [Audience Retention Cohort](entertainment/audience-retention-cohort.html) - Track return viewing or subscriber retention by content cohort.
-- [Release Calendar Heatmap](entertainment/release-calendar-heatmap.html) - Show release density, campaigns, or audience activity by day.
-- [Genre Momentum Heatmap](entertainment/genre-momentum-heatmap.html) - Reveal genre demand shifts across weeks or platforms.
-- [Playlist Flow Sankey](entertainment/playlist-flow-sankey.html) - Show listener or viewer movement between playlists, shows, and channels.
-- [Talent Score Radar](entertainment/talent-score-radar.html) - Score an artist or title across reach, loyalty, monetization, and brand fit.
-- [Campaign Funnel](entertainment/campaign-funnel.html) - Track awareness, trailer views, follows, intent, and purchase.
-- [Title Portfolio Treemap](entertainment/title-portfolio-treemap.html) - Map catalog performance by title, franchise, or genre.
+- [Viewership Line](entertainment/viewership-line.html) - Track episode watch time before and after trailer, premiere, and finale drops.
+- [Catalog Share Donut](entertainment/catalog-share-donut.html) - Summarize where a featured title's watch starts come from across discovery surfaces.
+- [Box Office Stacked Bar](entertainment/box-office-stacked-bar.html) - Break weekly title demand by search, playlist, and recommendation channels after launch.
+- [Audience Retention Cohort](entertainment/audience-retention-cohort.html) - Track how catalog, long-tail, prelaunch, launch, and weekly cohorts retain viewers over time.
+- [Release Calendar Heatmap](entertainment/release-calendar-heatmap.html) - Show when catalog refreshes, long-tail pushes, trailers, premieres, and week-one activity collide.
+- [Genre Momentum Heatmap](entertainment/genre-momentum-heatmap.html) - Reveal genre demand shifts as a release campaign changes audience attention week by week.
+- [Playlist Flow Sankey](entertainment/playlist-flow-sankey.html) - Show how audiences move from owned channels and ticketing into merch, trailers, shows, and playlists.
+- [Talent Score Radar](entertainment/talent-score-radar.html) - Score talent or titles before greenlight, booking, sponsorship, or cross-promotion decisions.
+- [Campaign Funnel](entertainment/campaign-funnel.html) - Track a title campaign from audience follow-through to trailer exposure, intent, and purchase.
+- [Title Portfolio Treemap](entertainment/title-portfolio-treemap.html) - Map catalog portfolio weight by genre to find hit concentration and underused long-tail shelves.
 
 ### Gaming
 
