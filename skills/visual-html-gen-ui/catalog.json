@@ -926,6 +926,123 @@
           ]
         }
       ]
+    },
+    {
+      "slug": "entertainment",
+      "name": "Entertainment",
+      "summary": "Streaming, music, film, live events, audience behavior, releases, and catalog performance.",
+      "charts": [
+        {
+          "slug": "viewership-line",
+          "title": "Viewership Line",
+          "type": "line",
+          "purpose": "Track streams, tickets, or watch time around release windows.",
+          "signals": [
+            "demand",
+            "release lift",
+            "decay"
+          ]
+        },
+        {
+          "slug": "catalog-share-donut",
+          "title": "Catalog Share Donut",
+          "type": "donut",
+          "purpose": "Summarize watch time or revenue by genre, studio, or catalog segment.",
+          "signals": [
+            "share",
+            "balance",
+            "concentration"
+          ]
+        },
+        {
+          "slug": "box-office-stacked-bar",
+          "title": "Box Office Stacked Bar",
+          "type": "stacked-bar",
+          "purpose": "Break revenue by market, format, or week.",
+          "signals": [
+            "market mix",
+            "scale",
+            "windowing"
+          ]
+        },
+        {
+          "slug": "audience-retention-cohort",
+          "title": "Audience Retention Cohort",
+          "type": "cohort",
+          "purpose": "Track return viewing or subscriber retention by content cohort.",
+          "signals": [
+            "retention",
+            "stickiness",
+            "content quality"
+          ]
+        },
+        {
+          "slug": "release-calendar-heatmap",
+          "title": "Release Calendar Heatmap",
+          "type": "calendar",
+          "purpose": "Show release density, campaigns, or audience activity by day.",
+          "signals": [
+            "calendar pressure",
+            "clusters",
+            "seasonality"
+          ]
+        },
+        {
+          "slug": "genre-momentum-heatmap",
+          "title": "Genre Momentum Heatmap",
+          "type": "heatmap",
+          "purpose": "Reveal genre demand shifts across weeks or platforms.",
+          "signals": [
+            "momentum",
+            "taste shift",
+            "programming opportunity"
+          ]
+        },
+        {
+          "slug": "playlist-flow-sankey",
+          "title": "Playlist Flow Sankey",
+          "type": "sankey",
+          "purpose": "Show listener or viewer movement between playlists, shows, and channels.",
+          "signals": [
+            "discovery path",
+            "handoff",
+            "drop-off"
+          ]
+        },
+        {
+          "slug": "talent-score-radar",
+          "title": "Talent Score Radar",
+          "type": "radar",
+          "purpose": "Score an artist or title across reach, loyalty, monetization, and brand fit.",
+          "signals": [
+            "profile",
+            "fit",
+            "weak dimension"
+          ]
+        },
+        {
+          "slug": "campaign-funnel",
+          "title": "Campaign Funnel",
+          "type": "funnel",
+          "purpose": "Track awareness, trailer views, follows, intent, and purchase.",
+          "signals": [
+            "awareness",
+            "conversion",
+            "campaign quality"
+          ]
+        },
+        {
+          "slug": "title-portfolio-treemap",
+          "title": "Title Portfolio Treemap",
+          "type": "treemap",
+          "purpose": "Map catalog performance by title, franchise, or genre.",
+          "signals": [
+            "portfolio weight",
+            "hit concentration",
+            "long tail"
+          ]
+        }
+      ]
     }
   ]
 }

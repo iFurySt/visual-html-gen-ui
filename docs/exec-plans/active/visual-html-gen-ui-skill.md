@@ -83,7 +83,7 @@ without loading every example into context.
 - [x] Health
 - [x] Ecommerce
 - [x] Social
-- [ ] Entertainment
+- [x] Entertainment
 - [ ] Gaming
 - [ ] Content Creation
 - [ ] Enterprise Services

@@ -133,6 +133,21 @@ Community growth, engagement, creator networks, moderation, content propagation,
 - [Moderation Waterfall](social/moderation-waterfall/index.html) - Explain report queue changes from inflow, automation, review, appeals, and backlog.
 - [Community Health Radar](social/community-health-radar/index.html) - Score safety, activity, diversity, creator supply, and retention.
 
+### Entertainment
+
+Streaming, music, film, live events, audience behavior, releases, and catalog performance.
+
+- [Viewership Line](entertainment/viewership-line/index.html) - Track streams, tickets, or watch time around release windows.
+- [Catalog Share Donut](entertainment/catalog-share-donut/index.html) - Summarize watch time or revenue by genre, studio, or catalog segment.
+- [Box Office Stacked Bar](entertainment/box-office-stacked-bar/index.html) - Break revenue by market, format, or week.
+- [Audience Retention Cohort](entertainment/audience-retention-cohort/index.html) - Track return viewing or subscriber retention by content cohort.
+- [Release Calendar Heatmap](entertainment/release-calendar-heatmap/index.html) - Show release density, campaigns, or audience activity by day.
+- [Genre Momentum Heatmap](entertainment/genre-momentum-heatmap/index.html) - Reveal genre demand shifts across weeks or platforms.
+- [Playlist Flow Sankey](entertainment/playlist-flow-sankey/index.html) - Show listener or viewer movement between playlists, shows, and channels.
+- [Talent Score Radar](entertainment/talent-score-radar/index.html) - Score an artist or title across reach, loyalty, monetization, and brand fit.
+- [Campaign Funnel](entertainment/campaign-funnel/index.html) - Track awareness, trailer views, follows, intent, and purchase.
+- [Title Portfolio Treemap](entertainment/title-portfolio-treemap/index.html) - Map catalog performance by title, franchise, or genre.
+
 ## Maintenance
 
 Maintainers should edit `catalog.json`, run
