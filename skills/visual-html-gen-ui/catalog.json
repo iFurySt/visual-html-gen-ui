@@ -1628,6 +1628,123 @@
           ]
         }
       ]
+    },
+    {
+      "slug": "real-estate",
+      "name": "Real Estate",
+      "summary": "Property valuation, leasing, occupancy, market supply, rent, cap rates, and asset operations.",
+      "charts": [
+        {
+          "slug": "price-index-line",
+          "title": "Price Index Line",
+          "type": "line",
+          "purpose": "Track property price, rent index, or cap-rate movement over time.",
+          "signals": [
+            "trend",
+            "cycle",
+            "turning point"
+          ]
+        },
+        {
+          "slug": "occupancy-area",
+          "title": "Occupancy Area",
+          "type": "area",
+          "purpose": "Emphasize leased area or occupancy scale through time.",
+          "signals": [
+            "occupancy",
+            "scale",
+            "vacancy risk"
+          ]
+        },
+        {
+          "slug": "lease-funnel",
+          "title": "Lease Funnel",
+          "type": "funnel",
+          "purpose": "Track prospects through inquiry, tour, offer, lease, and move-in.",
+          "signals": [
+            "conversion",
+            "leasing friction",
+            "pipeline"
+          ]
+        },
+        {
+          "slug": "portfolio-treemap",
+          "title": "Portfolio Treemap",
+          "type": "treemap",
+          "purpose": "Map NOI, value, or square footage by asset and submarket.",
+          "signals": [
+            "portfolio weight",
+            "concentration",
+            "asset mix"
+          ]
+        },
+        {
+          "slug": "market-heatmap",
+          "title": "Market Heatmap",
+          "type": "heatmap",
+          "purpose": "Show rent growth, vacancy, or absorption by market and property type.",
+          "signals": [
+            "hotspot",
+            "market strength",
+            "risk"
+          ]
+        },
+        {
+          "slug": "development-waterfall",
+          "title": "Development Waterfall",
+          "type": "waterfall",
+          "purpose": "Explain project return from land, construction, financing, lease-up, and exit.",
+          "signals": [
+            "return driver",
+            "cost risk",
+            "profitability"
+          ]
+        },
+        {
+          "slug": "tenant-cohort-retention",
+          "title": "Tenant Cohort Retention",
+          "type": "cohort",
+          "purpose": "Track tenant renewal and retention by lease-start cohort.",
+          "signals": [
+            "renewal",
+            "stickiness",
+            "cohort quality"
+          ]
+        },
+        {
+          "slug": "valuation-sensitivity-tornado",
+          "title": "Valuation Sensitivity Tornado",
+          "type": "tornado",
+          "purpose": "Rank cap rate, rent growth, vacancy, and financing assumptions by value impact.",
+          "signals": [
+            "sensitivity",
+            "valuation risk",
+            "key driver"
+          ]
+        },
+        {
+          "slug": "asset-score-radar",
+          "title": "Asset Score Radar",
+          "type": "radar",
+          "purpose": "Score a property by location, income, condition, tenant quality, and risk.",
+          "signals": [
+            "asset profile",
+            "balance",
+            "weak dimension"
+          ]
+        },
+        {
+          "slug": "cashflow-stress-test",
+          "title": "Cashflow Stress Test",
+          "type": "stress",
+          "purpose": "Compare cashflow under vacancy, rate shock, construction delay, and recession scenarios.",
+          "signals": [
+            "tail risk",
+            "coverage gap",
+            "capital need"
+          ]
+        }
+      ]
     }
   ]
 }

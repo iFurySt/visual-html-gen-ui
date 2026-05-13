@@ -39,6 +39,7 @@ make ci
 - Enterprise Services: 10 chart examples.
 - Cybersecurity: 10 chart examples.
 - AI Agent: 10 chart examples.
+- Real Estate: 10 chart examples.
 
 ## License
 

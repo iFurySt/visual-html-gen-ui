@@ -89,7 +89,7 @@ without loading every example into context.
 - [x] Enterprise Services
 - [x] Cybersecurity
 - [x] AI Agent
-- [ ] Real Estate
+- [x] Real Estate
 - [ ] HR
 - [ ] Mobility
 - [ ] Travel

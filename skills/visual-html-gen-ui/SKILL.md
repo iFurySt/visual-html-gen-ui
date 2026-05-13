@@ -223,6 +223,21 @@ Agent workflows, model performance, tool use, evaluation, cost, latency, safety,
 - [Token Waterfall](ai-agent/token-waterfall/index.html) - Explain token use from system context, retrieved docs, reasoning, tool output, and answer.
 - [Safety Stress Test](ai-agent/safety-stress-test/index.html) - Compare failure rates under normal, adversarial, long-context, and tool-error scenarios.
 
+### Real Estate
+
+Property valuation, leasing, occupancy, market supply, rent, cap rates, and asset operations.
+
+- [Price Index Line](real-estate/price-index-line/index.html) - Track property price, rent index, or cap-rate movement over time.
+- [Occupancy Area](real-estate/occupancy-area/index.html) - Emphasize leased area or occupancy scale through time.
+- [Lease Funnel](real-estate/lease-funnel/index.html) - Track prospects through inquiry, tour, offer, lease, and move-in.
+- [Portfolio Treemap](real-estate/portfolio-treemap/index.html) - Map NOI, value, or square footage by asset and submarket.
+- [Market Heatmap](real-estate/market-heatmap/index.html) - Show rent growth, vacancy, or absorption by market and property type.
+- [Development Waterfall](real-estate/development-waterfall/index.html) - Explain project return from land, construction, financing, lease-up, and exit.
+- [Tenant Cohort Retention](real-estate/tenant-cohort-retention/index.html) - Track tenant renewal and retention by lease-start cohort.
+- [Valuation Sensitivity Tornado](real-estate/valuation-sensitivity-tornado/index.html) - Rank cap rate, rent growth, vacancy, and financing assumptions by value impact.
+- [Asset Score Radar](real-estate/asset-score-radar/index.html) - Score a property by location, income, condition, tenant quality, and risk.
+- [Cashflow Stress Test](real-estate/cashflow-stress-test/index.html) - Compare cashflow under vacancy, rate shock, construction delay, and recession scenarios.
+
 ## Maintenance
 
 Maintainers should edit `catalog.json`, run
