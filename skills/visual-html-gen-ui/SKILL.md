@@ -182,16 +182,16 @@ Creator workflow, publishing cadence, audience growth, monetization, editorial p
 
 B2B sales, delivery, support, customer success, implementation, and account health analytics.
 
-- [ARR Line](enterprise-services/arr-line.html) - Track recurring revenue or contracted backlog over time.
-- [Sales Pipeline Funnel](enterprise-services/sales-pipeline-funnel.html) - Summarize leads, qualified opportunities, proposals, negotiation, and closed won.
-- [Implementation Sankey](enterprise-services/implementation-sankey.html) - Show customer movement across kickoff, setup, integration, training, and go-live.
-- [Ticket Heatmap](enterprise-services/ticket-heatmap.html) - Reveal support load by severity and product area.
-- [Account Health Radar](enterprise-services/account-health-radar.html) - Score customers across adoption, support, expansion, sentiment, and renewal risk.
-- [Service Margin Waterfall](enterprise-services/service-margin-waterfall.html) - Explain gross margin from contract value through labor, travel, support, and overrun.
-- [Customer Retention Cohort](enterprise-services/customer-retention-cohort.html) - Track logo or revenue retention by contract cohort.
-- [SLA Calendar](enterprise-services/sla-calendar.html) - Show SLA breaches or incident pressure by day.
-- [Account Portfolio Treemap](enterprise-services/portfolio-treemap.html) - Map revenue or effort by account, segment, or service line.
-- [Sales Efficiency KPI](enterprise-services/sales-efficiency-kpi.html) - Compare CAC, payback, expansion, win rate, and burn efficiency.
+- [ARR Line](enterprise-services/arr-line.html) - Track ARR movement from new logos, expansion, renewals, churn, and contracted backlog across quarters.
+- [Sales Pipeline Funnel](enterprise-services/sales-pipeline-funnel.html) - Track enterprise opportunities from lead through qualification, proposal, procurement, and closed won.
+- [Implementation Sankey](enterprise-services/implementation-sankey.html) - Show customers moving from kickoff through setup, integration, training, go-live, and support handoff.
+- [Ticket Heatmap](enterprise-services/ticket-heatmap.html) - Reveal support load by severity, product area, and daypart for customer escalations.
+- [Account Health Radar](enterprise-services/account-health-radar.html) - Score renewal accounts across adoption, support burden, expansion readiness, sentiment, and risk.
+- [Service Margin Waterfall](enterprise-services/service-margin-waterfall.html) - Explain services gross margin from contract value through labor, travel, support, and delivery overrun.
+- [Customer Retention Cohort](enterprise-services/customer-retention-cohort.html) - Track logo and revenue retention by contract cohort, renewal quarter, and onboarding path.
+- [SLA Calendar](enterprise-services/sla-calendar.html) - Show SLA breaches, incident pressure, and response-risk clusters by day.
+- [Account Portfolio Treemap](enterprise-services/portfolio-treemap.html) - Map revenue and delivery effort by account segment or service line to spot concentration.
+- [Sales Efficiency KPI](enterprise-services/sales-efficiency-kpi.html) - Compare CAC, payback, expansion, win rate, and sales-capacity efficiency for enterprise motions.
 
 ### Cybersecurity
 
