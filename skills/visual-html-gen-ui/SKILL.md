@@ -343,6 +343,21 @@ Production, quality, supply chain, maintenance, throughput, yield, and factory o
 - [Cost Waterfall](manufacturing/cost-waterfall/index.html) - Explain cost movement from materials, labor, energy, rework, and logistics.
 - [Factory Risk Radar](manufacturing/factory-risk-radar/index.html) - Score a plant across safety, quality, capacity, maintenance, supply, and cost.
 
+### Energy
+
+Generation, demand, grid operations, trading, storage, renewables, emissions, and asset performance.
+
+- [Load Line](energy/load-line/index.html) - Track power demand, generation, or price over time.
+- [Generation Stack Area](energy/generation-stack-area/index.html) - Emphasize generation mix or supply stack over time.
+- [Fuel Mix Donut](energy/fuel-mix-donut/index.html) - Summarize generation or consumption by energy source.
+- [Grid Heatmap](energy/grid-heatmap/index.html) - Map load, congestion, or outage risk by region and hour.
+- [Dispatch Sankey](energy/dispatch-sankey/index.html) - Show energy flow from generation sources to grid, storage, and load.
+- [Asset Treemap](energy/asset-treemap/index.html) - Map capacity, revenue, or emissions by asset.
+- [Price Risk Scatter](energy/price-risk-scatter/index.html) - Position markets or assets by price volatility and margin.
+- [Emissions Waterfall](energy/emissions-waterfall/index.html) - Explain emissions movement from demand, efficiency, renewables, offsets, and fuel mix.
+- [Project Sensitivity Tornado](energy/project-sensitivity-tornado/index.html) - Rank price, capex, capacity factor, and financing assumptions by project return effect.
+- [Supply Stress Test](energy/supply-stress-test/index.html) - Compare reserve margin under outage, heat wave, fuel shock, and demand spike scenarios.
+
 ## Maintenance
 
 Maintainers should edit `catalog.json`, run

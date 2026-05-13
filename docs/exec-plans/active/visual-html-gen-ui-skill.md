@@ -97,7 +97,7 @@ without loading every example into context.
 - [x] Legal
 - [x] Government
 - [x] Manufacturing
-- [ ] Energy
+- [x] Energy
 - [ ] Retail
 - [ ] Crypto
 - [ ] Fashion

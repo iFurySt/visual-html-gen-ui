@@ -2564,6 +2564,123 @@
           ]
         }
       ]
+    },
+    {
+      "slug": "energy",
+      "name": "Energy",
+      "summary": "Generation, demand, grid operations, trading, storage, renewables, emissions, and asset performance.",
+      "charts": [
+        {
+          "slug": "load-line",
+          "title": "Load Line",
+          "type": "line",
+          "purpose": "Track power demand, generation, or price over time.",
+          "signals": [
+            "demand",
+            "peak",
+            "trend"
+          ]
+        },
+        {
+          "slug": "generation-stack-area",
+          "title": "Generation Stack Area",
+          "type": "area",
+          "purpose": "Emphasize generation mix or supply stack over time.",
+          "signals": [
+            "mix",
+            "scale",
+            "transition"
+          ]
+        },
+        {
+          "slug": "fuel-mix-donut",
+          "title": "Fuel Mix Donut",
+          "type": "donut",
+          "purpose": "Summarize generation or consumption by energy source.",
+          "signals": [
+            "share",
+            "balance",
+            "transition risk"
+          ]
+        },
+        {
+          "slug": "grid-heatmap",
+          "title": "Grid Heatmap",
+          "type": "heatmap",
+          "purpose": "Map load, congestion, or outage risk by region and hour.",
+          "signals": [
+            "hotspot",
+            "congestion",
+            "risk"
+          ]
+        },
+        {
+          "slug": "dispatch-sankey",
+          "title": "Dispatch Sankey",
+          "type": "sankey",
+          "purpose": "Show energy flow from generation sources to grid, storage, and load.",
+          "signals": [
+            "flow",
+            "storage path",
+            "loss"
+          ]
+        },
+        {
+          "slug": "asset-treemap",
+          "title": "Asset Treemap",
+          "type": "treemap",
+          "purpose": "Map capacity, revenue, or emissions by asset.",
+          "signals": [
+            "asset weight",
+            "concentration",
+            "portfolio"
+          ]
+        },
+        {
+          "slug": "price-risk-scatter",
+          "title": "Price Risk Scatter",
+          "type": "scatter",
+          "purpose": "Position markets or assets by price volatility and margin.",
+          "signals": [
+            "volatility",
+            "return",
+            "outlier"
+          ]
+        },
+        {
+          "slug": "emissions-waterfall",
+          "title": "Emissions Waterfall",
+          "type": "waterfall",
+          "purpose": "Explain emissions movement from demand, efficiency, renewables, offsets, and fuel mix.",
+          "signals": [
+            "emissions driver",
+            "abatement",
+            "gap"
+          ]
+        },
+        {
+          "slug": "project-sensitivity-tornado",
+          "title": "Project Sensitivity Tornado",
+          "type": "tornado",
+          "purpose": "Rank price, capex, capacity factor, and financing assumptions by project return effect.",
+          "signals": [
+            "sensitivity",
+            "project risk",
+            "driver"
+          ]
+        },
+        {
+          "slug": "supply-stress-test",
+          "title": "Supply Stress Test",
+          "type": "stress",
+          "purpose": "Compare reserve margin under outage, heat wave, fuel shock, and demand spike scenarios.",
+          "signals": [
+            "resilience",
+            "capacity gap",
+            "tail event"
+          ]
+        }
+      ]
     }
   ]
 }

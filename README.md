@@ -47,6 +47,7 @@ make ci
 - Legal: 10 chart examples.
 - Government: 10 chart examples.
 - Manufacturing: 10 chart examples.
+- Energy: 10 chart examples.
 
 ## License
 
