@@ -575,6 +575,123 @@
           ]
         }
       ]
+    },
+    {
+      "slug": "health",
+      "name": "Health",
+      "summary": "Patient monitoring, care operations, population health, appointment flow, and clinical quality views.",
+      "charts": [
+        {
+          "slug": "vitals-trend-line",
+          "title": "Vitals Trend Line",
+          "type": "line",
+          "purpose": "Track a patient metric such as glucose, heart rate, or blood pressure over time.",
+          "signals": [
+            "trend",
+            "threshold",
+            "episode"
+          ]
+        },
+        {
+          "slug": "symptom-severity-area",
+          "title": "Symptom Severity Area",
+          "type": "area",
+          "purpose": "Emphasize cumulative symptom burden or recovery progress.",
+          "signals": [
+            "burden",
+            "recovery",
+            "flare-up"
+          ]
+        },
+        {
+          "slug": "patient-flow-funnel",
+          "title": "Patient Flow Funnel",
+          "type": "funnel",
+          "purpose": "Summarize intake, triage, consult, treatment, and discharge conversion.",
+          "signals": [
+            "flow",
+            "drop-off",
+            "throughput"
+          ]
+        },
+        {
+          "slug": "appointment-calendar",
+          "title": "Appointment Calendar",
+          "type": "calendar",
+          "purpose": "Show appointment density, no-shows, or follow-up adherence by day.",
+          "signals": [
+            "load",
+            "no-show cluster",
+            "adherence"
+          ]
+        },
+        {
+          "slug": "ward-utilization-heatmap",
+          "title": "Ward Utilization Heatmap",
+          "type": "heatmap",
+          "purpose": "Reveal bed, room, or clinician utilization by time block.",
+          "signals": [
+            "utilization",
+            "capacity",
+            "peak hour"
+          ]
+        },
+        {
+          "slug": "care-pathway-sankey",
+          "title": "Care Pathway Sankey",
+          "type": "sankey",
+          "purpose": "Visualize patient movement across referral, diagnosis, treatment, and follow-up.",
+          "signals": [
+            "pathway",
+            "handoff",
+            "leakage"
+          ]
+        },
+        {
+          "slug": "population-risk-scatter",
+          "title": "Population Risk Scatter",
+          "type": "scatter",
+          "purpose": "Position patient groups by risk score and cost or complexity.",
+          "signals": [
+            "risk segment",
+            "outlier",
+            "priority"
+          ]
+        },
+        {
+          "slug": "treatment-response-cohort",
+          "title": "Treatment Response Cohort",
+          "type": "cohort",
+          "purpose": "Track response or adherence cohorts over follow-up periods.",
+          "signals": [
+            "response",
+            "persistence",
+            "cohort quality"
+          ]
+        },
+        {
+          "slug": "clinical-quality-radar",
+          "title": "Clinical Quality Radar",
+          "type": "radar",
+          "purpose": "Score a program across safety, access, experience, efficacy, and cost.",
+          "signals": [
+            "quality profile",
+            "tradeoff",
+            "weak dimension"
+          ]
+        },
+        {
+          "slug": "readmission-stress-test",
+          "title": "Readmission Stress Test",
+          "type": "stress",
+          "purpose": "Compare expected readmission or complication losses under stress scenarios.",
+          "signals": [
+            "tail risk",
+            "quality gap",
+            "capacity need"
+          ]
+        }
+      ]
     }
   ]
 }

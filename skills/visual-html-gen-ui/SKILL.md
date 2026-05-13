@@ -88,6 +88,21 @@ Learning progress, classroom operations, curriculum quality, assessment, and stu
 - [Rubric Score Radar](education/rubric-score-radar/index.html) - Summarize student or class performance across rubric dimensions.
 - [Assessment Stress Test](education/assessment-stress-test/index.html) - Compare performance under standard, timed, and advanced assessment conditions.
 
+### Health
+
+Patient monitoring, care operations, population health, appointment flow, and clinical quality views.
+
+- [Vitals Trend Line](health/vitals-trend-line/index.html) - Track a patient metric such as glucose, heart rate, or blood pressure over time.
+- [Symptom Severity Area](health/symptom-severity-area/index.html) - Emphasize cumulative symptom burden or recovery progress.
+- [Patient Flow Funnel](health/patient-flow-funnel/index.html) - Summarize intake, triage, consult, treatment, and discharge conversion.
+- [Appointment Calendar](health/appointment-calendar/index.html) - Show appointment density, no-shows, or follow-up adherence by day.
+- [Ward Utilization Heatmap](health/ward-utilization-heatmap/index.html) - Reveal bed, room, or clinician utilization by time block.
+- [Care Pathway Sankey](health/care-pathway-sankey/index.html) - Visualize patient movement across referral, diagnosis, treatment, and follow-up.
+- [Population Risk Scatter](health/population-risk-scatter/index.html) - Position patient groups by risk score and cost or complexity.
+- [Treatment Response Cohort](health/treatment-response-cohort/index.html) - Track response or adherence cohorts over follow-up periods.
+- [Clinical Quality Radar](health/clinical-quality-radar/index.html) - Score a program across safety, access, experience, efficacy, and cost.
+- [Readmission Stress Test](health/readmission-stress-test/index.html) - Compare expected readmission or complication losses under stress scenarios.
+
 ## Maintenance
 
 Maintainers should edit `catalog.json`, run

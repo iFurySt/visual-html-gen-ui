@@ -80,7 +80,7 @@ without loading every example into context.
 - [x] Finance
 - [x] Office
 - [x] Education
-- [ ] Health
+- [x] Health
 - [ ] Ecommerce
 - [ ] Social
 - [ ] Entertainment
