@@ -73,6 +73,21 @@ Workplace productivity, meetings, task execution, communication, approvals, and 
 - [Knowledge Base Treemap](office/knowledge-base-treemap/index.html) - Map documentation coverage by department or topic area.
 - [Workload Risk Radar](office/workload-risk-radar/index.html) - Score teams across urgency, ambiguity, dependency, load, and morale risk.
 
+### Education
+
+Learning progress, classroom operations, curriculum quality, assessment, and student support analytics.
+
+- [Learning Progress Line](education/learning-progress-line/index.html) - Show mastery or completion growth across a semester.
+- [Grade Distribution Bars](education/grade-distribution-bars/index.html) - Compare score bands across classes, sections, or terms.
+- [Mastery Heatmap](education/mastery-heatmap/index.html) - Map skill mastery by module and learner group.
+- [Attendance Calendar](education/attendance-calendar/index.html) - Reveal daily attendance, absence, or participation intensity.
+- [Cohort Retention](education/cohort-retention/index.html) - Track student retention or course completion by intake cohort.
+- [Curriculum Coverage Treemap](education/curriculum-coverage-treemap/index.html) - Show instructional time or content weight by curriculum area.
+- [Intervention Funnel](education/intervention-funnel/index.html) - Track students from flagged risk to outreach, support, and recovery.
+- [Learning Path Sankey](education/learning-path-sankey/index.html) - Show how learners move across tracks, modules, and outcomes.
+- [Rubric Score Radar](education/rubric-score-radar/index.html) - Summarize student or class performance across rubric dimensions.
+- [Assessment Stress Test](education/assessment-stress-test/index.html) - Compare performance under standard, timed, and advanced assessment conditions.
+
 ## Maintenance
 
 Maintainers should edit `catalog.json`, run

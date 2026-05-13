@@ -29,6 +29,7 @@ make ci
 
 - Finance: 30 chart examples.
 - Office: 10 chart examples.
+- Education: 10 chart examples.
 
 ## License
 

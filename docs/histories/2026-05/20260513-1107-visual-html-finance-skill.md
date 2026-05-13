@@ -35,6 +35,7 @@ low-saturation clay/olive/oat/slate colors.
 
 - Finance
 - Office
+- Education
 
 ### Files Modified
 

@@ -79,7 +79,7 @@ without loading every example into context.
 
 - [x] Finance
 - [x] Office
-- [ ] Education
+- [x] Education
 - [ ] Health
 - [ ] Ecommerce
 - [ ] Social

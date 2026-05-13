@@ -458,6 +458,123 @@
           ]
         }
       ]
+    },
+    {
+      "slug": "education",
+      "name": "Education",
+      "summary": "Learning progress, classroom operations, curriculum quality, assessment, and student support analytics.",
+      "charts": [
+        {
+          "slug": "learning-progress-line",
+          "title": "Learning Progress Line",
+          "type": "line",
+          "purpose": "Show mastery or completion growth across a semester.",
+          "signals": [
+            "progress",
+            "pace",
+            "plateau"
+          ]
+        },
+        {
+          "slug": "grade-distribution-bars",
+          "title": "Grade Distribution Bars",
+          "type": "grouped-bar",
+          "purpose": "Compare score bands across classes, sections, or terms.",
+          "signals": [
+            "distribution",
+            "comparison",
+            "achievement gap"
+          ]
+        },
+        {
+          "slug": "mastery-heatmap",
+          "title": "Mastery Heatmap",
+          "type": "heatmap",
+          "purpose": "Map skill mastery by module and learner group.",
+          "signals": [
+            "mastery",
+            "gaps",
+            "intervention target"
+          ]
+        },
+        {
+          "slug": "attendance-calendar",
+          "title": "Attendance Calendar",
+          "type": "calendar",
+          "purpose": "Reveal daily attendance, absence, or participation intensity.",
+          "signals": [
+            "attendance",
+            "clusters",
+            "risk days"
+          ]
+        },
+        {
+          "slug": "cohort-retention",
+          "title": "Cohort Retention",
+          "type": "cohort",
+          "purpose": "Track student retention or course completion by intake cohort.",
+          "signals": [
+            "retention",
+            "drop-off",
+            "cohort quality"
+          ]
+        },
+        {
+          "slug": "curriculum-coverage-treemap",
+          "title": "Curriculum Coverage Treemap",
+          "type": "treemap",
+          "purpose": "Show instructional time or content weight by curriculum area.",
+          "signals": [
+            "coverage",
+            "imbalance",
+            "priority"
+          ]
+        },
+        {
+          "slug": "intervention-funnel",
+          "title": "Intervention Funnel",
+          "type": "funnel",
+          "purpose": "Track students from flagged risk to outreach, support, and recovery.",
+          "signals": [
+            "conversion",
+            "support reach",
+            "bottleneck"
+          ]
+        },
+        {
+          "slug": "learning-path-sankey",
+          "title": "Learning Path Sankey",
+          "type": "sankey",
+          "purpose": "Show how learners move across tracks, modules, and outcomes.",
+          "signals": [
+            "pathway",
+            "switching",
+            "outcome mix"
+          ]
+        },
+        {
+          "slug": "rubric-score-radar",
+          "title": "Rubric Score Radar",
+          "type": "radar",
+          "purpose": "Summarize student or class performance across rubric dimensions.",
+          "signals": [
+            "profile",
+            "strength",
+            "weak dimension"
+          ]
+        },
+        {
+          "slug": "assessment-stress-test",
+          "title": "Assessment Stress Test",
+          "type": "stress",
+          "purpose": "Compare performance under standard, timed, and advanced assessment conditions.",
+          "signals": [
+            "pressure point",
+            "resilience",
+            "support need"
+          ]
+        }
+      ]
     }
   ]
 }
