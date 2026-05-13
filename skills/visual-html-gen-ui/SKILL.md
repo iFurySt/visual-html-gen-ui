@@ -403,6 +403,21 @@ Collections, merchandising, trend signals, inventory, brand performance, runway,
 - [Markdown Waterfall](fashion/markdown-waterfall/index.html) - Explain margin movement from full price through markdown, returns, and inventory cost.
 - [Style Score Radar](fashion/style-score-radar/index.html) - Score a look across trend, fit, margin, availability, and brand fit.
 
+### Sports
+
+Team performance, player development, game operations, fan engagement, training, and commercial sports metrics.
+
+- [Performance Line](sports/performance-line/index.html) - Track wins, points, pace, or rating across games and weeks.
+- [Player Usage Stacked Bar](sports/player-usage-stacked-bar/index.html) - Break minutes, touches, or possessions by player or role.
+- [Shot Heatmap](sports/shot-heatmap/index.html) - Map shot quality, attempts, or scoring zones.
+- [Training Calendar](sports/training-calendar/index.html) - Reveal training load, recovery, or match congestion by day.
+- [Fan Funnel](sports/fan-funnel/index.html) - Track fans from reach to engagement, ticket intent, purchase, and loyalty.
+- [Roster Treemap](sports/roster-treemap/index.html) - Map salary, minutes, or contribution by player group.
+- [Injury Risk Scatter](sports/injury-risk-scatter/index.html) - Position players by workload and injury risk or fatigue score.
+- [Season Ticket Cohort](sports/season-ticket-cohort/index.html) - Track renewal or attendance by buyer cohort.
+- [Match Flow Sankey](sports/match-flow-sankey/index.html) - Show possession or play flow between zones and outcomes.
+- [Athlete Score Radar](sports/athlete-score-radar/index.html) - Score an athlete across skill, speed, endurance, decision, and availability.
+
 ## Maintenance
 
 Maintainers should edit `catalog.json`, run

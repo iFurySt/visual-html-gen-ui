@@ -3032,6 +3032,123 @@
           ]
         }
       ]
+    },
+    {
+      "slug": "sports",
+      "name": "Sports",
+      "summary": "Team performance, player development, game operations, fan engagement, training, and commercial sports metrics.",
+      "charts": [
+        {
+          "slug": "performance-line",
+          "title": "Performance Line",
+          "type": "line",
+          "purpose": "Track wins, points, pace, or rating across games and weeks.",
+          "signals": [
+            "form",
+            "streak",
+            "turning point"
+          ]
+        },
+        {
+          "slug": "player-usage-stacked-bar",
+          "title": "Player Usage Stacked Bar",
+          "type": "stacked-bar",
+          "purpose": "Break minutes, touches, or possessions by player or role.",
+          "signals": [
+            "usage mix",
+            "rotation",
+            "load"
+          ]
+        },
+        {
+          "slug": "shot-heatmap",
+          "title": "Shot Heatmap",
+          "type": "heatmap",
+          "purpose": "Map shot quality, attempts, or scoring zones.",
+          "signals": [
+            "hotspot",
+            "efficiency",
+            "coverage"
+          ]
+        },
+        {
+          "slug": "training-calendar",
+          "title": "Training Calendar",
+          "type": "calendar",
+          "purpose": "Reveal training load, recovery, or match congestion by day.",
+          "signals": [
+            "load",
+            "recovery",
+            "risk period"
+          ]
+        },
+        {
+          "slug": "fan-funnel",
+          "title": "Fan Funnel",
+          "type": "funnel",
+          "purpose": "Track fans from reach to engagement, ticket intent, purchase, and loyalty.",
+          "signals": [
+            "conversion",
+            "engagement",
+            "commercial quality"
+          ]
+        },
+        {
+          "slug": "roster-treemap",
+          "title": "Roster Treemap",
+          "type": "treemap",
+          "purpose": "Map salary, minutes, or contribution by player group.",
+          "signals": [
+            "roster weight",
+            "concentration",
+            "value"
+          ]
+        },
+        {
+          "slug": "injury-risk-scatter",
+          "title": "Injury Risk Scatter",
+          "type": "scatter",
+          "purpose": "Position players by workload and injury risk or fatigue score.",
+          "signals": [
+            "risk",
+            "outlier",
+            "intervention"
+          ]
+        },
+        {
+          "slug": "season-ticket-cohort",
+          "title": "Season Ticket Cohort",
+          "type": "cohort",
+          "purpose": "Track renewal or attendance by buyer cohort.",
+          "signals": [
+            "retention",
+            "loyalty",
+            "cohort quality"
+          ]
+        },
+        {
+          "slug": "match-flow-sankey",
+          "title": "Match Flow Sankey",
+          "type": "sankey",
+          "purpose": "Show possession or play flow between zones and outcomes.",
+          "signals": [
+            "play path",
+            "transition",
+            "conversion"
+          ]
+        },
+        {
+          "slug": "athlete-score-radar",
+          "title": "Athlete Score Radar",
+          "type": "radar",
+          "purpose": "Score an athlete across skill, speed, endurance, decision, and availability.",
+          "signals": [
+            "profile",
+            "strength",
+            "weak dimension"
+          ]
+        }
+      ]
     }
   ]
 }

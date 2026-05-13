@@ -101,7 +101,7 @@ without loading every example into context.
 - [x] Retail
 - [x] Crypto
 - [x] Fashion
-- [ ] Sports
+- [x] Sports
 - [ ] Pets
 
 ## Decision Log

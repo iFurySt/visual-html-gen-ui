@@ -51,6 +51,7 @@ make ci
 - Retail: 10 chart examples.
 - Crypto: 10 chart examples.
 - Fashion: 10 chart examples.
+- Sports: 10 chart examples.
 
 ## License
 
