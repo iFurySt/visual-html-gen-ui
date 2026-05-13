@@ -14,6 +14,9 @@ globally so agents can review, extend, validate, and commit it in small slices.
 - `skills/visual-html-gen-ui/<domain>/<chart>.html`: generated,
   standalone chart examples.
 - `skills/visual-html-gen-ui/scripts/`: generation and validation utilities.
+- `index.html`: generated GitHub Pages gallery, grouped by domain.
+- `scripts/build-gallery.py`: root gallery generator.
+- `scripts/validate-gallery.py`: gallery link and structure validator.
 - `docs/`: collaboration guides, execution plans, histories, and quality notes.
 
 ## Boundary Rules
@@ -31,6 +34,9 @@ globally so agents can review, extend, validate, and commit it in small slices.
 
 1. Maintainer edits `skills/visual-html-gen-ui/catalog.json`.
 2. `scripts/build_charts.py` generates `SKILL.md` and every chart HTML file.
-3. `scripts/validate_skill.py` checks frontmatter, catalog uniqueness, chart
+3. `scripts/build-gallery.py` generates the GitHub Pages `index.html` gallery.
+4. `scripts/validate_skill.py` checks frontmatter, catalog uniqueness, chart
    files, links, standalone HTML shape, and title coverage.
-4. `make ci` runs repository-level checks, including skill validation.
+5. `scripts/validate-gallery.py` checks gallery links and domain sections.
+6. `make ci` runs repository-level checks, including skill and gallery
+   validation.

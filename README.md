@@ -10,13 +10,18 @@ and works as a table of contents. Agents should open only the domain/chart
 example they need, then adapt that standalone HTML file into the target
 project.
 
+The public gallery is generated at the repository root as `index.html` for
+GitHub Pages.
+
 ## Quick Start
 
-Regenerate and validate the skill after editing the catalog:
+Regenerate and validate the skill and gallery after editing the catalog:
 
 ```sh
 python3 skills/visual-html-gen-ui/scripts/build_charts.py
+python3 scripts/build-gallery.py
 python3 skills/visual-html-gen-ui/scripts/validate_skill.py
+python3 scripts/validate-gallery.py
 ```
 
 Run repository checks:
@@ -24,6 +29,12 @@ Run repository checks:
 ```sh
 make ci
 ```
+
+## Gallery
+
+- GitHub Pages: <https://ifuryst.com/visual-html-gen-ui/>
+- Source: `index.html`
+- Generator: `scripts/build-gallery.py`
 
 ## Current Catalog
 

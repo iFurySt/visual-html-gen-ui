@@ -1,7 +1,7 @@
 PROJECT ?=
 SLUG ?=
 
-.PHONY: init check-docs check-repo check-skill ci release-package new-history new-plan
+.PHONY: init check-docs check-repo check-skill check-gallery ci release-package new-history new-plan
 
 init:
 	@if [ -z "$(PROJECT)" ]; then echo "usage: make init PROJECT=my-project"; exit 1; fi
@@ -16,6 +16,9 @@ check-repo:
 
 check-skill:
 	python3 skills/visual-html-gen-ui/scripts/validate_skill.py
+
+check-gallery:
+	python3 scripts/validate-gallery.py
 
 ci:
 	./scripts/ci.sh
