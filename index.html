@@ -11968,8 +11968,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Vitals Trend Line example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Health Vitals Trend Line for patient vitals score&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative clinical index / health sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Remote blood pressure trend&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;home readings with care-team review threshold&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;health/vitals-trend-line&lt;/div&gt;
     &lt;/div&gt;
@@ -11992,14 +11992,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Track a patient metric such as glucose, heart rate, or blood pressure over time.&lt;/p&gt;
+        &lt;p&gt;Use this for chronic-care monitoring where the care team needs to see whether home readings are stabilizing or crossing an escalation threshold.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;trend&lt;/li&gt;
-&lt;li&gt;threshold&lt;/li&gt;
-&lt;li&gt;episode&lt;/li&gt;
+          &lt;li&gt;home readings&lt;/li&gt;
+&lt;li&gt;threshold breach&lt;/li&gt;
+&lt;li&gt;follow-up need&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -12010,8 +12010,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Vitals Trend Line</div>
-          <div class="desc">Track a patient metric such as glucose, heart rate, or blood pressure over time.</div>
-          <div class="signals"><span>vitals</span><span>trend</span><span>line</span></div>
+          <div class="desc">Track remote blood pressure readings against escalation thresholds between visits.</div>
+          <div class="signals"><span>home readings</span><span>threshold</span><span>follow-up</span></div>
           <div class="file"><span>health/vitals-trend-line.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -12187,8 +12187,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Symptom Severity Area example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Health cumulative care quality&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative clinical score / health sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Post-discharge symptom burden&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;daily patient-reported severity across the recovery window&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;health/symptom-severity-area&lt;/div&gt;
     &lt;/div&gt;
@@ -12211,14 +12211,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Emphasize cumulative symptom burden or recovery progress.&lt;/p&gt;
+        &lt;p&gt;Use this when nurses or care managers need to distinguish normal recovery from a worsening symptom pattern.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;burden&lt;/li&gt;
-&lt;li&gt;recovery&lt;/li&gt;
-&lt;li&gt;flare-up&lt;/li&gt;
+          &lt;li&gt;symptom burden&lt;/li&gt;
+&lt;li&gt;recovery curve&lt;/li&gt;
+&lt;li&gt;flare-up risk&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -12229,8 +12229,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Symptom Severity Area</div>
-          <div class="desc">Emphasize cumulative symptom burden or recovery progress.</div>
-          <div class="signals"><span>symptom</span><span>severity</span><span>area</span></div>
+          <div class="desc">Show symptom burden after discharge before readmission risk rises.</div>
+          <div class="signals"><span>symptoms</span><span>recovery</span><span>flare-up</span></div>
           <div class="file"><span>health/symptom-severity-area.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -12406,8 +12406,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Patient Flow Funnel example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Health discharge to treatment&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative clinical score / health sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Emergency department throughput funnel&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;patients progressing from arrival to discharge decision&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;health/patient-flow-funnel&lt;/div&gt;
     &lt;/div&gt;
@@ -12422,14 +12422,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Summarize intake, triage, consult, treatment, and discharge conversion.&lt;/p&gt;
+        &lt;p&gt;Use this when operations teams need to see where patients wait or drop from the expected care path.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;flow&lt;/li&gt;
-&lt;li&gt;drop-off&lt;/li&gt;
-&lt;li&gt;throughput&lt;/li&gt;
+          &lt;li&gt;triage flow&lt;/li&gt;
+&lt;li&gt;consult bottleneck&lt;/li&gt;
+&lt;li&gt;discharge throughput&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -12440,8 +12440,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Patient Flow Funnel</div>
-          <div class="desc">Summarize intake, triage, consult, treatment, and discharge conversion.</div>
-          <div class="signals"><span>patient</span><span>flow</span><span>funnel</span></div>
+          <div class="desc">Summarize emergency department flow from arrival to discharge decision.</div>
+          <div class="signals"><span>triage</span><span>consults</span><span>discharge</span></div>
           <div class="file"><span>health/patient-flow-funnel.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -12617,8 +12617,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Appointment Calendar example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Health appointment calendar example&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative clinical score / health sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Clinic no-show and follow-up calendar&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;daily appointment pressure with no-show and follow-up risk&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;health/appointment-calendar&lt;/div&gt;
     &lt;/div&gt;
@@ -12694,14 +12694,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Show appointment density, no-shows, or follow-up adherence by day.&lt;/p&gt;
+        &lt;p&gt;Use this to tune reminder outreach, staffing, and follow-up scheduling around predictable no-show patterns.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;load&lt;/li&gt;
+          &lt;li&gt;clinic load&lt;/li&gt;
 &lt;li&gt;no-show cluster&lt;/li&gt;
-&lt;li&gt;adherence&lt;/li&gt;
+&lt;li&gt;follow-up gap&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -12712,8 +12712,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Appointment Calendar</div>
-          <div class="desc">Show appointment density, no-shows, or follow-up adherence by day.</div>
-          <div class="signals"><span>appointment</span><span>calendar</span></div>
+          <div class="desc">Show clinic appointment load, no-show clusters, and follow-up gaps by day.</div>
+          <div class="signals"><span>clinic load</span><span>no-shows</span><span>follow-up</span></div>
           <div class="file"><span>health/appointment-calendar.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -12889,8 +12889,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Ward Utilization Heatmap example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Health ward utilization heatmap example&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative clinical score / health sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Ward capacity by shift block&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;bed occupancy and staffing pressure across ward shifts&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;health/ward-utilization-heatmap&lt;/div&gt;
     &lt;/div&gt;
@@ -12941,13 +12941,13 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Reveal bed, room, or clinician utilization by time block.&lt;/p&gt;
+        &lt;p&gt;Use this when charge nurses and bed managers need a compact view of where capacity is tight by hour and ward.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;utilization&lt;/li&gt;
-&lt;li&gt;capacity&lt;/li&gt;
+          &lt;li&gt;bed pressure&lt;/li&gt;
+&lt;li&gt;shift coverage&lt;/li&gt;
 &lt;li&gt;peak hour&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
@@ -12959,8 +12959,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Ward Utilization Heatmap</div>
-          <div class="desc">Reveal bed, room, or clinician utilization by time block.</div>
-          <div class="signals"><span>ward</span><span>utilization</span><span>heatmap</span></div>
+          <div class="desc">Reveal inpatient bed and nurse coverage pressure by ward and shift block.</div>
+          <div class="signals"><span>bed pressure</span><span>shifts</span><span>capacity</span></div>
           <div class="file"><span>health/ward-utilization-heatmap.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -13136,8 +13136,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Care Pathway Sankey example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Health flow between escalated and recovered&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative clinical score / health sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Referral-to-follow-up care pathway&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;patient movement across diagnosis, treatment, recovery, and escalation paths&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;health/care-pathway-sankey&lt;/div&gt;
     &lt;/div&gt;
@@ -13158,14 +13158,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Visualize patient movement across referral, diagnosis, treatment, and follow-up.&lt;/p&gt;
+        &lt;p&gt;Use this to find handoff leakage between referral, diagnosis, treatment, follow-up, and escalation workflows.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;pathway&lt;/li&gt;
-&lt;li&gt;handoff&lt;/li&gt;
-&lt;li&gt;leakage&lt;/li&gt;
+          &lt;li&gt;care pathway&lt;/li&gt;
+&lt;li&gt;handoff leakage&lt;/li&gt;
+&lt;li&gt;escalation path&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -13176,8 +13176,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Care Pathway Sankey</div>
-          <div class="desc">Visualize patient movement across referral, diagnosis, treatment, and follow-up.</div>
-          <div class="signals"><span>care</span><span>pathway</span><span>sankey</span></div>
+          <div class="desc">Visualize referral, diagnosis, treatment, follow-up, recovery, and escalation paths.</div>
+          <div class="signals"><span>care path</span><span>handoffs</span><span>escalation</span></div>
           <div class="file"><span>health/care-pathway-sankey.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -13353,8 +13353,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Population Risk Scatter example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Health population risk scatter example&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative clinical score / health sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Population risk vs care cost&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;cohort risk score, annualized cost, and panel size&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;health/population-risk-scatter&lt;/div&gt;
     &lt;/div&gt;
@@ -13374,14 +13374,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Position patient groups by risk score and cost or complexity.&lt;/p&gt;
+        &lt;p&gt;Use this when population health teams need to prioritize outreach for high-risk, high-cost cohorts.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
           &lt;li&gt;risk segment&lt;/li&gt;
-&lt;li&gt;outlier&lt;/li&gt;
-&lt;li&gt;priority&lt;/li&gt;
+&lt;li&gt;cost outlier&lt;/li&gt;
+&lt;li&gt;care priority&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -13392,8 +13392,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Population Risk Scatter</div>
-          <div class="desc">Position patient groups by risk score and cost or complexity.</div>
-          <div class="signals"><span>population</span><span>risk</span><span>scatter</span></div>
+          <div class="desc">Position patient cohorts by clinical risk, cost, and care-management priority.</div>
+          <div class="signals"><span>risk</span><span>cost</span><span>priority</span></div>
           <div class="file"><span>health/population-risk-scatter.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -13569,8 +13569,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Treatment Response Cohort example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Health treatment response cohort example&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative clinical score / health sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Treatment response by start cohort&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;response persistence by cohort month and follow-up interval&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;health/treatment-response-cohort&lt;/div&gt;
     &lt;/div&gt;
@@ -13586,13 +13586,13 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Track response or adherence cohorts over follow-up periods.&lt;/p&gt;
+        &lt;p&gt;Use this to see whether adherence, symptom response, or follow-up completion decays differently by treatment cohort.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;response&lt;/li&gt;
-&lt;li&gt;persistence&lt;/li&gt;
+          &lt;li&gt;response persistence&lt;/li&gt;
+&lt;li&gt;adherence decay&lt;/li&gt;
 &lt;li&gt;cohort quality&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
@@ -13604,8 +13604,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Treatment Response Cohort</div>
-          <div class="desc">Track response or adherence cohorts over follow-up periods.</div>
-          <div class="signals"><span>treatment</span><span>response</span><span>cohort</span></div>
+          <div class="desc">Track treatment response and adherence by start-month cohort.</div>
+          <div class="signals"><span>response</span><span>adherence</span><span>cohort</span></div>
           <div class="file"><span>health/treatment-response-cohort.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -13781,8 +13781,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Clinical Quality Radar example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Health clinical quality radar example&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative clinical score / health sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Clinical program quality profile&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;quality review across safety, access, experience, outcomes, equity, and cost&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;health/clinical-quality-radar&lt;/div&gt;
     &lt;/div&gt;
@@ -13802,13 +13802,13 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Score a program across safety, access, experience, efficacy, and cost.&lt;/p&gt;
+        &lt;p&gt;Use this when leaders need a balanced view of quality instead of optimizing one measure at the expense of another.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
           &lt;li&gt;quality profile&lt;/li&gt;
-&lt;li&gt;tradeoff&lt;/li&gt;
+&lt;li&gt;equity tradeoff&lt;/li&gt;
 &lt;li&gt;weak dimension&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
@@ -13820,8 +13820,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Clinical Quality Radar</div>
-          <div class="desc">Score a program across safety, access, experience, efficacy, and cost.</div>
-          <div class="signals"><span>clinical</span><span>quality</span><span>radar</span></div>
+          <div class="desc">Score clinical quality across safety, access, experience, outcomes, equity, and cost.</div>
+          <div class="signals"><span>quality</span><span>equity</span><span>outcomes</span></div>
           <div class="file"><span>health/clinical-quality-radar.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -13997,8 +13997,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Readmission Stress Test example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Health scenario stress test&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative clinical score / health sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Readmission risk stress test&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;expected readmission lift under surge, staffing, and follow-up scenarios&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;health/readmission-stress-test&lt;/div&gt;
     &lt;/div&gt;
@@ -14020,13 +14020,13 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Compare expected readmission or complication losses under stress scenarios.&lt;/p&gt;
+        &lt;p&gt;Use this before discharge-planning changes or seasonal surges to estimate where follow-up capacity protects outcomes.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;tail risk&lt;/li&gt;
-&lt;li&gt;quality gap&lt;/li&gt;
+          &lt;li&gt;readmission lift&lt;/li&gt;
+&lt;li&gt;follow-up gap&lt;/li&gt;
 &lt;li&gt;capacity need&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
@@ -14038,8 +14038,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Readmission Stress Test</div>
-          <div class="desc">Compare expected readmission or complication losses under stress scenarios.</div>
-          <div class="signals"><span>readmission</span><span>stress</span><span>test</span></div>
+          <div class="desc">Compare readmission risk under staffing, follow-up, and surge scenarios.</div>
+          <div class="signals"><span>readmission</span><span>follow-up</span><span>capacity</span></div>
           <div class="file"><span>health/readmission-stress-test.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>

@@ -92,16 +92,16 @@ Learning progress, classroom operations, curriculum quality, assessment, and stu
 
 Patient monitoring, care operations, population health, appointment flow, and clinical quality views.
 
-- [Vitals Trend Line](health/vitals-trend-line.html) - Track a patient metric such as glucose, heart rate, or blood pressure over time.
-- [Symptom Severity Area](health/symptom-severity-area.html) - Emphasize cumulative symptom burden or recovery progress.
-- [Patient Flow Funnel](health/patient-flow-funnel.html) - Summarize intake, triage, consult, treatment, and discharge conversion.
-- [Appointment Calendar](health/appointment-calendar.html) - Show appointment density, no-shows, or follow-up adherence by day.
-- [Ward Utilization Heatmap](health/ward-utilization-heatmap.html) - Reveal bed, room, or clinician utilization by time block.
-- [Care Pathway Sankey](health/care-pathway-sankey.html) - Visualize patient movement across referral, diagnosis, treatment, and follow-up.
-- [Population Risk Scatter](health/population-risk-scatter.html) - Position patient groups by risk score and cost or complexity.
-- [Treatment Response Cohort](health/treatment-response-cohort.html) - Track response or adherence cohorts over follow-up periods.
-- [Clinical Quality Radar](health/clinical-quality-radar.html) - Score a program across safety, access, experience, efficacy, and cost.
-- [Readmission Stress Test](health/readmission-stress-test.html) - Compare expected readmission or complication losses under stress scenarios.
+- [Vitals Trend Line](health/vitals-trend-line.html) - Track remote blood pressure readings against escalation thresholds between visits.
+- [Symptom Severity Area](health/symptom-severity-area.html) - Show symptom burden after discharge before readmission risk rises.
+- [Patient Flow Funnel](health/patient-flow-funnel.html) - Summarize emergency department flow from arrival to discharge decision.
+- [Appointment Calendar](health/appointment-calendar.html) - Show clinic appointment load, no-show clusters, and follow-up gaps by day.
+- [Ward Utilization Heatmap](health/ward-utilization-heatmap.html) - Reveal inpatient bed and nurse coverage pressure by ward and shift block.
+- [Care Pathway Sankey](health/care-pathway-sankey.html) - Visualize referral, diagnosis, treatment, follow-up, recovery, and escalation paths.
+- [Population Risk Scatter](health/population-risk-scatter.html) - Position patient cohorts by clinical risk, cost, and care-management priority.
+- [Treatment Response Cohort](health/treatment-response-cohort.html) - Track treatment response and adherence by start-month cohort.
+- [Clinical Quality Radar](health/clinical-quality-radar.html) - Score clinical quality across safety, access, experience, outcomes, equity, and cost.
+- [Readmission Stress Test](health/readmission-stress-test.html) - Compare readmission risk under staffing, follow-up, and surge scenarios.
 
 ### Ecommerce
 
