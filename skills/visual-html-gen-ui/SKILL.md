@@ -253,6 +253,21 @@ Workforce planning, recruiting, performance, retention, engagement, compensation
 - [Performance Radar](hr/performance-radar/index.html) - Score a role or team across impact, collaboration, craft, ownership, and growth.
 - [Workforce Risk Stress Test](hr/workforce-risk-stress-test/index.html) - Compare staffing gaps under attrition, hiring freeze, demand spike, and reorg scenarios.
 
+### Mobility
+
+Urban mobility, ride hailing, fleet operations, routing, utilization, safety, and multimodal transport.
+
+- [Trip Volume Line](mobility/trip-volume-line/index.html) - Track rides, deliveries, or passenger trips over time.
+- [Fleet Utilization Area](mobility/fleet-utilization-area/index.html) - Emphasize active vehicles, idle capacity, or utilization scale.
+- [Dispatch Funnel](mobility/dispatch-funnel/index.html) - Track requests through matched, accepted, arrived, completed, and rated.
+- [Route Heatmap](mobility/route-heatmap/index.html) - Reveal demand or congestion by zone and time block.
+- [Mode Share Donut](mobility/mode-share-donut/index.html) - Summarize trips by car, bike, transit, walking, or scooter.
+- [Station Treemap](mobility/station-treemap/index.html) - Map usage by station, depot, or zone.
+- [Driver Cohort Retention](mobility/driver-cohort-retention/index.html) - Track driver or rider retention by activation cohort.
+- [Fare Waterfall](mobility/fare-waterfall/index.html) - Explain fare from base, distance, surge, incentives, fees, and margin.
+- [Safety Radar](mobility/safety-radar/index.html) - Score operations across incidents, compliance, training, vehicle health, and response.
+- [Demand Stress Test](mobility/demand-stress-test/index.html) - Compare service capacity under weather, event, outage, and demand spike scenarios.
+
 ## Maintenance
 
 Maintainers should edit `catalog.json`, run

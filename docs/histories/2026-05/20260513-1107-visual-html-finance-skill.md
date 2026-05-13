@@ -47,6 +47,7 @@ low-saturation clay/olive/oat/slate colors.
 - AI Agent
 - Real Estate
 - HR
+- Mobility
 
 ### Files Modified
 

@@ -1862,6 +1862,123 @@
           ]
         }
       ]
+    },
+    {
+      "slug": "mobility",
+      "name": "Mobility",
+      "summary": "Urban mobility, ride hailing, fleet operations, routing, utilization, safety, and multimodal transport.",
+      "charts": [
+        {
+          "slug": "trip-volume-line",
+          "title": "Trip Volume Line",
+          "type": "line",
+          "purpose": "Track rides, deliveries, or passenger trips over time.",
+          "signals": [
+            "demand",
+            "seasonality",
+            "event lift"
+          ]
+        },
+        {
+          "slug": "fleet-utilization-area",
+          "title": "Fleet Utilization Area",
+          "type": "area",
+          "purpose": "Emphasize active vehicles, idle capacity, or utilization scale.",
+          "signals": [
+            "utilization",
+            "capacity",
+            "downtime"
+          ]
+        },
+        {
+          "slug": "dispatch-funnel",
+          "title": "Dispatch Funnel",
+          "type": "funnel",
+          "purpose": "Track requests through matched, accepted, arrived, completed, and rated.",
+          "signals": [
+            "conversion",
+            "dispatch friction",
+            "service quality"
+          ]
+        },
+        {
+          "slug": "route-heatmap",
+          "title": "Route Heatmap",
+          "type": "heatmap",
+          "purpose": "Reveal demand or congestion by zone and time block.",
+          "signals": [
+            "hotspot",
+            "congestion",
+            "supply gap"
+          ]
+        },
+        {
+          "slug": "mode-share-donut",
+          "title": "Mode Share Donut",
+          "type": "donut",
+          "purpose": "Summarize trips by car, bike, transit, walking, or scooter.",
+          "signals": [
+            "mode mix",
+            "balance",
+            "shift"
+          ]
+        },
+        {
+          "slug": "station-treemap",
+          "title": "Station Treemap",
+          "type": "treemap",
+          "purpose": "Map usage by station, depot, or zone.",
+          "signals": [
+            "concentration",
+            "station load",
+            "coverage"
+          ]
+        },
+        {
+          "slug": "driver-cohort-retention",
+          "title": "Driver Cohort Retention",
+          "type": "cohort",
+          "purpose": "Track driver or rider retention by activation cohort.",
+          "signals": [
+            "retention",
+            "supply quality",
+            "stickiness"
+          ]
+        },
+        {
+          "slug": "fare-waterfall",
+          "title": "Fare Waterfall",
+          "type": "waterfall",
+          "purpose": "Explain fare from base, distance, surge, incentives, fees, and margin.",
+          "signals": [
+            "fare driver",
+            "cost leak",
+            "profitability"
+          ]
+        },
+        {
+          "slug": "safety-radar",
+          "title": "Safety Radar",
+          "type": "radar",
+          "purpose": "Score operations across incidents, compliance, training, vehicle health, and response.",
+          "signals": [
+            "safety profile",
+            "risk",
+            "weak control"
+          ]
+        },
+        {
+          "slug": "demand-stress-test",
+          "title": "Demand Stress Test",
+          "type": "stress",
+          "purpose": "Compare service capacity under weather, event, outage, and demand spike scenarios.",
+          "signals": [
+            "resilience",
+            "capacity gap",
+            "tail event"
+          ]
+        }
+      ]
     }
   ]
 }

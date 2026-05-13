@@ -91,7 +91,7 @@ without loading every example into context.
 - [x] AI Agent
 - [x] Real Estate
 - [x] HR
-- [ ] Mobility
+- [x] Mobility
 - [ ] Travel
 - [ ] Biotech
 - [ ] Legal
