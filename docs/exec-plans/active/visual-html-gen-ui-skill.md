@@ -96,7 +96,7 @@ without loading every example into context.
 - [x] Biotech
 - [x] Legal
 - [x] Government
-- [ ] Manufacturing
+- [x] Manufacturing
 - [ ] Energy
 - [ ] Retail
 - [ ] Crypto

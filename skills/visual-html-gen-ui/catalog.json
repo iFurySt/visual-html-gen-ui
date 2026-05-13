@@ -2447,6 +2447,123 @@
           ]
         }
       ]
+    },
+    {
+      "slug": "manufacturing",
+      "name": "Manufacturing",
+      "summary": "Production, quality, supply chain, maintenance, throughput, yield, and factory operations analytics.",
+      "charts": [
+        {
+          "slug": "production-line",
+          "title": "Production Line",
+          "type": "line",
+          "purpose": "Track output, yield, or throughput over shifts and weeks.",
+          "signals": [
+            "throughput",
+            "trend",
+            "downtime impact"
+          ]
+        },
+        {
+          "slug": "quality-stacked-bar",
+          "title": "Quality Stacked Bar",
+          "type": "stacked-bar",
+          "purpose": "Break production into pass, rework, scrap, and hold states.",
+          "signals": [
+            "quality mix",
+            "scrap",
+            "process shift"
+          ]
+        },
+        {
+          "slug": "defect-heatmap",
+          "title": "Defect Heatmap",
+          "type": "heatmap",
+          "purpose": "Map defect rate by station and defect type.",
+          "signals": [
+            "hotspot",
+            "root cause",
+            "priority"
+          ]
+        },
+        {
+          "slug": "supply-flow-sankey",
+          "title": "Supply Flow Sankey",
+          "type": "sankey",
+          "purpose": "Show material flow from suppliers to lines, inventory, and shipment.",
+          "signals": [
+            "flow",
+            "constraint",
+            "leakage"
+          ]
+        },
+        {
+          "slug": "oee-kpi",
+          "title": "OEE KPI",
+          "type": "kpi",
+          "purpose": "Compare availability, performance, quality, cycle time, and scrap efficiency.",
+          "signals": [
+            "efficiency",
+            "loss",
+            "quality"
+          ]
+        },
+        {
+          "slug": "line-utilization-calendar",
+          "title": "Line Utilization Calendar",
+          "type": "calendar",
+          "purpose": "Reveal shift utilization or downtime by day.",
+          "signals": [
+            "utilization",
+            "downtime cluster",
+            "capacity"
+          ]
+        },
+        {
+          "slug": "product-mix-treemap",
+          "title": "Product Mix Treemap",
+          "type": "treemap",
+          "purpose": "Map output, revenue, or margin by product family.",
+          "signals": [
+            "mix",
+            "concentration",
+            "portfolio"
+          ]
+        },
+        {
+          "slug": "maintenance-funnel",
+          "title": "Maintenance Funnel",
+          "type": "funnel",
+          "purpose": "Track work orders from created to triaged, scheduled, completed, and verified.",
+          "signals": [
+            "maintenance flow",
+            "backlog",
+            "bottleneck"
+          ]
+        },
+        {
+          "slug": "cost-waterfall",
+          "title": "Cost Waterfall",
+          "type": "waterfall",
+          "purpose": "Explain cost movement from materials, labor, energy, rework, and logistics.",
+          "signals": [
+            "cost driver",
+            "margin impact",
+            "waste"
+          ]
+        },
+        {
+          "slug": "factory-risk-radar",
+          "title": "Factory Risk Radar",
+          "type": "radar",
+          "purpose": "Score a plant across safety, quality, capacity, maintenance, supply, and cost.",
+          "signals": [
+            "risk profile",
+            "balance",
+            "weak dimension"
+          ]
+        }
+      ]
     }
   ]
 }

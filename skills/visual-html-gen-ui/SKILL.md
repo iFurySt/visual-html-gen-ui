@@ -328,6 +328,21 @@ Public services, budgets, case queues, civic operations, policy outcomes, and in
 - [Policy Score Radar](government/policy-score-radar/index.html) - Score policy options across cost, reach, equity, feasibility, and risk.
 - [Budget Stress Test](government/budget-stress-test/index.html) - Compare budget gap under inflation, revenue decline, demand spike, and disaster scenarios.
 
+### Manufacturing
+
+Production, quality, supply chain, maintenance, throughput, yield, and factory operations analytics.
+
+- [Production Line](manufacturing/production-line/index.html) - Track output, yield, or throughput over shifts and weeks.
+- [Quality Stacked Bar](manufacturing/quality-stacked-bar/index.html) - Break production into pass, rework, scrap, and hold states.
+- [Defect Heatmap](manufacturing/defect-heatmap/index.html) - Map defect rate by station and defect type.
+- [Supply Flow Sankey](manufacturing/supply-flow-sankey/index.html) - Show material flow from suppliers to lines, inventory, and shipment.
+- [OEE KPI](manufacturing/oee-kpi/index.html) - Compare availability, performance, quality, cycle time, and scrap efficiency.
+- [Line Utilization Calendar](manufacturing/line-utilization-calendar/index.html) - Reveal shift utilization or downtime by day.
+- [Product Mix Treemap](manufacturing/product-mix-treemap/index.html) - Map output, revenue, or margin by product family.
+- [Maintenance Funnel](manufacturing/maintenance-funnel/index.html) - Track work orders from created to triaged, scheduled, completed, and verified.
+- [Cost Waterfall](manufacturing/cost-waterfall/index.html) - Explain cost movement from materials, labor, energy, rework, and logistics.
+- [Factory Risk Radar](manufacturing/factory-risk-radar/index.html) - Score a plant across safety, quality, capacity, maintenance, supply, and cost.
+
 ## Maintenance
 
 Maintainers should edit `catalog.json`, run

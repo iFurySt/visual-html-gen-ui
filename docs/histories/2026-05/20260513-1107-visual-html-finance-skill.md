@@ -52,6 +52,7 @@ low-saturation clay/olive/oat/slate colors.
 - Biotech
 - Legal
 - Government
+- Manufacturing
 
 ### Files Modified
 

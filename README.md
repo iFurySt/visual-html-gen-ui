@@ -46,6 +46,7 @@ make ci
 - Biotech: 10 chart examples.
 - Legal: 10 chart examples.
 - Government: 10 chart examples.
+- Manufacturing: 10 chart examples.
 
 ## License
 

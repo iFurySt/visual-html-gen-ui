@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Manufacturing - Line Utilization Calendar</title>
+<style>
+  :root {
+    --ivory: #FAF9F5;
+    --paper: #FFFFFF;
+    --slate: #141413;
+    --clay: #D97757;
+    --rust: #B04A3F;
+    --oat: #E3DACC;
+    --olive: #788C5D;
+    --teal: #4D8A8B;
+    --blue: #5277A3;
+    --gold: #C99A42;
+    --gray-100: #F0EEE6;
+    --gray-300: #D1CFC5;
+    --gray-500: #87867F;
+    --gray-700: #3D3D3A;
+    --serif: ui-serif, Georgia, "Times New Roman", serif;
+    --sans: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --mono: ui-monospace, "SF Mono", Menlo, Monaco, Consolas, monospace;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--ivory);
+    color: var(--slate);
+    font-family: var(--sans);
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+  .page {
+    width: min(1120px, calc(100vw - 40px));
+    margin: 0 auto;
+    padding: 56px 0 96px;
+  }
+  header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 24px;
+    align-items: end;
+    margin-bottom: 28px;
+    border-bottom: 1.5px solid var(--gray-300);
+    padding-bottom: 22px;
+  }
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--gray-500);
+    margin-bottom: 10px;
+  }
+  h1 {
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: clamp(34px, 5vw, 56px);
+    line-height: 1.04;
+    letter-spacing: 0;
+    margin: 0;
+  }
+  .purpose {
+    max-width: 620px;
+    margin: 16px 0 0;
+    color: var(--gray-700);
+    font-size: 16px;
+  }
+  .stamp {
+    border: 1.5px solid var(--gray-300);
+    background: var(--paper);
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--gray-700);
+    white-space: nowrap;
+  }
+  .frame {
+    background: var(--paper);
+    border: 1.5px solid var(--gray-300);
+    border-radius: 8px;
+    padding: 22px;
+  }
+  .chart-head {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    align-items: start;
+    margin-bottom: 16px;
+  }
+  .chart-title {
+    font-family: var(--serif);
+    font-size: 26px;
+    line-height: 1.15;
+    margin: 0;
+    font-weight: 500;
+  }
+  .chart-meta {
+    font-family: var(--mono);
+    color: var(--gray-500);
+    font-size: 12px;
+  }
+  svg {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .note-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 18px;
+    margin-top: 22px;
+  }
+  .note {
+    border-top: 1.5px solid var(--gray-300);
+    padding-top: 16px;
+    color: var(--gray-700);
+  }
+  .note h2 {
+    font-family: var(--mono);
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--gray-500);
+    margin: 0 0 8px;
+  }
+  .note p, .note ul { margin: 0; }
+  .note ul { padding-left: 18px; }
+  .axis { stroke: var(--gray-300); stroke-width: 1.5; }
+  .grid { stroke: var(--gray-100); stroke-width: 1.5; }
+  .label {
+    fill: var(--gray-500);
+    font: 12px var(--mono);
+  }
+  .small {
+    fill: var(--gray-700);
+    font: 13px var(--sans);
+  }
+  @media (max-width: 760px) {
+    .page { width: min(100vw - 28px, 1120px); padding-top: 32px; }
+    header, .note-grid { grid-template-columns: 1fr; }
+    .stamp { width: fit-content; }
+    .frame { padding: 16px; }
+    .chart-head { flex-direction: column; }
+  }
+</style>
+</head>
+<body>
+<main class="page">
+  <header>
+    <div>
+      <div class="eyebrow">Manufacturing / calendar</div>
+      <h1>Line Utilization Calendar</h1>
+      <p class="purpose">Reveal shift utilization or downtime by day.</p>
+    </div>
+    <div class="stamp">standalone html</div>
+  </header>
+
+  <section class="frame" aria-label="Line Utilization Calendar example">
+    <div class="chart-head">
+      <div>
+        <h2 class="chart-title">Sample line utilization calendar</h2>
+        <div class="chart-meta">illustrative data / replace with project values</div>
+      </div>
+      <div class="chart-meta">manufacturing/line-utilization-calendar</div>
+    </div>
+    <svg viewBox="0 0 960 380" role="img" aria-label="Chart preview">
+  <rect x="0" y="0" width="960" height="380" rx="8" fill="#FAF9F5"/>
+  <text class="label" x="96" y="52">Jan</text><text class="label" x="270" y="52">Feb</text><text class="label" x="444" y="52">Mar</text><text class="label" x="618" y="52">Apr</text><text class="label" x="792" y="52">May</text>
+  <rect x="94" y="82" width="36" height="32" rx="5" fill="#F0EEE6"/>
+  <rect x="94" y="130" width="36" height="32" rx="5" fill="#D97757"/>
+  <rect x="94" y="178" width="36" height="32" rx="5" fill="#4D8A8B"/>
+  <rect x="94" y="226" width="36" height="32" rx="5" fill="#788C5D"/>
+  <rect x="94" y="274" width="36" height="32" rx="5" fill="#BFCB9D"/>
+  <rect x="152" y="82" width="36" height="32" rx="5" fill="#E3DACC"/>
+  <rect x="152" y="130" width="36" height="32" rx="5" fill="#F0EEE6"/>
+  <rect x="152" y="178" width="36" height="32" rx="5" fill="#D97757"/>
+  <rect x="152" y="226" width="36" height="32" rx="5" fill="#4D8A8B"/>
+  <rect x="152" y="274" width="36" height="32" rx="5" fill="#788C5D"/>
+  <rect x="210" y="82" width="36" height="32" rx="5" fill="#BFCB9D"/>
+  <rect x="210" y="130" width="36" height="32" rx="5" fill="#E3DACC"/>
+  <rect x="210" y="178" width="36" height="32" rx="5" fill="#F0EEE6"/>
+  <rect x="210" y="226" width="36" height="32" rx="5" fill="#D97757"/>
+  <rect x="210" y="274" width="36" height="32" rx="5" fill="#4D8A8B"/>
+  <rect x="268" y="82" width="36" height="32" rx="5" fill="#788C5D"/>
+  <rect x="268" y="130" width="36" height="32" rx="5" fill="#BFCB9D"/>
+  <rect x="268" y="178" width="36" height="32" rx="5" fill="#E3DACC"/>
+  <rect x="268" y="226" width="36" height="32" rx="5" fill="#F0EEE6"/>
+  <rect x="268" y="274" width="36" height="32" rx="5" fill="#D97757"/>
+  <rect x="326" y="82" width="36" height="32" rx="5" fill="#4D8A8B"/>
+  <rect x="326" y="130" width="36" height="32" rx="5" fill="#788C5D"/>
+  <rect x="326" y="178" width="36" height="32" rx="5" fill="#BFCB9D"/>
+  <rect x="326" y="226" width="36" height="32" rx="5" fill="#E3DACC"/>
+  <rect x="326" y="274" width="36" height="32" rx="5" fill="#F0EEE6"/>
+  <rect x="384" y="82" width="36" height="32" rx="5" fill="#D97757"/>
+  <rect x="384" y="130" width="36" height="32" rx="5" fill="#4D8A8B"/>
+  <rect x="384" y="178" width="36" height="32" rx="5" fill="#788C5D"/>
+  <rect x="384" y="226" width="36" height="32" rx="5" fill="#BFCB9D"/>
+  <rect x="384" y="274" width="36" height="32" rx="5" fill="#E3DACC"/>
+  <rect x="442" y="82" width="36" height="32" rx="5" fill="#F0EEE6"/>
+  <rect x="442" y="130" width="36" height="32" rx="5" fill="#D97757"/>
+  <rect x="442" y="178" width="36" height="32" rx="5" fill="#4D8A8B"/>
+  <rect x="442" y="226" width="36" height="32" rx="5" fill="#788C5D"/>
+  <rect x="442" y="274" width="36" height="32" rx="5" fill="#BFCB9D"/>
+  <rect x="500" y="82" width="36" height="32" rx="5" fill="#E3DACC"/>
+  <rect x="500" y="130" width="36" height="32" rx="5" fill="#F0EEE6"/>
+  <rect x="500" y="178" width="36" height="32" rx="5" fill="#D97757"/>
+  <rect x="500" y="226" width="36" height="32" rx="5" fill="#4D8A8B"/>
+  <rect x="500" y="274" width="36" height="32" rx="5" fill="#788C5D"/>
+  <rect x="558" y="82" width="36" height="32" rx="5" fill="#BFCB9D"/>
+  <rect x="558" y="130" width="36" height="32" rx="5" fill="#E3DACC"/>
+  <rect x="558" y="178" width="36" height="32" rx="5" fill="#F0EEE6"/>
+  <rect x="558" y="226" width="36" height="32" rx="5" fill="#D97757"/>
+  <rect x="558" y="274" width="36" height="32" rx="5" fill="#4D8A8B"/>
+  <rect x="616" y="82" width="36" height="32" rx="5" fill="#788C5D"/>
+  <rect x="616" y="130" width="36" height="32" rx="5" fill="#BFCB9D"/>
+  <rect x="616" y="178" width="36" height="32" rx="5" fill="#E3DACC"/>
+  <rect x="616" y="226" width="36" height="32" rx="5" fill="#F0EEE6"/>
+  <rect x="616" y="274" width="36" height="32" rx="5" fill="#D97757"/>
+  <rect x="674" y="82" width="36" height="32" rx="5" fill="#4D8A8B"/>
+  <rect x="674" y="130" width="36" height="32" rx="5" fill="#788C5D"/>
+  <rect x="674" y="178" width="36" height="32" rx="5" fill="#BFCB9D"/>
+  <rect x="674" y="226" width="36" height="32" rx="5" fill="#E3DACC"/>
+  <rect x="674" y="274" width="36" height="32" rx="5" fill="#F0EEE6"/>
+  <rect x="732" y="82" width="36" height="32" rx="5" fill="#D97757"/>
+  <rect x="732" y="130" width="36" height="32" rx="5" fill="#4D8A8B"/>
+  <rect x="732" y="178" width="36" height="32" rx="5" fill="#788C5D"/>
+  <rect x="732" y="226" width="36" height="32" rx="5" fill="#BFCB9D"/>
+  <rect x="732" y="274" width="36" height="32" rx="5" fill="#E3DACC"/>
+  <rect x="790" y="82" width="36" height="32" rx="5" fill="#F0EEE6"/>
+  <rect x="790" y="130" width="36" height="32" rx="5" fill="#D97757"/>
+  <rect x="790" y="178" width="36" height="32" rx="5" fill="#4D8A8B"/>
+  <rect x="790" y="226" width="36" height="32" rx="5" fill="#788C5D"/>
+  <rect x="790" y="274" width="36" height="32" rx="5" fill="#BFCB9D"/>
+</svg>
+    <div class="note-grid">
+      <div class="note">
+        <h2>Use When</h2>
+        <p>Reveal shift utilization or downtime by day.</p>
+      </div>
+      <div class="note">
+        <h2>Signals</h2>
+        <ul>
+          <li>utilization</li>
+<li>downtime cluster</li>
+<li>capacity</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+</body>
+</html>
