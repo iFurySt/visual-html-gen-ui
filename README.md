@@ -45,6 +45,7 @@ make ci
 - Travel: 10 chart examples.
 - Biotech: 10 chart examples.
 - Legal: 10 chart examples.
+- Government: 10 chart examples.
 
 ## License
 

@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Government - District Heatmap</title>
+<style>
+  :root {
+    --ivory: #FAF9F5;
+    --paper: #FFFFFF;
+    --slate: #141413;
+    --clay: #D97757;
+    --rust: #B04A3F;
+    --oat: #E3DACC;
+    --olive: #788C5D;
+    --teal: #4D8A8B;
+    --blue: #5277A3;
+    --gold: #C99A42;
+    --gray-100: #F0EEE6;
+    --gray-300: #D1CFC5;
+    --gray-500: #87867F;
+    --gray-700: #3D3D3A;
+    --serif: ui-serif, Georgia, "Times New Roman", serif;
+    --sans: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --mono: ui-monospace, "SF Mono", Menlo, Monaco, Consolas, monospace;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--ivory);
+    color: var(--slate);
+    font-family: var(--sans);
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+  .page {
+    width: min(1120px, calc(100vw - 40px));
+    margin: 0 auto;
+    padding: 56px 0 96px;
+  }
+  header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 24px;
+    align-items: end;
+    margin-bottom: 28px;
+    border-bottom: 1.5px solid var(--gray-300);
+    padding-bottom: 22px;
+  }
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--gray-500);
+    margin-bottom: 10px;
+  }
+  h1 {
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: clamp(34px, 5vw, 56px);
+    line-height: 1.04;
+    letter-spacing: 0;
+    margin: 0;
+  }
+  .purpose {
+    max-width: 620px;
+    margin: 16px 0 0;
+    color: var(--gray-700);
+    font-size: 16px;
+  }
+  .stamp {
+    border: 1.5px solid var(--gray-300);
+    background: var(--paper);
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--gray-700);
+    white-space: nowrap;
+  }
+  .frame {
+    background: var(--paper);
+    border: 1.5px solid var(--gray-300);
+    border-radius: 8px;
+    padding: 22px;
+  }
+  .chart-head {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    align-items: start;
+    margin-bottom: 16px;
+  }
+  .chart-title {
+    font-family: var(--serif);
+    font-size: 26px;
+    line-height: 1.15;
+    margin: 0;
+    font-weight: 500;
+  }
+  .chart-meta {
+    font-family: var(--mono);
+    color: var(--gray-500);
+    font-size: 12px;
+  }
+  svg {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .note-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 18px;
+    margin-top: 22px;
+  }
+  .note {
+    border-top: 1.5px solid var(--gray-300);
+    padding-top: 16px;
+    color: var(--gray-700);
+  }
+  .note h2 {
+    font-family: var(--mono);
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--gray-500);
+    margin: 0 0 8px;
+  }
+  .note p, .note ul { margin: 0; }
+  .note ul { padding-left: 18px; }
+  .axis { stroke: var(--gray-300); stroke-width: 1.5; }
+  .grid { stroke: var(--gray-100); stroke-width: 1.5; }
+  .label {
+    fill: var(--gray-500);
+    font: 12px var(--mono);
+  }
+  .small {
+    fill: var(--gray-700);
+    font: 13px var(--sans);
+  }
+  @media (max-width: 760px) {
+    .page { width: min(100vw - 28px, 1120px); padding-top: 32px; }
+    header, .note-grid { grid-template-columns: 1fr; }
+    .stamp { width: fit-content; }
+    .frame { padding: 16px; }
+    .chart-head { flex-direction: column; }
+  }
+</style>
+</head>
+<body>
+<main class="page">
+  <header>
+    <div>
+      <div class="eyebrow">Government / heatmap</div>
+      <h1>District Heatmap</h1>
+      <p class="purpose">Map service need or outcome metrics by district and topic.</p>
+    </div>
+    <div class="stamp">standalone html</div>
+  </header>
+
+  <section class="frame" aria-label="District Heatmap example">
+    <div class="chart-head">
+      <div>
+        <h2 class="chart-title">Sample district heatmap</h2>
+        <div class="chart-meta">illustrative data / replace with project values</div>
+      </div>
+      <div class="chart-meta">government/district-heatmap</div>
+    </div>
+    <svg viewBox="0 0 960 380" role="img" aria-label="Chart preview">
+  <rect x="0" y="0" width="960" height="380" rx="8" fill="#FAF9F5"/>
+  <text class="small" x="58" y="96">Tech</text>
+  <rect x="150" y="70" width="88" height="34" rx="5" fill="#B04A3F"/>
+  <rect x="262" y="70" width="88" height="34" rx="5" fill="#788C5D"/>
+  <rect x="374" y="70" width="88" height="34" rx="5" fill="#9BAE78"/>
+  <rect x="486" y="70" width="88" height="34" rx="5" fill="#9BAE78"/>
+  <rect x="598" y="70" width="88" height="34" rx="5" fill="#E3DACC"/>
+  <rect x="710" y="70" width="88" height="34" rx="5" fill="#E3DACC"/>
+  <text class="small" x="58" y="144">Banks</text>
+  <rect x="150" y="118" width="88" height="34" rx="5" fill="#E3DACC"/>
+  <rect x="262" y="118" width="88" height="34" rx="5" fill="#CF6B52"/>
+  <rect x="374" y="118" width="88" height="34" rx="5" fill="#CF6B52"/>
+  <rect x="486" y="118" width="88" height="34" rx="5" fill="#B04A3F"/>
+  <rect x="598" y="118" width="88" height="34" rx="5" fill="#B04A3F"/>
+  <rect x="710" y="118" width="88" height="34" rx="5" fill="#788C5D"/>
+  <text class="small" x="58" y="192">Energy</text>
+  <rect x="150" y="166" width="88" height="34" rx="5" fill="#788C5D"/>
+  <rect x="262" y="166" width="88" height="34" rx="5" fill="#9BAE78"/>
+  <rect x="374" y="166" width="88" height="34" rx="5" fill="#9BAE78"/>
+  <rect x="486" y="166" width="88" height="34" rx="5" fill="#E3DACC"/>
+  <rect x="598" y="166" width="88" height="34" rx="5" fill="#E3DACC"/>
+  <rect x="710" y="166" width="88" height="34" rx="5" fill="#CF6B52"/>
+  <text class="small" x="58" y="240">Health</text>
+  <rect x="150" y="214" width="88" height="34" rx="5" fill="#CF6B52"/>
+  <rect x="262" y="214" width="88" height="34" rx="5" fill="#CF6B52"/>
+  <rect x="374" y="214" width="88" height="34" rx="5" fill="#B04A3F"/>
+  <rect x="486" y="214" width="88" height="34" rx="5" fill="#B04A3F"/>
+  <rect x="598" y="214" width="88" height="34" rx="5" fill="#788C5D"/>
+  <rect x="710" y="214" width="88" height="34" rx="5" fill="#9BAE78"/>
+  <text class="small" x="58" y="288">Retail</text>
+  <rect x="150" y="262" width="88" height="34" rx="5" fill="#9BAE78"/>
+  <rect x="262" y="262" width="88" height="34" rx="5" fill="#9BAE78"/>
+  <rect x="374" y="262" width="88" height="34" rx="5" fill="#E3DACC"/>
+  <rect x="486" y="262" width="88" height="34" rx="5" fill="#E3DACC"/>
+  <rect x="598" y="262" width="88" height="34" rx="5" fill="#CF6B52"/>
+  <rect x="710" y="262" width="88" height="34" rx="5" fill="#CF6B52"/>
+  <text class="label" x="176" y="48">Mon</text>
+  <text class="label" x="288" y="48">Tue</text>
+  <text class="label" x="400" y="48">Wed</text>
+  <text class="label" x="512" y="48">Thu</text>
+  <text class="label" x="624" y="48">Fri</text>
+  <text class="label" x="736" y="48">Wk</text>
+</svg>
+    <div class="note-grid">
+      <div class="note">
+        <h2>Use When</h2>
+        <p>Map service need or outcome metrics by district and topic.</p>
+      </div>
+      <div class="note">
+        <h2>Signals</h2>
+        <ul>
+          <li>hotspot</li>
+<li>equity</li>
+<li>priority</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+</body>
+</html>

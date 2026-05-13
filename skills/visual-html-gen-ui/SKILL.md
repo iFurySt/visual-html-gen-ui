@@ -313,6 +313,21 @@ Matter management, contracts, litigation, compliance, risk, billing, and legal o
 - [Case Merit Radar](legal/case-merit-radar/index.html) - Score matters across evidence, damages, precedent, cost, timing, and risk.
 - [Litigation Stress Test](legal/litigation-stress-test/index.html) - Compare exposure under settlement, trial, appeal, and adverse judgment scenarios.
 
+### Government
+
+Public services, budgets, case queues, civic operations, policy outcomes, and infrastructure programs.
+
+- [Service Demand Line](government/service-demand-line/index.html) - Track public service requests, permits, or cases over time.
+- [Budget Allocation Donut](government/budget-allocation-donut/index.html) - Summarize budget by agency, program, or funding source.
+- [Permit Funnel](government/permit-funnel/index.html) - Track applications through submitted, reviewed, corrected, approved, and issued.
+- [Case Flow Sankey](government/case-flow-sankey/index.html) - Show case movement across intake, eligibility, review, service, and close.
+- [District Heatmap](government/district-heatmap/index.html) - Map service need or outcome metrics by district and topic.
+- [Program Treemap](government/program-treemap/index.html) - Map spend or outcomes by program area.
+- [Deadline Calendar](government/deadline-calendar/index.html) - Show public hearings, filing deadlines, grant windows, and reporting dates.
+- [Outcome Cohort](government/outcome-cohort/index.html) - Track participant outcomes by intake cohort.
+- [Policy Score Radar](government/policy-score-radar/index.html) - Score policy options across cost, reach, equity, feasibility, and risk.
+- [Budget Stress Test](government/budget-stress-test/index.html) - Compare budget gap under inflation, revenue decline, demand spike, and disaster scenarios.
+
 ## Maintenance
 
 Maintainers should edit `catalog.json`, run

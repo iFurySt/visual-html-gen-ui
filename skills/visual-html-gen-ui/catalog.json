@@ -2330,6 +2330,123 @@
           ]
         }
       ]
+    },
+    {
+      "slug": "government",
+      "name": "Government",
+      "summary": "Public services, budgets, case queues, civic operations, policy outcomes, and infrastructure programs.",
+      "charts": [
+        {
+          "slug": "service-demand-line",
+          "title": "Service Demand Line",
+          "type": "line",
+          "purpose": "Track public service requests, permits, or cases over time.",
+          "signals": [
+            "demand",
+            "trend",
+            "seasonality"
+          ]
+        },
+        {
+          "slug": "budget-allocation-donut",
+          "title": "Budget Allocation Donut",
+          "type": "donut",
+          "purpose": "Summarize budget by agency, program, or funding source.",
+          "signals": [
+            "share",
+            "priority",
+            "balance"
+          ]
+        },
+        {
+          "slug": "permit-funnel",
+          "title": "Permit Funnel",
+          "type": "funnel",
+          "purpose": "Track applications through submitted, reviewed, corrected, approved, and issued.",
+          "signals": [
+            "throughput",
+            "drop-off",
+            "bottleneck"
+          ]
+        },
+        {
+          "slug": "case-flow-sankey",
+          "title": "Case Flow Sankey",
+          "type": "sankey",
+          "purpose": "Show case movement across intake, eligibility, review, service, and close.",
+          "signals": [
+            "pathway",
+            "handoff",
+            "leakage"
+          ]
+        },
+        {
+          "slug": "district-heatmap",
+          "title": "District Heatmap",
+          "type": "heatmap",
+          "purpose": "Map service need or outcome metrics by district and topic.",
+          "signals": [
+            "hotspot",
+            "equity",
+            "priority"
+          ]
+        },
+        {
+          "slug": "program-treemap",
+          "title": "Program Treemap",
+          "type": "treemap",
+          "purpose": "Map spend or outcomes by program area.",
+          "signals": [
+            "portfolio weight",
+            "concentration",
+            "coverage"
+          ]
+        },
+        {
+          "slug": "deadline-calendar",
+          "title": "Deadline Calendar",
+          "type": "calendar",
+          "purpose": "Show public hearings, filing deadlines, grant windows, and reporting dates.",
+          "signals": [
+            "deadline cluster",
+            "calendar load",
+            "risk"
+          ]
+        },
+        {
+          "slug": "outcome-cohort",
+          "title": "Outcome Cohort",
+          "type": "cohort",
+          "purpose": "Track participant outcomes by intake cohort.",
+          "signals": [
+            "outcome",
+            "retention",
+            "program quality"
+          ]
+        },
+        {
+          "slug": "policy-score-radar",
+          "title": "Policy Score Radar",
+          "type": "radar",
+          "purpose": "Score policy options across cost, reach, equity, feasibility, and risk.",
+          "signals": [
+            "policy profile",
+            "tradeoff",
+            "weak dimension"
+          ]
+        },
+        {
+          "slug": "budget-stress-test",
+          "title": "Budget Stress Test",
+          "type": "stress",
+          "purpose": "Compare budget gap under inflation, revenue decline, demand spike, and disaster scenarios.",
+          "signals": [
+            "fiscal risk",
+            "scenario gap",
+            "reserve need"
+          ]
+        }
+      ]
     }
   ]
 }

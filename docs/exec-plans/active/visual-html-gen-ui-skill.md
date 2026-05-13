@@ -95,7 +95,7 @@ without loading every example into context.
 - [x] Travel
 - [x] Biotech
 - [x] Legal
-- [ ] Government
+- [x] Government
 - [ ] Manufacturing
 - [ ] Energy
 - [ ] Retail
