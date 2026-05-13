@@ -257,16 +257,16 @@ Workforce planning, recruiting, performance, retention, engagement, compensation
 
 Urban mobility, ride hailing, fleet operations, routing, utilization, safety, and multimodal transport.
 
-- [Trip Volume Line](mobility/trip-volume-line.html) - Track rides, deliveries, or passenger trips over time.
-- [Fleet Utilization Area](mobility/fleet-utilization-area.html) - Emphasize active vehicles, idle capacity, or utilization scale.
-- [Dispatch Funnel](mobility/dispatch-funnel.html) - Track requests through matched, accepted, arrived, completed, and rated.
-- [Mobility Route Heatmap](mobility/route-heatmap.html) - Reveal demand or congestion by zone and time block.
-- [Mode Share Donut](mobility/mode-share-donut.html) - Summarize trips by car, bike, transit, walking, or scooter.
-- [Station Treemap](mobility/station-treemap.html) - Map usage by station, depot, or zone.
-- [Driver Cohort Retention](mobility/driver-cohort-retention.html) - Track driver or rider retention by activation cohort.
-- [Fare Waterfall](mobility/fare-waterfall.html) - Explain fare from base, distance, surge, incentives, fees, and margin.
-- [Safety Radar](mobility/safety-radar.html) - Score operations across incidents, compliance, training, vehicle health, and response.
-- [Demand Stress Test](mobility/demand-stress-test.html) - Compare service capacity under weather, event, outage, and demand spike scenarios.
+- [Trip Volume Line](mobility/trip-volume-line.html) - Track ride requests, completed trips, cancellations, ETA, and weather or event demand by hour or day.
+- [Fleet Utilization Area](mobility/fleet-utilization-area.html) - Show active, idle, charging, maintenance, and repositioning vehicle capacity across service windows.
+- [Dispatch Funnel](mobility/dispatch-funnel.html) - Track requests from open search through match, driver accept, arrival, pickup, completion, and rating.
+- [Mobility Route Heatmap](mobility/route-heatmap.html) - Reveal demand, congestion, wait time, and supply gaps by zone, corridor, and time block.
+- [Mode Share Donut](mobility/mode-share-donut.html) - Summarize trips by mode, purpose, distance band, and transfer behavior across a city or campus network.
+- [Station Treemap](mobility/station-treemap.html) - Map dock, depot, station, or curb-zone usage by departures, arrivals, dwell time, and rebalance need.
+- [Driver Cohort Retention](mobility/driver-cohort-retention.html) - Track driver activation, first-trip completion, weekly activity, churn, and reactivation by onboarding cohort.
+- [Fare Waterfall](mobility/fare-waterfall.html) - Explain rider fare and driver earnings from base, time, distance, surge, incentives, fees, tolls, and platform margin.
+- [Safety Radar](mobility/safety-radar.html) - Score operations across crash rate, harsh braking, compliance, training, vehicle health, and incident response.
+- [Demand Stress Test](mobility/demand-stress-test.html) - Compare service capacity under storm, event surge, transit outage, driver shortage, and app incident scenarios.
 
 ### Travel
 

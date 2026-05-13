@@ -36538,8 +36538,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Trip Volume Line example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Mobility Trip Volume Line for trip volume&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative rides / mobility sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Trip demand vs completed rides&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;hourly requests, completed trips, cancellations, ETA, and event/weather context&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;mobility/trip-volume-line&lt;/div&gt;
     &lt;/div&gt;
@@ -36562,14 +36562,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Track rides, deliveries, or passenger trips over time.&lt;/p&gt;
+        &lt;p&gt;Track ride requests, completed trips, cancellations, ETA, and weather or event demand by hour or day.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;demand&lt;/li&gt;
-&lt;li&gt;seasonality&lt;/li&gt;
-&lt;li&gt;event lift&lt;/li&gt;
+          &lt;li&gt;demand surge&lt;/li&gt;
+&lt;li&gt;completion gap&lt;/li&gt;
+&lt;li&gt;ETA pressure&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -36580,8 +36580,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Trip Volume Line</div>
-          <div class="desc">Track rides, deliveries, or passenger trips over time.</div>
-          <div class="signals"><span>trip</span><span>volume</span><span>line</span></div>
+          <div class="desc">Track ride requests, completed trips, cancellations, ETA, and weather or event demand by hour or day.</div>
+          <div class="signals"><span>demand</span><span>completed</span><span>ETA</span></div>
           <div class="file"><span>mobility/trip-volume-line.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -36757,8 +36757,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Fleet Utilization Area example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Mobility cumulative trip volume&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative rides / mobility sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Fleet utilization and idle capacity&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;active, idle, charging, maintenance, and repositioning vehicles across daily service windows&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;mobility/fleet-utilization-area&lt;/div&gt;
     &lt;/div&gt;
@@ -36781,13 +36781,13 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Emphasize active vehicles, idle capacity, or utilization scale.&lt;/p&gt;
+        &lt;p&gt;Show active, idle, charging, maintenance, and repositioning vehicle capacity across service windows.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;utilization&lt;/li&gt;
-&lt;li&gt;capacity&lt;/li&gt;
+          &lt;li&gt;active fleet&lt;/li&gt;
+&lt;li&gt;idle capacity&lt;/li&gt;
 &lt;li&gt;downtime&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
@@ -36799,8 +36799,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Fleet Utilization Area</div>
-          <div class="desc">Emphasize active vehicles, idle capacity, or utilization scale.</div>
-          <div class="signals"><span>fleet</span><span>utilization</span><span>area</span></div>
+          <div class="desc">Show active, idle, charging, maintenance, and repositioning vehicle capacity across service windows.</div>
+          <div class="signals"><span>active</span><span>idle</span><span>downtime</span></div>
           <div class="file"><span>mobility/fleet-utilization-area.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -36976,8 +36976,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Dispatch Funnel example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Mobility completed to arrived&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative rides / mobility sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Dispatch funnel from request to rated trip&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;request conversion through match, accept, arrival, pickup, completion, and rating stages&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;mobility/dispatch-funnel&lt;/div&gt;
     &lt;/div&gt;
@@ -36992,14 +36992,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Track requests through matched, accepted, arrived, completed, and rated.&lt;/p&gt;
+        &lt;p&gt;Track requests from open search through match, driver accept, arrival, pickup, completion, and rating.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;conversion&lt;/li&gt;
-&lt;li&gt;dispatch friction&lt;/li&gt;
-&lt;li&gt;service quality&lt;/li&gt;
+          &lt;li&gt;match rate&lt;/li&gt;
+&lt;li&gt;accept friction&lt;/li&gt;
+&lt;li&gt;pickup yield&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -37010,8 +37010,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Dispatch Funnel</div>
-          <div class="desc">Track requests through matched, accepted, arrived, completed, and rated.</div>
-          <div class="signals"><span>dispatch</span><span>funnel</span></div>
+          <div class="desc">Track requests from open search through match, driver accept, arrival, pickup, completion, and rating.</div>
+          <div class="signals"><span>match</span><span>accept</span><span>pickup</span></div>
           <div class="file"><span>mobility/dispatch-funnel.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -37187,8 +37187,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Mobility Route Heatmap example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Mobility mobility route heatmap example&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative rides / mobility sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Route heatmap for demand and congestion&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;zone and corridor pressure across demand, congestion, wait time, and vehicle supply&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;mobility/route-heatmap&lt;/div&gt;
     &lt;/div&gt;
@@ -37239,12 +37239,12 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Reveal demand or congestion by zone and time block.&lt;/p&gt;
+        &lt;p&gt;Reveal demand, congestion, wait time, and supply gaps by zone, corridor, and time block.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;hotspot&lt;/li&gt;
+          &lt;li&gt;demand hotspot&lt;/li&gt;
 &lt;li&gt;congestion&lt;/li&gt;
 &lt;li&gt;supply gap&lt;/li&gt;
         &lt;/ul&gt;
@@ -37257,8 +37257,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Mobility Route Heatmap</div>
-          <div class="desc">Reveal demand or congestion by zone and time block.</div>
-          <div class="signals"><span>route</span><span>heatmap</span></div>
+          <div class="desc">Reveal demand, congestion, wait time, and supply gaps by zone, corridor, and time block.</div>
+          <div class="signals"><span>demand</span><span>congestion</span><span>supply</span></div>
           <div class="file"><span>mobility/route-heatmap.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -37434,8 +37434,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Mode Share Donut example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Mobility mode share donut example&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative rides / mobility sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Mode share across urban trip types&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;car, bike, transit, walking, scooter, and multimodal trip share by distance band&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;mobility/mode-share-donut&lt;/div&gt;
     &lt;/div&gt;
@@ -37456,14 +37456,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Summarize trips by car, bike, transit, walking, or scooter.&lt;/p&gt;
+        &lt;p&gt;Summarize trips by mode, purpose, distance band, and transfer behavior across a city or campus network.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
           &lt;li&gt;mode mix&lt;/li&gt;
-&lt;li&gt;balance&lt;/li&gt;
-&lt;li&gt;shift&lt;/li&gt;
+&lt;li&gt;multimodal shift&lt;/li&gt;
+&lt;li&gt;distance band&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -37474,8 +37474,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Mode Share Donut</div>
-          <div class="desc">Summarize trips by car, bike, transit, walking, or scooter.</div>
-          <div class="signals"><span>mode</span><span>share</span><span>donut</span></div>
+          <div class="desc">Summarize trips by mode, purpose, distance band, and transfer behavior across a city or campus network.</div>
+          <div class="signals"><span>mode mix</span><span>transfer</span><span>distance</span></div>
           <div class="file"><span>mobility/mode-share-donut.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -37651,8 +37651,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Station Treemap example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Mobility station treemap example&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative rides / mobility sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Station demand and rebalance load&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;departures, arrivals, dwell time, and rebalance pressure by station or depot&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;mobility/station-treemap&lt;/div&gt;
     &lt;/div&gt;
@@ -37668,14 +37668,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Map usage by station, depot, or zone.&lt;/p&gt;
+        &lt;p&gt;Map dock, depot, station, or curb-zone usage by departures, arrivals, dwell time, and rebalance need.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;concentration&lt;/li&gt;
-&lt;li&gt;station load&lt;/li&gt;
-&lt;li&gt;coverage&lt;/li&gt;
+          &lt;li&gt;station load&lt;/li&gt;
+&lt;li&gt;dwell time&lt;/li&gt;
+&lt;li&gt;rebalance need&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -37686,8 +37686,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Station Treemap</div>
-          <div class="desc">Map usage by station, depot, or zone.</div>
-          <div class="signals"><span>station</span><span>treemap</span></div>
+          <div class="desc">Map dock, depot, station, or curb-zone usage by departures, arrivals, dwell time, and rebalance need.</div>
+          <div class="signals"><span>station</span><span>dwell</span><span>rebalance</span></div>
           <div class="file"><span>mobility/station-treemap.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -37863,8 +37863,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Driver Cohort Retention example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Mobility driver cohort retention example&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative rides / mobility sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Driver retention by activation cohort&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;cohort activity from activation through first trip, weekly active supply, churn, and reactivation&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;mobility/driver-cohort-retention&lt;/div&gt;
     &lt;/div&gt;
@@ -37880,14 +37880,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Track driver or rider retention by activation cohort.&lt;/p&gt;
+        &lt;p&gt;Track driver activation, first-trip completion, weekly activity, churn, and reactivation by onboarding cohort.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;retention&lt;/li&gt;
-&lt;li&gt;supply quality&lt;/li&gt;
-&lt;li&gt;stickiness&lt;/li&gt;
+          &lt;li&gt;first trip&lt;/li&gt;
+&lt;li&gt;active supply&lt;/li&gt;
+&lt;li&gt;churn risk&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -37898,8 +37898,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Driver Cohort Retention</div>
-          <div class="desc">Track driver or rider retention by activation cohort.</div>
-          <div class="signals"><span>driver</span><span>cohort</span><span>retention</span></div>
+          <div class="desc">Track driver activation, first-trip completion, weekly activity, churn, and reactivation by onboarding cohort.</div>
+          <div class="signals"><span>first trip</span><span>supply</span><span>churn</span></div>
           <div class="file"><span>mobility/driver-cohort-retention.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -38075,8 +38075,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Fare Waterfall example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Mobility fare waterfall example&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative rides / mobility sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Fare and driver earnings bridge&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;fare movement across base, time, distance, surge, incentives, fees, tolls, and margin&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;mobility/fare-waterfall&lt;/div&gt;
     &lt;/div&gt;
@@ -38099,14 +38099,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Explain fare from base, distance, surge, incentives, fees, and margin.&lt;/p&gt;
+        &lt;p&gt;Explain rider fare and driver earnings from base, time, distance, surge, incentives, fees, tolls, and platform margin.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
           &lt;li&gt;fare driver&lt;/li&gt;
-&lt;li&gt;cost leak&lt;/li&gt;
-&lt;li&gt;profitability&lt;/li&gt;
+&lt;li&gt;incentive cost&lt;/li&gt;
+&lt;li&gt;margin leak&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -38117,8 +38117,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Fare Waterfall</div>
-          <div class="desc">Explain fare from base, distance, surge, incentives, fees, and margin.</div>
-          <div class="signals"><span>fare</span><span>waterfall</span></div>
+          <div class="desc">Explain rider fare and driver earnings from base, time, distance, surge, incentives, fees, tolls, and platform margin.</div>
+          <div class="signals"><span>fare</span><span>incentives</span><span>margin</span></div>
           <div class="file"><span>mobility/fare-waterfall.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -38294,8 +38294,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Safety Radar example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Mobility safety radar example&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative rides / mobility sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Mobility safety and compliance profile&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;crash, braking, compliance, training, vehicle-health, and incident-response scorecard&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;mobility/safety-radar&lt;/div&gt;
     &lt;/div&gt;
@@ -38315,14 +38315,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Score operations across incidents, compliance, training, vehicle health, and response.&lt;/p&gt;
+        &lt;p&gt;Score operations across crash rate, harsh braking, compliance, training, vehicle health, and incident response.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;safety profile&lt;/li&gt;
-&lt;li&gt;risk&lt;/li&gt;
-&lt;li&gt;weak control&lt;/li&gt;
+          &lt;li&gt;crash risk&lt;/li&gt;
+&lt;li&gt;compliance gap&lt;/li&gt;
+&lt;li&gt;response time&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -38333,8 +38333,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Safety Radar</div>
-          <div class="desc">Score operations across incidents, compliance, training, vehicle health, and response.</div>
-          <div class="signals"><span>safety</span><span>radar</span></div>
+          <div class="desc">Score operations across crash rate, harsh braking, compliance, training, vehicle health, and incident response.</div>
+          <div class="signals"><span>crash</span><span>compliance</span><span>response</span></div>
           <div class="file"><span>mobility/safety-radar.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -38510,8 +38510,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Demand Stress Test example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Mobility scenario stress test&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative rides / mobility sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Service capacity stress test by disruption&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;rider demand and supply coverage under weather, event, outage, shortage, and app incident scenarios&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;mobility/demand-stress-test&lt;/div&gt;
     &lt;/div&gt;
@@ -38533,14 +38533,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Compare service capacity under weather, event, outage, and demand spike scenarios.&lt;/p&gt;
+        &lt;p&gt;Compare service capacity under storm, event surge, transit outage, driver shortage, and app incident scenarios.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;resilience&lt;/li&gt;
-&lt;li&gt;capacity gap&lt;/li&gt;
-&lt;li&gt;tail event&lt;/li&gt;
+          &lt;li&gt;coverage gap&lt;/li&gt;
+&lt;li&gt;event surge&lt;/li&gt;
+&lt;li&gt;outage risk&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -38551,8 +38551,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Demand Stress Test</div>
-          <div class="desc">Compare service capacity under weather, event, outage, and demand spike scenarios.</div>
-          <div class="signals"><span>demand</span><span>stress</span><span>test</span></div>
+          <div class="desc">Compare service capacity under storm, event surge, transit outage, driver shortage, and app incident scenarios.</div>
+          <div class="signals"><span>coverage</span><span>event surge</span><span>outage</span></div>
           <div class="file"><span>mobility/demand-stress-test.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
