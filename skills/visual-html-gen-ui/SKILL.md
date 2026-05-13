@@ -347,16 +347,16 @@ Production, quality, supply chain, maintenance, throughput, yield, and factory o
 
 Generation, demand, grid operations, trading, storage, renewables, emissions, and asset performance.
 
-- [Load Line](energy/load-line.html) - Track power demand, generation, or price over time.
-- [Generation Stack Area](energy/generation-stack-area.html) - Emphasize generation mix or supply stack over time.
-- [Fuel Mix Donut](energy/fuel-mix-donut.html) - Summarize generation or consumption by energy source.
-- [Grid Heatmap](energy/grid-heatmap.html) - Map load, congestion, or outage risk by region and hour.
-- [Dispatch Sankey](energy/dispatch-sankey.html) - Show energy flow from generation sources to grid, storage, and load.
-- [Asset Treemap](energy/asset-treemap.html) - Map capacity, revenue, or emissions by asset.
-- [Price Risk Scatter](energy/price-risk-scatter.html) - Position markets or assets by price volatility and margin.
-- [Emissions Waterfall](energy/emissions-waterfall.html) - Explain emissions movement from demand, efficiency, renewables, offsets, and fuel mix.
-- [Project Sensitivity Tornado](energy/project-sensitivity-tornado.html) - Rank price, capex, capacity factor, and financing assumptions by project return effect.
-- [Supply Stress Test](energy/supply-stress-test.html) - Compare reserve margin under outage, heat wave, fuel shock, and demand spike scenarios.
+- [Load Line](energy/load-line.html) - Track hourly load, renewable output, net load, curtailment, peak price, and reserve margin across operating days.
+- [Generation Stack Area](energy/generation-stack-area.html) - Show generation mix across solar, wind, hydro, gas, coal, imports, storage discharge, and curtailment over time.
+- [Fuel Mix Donut](energy/fuel-mix-donut.html) - Summarize generation, consumption, emissions intensity, and contracted supply by fuel or resource type.
+- [Grid Heatmap](energy/grid-heatmap.html) - Map load, congestion price, outage exposure, voltage constraint, and reserve scarcity by region and hour.
+- [Dispatch Sankey](energy/dispatch-sankey.html) - Show energy flow from renewable and thermal generation through transmission, storage charge, storage discharge, curtailment, grid delivery, and end-use load.
+- [Asset Treemap](energy/asset-treemap.html) - Map capacity, merchant revenue, contracted revenue, emissions, availability, and maintenance exposure by plant or asset.
+- [Price Risk Scatter](energy/price-risk-scatter.html) - Position hubs, assets, or hedges by price volatility, spread margin, liquidity, basis risk, and downside exposure.
+- [Emissions Waterfall](energy/emissions-waterfall.html) - Explain emissions movement from demand growth, efficiency, renewables, storage, fuel switching, offsets, and curtailment.
+- [Project Sensitivity Tornado](energy/project-sensitivity-tornado.html) - Rank power price, capex, capacity factor, degradation, interconnect cost, tax credits, and financing assumptions by project return impact.
+- [Supply Stress Test](energy/supply-stress-test.html) - Compare reserve margin, unserved load, storage duration, fuel availability, and price spike exposure under outage, heat wave, fuel shock, demand spike, and transmission constraint scenarios.
 
 ### Retail
 

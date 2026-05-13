@@ -155,7 +155,7 @@
     <div>
       <div class="eyebrow">Energy / sankey</div>
       <h1>Dispatch Sankey</h1>
-      <p class="purpose">Show energy flow from generation sources to grid, storage, and load.</p>
+      <p class="purpose">Show energy flow from renewable and thermal generation through transmission, storage charge, storage discharge, curtailment, grid delivery, and end-use load.</p>
     </div>
     <div class="stamp">standalone html</div>
   </header>
@@ -163,8 +163,8 @@
   <section id="chart-preview" class="frame" aria-label="Dispatch Sankey example">
     <div class="chart-head">
       <div>
-        <h2 class="chart-title">Energy flow between wind and solar</h2>
-        <div class="chart-meta">illustrative MWh / energy sample data</div>
+        <h2 class="chart-title">Dispatch flow from generation to load and storage</h2>
+        <div class="chart-meta">renewable and thermal dispatch through transmission, storage, curtailment, grid delivery, and load</div>
       </div>
       <div class="chart-meta">energy/dispatch-sankey</div>
     </div>
@@ -185,14 +185,14 @@
     <div class="note-grid">
       <div class="note">
         <h2>Use When</h2>
-        <p>Show energy flow from generation sources to grid, storage, and load.</p>
+        <p>Show energy flow from renewable and thermal generation through transmission, storage charge, storage discharge, curtailment, grid delivery, and end-use load.</p>
       </div>
       <div class="note">
         <h2>Signals</h2>
         <ul>
-          <li>flow</li>
-<li>storage path</li>
-<li>loss</li>
+          <li>storage path</li>
+<li>curtailment loss</li>
+<li>delivered load</li>
         </ul>
       </div>
     </div>

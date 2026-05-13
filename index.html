@@ -49955,8 +49955,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Load Line example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Energy Load Line for grid load&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative MWh / energy sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Net load, peak price, and reserve margin trend&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;hourly load, renewable output, net load, curtailment, peak price, and reserve margin&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;energy/load-line&lt;/div&gt;
     &lt;/div&gt;
@@ -49979,14 +49979,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Track power demand, generation, or price over time.&lt;/p&gt;
+        &lt;p&gt;Track hourly load, renewable output, net load, curtailment, peak price, and reserve margin across operating days.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;demand&lt;/li&gt;
-&lt;li&gt;peak&lt;/li&gt;
-&lt;li&gt;trend&lt;/li&gt;
+          &lt;li&gt;peak load&lt;/li&gt;
+&lt;li&gt;ramp risk&lt;/li&gt;
+&lt;li&gt;reserve margin&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -49997,8 +49997,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Load Line</div>
-          <div class="desc">Track power demand, generation, or price over time.</div>
-          <div class="signals"><span>load</span><span>line</span></div>
+          <div class="desc">Track hourly load, renewable output, net load, curtailment, peak price, and reserve margin across operating days.</div>
+          <div class="signals"><span>load</span><span>ramp</span><span>reserve</span></div>
           <div class="file"><span>energy/load-line.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -50174,8 +50174,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Generation Stack Area example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Energy cumulative grid load&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative MWh / energy sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Generation stack and renewable dispatch mix&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;generation mix across solar, wind, hydro, gas, coal, imports, storage discharge, and curtailment&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;energy/generation-stack-area&lt;/div&gt;
     &lt;/div&gt;
@@ -50198,14 +50198,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Emphasize generation mix or supply stack over time.&lt;/p&gt;
+        &lt;p&gt;Show generation mix across solar, wind, hydro, gas, coal, imports, storage discharge, and curtailment over time.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;mix&lt;/li&gt;
-&lt;li&gt;scale&lt;/li&gt;
-&lt;li&gt;transition&lt;/li&gt;
+          &lt;li&gt;renewable share&lt;/li&gt;
+&lt;li&gt;thermal call&lt;/li&gt;
+&lt;li&gt;curtailment risk&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -50216,8 +50216,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Generation Stack Area</div>
-          <div class="desc">Emphasize generation mix or supply stack over time.</div>
-          <div class="signals"><span>generation</span><span>stack</span><span>area</span></div>
+          <div class="desc">Show generation mix across solar, wind, hydro, gas, coal, imports, storage discharge, and curtailment over time.</div>
+          <div class="signals"><span>renewables</span><span>thermal</span><span>curtailment</span></div>
           <div class="file"><span>energy/generation-stack-area.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -50393,8 +50393,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Fuel Mix Donut example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Energy fuel mix donut example&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative MWh / energy sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Fuel mix and emissions intensity snapshot&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;generation share, consumption share, emissions intensity, and contracted supply by resource type&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;energy/fuel-mix-donut&lt;/div&gt;
     &lt;/div&gt;
@@ -50415,14 +50415,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Summarize generation or consumption by energy source.&lt;/p&gt;
+        &lt;p&gt;Summarize generation, consumption, emissions intensity, and contracted supply by fuel or resource type.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;share&lt;/li&gt;
-&lt;li&gt;balance&lt;/li&gt;
-&lt;li&gt;transition risk&lt;/li&gt;
+          &lt;li&gt;fuel share&lt;/li&gt;
+&lt;li&gt;carbon intensity&lt;/li&gt;
+&lt;li&gt;transition exposure&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -50433,8 +50433,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Fuel Mix Donut</div>
-          <div class="desc">Summarize generation or consumption by energy source.</div>
-          <div class="signals"><span>fuel</span><span>mix</span><span>donut</span></div>
+          <div class="desc">Summarize generation, consumption, emissions intensity, and contracted supply by fuel or resource type.</div>
+          <div class="signals"><span>fuels</span><span>carbon</span><span>contracts</span></div>
           <div class="file"><span>energy/fuel-mix-donut.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -50610,8 +50610,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Grid Heatmap example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Energy grid heatmap example&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative MWh / energy sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Grid congestion and outage risk heatmap&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;load, congestion price, outage exposure, voltage constraint, and reserve scarcity by region and hour&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;energy/grid-heatmap&lt;/div&gt;
     &lt;/div&gt;
@@ -50662,14 +50662,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Map load, congestion, or outage risk by region and hour.&lt;/p&gt;
+        &lt;p&gt;Map load, congestion price, outage exposure, voltage constraint, and reserve scarcity by region and hour.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;hotspot&lt;/li&gt;
-&lt;li&gt;congestion&lt;/li&gt;
-&lt;li&gt;risk&lt;/li&gt;
+          &lt;li&gt;congestion hotspot&lt;/li&gt;
+&lt;li&gt;outage exposure&lt;/li&gt;
+&lt;li&gt;scarcity hour&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -50680,8 +50680,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Grid Heatmap</div>
-          <div class="desc">Map load, congestion, or outage risk by region and hour.</div>
-          <div class="signals"><span>grid</span><span>heatmap</span></div>
+          <div class="desc">Map load, congestion price, outage exposure, voltage constraint, and reserve scarcity by region and hour.</div>
+          <div class="signals"><span>congestion</span><span>outages</span><span>scarcity</span></div>
           <div class="file"><span>energy/grid-heatmap.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -50857,8 +50857,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Dispatch Sankey example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Energy flow between wind and solar&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative MWh / energy sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Dispatch flow from generation to load and storage&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;renewable and thermal dispatch through transmission, storage, curtailment, grid delivery, and load&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;energy/dispatch-sankey&lt;/div&gt;
     &lt;/div&gt;
@@ -50879,14 +50879,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Show energy flow from generation sources to grid, storage, and load.&lt;/p&gt;
+        &lt;p&gt;Show energy flow from renewable and thermal generation through transmission, storage charge, storage discharge, curtailment, grid delivery, and end-use load.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;flow&lt;/li&gt;
-&lt;li&gt;storage path&lt;/li&gt;
-&lt;li&gt;loss&lt;/li&gt;
+          &lt;li&gt;storage path&lt;/li&gt;
+&lt;li&gt;curtailment loss&lt;/li&gt;
+&lt;li&gt;delivered load&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -50897,8 +50897,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Dispatch Sankey</div>
-          <div class="desc">Show energy flow from generation sources to grid, storage, and load.</div>
-          <div class="signals"><span>dispatch</span><span>sankey</span></div>
+          <div class="desc">Show energy flow from renewable and thermal generation through transmission, storage charge, storage discharge, curtailment, grid delivery, and end-use load.</div>
+          <div class="signals"><span>storage</span><span>curtailment</span><span>load</span></div>
           <div class="file"><span>energy/dispatch-sankey.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -51074,8 +51074,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Asset Treemap example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Energy asset treemap example&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative MWh / energy sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Asset portfolio by capacity revenue and emissions&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;capacity, merchant revenue, contracted revenue, emissions, availability, and maintenance exposure by asset&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;energy/asset-treemap&lt;/div&gt;
     &lt;/div&gt;
@@ -51091,14 +51091,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Map capacity, revenue, or emissions by asset.&lt;/p&gt;
+        &lt;p&gt;Map capacity, merchant revenue, contracted revenue, emissions, availability, and maintenance exposure by plant or asset.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;asset weight&lt;/li&gt;
-&lt;li&gt;concentration&lt;/li&gt;
-&lt;li&gt;portfolio&lt;/li&gt;
+          &lt;li&gt;capacity weight&lt;/li&gt;
+&lt;li&gt;revenue concentration&lt;/li&gt;
+&lt;li&gt;emissions load&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -51109,8 +51109,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Asset Treemap</div>
-          <div class="desc">Map capacity, revenue, or emissions by asset.</div>
-          <div class="signals"><span>asset</span><span>treemap</span></div>
+          <div class="desc">Map capacity, merchant revenue, contracted revenue, emissions, availability, and maintenance exposure by plant or asset.</div>
+          <div class="signals"><span>capacity</span><span>revenue</span><span>emissions</span></div>
           <div class="file"><span>energy/asset-treemap.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -51286,8 +51286,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Price Risk Scatter example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Energy price risk scatter example&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative MWh / energy sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Price volatility and margin risk map&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;price volatility, spread margin, liquidity, basis risk, and downside exposure by market or asset&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;energy/price-risk-scatter&lt;/div&gt;
     &lt;/div&gt;
@@ -51307,14 +51307,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Position markets or assets by price volatility and margin.&lt;/p&gt;
+        &lt;p&gt;Position hubs, assets, or hedges by price volatility, spread margin, liquidity, basis risk, and downside exposure.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
           &lt;li&gt;volatility&lt;/li&gt;
-&lt;li&gt;return&lt;/li&gt;
-&lt;li&gt;outlier&lt;/li&gt;
+&lt;li&gt;basis risk&lt;/li&gt;
+&lt;li&gt;margin cushion&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -51325,8 +51325,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Price Risk Scatter</div>
-          <div class="desc">Position markets or assets by price volatility and margin.</div>
-          <div class="signals"><span>price</span><span>risk</span><span>scatter</span></div>
+          <div class="desc">Position hubs, assets, or hedges by price volatility, spread margin, liquidity, basis risk, and downside exposure.</div>
+          <div class="signals"><span>volatility</span><span>basis</span><span>margin</span></div>
           <div class="file"><span>energy/price-risk-scatter.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -51502,8 +51502,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Emissions Waterfall example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Energy emissions waterfall example&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative MWh / energy sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Emissions bridge from demand to abatement&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;demand growth, efficiency, renewables, storage, fuel switching, offsets, and curtailment effects&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;energy/emissions-waterfall&lt;/div&gt;
     &lt;/div&gt;
@@ -51526,14 +51526,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Explain emissions movement from demand, efficiency, renewables, offsets, and fuel mix.&lt;/p&gt;
+        &lt;p&gt;Explain emissions movement from demand growth, efficiency, renewables, storage, fuel switching, offsets, and curtailment.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;emissions driver&lt;/li&gt;
-&lt;li&gt;abatement&lt;/li&gt;
-&lt;li&gt;gap&lt;/li&gt;
+          &lt;li&gt;demand growth&lt;/li&gt;
+&lt;li&gt;renewable abatement&lt;/li&gt;
+&lt;li&gt;offset gap&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -51544,8 +51544,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Emissions Waterfall</div>
-          <div class="desc">Explain emissions movement from demand, efficiency, renewables, offsets, and fuel mix.</div>
-          <div class="signals"><span>emissions</span><span>waterfall</span></div>
+          <div class="desc">Explain emissions movement from demand growth, efficiency, renewables, storage, fuel switching, offsets, and curtailment.</div>
+          <div class="signals"><span>demand</span><span>abatement</span><span>offsets</span></div>
           <div class="file"><span>energy/emissions-waterfall.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -51721,8 +51721,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Project Sensitivity Tornado example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Energy project sensitivity tornado example&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative MWh / energy sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Project return sensitivity by market and build assumptions&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;return impact from power price, capex, capacity factor, degradation, interconnect cost, tax credits, and financing&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;energy/project-sensitivity-tornado&lt;/div&gt;
     &lt;/div&gt;
@@ -51734,14 +51734,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Rank price, capex, capacity factor, and financing assumptions by project return effect.&lt;/p&gt;
+        &lt;p&gt;Rank power price, capex, capacity factor, degradation, interconnect cost, tax credits, and financing assumptions by project return impact.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;sensitivity&lt;/li&gt;
-&lt;li&gt;project risk&lt;/li&gt;
-&lt;li&gt;driver&lt;/li&gt;
+          &lt;li&gt;price sensitivity&lt;/li&gt;
+&lt;li&gt;capex exposure&lt;/li&gt;
+&lt;li&gt;capacity factor&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -51752,8 +51752,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Project Sensitivity Tornado</div>
-          <div class="desc">Rank price, capex, capacity factor, and financing assumptions by project return effect.</div>
-          <div class="signals"><span>project</span><span>sensitivity</span><span>tornado</span></div>
+          <div class="desc">Rank power price, capex, capacity factor, degradation, interconnect cost, tax credits, and financing assumptions by project return impact.</div>
+          <div class="signals"><span>price</span><span>capex</span><span>returns</span></div>
           <div class="file"><span>energy/project-sensitivity-tornado.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -51929,8 +51929,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Supply Stress Test example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Energy scenario stress test&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative MWh / energy sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Supply resilience stress test by constraint scenario&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;reserve margin, unserved load, storage duration, fuel availability, and price spike exposure under constraint scenarios&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;energy/supply-stress-test&lt;/div&gt;
     &lt;/div&gt;
@@ -51952,14 +51952,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Compare reserve margin under outage, heat wave, fuel shock, and demand spike scenarios.&lt;/p&gt;
+        &lt;p&gt;Compare reserve margin, unserved load, storage duration, fuel availability, and price spike exposure under outage, heat wave, fuel shock, demand spike, and transmission constraint scenarios.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;resilience&lt;/li&gt;
-&lt;li&gt;capacity gap&lt;/li&gt;
-&lt;li&gt;tail event&lt;/li&gt;
+          &lt;li&gt;reserve shortfall&lt;/li&gt;
+&lt;li&gt;unserved load&lt;/li&gt;
+&lt;li&gt;price spike&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -51970,8 +51970,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Supply Stress Test</div>
-          <div class="desc">Compare reserve margin under outage, heat wave, fuel shock, and demand spike scenarios.</div>
-          <div class="signals"><span>supply</span><span>stress</span><span>test</span></div>
+          <div class="desc">Compare reserve margin, unserved load, storage duration, fuel availability, and price spike exposure under outage, heat wave, fuel shock, demand spike, and transmission constraint scenarios.</div>
+          <div class="signals"><span>reserves</span><span>unserved</span><span>price</span></div>
           <div class="file"><span>energy/supply-stress-test.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
