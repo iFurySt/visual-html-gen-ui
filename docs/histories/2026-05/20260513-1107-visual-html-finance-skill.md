@@ -48,6 +48,7 @@ low-saturation clay/olive/oat/slate colors.
 - Real Estate
 - HR
 - Mobility
+- Travel
 
 ### Files Modified
 

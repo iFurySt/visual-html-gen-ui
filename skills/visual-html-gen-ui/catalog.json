@@ -1979,6 +1979,123 @@
           ]
         }
       ]
+    },
+    {
+      "slug": "travel",
+      "name": "Travel",
+      "summary": "Trips, bookings, destinations, itinerary planning, hospitality, demand forecasting, and traveler experience.",
+      "charts": [
+        {
+          "slug": "booking-line",
+          "title": "Booking Line",
+          "type": "line",
+          "purpose": "Track bookings, room nights, or ticket volume over time.",
+          "signals": [
+            "demand",
+            "seasonality",
+            "campaign lift"
+          ]
+        },
+        {
+          "slug": "destination-share-donut",
+          "title": "Destination Share Donut",
+          "type": "donut",
+          "purpose": "Summarize trips by destination, region, or travel type.",
+          "signals": [
+            "share",
+            "mix",
+            "concentration"
+          ]
+        },
+        {
+          "slug": "booking-funnel",
+          "title": "Booking Funnel",
+          "type": "funnel",
+          "purpose": "Track search, quote, checkout, payment, confirmation, and check-in.",
+          "signals": [
+            "conversion",
+            "friction",
+            "intent"
+          ]
+        },
+        {
+          "slug": "itinerary-sankey",
+          "title": "Itinerary Sankey",
+          "type": "sankey",
+          "purpose": "Show traveler movement across origin, destination, lodging, activity, and return.",
+          "signals": [
+            "journey",
+            "path",
+            "cross-sell"
+          ]
+        },
+        {
+          "slug": "seasonality-calendar",
+          "title": "Seasonality Calendar",
+          "type": "calendar",
+          "purpose": "Reveal booking or travel intensity by day.",
+          "signals": [
+            "seasonality",
+            "peak dates",
+            "demand gap"
+          ]
+        },
+        {
+          "slug": "route-heatmap",
+          "title": "Route Heatmap",
+          "type": "heatmap",
+          "purpose": "Map demand, occupancy, or price by route and month.",
+          "signals": [
+            "hot route",
+            "price pressure",
+            "capacity"
+          ]
+        },
+        {
+          "slug": "hotel-portfolio-treemap",
+          "title": "Hotel Portfolio Treemap",
+          "type": "treemap",
+          "purpose": "Map revenue or nights by hotel, destination, or brand.",
+          "signals": [
+            "portfolio weight",
+            "hero market",
+            "long tail"
+          ]
+        },
+        {
+          "slug": "traveler-retention-cohort",
+          "title": "Traveler Retention Cohort",
+          "type": "cohort",
+          "purpose": "Track repeat bookings by acquisition cohort.",
+          "signals": [
+            "retention",
+            "loyalty",
+            "cohort quality"
+          ]
+        },
+        {
+          "slug": "trip-margin-waterfall",
+          "title": "Trip Margin Waterfall",
+          "type": "waterfall",
+          "purpose": "Explain margin from gross booking through discounts, fees, supplier cost, and support.",
+          "signals": [
+            "margin driver",
+            "cost leak",
+            "profitability"
+          ]
+        },
+        {
+          "slug": "experience-radar",
+          "title": "Experience Radar",
+          "type": "radar",
+          "purpose": "Score travel experience across price, convenience, support, quality, and flexibility.",
+          "signals": [
+            "experience profile",
+            "tradeoff",
+            "weak dimension"
+          ]
+        }
+      ]
     }
   ]
 }

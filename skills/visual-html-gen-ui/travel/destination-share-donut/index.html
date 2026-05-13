@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Travel - Destination Share Donut</title>
+<style>
+  :root {
+    --ivory: #FAF9F5;
+    --paper: #FFFFFF;
+    --slate: #141413;
+    --clay: #D97757;
+    --rust: #B04A3F;
+    --oat: #E3DACC;
+    --olive: #788C5D;
+    --teal: #4D8A8B;
+    --blue: #5277A3;
+    --gold: #C99A42;
+    --gray-100: #F0EEE6;
+    --gray-300: #D1CFC5;
+    --gray-500: #87867F;
+    --gray-700: #3D3D3A;
+    --serif: ui-serif, Georgia, "Times New Roman", serif;
+    --sans: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --mono: ui-monospace, "SF Mono", Menlo, Monaco, Consolas, monospace;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--ivory);
+    color: var(--slate);
+    font-family: var(--sans);
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+  .page {
+    width: min(1120px, calc(100vw - 40px));
+    margin: 0 auto;
+    padding: 56px 0 96px;
+  }
+  header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 24px;
+    align-items: end;
+    margin-bottom: 28px;
+    border-bottom: 1.5px solid var(--gray-300);
+    padding-bottom: 22px;
+  }
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--gray-500);
+    margin-bottom: 10px;
+  }
+  h1 {
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: clamp(34px, 5vw, 56px);
+    line-height: 1.04;
+    letter-spacing: 0;
+    margin: 0;
+  }
+  .purpose {
+    max-width: 620px;
+    margin: 16px 0 0;
+    color: var(--gray-700);
+    font-size: 16px;
+  }
+  .stamp {
+    border: 1.5px solid var(--gray-300);
+    background: var(--paper);
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--gray-700);
+    white-space: nowrap;
+  }
+  .frame {
+    background: var(--paper);
+    border: 1.5px solid var(--gray-300);
+    border-radius: 8px;
+    padding: 22px;
+  }
+  .chart-head {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    align-items: start;
+    margin-bottom: 16px;
+  }
+  .chart-title {
+    font-family: var(--serif);
+    font-size: 26px;
+    line-height: 1.15;
+    margin: 0;
+    font-weight: 500;
+  }
+  .chart-meta {
+    font-family: var(--mono);
+    color: var(--gray-500);
+    font-size: 12px;
+  }
+  svg {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .note-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 18px;
+    margin-top: 22px;
+  }
+  .note {
+    border-top: 1.5px solid var(--gray-300);
+    padding-top: 16px;
+    color: var(--gray-700);
+  }
+  .note h2 {
+    font-family: var(--mono);
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--gray-500);
+    margin: 0 0 8px;
+  }
+  .note p, .note ul { margin: 0; }
+  .note ul { padding-left: 18px; }
+  .axis { stroke: var(--gray-300); stroke-width: 1.5; }
+  .grid { stroke: var(--gray-100); stroke-width: 1.5; }
+  .label {
+    fill: var(--gray-500);
+    font: 12px var(--mono);
+  }
+  .small {
+    fill: var(--gray-700);
+    font: 13px var(--sans);
+  }
+  @media (max-width: 760px) {
+    .page { width: min(100vw - 28px, 1120px); padding-top: 32px; }
+    header, .note-grid { grid-template-columns: 1fr; }
+    .stamp { width: fit-content; }
+    .frame { padding: 16px; }
+    .chart-head { flex-direction: column; }
+  }
+</style>
+</head>
+<body>
+<main class="page">
+  <header>
+    <div>
+      <div class="eyebrow">Travel / donut</div>
+      <h1>Destination Share Donut</h1>
+      <p class="purpose">Summarize trips by destination, region, or travel type.</p>
+    </div>
+    <div class="stamp">standalone html</div>
+  </header>
+
+  <section class="frame" aria-label="Destination Share Donut example">
+    <div class="chart-head">
+      <div>
+        <h2 class="chart-title">Sample destination share donut</h2>
+        <div class="chart-meta">illustrative data / replace with project values</div>
+      </div>
+      <div class="chart-meta">travel/destination-share-donut</div>
+    </div>
+    <svg viewBox="0 0 960 430" role="img" aria-label="Chart preview">
+  <rect x="0" y="0" width="960" height="430" rx="8" fill="#FAF9F5"/>
+  <path d="M 300.0 78.0 A 132 132 0 0 1 411.5 280.7 L 355.7 245.4 A 66 66 0 0 0 300.0 144.0 Z" fill="#4D8A8B"/>
+  <path d="M 411.5 280.7 A 132 132 0 0 1 236.4 325.7 L 268.2 267.8 A 66 66 0 0 0 355.7 245.4 Z" fill="#D97757"/>
+  <path d="M 236.4 325.7 A 132 132 0 0 1 168.3 201.7 L 234.1 205.9 A 66 66 0 0 0 268.2 267.8 Z" fill="#788C5D"/>
+  <path d="M 168.3 201.7 A 132 132 0 0 1 222.4 103.2 L 261.2 156.6 A 66 66 0 0 0 234.1 205.9 Z" fill="#C99A42"/>
+  <path d="M 222.4 103.2 A 132 132 0 0 1 300.0 78.0 L 300.0 144.0 A 66 66 0 0 0 261.2 156.6 Z" fill="#5277A3"/>
+  <rect x="560" y="116" width="16" height="16" rx="3" fill="#4D8A8B"/><text class="small" x="588" y="129">Public equity 34%</text>
+  <rect x="560" y="158" width="16" height="16" rx="3" fill="#D97757"/><text class="small" x="588" y="171">Credit 24%</text>
+  <rect x="560" y="200" width="16" height="16" rx="3" fill="#788C5D"/><text class="small" x="588" y="213">Cash 18%</text>
+  <rect x="560" y="242" width="16" height="16" rx="3" fill="#C99A42"/><text class="small" x="588" y="255">Private 14%</text>
+  <rect x="560" y="284" width="16" height="16" rx="3" fill="#5277A3"/><text class="small" x="588" y="297">Hedges 10%</text>
+  <text x="300" y="204" text-anchor="middle" font-family="var(--serif)" font-size="42" fill="#141413">100%</text><text class="label" x="300" y="234" text-anchor="middle">allocated</text>
+</svg>
+    <div class="note-grid">
+      <div class="note">
+        <h2>Use When</h2>
+        <p>Summarize trips by destination, region, or travel type.</p>
+      </div>
+      <div class="note">
+        <h2>Signals</h2>
+        <ul>
+          <li>share</li>
+<li>mix</li>
+<li>concentration</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+</body>
+</html>

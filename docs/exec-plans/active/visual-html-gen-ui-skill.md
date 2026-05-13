@@ -92,7 +92,7 @@ without loading every example into context.
 - [x] Real Estate
 - [x] HR
 - [x] Mobility
-- [ ] Travel
+- [x] Travel
 - [ ] Biotech
 - [ ] Legal
 - [ ] Government

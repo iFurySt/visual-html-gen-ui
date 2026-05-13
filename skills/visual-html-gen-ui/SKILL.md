@@ -268,6 +268,21 @@ Urban mobility, ride hailing, fleet operations, routing, utilization, safety, an
 - [Safety Radar](mobility/safety-radar/index.html) - Score operations across incidents, compliance, training, vehicle health, and response.
 - [Demand Stress Test](mobility/demand-stress-test/index.html) - Compare service capacity under weather, event, outage, and demand spike scenarios.
 
+### Travel
+
+Trips, bookings, destinations, itinerary planning, hospitality, demand forecasting, and traveler experience.
+
+- [Booking Line](travel/booking-line/index.html) - Track bookings, room nights, or ticket volume over time.
+- [Destination Share Donut](travel/destination-share-donut/index.html) - Summarize trips by destination, region, or travel type.
+- [Booking Funnel](travel/booking-funnel/index.html) - Track search, quote, checkout, payment, confirmation, and check-in.
+- [Itinerary Sankey](travel/itinerary-sankey/index.html) - Show traveler movement across origin, destination, lodging, activity, and return.
+- [Seasonality Calendar](travel/seasonality-calendar/index.html) - Reveal booking or travel intensity by day.
+- [Route Heatmap](travel/route-heatmap/index.html) - Map demand, occupancy, or price by route and month.
+- [Hotel Portfolio Treemap](travel/hotel-portfolio-treemap/index.html) - Map revenue or nights by hotel, destination, or brand.
+- [Traveler Retention Cohort](travel/traveler-retention-cohort/index.html) - Track repeat bookings by acquisition cohort.
+- [Trip Margin Waterfall](travel/trip-margin-waterfall/index.html) - Explain margin from gross booking through discounts, fees, supplier cost, and support.
+- [Experience Radar](travel/experience-radar/index.html) - Score travel experience across price, convenience, support, quality, and flexibility.
+
 ## Maintenance
 
 Maintainers should edit `catalog.json`, run
