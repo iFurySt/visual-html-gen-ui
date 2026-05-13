@@ -362,16 +362,16 @@ Generation, demand, grid operations, trading, storage, renewables, emissions, an
 
 Store operations, category management, merchandising, footfall, inventory, promotions, and basket analytics.
 
-- [Same Store Sales Line](retail/same-store-sales-line.html) - Track same-store sales, footfall, or conversion over time.
-- [Category Mix Stacked Bar](retail/category-mix-stacked-bar.html) - Break store sales into category or department components.
-- [Store Traffic Calendar](retail/store-traffic-calendar.html) - Reveal footfall or transaction pressure by day.
-- [Shelf Availability Heatmap](retail/shelf-availability-heatmap.html) - Map availability or stockout risk by store and category.
-- [Basket Sankey](retail/basket-sankey.html) - Show basket flow between entry category, attached items, and checkout.
-- [Store Treemap](retail/store-treemap.html) - Map revenue, margin, or traffic by store.
-- [Promotion Funnel](retail/promotion-funnel.html) - Track shoppers from exposure to redemption, purchase, repeat, and loyalty.
-- [Loyalty Cohort Retention](retail/loyalty-cohort-retention.html) - Track repeat shopping by loyalty cohort.
-- [Margin Waterfall](retail/margin-waterfall.html) - Explain gross margin from sales through markdowns, shrink, labor, and logistics.
-- [Store Score Radar](retail/store-score-radar.html) - Score a store across traffic, conversion, availability, service, and shrink.
+- [Same Store Sales Line](retail/same-store-sales-line.html) - Track comp sales, footfall, conversion, basket size, markdown lift, and promo or weather variance by week.
+- [Category Mix Stacked Bar](retail/category-mix-stacked-bar.html) - Break sales, margin, units, markdown dollars, and inventory turns by department, category, and channel.
+- [Store Traffic Calendar](retail/store-traffic-calendar.html) - Reveal footfall, transactions, queue pressure, staffing coverage, event lifts, and weather dips by daypart.
+- [Shelf Availability Heatmap](retail/shelf-availability-heatmap.html) - Map on-shelf availability, stockout risk, phantom inventory, planogram compliance, and replenishment lag by store and category.
+- [Basket Sankey](retail/basket-sankey.html) - Show basket flow from entry category through attach items, substitution, promotion redemption, checkout, and loyalty capture.
+- [Store Treemap](retail/store-treemap.html) - Map revenue, gross margin, traffic, conversion, shrink, and labor cost by store and region.
+- [Promotion Funnel](retail/promotion-funnel.html) - Track shoppers from impression through offer view, clip or save, redemption, purchase, repeat, and loyalty enrollment.
+- [Loyalty Cohort Retention](retail/loyalty-cohort-retention.html) - Track repeat shopping, churn, average order value, rewards usage, and category expansion by loyalty cohort.
+- [Margin Waterfall](retail/margin-waterfall.html) - Explain gross margin movement from sales mix, markdowns, vendor funding, shrink, labor, fulfillment, freight, and returns.
+- [Store Score Radar](retail/store-score-radar.html) - Score a store across traffic quality, conversion, availability, service level, shrink control, staffing, and local demand.
 
 ### Crypto
 
