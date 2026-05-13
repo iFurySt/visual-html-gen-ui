@@ -272,16 +272,16 @@ Urban mobility, ride hailing, fleet operations, routing, utilization, safety, an
 
 Trips, bookings, destinations, itinerary planning, hospitality, demand forecasting, and traveler experience.
 
-- [Booking Line](travel/booking-line.html) - Track bookings, room nights, or ticket volume over time.
-- [Destination Share Donut](travel/destination-share-donut.html) - Summarize trips by destination, region, or travel type.
-- [Booking Funnel](travel/booking-funnel.html) - Track search, quote, checkout, payment, confirmation, and check-in.
-- [Itinerary Sankey](travel/itinerary-sankey.html) - Show traveler movement across origin, destination, lodging, activity, and return.
-- [Seasonality Calendar](travel/seasonality-calendar.html) - Reveal booking or travel intensity by day.
-- [Travel Route Heatmap](travel/route-heatmap.html) - Map demand, occupancy, or price by route and month.
-- [Hotel Portfolio Treemap](travel/hotel-portfolio-treemap.html) - Map revenue or nights by hotel, destination, or brand.
-- [Traveler Retention Cohort](travel/traveler-retention-cohort.html) - Track repeat bookings by acquisition cohort.
-- [Trip Margin Waterfall](travel/trip-margin-waterfall.html) - Explain margin from gross booking through discounts, fees, supplier cost, and support.
-- [Experience Radar](travel/experience-radar.html) - Score travel experience across price, convenience, support, quality, and flexibility.
+- [Booking Line](travel/booking-line.html) - Track booking demand, room nights, cancellation rate, ADR, and campaign pickup by booking window.
+- [Destination Share Donut](travel/destination-share-donut.html) - Summarize booked trips by destination, region, traveler segment, trip purpose, and season.
+- [Booking Funnel](travel/booking-funnel.html) - Track traveler conversion from search through availability, quote, checkout, payment, confirmation, and check-in.
+- [Itinerary Sankey](travel/itinerary-sankey.html) - Show itinerary flow across origin market, destination, lodging, transport, activities, add-ons, and return.
+- [Seasonality Calendar](travel/seasonality-calendar.html) - Reveal booking pickup, arrival intensity, price compression, and blackout dates across the travel calendar.
+- [Travel Route Heatmap](travel/route-heatmap.html) - Map route demand, load factor, fare pressure, and availability by origin-destination pair and month.
+- [Hotel Portfolio Treemap](travel/hotel-portfolio-treemap.html) - Map room-night revenue, occupancy, ADR, and brand contribution by property, destination, or segment.
+- [Traveler Retention Cohort](travel/traveler-retention-cohort.html) - Track repeat booking, reactivation, loyalty tier movement, and destination switching by acquisition cohort.
+- [Trip Margin Waterfall](travel/trip-margin-waterfall.html) - Explain trip margin from gross booking value through discounts, taxes, supplier cost, payment fees, support, refunds, and attach revenue.
+- [Experience Radar](travel/experience-radar.html) - Score traveler experience across price transparency, itinerary convenience, disruption support, supplier quality, flexibility, and loyalty value.
 
 ### Biotech
 

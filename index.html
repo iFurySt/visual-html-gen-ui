@@ -38737,8 +38737,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Booking Line example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Travel Booking Line for booking demand&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative bookings / travel sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Booking pickup and cancellation trend&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;daily bookings, room nights, ADR, cancellations, and campaign pickup by booking window&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;travel/booking-line&lt;/div&gt;
     &lt;/div&gt;
@@ -38761,14 +38761,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Track bookings, room nights, or ticket volume over time.&lt;/p&gt;
+        &lt;p&gt;Track booking demand, room nights, cancellation rate, ADR, and campaign pickup by booking window.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;demand&lt;/li&gt;
-&lt;li&gt;seasonality&lt;/li&gt;
-&lt;li&gt;campaign lift&lt;/li&gt;
+          &lt;li&gt;booking pickup&lt;/li&gt;
+&lt;li&gt;cancellation risk&lt;/li&gt;
+&lt;li&gt;ADR movement&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -38779,8 +38779,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Booking Line</div>
-          <div class="desc">Track bookings, room nights, or ticket volume over time.</div>
-          <div class="signals"><span>booking</span><span>line</span></div>
+          <div class="desc">Track booking demand, room nights, cancellation rate, ADR, and campaign pickup by booking window.</div>
+          <div class="signals"><span>pickup</span><span>cancellations</span><span>ADR</span></div>
           <div class="file"><span>travel/booking-line.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -38956,8 +38956,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Destination Share Donut example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Travel destination share donut example&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative bookings / travel sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Destination mix by traveler segment&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;destination share across region, trip purpose, traveler segment, and season&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;travel/destination-share-donut&lt;/div&gt;
     &lt;/div&gt;
@@ -38978,13 +38978,13 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Summarize trips by destination, region, or travel type.&lt;/p&gt;
+        &lt;p&gt;Summarize booked trips by destination, region, traveler segment, trip purpose, and season.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;share&lt;/li&gt;
-&lt;li&gt;mix&lt;/li&gt;
+          &lt;li&gt;destination mix&lt;/li&gt;
+&lt;li&gt;segment demand&lt;/li&gt;
 &lt;li&gt;concentration&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
@@ -38996,8 +38996,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Destination Share Donut</div>
-          <div class="desc">Summarize trips by destination, region, or travel type.</div>
-          <div class="signals"><span>destination</span><span>share</span><span>donut</span></div>
+          <div class="desc">Summarize booked trips by destination, region, traveler segment, trip purpose, and season.</div>
+          <div class="signals"><span>destinations</span><span>segments</span><span>season</span></div>
           <div class="file"><span>travel/destination-share-donut.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -39173,8 +39173,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Booking Funnel example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Travel search to check-in&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative bookings / travel sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Booking funnel from search to check-in&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;traveler conversion through search, availability, quote, checkout, payment, confirmation, and check-in&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;travel/booking-funnel&lt;/div&gt;
     &lt;/div&gt;
@@ -39189,14 +39189,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Track search, quote, checkout, payment, confirmation, and check-in.&lt;/p&gt;
+        &lt;p&gt;Track traveler conversion from search through availability, quote, checkout, payment, confirmation, and check-in.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;conversion&lt;/li&gt;
-&lt;li&gt;friction&lt;/li&gt;
-&lt;li&gt;intent&lt;/li&gt;
+          &lt;li&gt;search intent&lt;/li&gt;
+&lt;li&gt;payment drop&lt;/li&gt;
+&lt;li&gt;check-in yield&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -39207,8 +39207,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Booking Funnel</div>
-          <div class="desc">Track search, quote, checkout, payment, confirmation, and check-in.</div>
-          <div class="signals"><span>booking</span><span>funnel</span></div>
+          <div class="desc">Track traveler conversion from search through availability, quote, checkout, payment, confirmation, and check-in.</div>
+          <div class="signals"><span>search</span><span>payment</span><span>check-in</span></div>
           <div class="file"><span>travel/booking-funnel.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -39384,8 +39384,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Itinerary Sankey example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Travel flow between tokyo and paris&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative bookings / travel sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Itinerary flow from origin to activities&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;traveler paths across origins, destinations, lodging, transport, activities, add-ons, and return&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;travel/itinerary-sankey&lt;/div&gt;
     &lt;/div&gt;
@@ -39406,13 +39406,13 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Show traveler movement across origin, destination, lodging, activity, and return.&lt;/p&gt;
+        &lt;p&gt;Show itinerary flow across origin market, destination, lodging, transport, activities, add-ons, and return.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;journey&lt;/li&gt;
-&lt;li&gt;path&lt;/li&gt;
+          &lt;li&gt;route path&lt;/li&gt;
+&lt;li&gt;add-on attach&lt;/li&gt;
 &lt;li&gt;cross-sell&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
@@ -39424,8 +39424,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Itinerary Sankey</div>
-          <div class="desc">Show traveler movement across origin, destination, lodging, activity, and return.</div>
-          <div class="signals"><span>itinerary</span><span>sankey</span></div>
+          <div class="desc">Show itinerary flow across origin market, destination, lodging, transport, activities, add-ons, and return.</div>
+          <div class="signals"><span>origin</span><span>activities</span><span>add-ons</span></div>
           <div class="file"><span>travel/itinerary-sankey.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -39601,8 +39601,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Seasonality Calendar example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Travel seasonality calendar example&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative bookings / travel sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Booking seasonality and blackout calendar&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;daily booking pickup, arrivals, rates, blackout dates, and event periods&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;travel/seasonality-calendar&lt;/div&gt;
     &lt;/div&gt;
@@ -39678,14 +39678,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Reveal booking or travel intensity by day.&lt;/p&gt;
+        &lt;p&gt;Reveal booking pickup, arrival intensity, price compression, and blackout dates across the travel calendar.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;seasonality&lt;/li&gt;
-&lt;li&gt;peak dates&lt;/li&gt;
-&lt;li&gt;demand gap&lt;/li&gt;
+          &lt;li&gt;peak dates&lt;/li&gt;
+&lt;li&gt;shoulder season&lt;/li&gt;
+&lt;li&gt;blackout risk&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -39696,8 +39696,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Seasonality Calendar</div>
-          <div class="desc">Reveal booking or travel intensity by day.</div>
-          <div class="signals"><span>seasonality</span><span>calendar</span></div>
+          <div class="desc">Reveal booking pickup, arrival intensity, price compression, and blackout dates across the travel calendar.</div>
+          <div class="signals"><span>pickup</span><span>peak dates</span><span>blackouts</span></div>
           <div class="file"><span>travel/seasonality-calendar.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -39873,8 +39873,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Travel Route Heatmap example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Travel travel route heatmap example&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative bookings / travel sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Route demand and fare pressure heatmap&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;origin-destination demand, load factor, fare pressure, and availability by month&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;travel/route-heatmap&lt;/div&gt;
     &lt;/div&gt;
@@ -39925,14 +39925,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Map demand, occupancy, or price by route and month.&lt;/p&gt;
+        &lt;p&gt;Map route demand, load factor, fare pressure, and availability by origin-destination pair and month.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
           &lt;li&gt;hot route&lt;/li&gt;
-&lt;li&gt;price pressure&lt;/li&gt;
-&lt;li&gt;capacity&lt;/li&gt;
+&lt;li&gt;fare pressure&lt;/li&gt;
+&lt;li&gt;capacity gap&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -39943,8 +39943,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Travel Route Heatmap</div>
-          <div class="desc">Map demand, occupancy, or price by route and month.</div>
-          <div class="signals"><span>route</span><span>heatmap</span></div>
+          <div class="desc">Map route demand, load factor, fare pressure, and availability by origin-destination pair and month.</div>
+          <div class="signals"><span>routes</span><span>load factor</span><span>fare</span></div>
           <div class="file"><span>travel/route-heatmap.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -40120,8 +40120,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Hotel Portfolio Treemap example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Travel hotel portfolio treemap example&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative bookings / travel sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Hotel portfolio revenue by market&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;room-night revenue, occupancy, ADR, and brand mix across hotel properties and destinations&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;travel/hotel-portfolio-treemap&lt;/div&gt;
     &lt;/div&gt;
@@ -40137,14 +40137,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Map revenue or nights by hotel, destination, or brand.&lt;/p&gt;
+        &lt;p&gt;Map room-night revenue, occupancy, ADR, and brand contribution by property, destination, or segment.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;portfolio weight&lt;/li&gt;
-&lt;li&gt;hero market&lt;/li&gt;
-&lt;li&gt;long tail&lt;/li&gt;
+          &lt;li&gt;revenue weight&lt;/li&gt;
+&lt;li&gt;occupancy mix&lt;/li&gt;
+&lt;li&gt;market concentration&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -40155,8 +40155,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Hotel Portfolio Treemap</div>
-          <div class="desc">Map revenue or nights by hotel, destination, or brand.</div>
-          <div class="signals"><span>hotel</span><span>portfolio</span><span>treemap</span></div>
+          <div class="desc">Map room-night revenue, occupancy, ADR, and brand contribution by property, destination, or segment.</div>
+          <div class="signals"><span>revenue</span><span>occupancy</span><span>ADR</span></div>
           <div class="file"><span>travel/hotel-portfolio-treemap.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -40332,8 +40332,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Traveler Retention Cohort example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Travel traveler retention cohort example&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative bookings / travel sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Traveler repeat booking by acquisition cohort&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;repeat booking, reactivation, loyalty movement, and destination switching by cohort age&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;travel/traveler-retention-cohort&lt;/div&gt;
     &lt;/div&gt;
@@ -40349,14 +40349,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Track repeat bookings by acquisition cohort.&lt;/p&gt;
+        &lt;p&gt;Track repeat booking, reactivation, loyalty tier movement, and destination switching by acquisition cohort.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;retention&lt;/li&gt;
-&lt;li&gt;loyalty&lt;/li&gt;
-&lt;li&gt;cohort quality&lt;/li&gt;
+          &lt;li&gt;repeat rate&lt;/li&gt;
+&lt;li&gt;loyalty lift&lt;/li&gt;
+&lt;li&gt;reactivation&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -40367,8 +40367,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Traveler Retention Cohort</div>
-          <div class="desc">Track repeat bookings by acquisition cohort.</div>
-          <div class="signals"><span>traveler</span><span>retention</span><span>cohort</span></div>
+          <div class="desc">Track repeat booking, reactivation, loyalty tier movement, and destination switching by acquisition cohort.</div>
+          <div class="signals"><span>repeat</span><span>loyalty</span><span>reactivation</span></div>
           <div class="file"><span>travel/traveler-retention-cohort.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -40544,8 +40544,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Trip Margin Waterfall example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Travel trip margin waterfall example&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative bookings / travel sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Trip margin bridge from booking to contribution&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;gross booking value, discounts, supplier cost, fees, refunds, support, attach revenue, and contribution margin&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;travel/trip-margin-waterfall&lt;/div&gt;
     &lt;/div&gt;
@@ -40568,14 +40568,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Explain margin from gross booking through discounts, fees, supplier cost, and support.&lt;/p&gt;
+        &lt;p&gt;Explain trip margin from gross booking value through discounts, taxes, supplier cost, payment fees, support, refunds, and attach revenue.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
           &lt;li&gt;margin driver&lt;/li&gt;
-&lt;li&gt;cost leak&lt;/li&gt;
-&lt;li&gt;profitability&lt;/li&gt;
+&lt;li&gt;refund drag&lt;/li&gt;
+&lt;li&gt;attach upside&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -40586,8 +40586,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Trip Margin Waterfall</div>
-          <div class="desc">Explain margin from gross booking through discounts, fees, supplier cost, and support.</div>
-          <div class="signals"><span>trip</span><span>margin</span><span>waterfall</span></div>
+          <div class="desc">Explain trip margin from gross booking value through discounts, taxes, supplier cost, payment fees, support, refunds, and attach revenue.</div>
+          <div class="signals"><span>margin</span><span>refunds</span><span>attach</span></div>
           <div class="file"><span>travel/trip-margin-waterfall.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -40763,8 +40763,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Experience Radar example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Travel experience radar example&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative bookings / travel sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Traveler experience scorecard by journey&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;price transparency, convenience, support, quality, flexibility, and loyalty value by journey type&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;travel/experience-radar&lt;/div&gt;
     &lt;/div&gt;
@@ -40784,14 +40784,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Score travel experience across price, convenience, support, quality, and flexibility.&lt;/p&gt;
+        &lt;p&gt;Score traveler experience across price transparency, itinerary convenience, disruption support, supplier quality, flexibility, and loyalty value.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;experience profile&lt;/li&gt;
-&lt;li&gt;tradeoff&lt;/li&gt;
-&lt;li&gt;weak dimension&lt;/li&gt;
+          &lt;li&gt;support gap&lt;/li&gt;
+&lt;li&gt;flexibility&lt;/li&gt;
+&lt;li&gt;loyalty value&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -40802,8 +40802,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Experience Radar</div>
-          <div class="desc">Score travel experience across price, convenience, support, quality, and flexibility.</div>
-          <div class="signals"><span>experience</span><span>radar</span></div>
+          <div class="desc">Score traveler experience across price transparency, itinerary convenience, disruption support, supplier quality, flexibility, and loyalty value.</div>
+          <div class="signals"><span>support</span><span>flexibility</span><span>loyalty</span></div>
           <div class="file"><span>travel/experience-radar.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
