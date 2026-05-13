@@ -24,6 +24,12 @@ def main() -> int:
 
     if "Visual HTML Gen UI" not in index:
         failures.append("index.html is missing the gallery title")
+    if "runtime deps" in index:
+        failures.append("index.html should not show the runtime deps summary stat")
+    if "white-space: nowrap;" not in index:
+        failures.append("index.html should keep the gallery title on one line")
+    if 'class="toc-sentinel"' not in index or 'toc.classList.toggle("is-stuck"' not in index:
+        failures.append("index.html is missing sticky domain tag behavior")
 
     expected_links = {
         f"skills/visual-html-gen-ui/{domain['slug']}/{chart['slug']}.html"
@@ -52,8 +58,12 @@ def main() -> int:
             failures.append(f"gallery link target does not exist: {link}")
 
     for domain in catalog["domains"]:
-        if f'id="{domain["slug"]}"' not in index:
-            failures.append(f"missing domain section: {domain['slug']}")
+        section_marker = f'<details class="domain-section" id="{domain["slug"]}" open>'
+        if section_marker not in index:
+            failures.append(f"missing collapsible domain section: {domain['slug']}")
+        toc_marker = f'href="#{domain["slug"]}"'
+        if toc_marker not in index:
+            failures.append(f"missing sticky tag link: {domain['slug']}")
 
     missing_preview_anchor = []
     for link in sorted(expected_links):

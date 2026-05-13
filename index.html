@@ -67,11 +67,12 @@
   h1 {
     font-family: var(--serif);
     font-weight: 500;
-    font-size: clamp(38px, 5.4vw, 62px);
+    font-size: 58px;
     line-height: 1.06;
     letter-spacing: 0;
     margin: 0 0 8px;
-    max-width: 15ch;
+    max-width: none;
+    white-space: nowrap;
   }
   h1 em {
     color: var(--clay);
@@ -165,10 +166,23 @@
   .b3 { height: 20px; background: var(--oat); }
   .b4 { height: 36px; background: var(--slate); }
   nav.toc {
+    position: sticky;
+    top: 0;
+    z-index: 20;
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
-    padding: 26px 0 0;
+    padding: 16px 0;
+    margin: 0 0 10px;
+    background: rgba(250, 249, 245, .94);
+    border-bottom: 1.5px solid transparent;
+    backdrop-filter: blur(12px);
+    transition: padding 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+  }
+  nav.toc.is-stuck {
+    padding: 10px 0;
+    border-bottom-color: var(--g300);
+    box-shadow: 0 10px 24px rgba(20,20,19,.07);
   }
   nav.toc a {
     font-size: 12.5px;
@@ -178,7 +192,7 @@
     text-decoration: none;
     color: var(--g700);
     background: var(--paper);
-    transition: border-color 120ms, color 120ms, background 120ms;
+    transition: border-color 120ms, color 120ms, background 120ms, transform 120ms;
     display: inline-flex;
     align-items: center;
     gap: 7px;
@@ -188,14 +202,24 @@
     font-size: 10px;
     color: var(--g500);
   }
-  nav.toc a:hover { border-color: var(--slate); color: var(--slate); }
+  nav.toc a:hover {
+    border-color: var(--slate);
+    color: var(--slate);
+    transform: translateY(-1px);
+  }
   nav.toc a:hover .n { color: var(--clay); }
+  nav.toc a.is-active {
+    border-color: var(--slate);
+    color: var(--slate);
+    background: var(--g100);
+  }
+  nav.toc a.is-active .n { color: var(--clay); }
   .summary {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 14px;
     margin: 30px 0 0;
-    max-width: 650px;
+    max-width: 430px;
   }
   .stat {
     background: var(--paper);
@@ -218,15 +242,34 @@
     text-transform: uppercase;
     color: var(--g500);
   }
-  section {
+  .toc-sentinel {
+    height: 1px;
+    margin-top: -1px;
+  }
+  details.domain-section {
     margin-top: 72px;
-    scroll-margin-top: 28px;
+    scroll-margin-top: 76px;
+  }
+  .domain-summary {
+    display: block;
+    list-style: none;
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 8px 10px;
+    margin: -8px -10px 10px;
+    transition: background 140ms ease;
+  }
+  .domain-summary::-webkit-details-marker { display: none; }
+  .domain-summary:hover { background: var(--g100); }
+  .domain-summary:focus-visible {
+    outline: 2px solid var(--clay);
+    outline-offset: 4px;
   }
   .sec-head {
     display: flex;
-    align-items: baseline;
+    align-items: center;
     gap: 16px;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
   }
   .sec-head .idx {
     font-family: var(--mono);
@@ -252,6 +295,33 @@
     border-radius: 999px;
     white-space: nowrap;
   }
+  .toggle {
+    margin-left: auto;
+    width: 30px;
+    height: 30px;
+    border: 1.5px solid var(--g300);
+    border-radius: 999px;
+    background: var(--paper);
+    color: var(--g700);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: transform 160ms ease, border-color 160ms ease, color 160ms ease;
+  }
+  .toggle::before {
+    content: "+";
+    font-family: var(--mono);
+    font-size: 17px;
+    line-height: 1;
+  }
+  details[open] .toggle {
+    border-color: var(--slate);
+    color: var(--slate);
+  }
+  details[open] .toggle::before { content: "-"; }
+  .domain-summary:hover .toggle { transform: rotate(90deg); }
+  details[open] .domain-summary:hover .toggle { transform: none; }
   .sec-intro {
     font-size: 14.5px;
     color: var(--g700);
@@ -380,14 +450,21 @@
   @media (max-width: 880px) {
     .hero-grid { grid-template-columns: 1fr; }
     .hero-fig { max-width: 400px; margin-top: 28px; }
+    h1 { font-size: 48px; }
   }
   @media (max-width: 720px) {
     .wrap { padding: 0 20px 96px; }
     header.masthead { padding: 52px 0 38px; }
+    h1 { font-size: 38px; }
     .summary { grid-template-columns: 1fr; }
     .sec-intro, .grid { margin-left: 0; }
     .sec-head { gap: 10px; flex-wrap: wrap; }
     .sec-head .idx { width: auto; }
+    .toggle { margin-left: 0; }
+  }
+  @media (max-width: 420px) {
+    h1 { font-size: 32px; }
+    nav.toc a { font-size: 12px; padding: 6px 11px; }
   }
 </style>
 </head>
@@ -405,9 +482,28 @@
         <div class="summary" aria-label="Catalog summary">
           <div class="stat"><strong>26</strong><span>domains</span></div>
           <div class="stat"><strong>280</strong><span>chart pages</span></div>
-          <div class="stat"><strong>0</strong><span>runtime deps</span></div>
         </div>
-        <nav class="toc" aria-label="Domain table of contents">
+      </div>
+      <div class="hero-fig" aria-hidden="true">
+        <div class="pane domain">
+          <span class="tag">domains</span>
+          <span class="l w90"></span><span class="l w75"></span><span class="l w82"></span>
+          <span class="l w60"></span><span class="l w90"></span><span class="l w70"></span>
+          <span class="l w82"></span><span class="l w50"></span><span class="l w75"></span>
+          <span class="l w90"></span><span class="l w60"></span>
+        </div>
+        <div class="pane chart">
+          <span class="tag">charts</span>
+          <span class="l w60"></span>
+          <span class="blk"></span>
+          <span class="row"><span class="bar b1"></span><span class="bar b2"></span><span class="bar b3"></span><span class="bar b4"></span></span>
+          <span class="l w75"></span><span class="l w50"></span>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="toc-sentinel" aria-hidden="true"></div>
+  <nav class="toc" aria-label="Domain table of contents">
           <a href="#finance">Finance <span class="n">30</span></a>
           <a href="#office">Office <span class="n">10</span></a>
           <a href="#education">Education <span class="n">10</span></a>
@@ -434,29 +530,12 @@
           <a href="#fashion">Fashion <span class="n">10</span></a>
           <a href="#sports">Sports <span class="n">10</span></a>
           <a href="#pets">Pets <span class="n">10</span></a>
-        </nav>
-      </div>
-      <div class="hero-fig" aria-hidden="true">
-        <div class="pane domain">
-          <span class="tag">domains</span>
-          <span class="l w90"></span><span class="l w75"></span><span class="l w82"></span>
-          <span class="l w60"></span><span class="l w90"></span><span class="l w70"></span>
-          <span class="l w82"></span><span class="l w50"></span><span class="l w75"></span>
-          <span class="l w90"></span><span class="l w60"></span>
-        </div>
-        <div class="pane chart">
-          <span class="tag">charts</span>
-          <span class="l w60"></span>
-          <span class="blk"></span>
-          <span class="row"><span class="bar b1"></span><span class="bar b2"></span><span class="bar b3"></span><span class="bar b4"></span></span>
-          <span class="l w75"></span><span class="l w50"></span>
-        </div>
-      </div>
-    </div>
-  </header>
+  </nav>
 
-  <section id="finance">
-    <div class="sec-head"><span class="idx">01</span><h2>Finance</h2><span class="count">30 charts</span></div>
+  <details class="domain-section" id="finance" open>
+    <summary class="domain-summary">
+      <div class="sec-head"><span class="idx">01</span><h2>Finance</h2><span class="count">30 charts</span><span class="toggle" aria-hidden="true"></span></div>
+    </summary>
     <p class="sec-intro">Capital markets, investment research, portfolio analytics, risk, and private-market operating metrics.</p>
     <div class="grid">
       <a class="card" href="skills/visual-html-gen-ui/finance/line-chart.html">
@@ -7117,10 +7196,12 @@ body {
         </div>
       </a>
     </div>
-  </section>
+  </details>
 
-  <section id="office">
-    <div class="sec-head"><span class="idx">02</span><h2>Office</h2><span class="count">10 charts</span></div>
+  <details class="domain-section" id="office" open>
+    <summary class="domain-summary">
+      <div class="sec-head"><span class="idx">02</span><h2>Office</h2><span class="count">10 charts</span><span class="toggle" aria-hidden="true"></span></div>
+    </summary>
     <p class="sec-intro">Workplace productivity, meetings, task execution, communication, approvals, and team operations.</p>
     <div class="grid">
       <a class="card" href="skills/visual-html-gen-ui/office/meeting-load-timeline.html">
@@ -9395,10 +9476,12 @@ body {
         </div>
       </a>
     </div>
-  </section>
+  </details>
 
-  <section id="education">
-    <div class="sec-head"><span class="idx">03</span><h2>Education</h2><span class="count">10 charts</span></div>
+  <details class="domain-section" id="education" open>
+    <summary class="domain-summary">
+      <div class="sec-head"><span class="idx">03</span><h2>Education</h2><span class="count">10 charts</span><span class="toggle" aria-hidden="true"></span></div>
+    </summary>
     <p class="sec-intro">Learning progress, classroom operations, curriculum quality, assessment, and student support analytics.</p>
     <div class="grid">
       <a class="card" href="skills/visual-html-gen-ui/education/learning-progress-line.html">
@@ -11655,10 +11738,12 @@ body {
         </div>
       </a>
     </div>
-  </section>
+  </details>
 
-  <section id="health">
-    <div class="sec-head"><span class="idx">04</span><h2>Health</h2><span class="count">10 charts</span></div>
+  <details class="domain-section" id="health" open>
+    <summary class="domain-summary">
+      <div class="sec-head"><span class="idx">04</span><h2>Health</h2><span class="count">10 charts</span><span class="toggle" aria-hidden="true"></span></div>
+    </summary>
     <p class="sec-intro">Patient monitoring, care operations, population health, appointment flow, and clinical quality views.</p>
     <div class="grid">
       <a class="card" href="skills/visual-html-gen-ui/health/vitals-trend-line.html">
@@ -13909,10 +13994,12 @@ body {
         </div>
       </a>
     </div>
-  </section>
+  </details>
 
-  <section id="ecommerce">
-    <div class="sec-head"><span class="idx">05</span><h2>Ecommerce</h2><span class="count">10 charts</span></div>
+  <details class="domain-section" id="ecommerce" open>
+    <summary class="domain-summary">
+      <div class="sec-head"><span class="idx">05</span><h2>Ecommerce</h2><span class="count">10 charts</span><span class="toggle" aria-hidden="true"></span></div>
+    </summary>
     <p class="sec-intro">Online retail conversion, merchandising, inventory, customer value, promotions, and fulfillment analytics.</p>
     <div class="grid">
       <a class="card" href="skills/visual-html-gen-ui/ecommerce/revenue-line.html">
@@ -16105,10 +16192,12 @@ body {
         </div>
       </a>
     </div>
-  </section>
+  </details>
 
-  <section id="social">
-    <div class="sec-head"><span class="idx">06</span><h2>Social</h2><span class="count">10 charts</span></div>
+  <details class="domain-section" id="social" open>
+    <summary class="domain-summary">
+      <div class="sec-head"><span class="idx">06</span><h2>Social</h2><span class="count">10 charts</span><span class="toggle" aria-hidden="true"></span></div>
+    </summary>
     <p class="sec-intro">Community growth, engagement, creator networks, moderation, content propagation, and retention.</p>
     <div class="grid">
       <a class="card" href="skills/visual-html-gen-ui/social/active-users-line.html">
@@ -18300,10 +18389,12 @@ body {
         </div>
       </a>
     </div>
-  </section>
+  </details>
 
-  <section id="entertainment">
-    <div class="sec-head"><span class="idx">07</span><h2>Entertainment</h2><span class="count">10 charts</span></div>
+  <details class="domain-section" id="entertainment" open>
+    <summary class="domain-summary">
+      <div class="sec-head"><span class="idx">07</span><h2>Entertainment</h2><span class="count">10 charts</span><span class="toggle" aria-hidden="true"></span></div>
+    </summary>
     <p class="sec-intro">Streaming, music, film, live events, audience behavior, releases, and catalog performance.</p>
     <div class="grid">
       <a class="card" href="skills/visual-html-gen-ui/entertainment/viewership-line.html">
@@ -20559,10 +20650,12 @@ body {
         </div>
       </a>
     </div>
-  </section>
+  </details>
 
-  <section id="gaming">
-    <div class="sec-head"><span class="idx">08</span><h2>Gaming</h2><span class="count">10 charts</span></div>
+  <details class="domain-section" id="gaming" open>
+    <summary class="domain-summary">
+      <div class="sec-head"><span class="idx">08</span><h2>Gaming</h2><span class="count">10 charts</span><span class="toggle" aria-hidden="true"></span></div>
+    </summary>
     <p class="sec-intro">Game telemetry, player progression, economy balance, monetization, matchmaking, and live ops.</p>
     <div class="grid">
       <a class="card" href="skills/visual-html-gen-ui/gaming/dau-line.html">
@@ -22809,10 +22902,12 @@ body {
         </div>
       </a>
     </div>
-  </section>
+  </details>
 
-  <section id="content-creation">
-    <div class="sec-head"><span class="idx">09</span><h2>Content Creation</h2><span class="count">10 charts</span></div>
+  <details class="domain-section" id="content-creation" open>
+    <summary class="domain-summary">
+      <div class="sec-head"><span class="idx">09</span><h2>Content Creation</h2><span class="count">10 charts</span><span class="toggle" aria-hidden="true"></span></div>
+    </summary>
     <p class="sec-intro">Creator workflow, publishing cadence, audience growth, monetization, editorial planning, and performance.</p>
     <div class="grid">
       <a class="card" href="skills/visual-html-gen-ui/content-creation/publishing-cadence-line.html">
@@ -25026,10 +25121,12 @@ body {
         </div>
       </a>
     </div>
-  </section>
+  </details>
 
-  <section id="enterprise-services">
-    <div class="sec-head"><span class="idx">10</span><h2>Enterprise Services</h2><span class="count">10 charts</span></div>
+  <details class="domain-section" id="enterprise-services" open>
+    <summary class="domain-summary">
+      <div class="sec-head"><span class="idx">10</span><h2>Enterprise Services</h2><span class="count">10 charts</span><span class="toggle" aria-hidden="true"></span></div>
+    </summary>
     <p class="sec-intro">B2B sales, delivery, support, customer success, implementation, and account health analytics.</p>
     <div class="grid">
       <a class="card" href="skills/visual-html-gen-ui/enterprise-services/arr-line.html">
@@ -27273,10 +27370,12 @@ body {
         </div>
       </a>
     </div>
-  </section>
+  </details>
 
-  <section id="cybersecurity">
-    <div class="sec-head"><span class="idx">11</span><h2>Cybersecurity</h2><span class="count">10 charts</span></div>
+  <details class="domain-section" id="cybersecurity" open>
+    <summary class="domain-summary">
+      <div class="sec-head"><span class="idx">11</span><h2>Cybersecurity</h2><span class="count">10 charts</span><span class="toggle" aria-hidden="true"></span></div>
+    </summary>
     <p class="sec-intro">Threat detection, incidents, vulnerability management, risk posture, response operations, and control health.</p>
     <div class="grid">
       <a class="card" href="skills/visual-html-gen-ui/cybersecurity/incident-line.html">
@@ -29540,10 +29639,12 @@ body {
         </div>
       </a>
     </div>
-  </section>
+  </details>
 
-  <section id="ai-agent">
-    <div class="sec-head"><span class="idx">12</span><h2>AI Agent</h2><span class="count">10 charts</span></div>
+  <details class="domain-section" id="ai-agent" open>
+    <summary class="domain-summary">
+      <div class="sec-head"><span class="idx">12</span><h2>AI Agent</h2><span class="count">10 charts</span><span class="toggle" aria-hidden="true"></span></div>
+    </summary>
     <p class="sec-intro">Agent workflows, model performance, tool use, evaluation, cost, latency, safety, and autonomy analytics.</p>
     <div class="grid">
       <a class="card" href="skills/visual-html-gen-ui/ai-agent/task-success-line.html">
@@ -31741,10 +31842,12 @@ body {
         </div>
       </a>
     </div>
-  </section>
+  </details>
 
-  <section id="real-estate">
-    <div class="sec-head"><span class="idx">13</span><h2>Real Estate</h2><span class="count">10 charts</span></div>
+  <details class="domain-section" id="real-estate" open>
+    <summary class="domain-summary">
+      <div class="sec-head"><span class="idx">13</span><h2>Real Estate</h2><span class="count">10 charts</span><span class="toggle" aria-hidden="true"></span></div>
+    </summary>
     <p class="sec-intro">Property valuation, leasing, occupancy, market supply, rent, cap rates, and asset operations.</p>
     <div class="grid">
       <a class="card" href="skills/visual-html-gen-ui/real-estate/price-index-line.html">
@@ -33929,10 +34032,12 @@ body {
         </div>
       </a>
     </div>
-  </section>
+  </details>
 
-  <section id="hr">
-    <div class="sec-head"><span class="idx">14</span><h2>HR</h2><span class="count">10 charts</span></div>
+  <details class="domain-section" id="hr" open>
+    <summary class="domain-summary">
+      <div class="sec-head"><span class="idx">14</span><h2>HR</h2><span class="count">10 charts</span><span class="toggle" aria-hidden="true"></span></div>
+    </summary>
     <p class="sec-intro">Workforce planning, recruiting, performance, retention, engagement, compensation, and people operations.</p>
     <div class="grid">
       <a class="card" href="skills/visual-html-gen-ui/hr/headcount-line.html">
@@ -36188,10 +36293,12 @@ body {
         </div>
       </a>
     </div>
-  </section>
+  </details>
 
-  <section id="mobility">
-    <div class="sec-head"><span class="idx">15</span><h2>Mobility</h2><span class="count">10 charts</span></div>
+  <details class="domain-section" id="mobility" open>
+    <summary class="domain-summary">
+      <div class="sec-head"><span class="idx">15</span><h2>Mobility</h2><span class="count">10 charts</span><span class="toggle" aria-hidden="true"></span></div>
+    </summary>
     <p class="sec-intro">Urban mobility, ride hailing, fleet operations, routing, utilization, safety, and multimodal transport.</p>
     <div class="grid">
       <a class="card" href="skills/visual-html-gen-ui/mobility/trip-volume-line.html">
@@ -38385,10 +38492,12 @@ body {
         </div>
       </a>
     </div>
-  </section>
+  </details>
 
-  <section id="travel">
-    <div class="sec-head"><span class="idx">16</span><h2>Travel</h2><span class="count">10 charts</span></div>
+  <details class="domain-section" id="travel" open>
+    <summary class="domain-summary">
+      <div class="sec-head"><span class="idx">16</span><h2>Travel</h2><span class="count">10 charts</span><span class="toggle" aria-hidden="true"></span></div>
+    </summary>
     <p class="sec-intro">Trips, bookings, destinations, itinerary planning, hospitality, demand forecasting, and traveler experience.</p>
     <div class="grid">
       <a class="card" href="skills/visual-html-gen-ui/travel/booking-line.html">
@@ -40634,10 +40743,12 @@ body {
         </div>
       </a>
     </div>
-  </section>
+  </details>
 
-  <section id="biotech">
-    <div class="sec-head"><span class="idx">17</span><h2>Biotech</h2><span class="count">10 charts</span></div>
+  <details class="domain-section" id="biotech" open>
+    <summary class="domain-summary">
+      <div class="sec-head"><span class="idx">17</span><h2>Biotech</h2><span class="count">10 charts</span><span class="toggle" aria-hidden="true"></span></div>
+    </summary>
     <p class="sec-intro">Drug discovery, clinical trials, lab operations, biomarkers, pipelines, safety, and R&amp;D portfolio views.</p>
     <div class="grid">
       <a class="card" href="skills/visual-html-gen-ui/biotech/biomarker-line.html">
@@ -42828,10 +42939,12 @@ body {
         </div>
       </a>
     </div>
-  </section>
+  </details>
 
-  <section id="legal">
-    <div class="sec-head"><span class="idx">18</span><h2>Legal</h2><span class="count">10 charts</span></div>
+  <details class="domain-section" id="legal" open>
+    <summary class="domain-summary">
+      <div class="sec-head"><span class="idx">18</span><h2>Legal</h2><span class="count">10 charts</span><span class="toggle" aria-hidden="true"></span></div>
+    </summary>
     <p class="sec-intro">Matter management, contracts, litigation, compliance, risk, billing, and legal operations dashboards.</p>
     <div class="grid">
       <a class="card" href="skills/visual-html-gen-ui/legal/matter-volume-line.html">
@@ -45078,10 +45191,12 @@ body {
         </div>
       </a>
     </div>
-  </section>
+  </details>
 
-  <section id="government">
-    <div class="sec-head"><span class="idx">19</span><h2>Government</h2><span class="count">10 charts</span></div>
+  <details class="domain-section" id="government" open>
+    <summary class="domain-summary">
+      <div class="sec-head"><span class="idx">19</span><h2>Government</h2><span class="count">10 charts</span><span class="toggle" aria-hidden="true"></span></div>
+    </summary>
     <p class="sec-intro">Public services, budgets, case queues, civic operations, policy outcomes, and infrastructure programs.</p>
     <div class="grid">
       <a class="card" href="skills/visual-html-gen-ui/government/service-demand-line.html">
@@ -47326,10 +47441,12 @@ body {
         </div>
       </a>
     </div>
-  </section>
+  </details>
 
-  <section id="manufacturing">
-    <div class="sec-head"><span class="idx">20</span><h2>Manufacturing</h2><span class="count">10 charts</span></div>
+  <details class="domain-section" id="manufacturing" open>
+    <summary class="domain-summary">
+      <div class="sec-head"><span class="idx">20</span><h2>Manufacturing</h2><span class="count">10 charts</span><span class="toggle" aria-hidden="true"></span></div>
+    </summary>
     <p class="sec-intro">Production, quality, supply chain, maintenance, throughput, yield, and factory operations analytics.</p>
     <div class="grid">
       <a class="card" href="skills/visual-html-gen-ui/manufacturing/production-line.html">
@@ -49590,10 +49707,12 @@ body {
         </div>
       </a>
     </div>
-  </section>
+  </details>
 
-  <section id="energy">
-    <div class="sec-head"><span class="idx">21</span><h2>Energy</h2><span class="count">10 charts</span></div>
+  <details class="domain-section" id="energy" open>
+    <summary class="domain-summary">
+      <div class="sec-head"><span class="idx">21</span><h2>Energy</h2><span class="count">10 charts</span><span class="toggle" aria-hidden="true"></span></div>
+    </summary>
     <p class="sec-intro">Generation, demand, grid operations, trading, storage, renewables, emissions, and asset performance.</p>
     <div class="grid">
       <a class="card" href="skills/visual-html-gen-ui/energy/load-line.html">
@@ -51789,10 +51908,12 @@ body {
         </div>
       </a>
     </div>
-  </section>
+  </details>
 
-  <section id="retail">
-    <div class="sec-head"><span class="idx">22</span><h2>Retail</h2><span class="count">10 charts</span></div>
+  <details class="domain-section" id="retail" open>
+    <summary class="domain-summary">
+      <div class="sec-head"><span class="idx">22</span><h2>Retail</h2><span class="count">10 charts</span><span class="toggle" aria-hidden="true"></span></div>
+    </summary>
     <p class="sec-intro">Store operations, category management, merchandising, footfall, inventory, promotions, and basket analytics.</p>
     <div class="grid">
       <a class="card" href="skills/visual-html-gen-ui/retail/same-store-sales-line.html">
@@ -54050,10 +54171,12 @@ body {
         </div>
       </a>
     </div>
-  </section>
+  </details>
 
-  <section id="crypto">
-    <div class="sec-head"><span class="idx">23</span><h2>Crypto</h2><span class="count">10 charts</span></div>
+  <details class="domain-section" id="crypto" open>
+    <summary class="domain-summary">
+      <div class="sec-head"><span class="idx">23</span><h2>Crypto</h2><span class="count">10 charts</span><span class="toggle" aria-hidden="true"></span></div>
+    </summary>
     <p class="sec-intro">Token markets, DeFi liquidity, wallets, protocol revenue, on-chain behavior, risk, and exchange operations.</p>
     <div class="grid">
       <a class="card" href="skills/visual-html-gen-ui/crypto/token-price-line.html">
@@ -56253,10 +56376,12 @@ body {
         </div>
       </a>
     </div>
-  </section>
+  </details>
 
-  <section id="fashion">
-    <div class="sec-head"><span class="idx">24</span><h2>Fashion</h2><span class="count">10 charts</span></div>
+  <details class="domain-section" id="fashion" open>
+    <summary class="domain-summary">
+      <div class="sec-head"><span class="idx">24</span><h2>Fashion</h2><span class="count">10 charts</span><span class="toggle" aria-hidden="true"></span></div>
+    </summary>
     <p class="sec-intro">Collections, merchandising, trend signals, inventory, brand performance, runway, and customer style analytics.</p>
     <div class="grid">
       <a class="card" href="skills/visual-html-gen-ui/fashion/trend-line.html">
@@ -58459,10 +58584,12 @@ body {
         </div>
       </a>
     </div>
-  </section>
+  </details>
 
-  <section id="sports">
-    <div class="sec-head"><span class="idx">25</span><h2>Sports</h2><span class="count">10 charts</span></div>
+  <details class="domain-section" id="sports" open>
+    <summary class="domain-summary">
+      <div class="sec-head"><span class="idx">25</span><h2>Sports</h2><span class="count">10 charts</span><span class="toggle" aria-hidden="true"></span></div>
+    </summary>
     <p class="sec-intro">Team performance, player development, game operations, fan engagement, training, and commercial sports metrics.</p>
     <div class="grid">
       <a class="card" href="skills/visual-html-gen-ui/sports/performance-line.html">
@@ -60717,10 +60844,12 @@ body {
         </div>
       </a>
     </div>
-  </section>
+  </details>
 
-  <section id="pets">
-    <div class="sec-head"><span class="idx">26</span><h2>Pets</h2><span class="count">10 charts</span></div>
+  <details class="domain-section" id="pets" open>
+    <summary class="domain-summary">
+      <div class="sec-head"><span class="idx">26</span><h2>Pets</h2><span class="count">10 charts</span><span class="toggle" aria-hidden="true"></span></div>
+    </summary>
     <p class="sec-intro">Pet health, care routines, marketplace behavior, adoption, insurance, services, and owner engagement.</p>
     <div class="grid">
       <a class="card" href="skills/visual-html-gen-ui/pets/wellness-line.html">
@@ -62966,7 +63095,7 @@ body {
         </div>
       </a>
     </div>
-  </section>
+  </details>
 
   <footer>
     <span class="k">visual-html-gen-ui</span>
@@ -62974,5 +63103,63 @@ body {
     <a href="https://github.com/iFurySt/visual-html-gen-ui">GitHub</a>
   </footer>
 </div>
+<script>
+  const toc = document.querySelector(".toc");
+  const sentinel = document.querySelector(".toc-sentinel");
+  const tocLinks = [...document.querySelectorAll(".toc a")];
+  const domains = [...document.querySelectorAll(".domain-section")];
+
+  if (toc && sentinel) {
+    const updateTocState = () => {
+      toc.classList.toggle("is-stuck", window.scrollY > sentinel.offsetTop);
+    };
+    updateTocState();
+    window.addEventListener("scroll", updateTocState, { passive: true });
+    window.addEventListener("resize", updateTocState);
+  }
+
+  tocLinks.forEach((link) => {
+    link.addEventListener("click", (event) => {
+      event.preventDefault();
+      const target = document.querySelector(link.getAttribute("href"));
+      if (target && "open" in target) {
+        target.open = true;
+        history.pushState(null, "", link.hash);
+        const delta = target.getBoundingClientRect().top - ((toc?.offsetHeight || 0) + 18);
+        setTimeout(() => {
+          window.scrollBy({ top: delta, behavior: "instant" });
+        }, 0);
+        toc?.classList.add("is-stuck");
+        tocLinks.forEach((item) => item.classList.remove("is-active"));
+        link.classList.add("is-active");
+      }
+    });
+  });
+
+  if (location.hash) {
+    const target = document.querySelector(location.hash);
+    if (target && "open" in target) {
+      target.open = true;
+    }
+  }
+
+  if (tocLinks.length && domains.length) {
+    const activeById = new Map(tocLinks.map((link) => [link.hash.slice(1), link]));
+    const setActiveDomain = (domain) => {
+      tocLinks.forEach((link) => link.classList.remove("is-active"));
+      activeById.get(domain.id)?.classList.add("is-active");
+    };
+    const updateActiveDomain = () => {
+      const stickyOffset = (toc?.offsetHeight || 0) + 28;
+      const current = domains
+        .filter((domain) => domain.getBoundingClientRect().top <= stickyOffset)
+        .at(-1) || domains[0];
+      setActiveDomain(current);
+    };
+    updateActiveDomain();
+    window.addEventListener("scroll", updateActiveDomain, { passive: true });
+    window.addEventListener("resize", updateActiveDomain);
+  }
+</script>
 </body>
 </html>

@@ -95,11 +95,12 @@ def render_page(catalog: dict) -> str:
   h1 {{
     font-family: var(--serif);
     font-weight: 500;
-    font-size: clamp(38px, 5.4vw, 62px);
+    font-size: 58px;
     line-height: 1.06;
     letter-spacing: 0;
     margin: 0 0 8px;
-    max-width: 15ch;
+    max-width: none;
+    white-space: nowrap;
   }}
   h1 em {{
     color: var(--clay);
@@ -193,10 +194,23 @@ def render_page(catalog: dict) -> str:
   .b3 {{ height: 20px; background: var(--oat); }}
   .b4 {{ height: 36px; background: var(--slate); }}
   nav.toc {{
+    position: sticky;
+    top: 0;
+    z-index: 20;
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
-    padding: 26px 0 0;
+    padding: 16px 0;
+    margin: 0 0 10px;
+    background: rgba(250, 249, 245, .94);
+    border-bottom: 1.5px solid transparent;
+    backdrop-filter: blur(12px);
+    transition: padding 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+  }}
+  nav.toc.is-stuck {{
+    padding: 10px 0;
+    border-bottom-color: var(--g300);
+    box-shadow: 0 10px 24px rgba(20,20,19,.07);
   }}
   nav.toc a {{
     font-size: 12.5px;
@@ -206,7 +220,7 @@ def render_page(catalog: dict) -> str:
     text-decoration: none;
     color: var(--g700);
     background: var(--paper);
-    transition: border-color 120ms, color 120ms, background 120ms;
+    transition: border-color 120ms, color 120ms, background 120ms, transform 120ms;
     display: inline-flex;
     align-items: center;
     gap: 7px;
@@ -216,14 +230,24 @@ def render_page(catalog: dict) -> str:
     font-size: 10px;
     color: var(--g500);
   }}
-  nav.toc a:hover {{ border-color: var(--slate); color: var(--slate); }}
+  nav.toc a:hover {{
+    border-color: var(--slate);
+    color: var(--slate);
+    transform: translateY(-1px);
+  }}
   nav.toc a:hover .n {{ color: var(--clay); }}
+  nav.toc a.is-active {{
+    border-color: var(--slate);
+    color: var(--slate);
+    background: var(--g100);
+  }}
+  nav.toc a.is-active .n {{ color: var(--clay); }}
   .summary {{
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 14px;
     margin: 30px 0 0;
-    max-width: 650px;
+    max-width: 430px;
   }}
   .stat {{
     background: var(--paper);
@@ -246,15 +270,34 @@ def render_page(catalog: dict) -> str:
     text-transform: uppercase;
     color: var(--g500);
   }}
-  section {{
+  .toc-sentinel {{
+    height: 1px;
+    margin-top: -1px;
+  }}
+  details.domain-section {{
     margin-top: 72px;
-    scroll-margin-top: 28px;
+    scroll-margin-top: 76px;
+  }}
+  .domain-summary {{
+    display: block;
+    list-style: none;
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 8px 10px;
+    margin: -8px -10px 10px;
+    transition: background 140ms ease;
+  }}
+  .domain-summary::-webkit-details-marker {{ display: none; }}
+  .domain-summary:hover {{ background: var(--g100); }}
+  .domain-summary:focus-visible {{
+    outline: 2px solid var(--clay);
+    outline-offset: 4px;
   }}
   .sec-head {{
     display: flex;
-    align-items: baseline;
+    align-items: center;
     gap: 16px;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
   }}
   .sec-head .idx {{
     font-family: var(--mono);
@@ -280,6 +323,33 @@ def render_page(catalog: dict) -> str:
     border-radius: 999px;
     white-space: nowrap;
   }}
+  .toggle {{
+    margin-left: auto;
+    width: 30px;
+    height: 30px;
+    border: 1.5px solid var(--g300);
+    border-radius: 999px;
+    background: var(--paper);
+    color: var(--g700);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: transform 160ms ease, border-color 160ms ease, color 160ms ease;
+  }}
+  .toggle::before {{
+    content: "+";
+    font-family: var(--mono);
+    font-size: 17px;
+    line-height: 1;
+  }}
+  details[open] .toggle {{
+    border-color: var(--slate);
+    color: var(--slate);
+  }}
+  details[open] .toggle::before {{ content: "-"; }}
+  .domain-summary:hover .toggle {{ transform: rotate(90deg); }}
+  details[open] .domain-summary:hover .toggle {{ transform: none; }}
   .sec-intro {{
     font-size: 14.5px;
     color: var(--g700);
@@ -408,14 +478,21 @@ def render_page(catalog: dict) -> str:
   @media (max-width: 880px) {{
     .hero-grid {{ grid-template-columns: 1fr; }}
     .hero-fig {{ max-width: 400px; margin-top: 28px; }}
+    h1 {{ font-size: 48px; }}
   }}
   @media (max-width: 720px) {{
     .wrap {{ padding: 0 20px 96px; }}
     header.masthead {{ padding: 52px 0 38px; }}
+    h1 {{ font-size: 38px; }}
     .summary {{ grid-template-columns: 1fr; }}
     .sec-intro, .grid {{ margin-left: 0; }}
     .sec-head {{ gap: 10px; flex-wrap: wrap; }}
     .sec-head .idx {{ width: auto; }}
+    .toggle {{ margin-left: 0; }}
+  }}
+  @media (max-width: 420px) {{
+    h1 {{ font-size: 32px; }}
+    nav.toc a {{ font-size: 12px; padding: 6px 11px; }}
   }}
 </style>
 </head>
@@ -433,11 +510,7 @@ def render_page(catalog: dict) -> str:
         <div class="summary" aria-label="Catalog summary">
           <div class="stat"><strong>{len(domains)}</strong><span>domains</span></div>
           <div class="stat"><strong>{chart_count}</strong><span>chart pages</span></div>
-          <div class="stat"><strong>0</strong><span>runtime deps</span></div>
         </div>
-        <nav class="toc" aria-label="Domain table of contents">
-{toc}
-        </nav>
       </div>
       <div class="hero-fig" aria-hidden="true">
         <div class="pane domain">
@@ -457,6 +530,10 @@ def render_page(catalog: dict) -> str:
       </div>
     </div>
   </header>
+  <div class="toc-sentinel" aria-hidden="true"></div>
+  <nav class="toc" aria-label="Domain table of contents">
+{toc}
+  </nav>
 
 {sections}
 
@@ -466,6 +543,64 @@ def render_page(catalog: dict) -> str:
     <a href="https://github.com/iFurySt/visual-html-gen-ui">GitHub</a>
   </footer>
 </div>
+<script>
+  const toc = document.querySelector(".toc");
+  const sentinel = document.querySelector(".toc-sentinel");
+  const tocLinks = [...document.querySelectorAll(".toc a")];
+  const domains = [...document.querySelectorAll(".domain-section")];
+
+  if (toc && sentinel) {{
+    const updateTocState = () => {{
+      toc.classList.toggle("is-stuck", window.scrollY > sentinel.offsetTop);
+    }};
+    updateTocState();
+    window.addEventListener("scroll", updateTocState, {{ passive: true }});
+    window.addEventListener("resize", updateTocState);
+  }}
+
+  tocLinks.forEach((link) => {{
+    link.addEventListener("click", (event) => {{
+      event.preventDefault();
+      const target = document.querySelector(link.getAttribute("href"));
+      if (target && "open" in target) {{
+        target.open = true;
+        history.pushState(null, "", link.hash);
+        const delta = target.getBoundingClientRect().top - ((toc?.offsetHeight || 0) + 18);
+        setTimeout(() => {{
+          window.scrollBy({{ top: delta, behavior: "instant" }});
+        }}, 0);
+        toc?.classList.add("is-stuck");
+        tocLinks.forEach((item) => item.classList.remove("is-active"));
+        link.classList.add("is-active");
+      }}
+    }});
+  }});
+
+  if (location.hash) {{
+    const target = document.querySelector(location.hash);
+    if (target && "open" in target) {{
+      target.open = true;
+    }}
+  }}
+
+  if (tocLinks.length && domains.length) {{
+    const activeById = new Map(tocLinks.map((link) => [link.hash.slice(1), link]));
+    const setActiveDomain = (domain) => {{
+      tocLinks.forEach((link) => link.classList.remove("is-active"));
+      activeById.get(domain.id)?.classList.add("is-active");
+    }};
+    const updateActiveDomain = () => {{
+      const stickyOffset = (toc?.offsetHeight || 0) + 28;
+      const current = domains
+        .filter((domain) => domain.getBoundingClientRect().top <= stickyOffset)
+        .at(-1) || domains[0];
+      setActiveDomain(current);
+    }};
+    updateActiveDomain();
+    window.addEventListener("scroll", updateActiveDomain, {{ passive: true }});
+    window.addEventListener("resize", updateActiveDomain);
+  }}
+</script>
 </body>
 </html>
 """
@@ -480,13 +615,15 @@ def render_toc_link(domain: dict) -> str:
 
 def render_domain_section(index: int, domain: dict) -> str:
     cards = "\n".join(render_card(domain, chart) for chart in domain["charts"])
-    return f"""  <section id="{html.escape(domain['slug'])}">
-    <div class="sec-head"><span class="idx">{index:02d}</span><h2>{html.escape(domain['name'])}</h2><span class="count">{len(domain['charts'])} charts</span></div>
+    return f"""  <details class="domain-section" id="{html.escape(domain['slug'])}" open>
+    <summary class="domain-summary">
+      <div class="sec-head"><span class="idx">{index:02d}</span><h2>{html.escape(domain['name'])}</h2><span class="count">{len(domain['charts'])} charts</span><span class="toggle" aria-hidden="true"></span></div>
+    </summary>
     <p class="sec-intro">{html.escape(domain['summary'])}</p>
     <div class="grid">
 {cards}
     </div>
-  </section>"""
+  </details>"""
 
 
 def render_card(domain: dict, chart: dict) -> str:
