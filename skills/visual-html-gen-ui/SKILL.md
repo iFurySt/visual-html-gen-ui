@@ -107,16 +107,16 @@ Patient monitoring, care operations, population health, appointment flow, and cl
 
 Online retail conversion, merchandising, inventory, customer value, promotions, and fulfillment analytics.
 
-- [Revenue Line](ecommerce/revenue-line.html) - Show gross merchandise value or revenue trend over time.
-- [Checkout Funnel](ecommerce/checkout-funnel.html) - Track shoppers through product view, cart, checkout, payment, and purchase.
-- [Category Sales Stacked Bar](ecommerce/category-sales-stacked-bar.html) - Break sales into category, channel, or region components.
-- [Product Margin Waterfall](ecommerce/product-margin-waterfall.html) - Explain margin from list price through discounts, shipping, returns, and fees.
-- [Inventory Heatmap](ecommerce/inventory-heatmap.html) - Reveal stock risk by SKU and warehouse or region.
-- [Shopper Cohort Retention](ecommerce/customer-cohort-retention.html) - Track repeat purchase retention by acquisition cohort.
-- [LTV CAC KPI](ecommerce/ltv-cac-kpi.html) - Compare acquisition efficiency, LTV, payback, and contribution margin.
-- [Basket Affinity Sankey](ecommerce/basket-affinity-sankey.html) - Show product pairings and category paths in baskets.
-- [SKU Performance Treemap](ecommerce/sku-performance-treemap.html) - Map SKU revenue or contribution by product family.
-- [Promo Sensitivity Tornado](ecommerce/promo-sensitivity-tornado.html) - Rank price, discount, shipping, and ad spend assumptions by profit effect.
+- [Revenue Line](ecommerce/revenue-line.html) - Track daily GMV and promotion lift across a campaign window.
+- [Checkout Funnel](ecommerce/checkout-funnel.html) - Track shoppers from product view through cart, checkout, payment, and purchase.
+- [Category Sales Stacked Bar](ecommerce/category-sales-stacked-bar.html) - Break category sales by online, marketplace, and store-assisted channels.
+- [Product Margin Waterfall](ecommerce/product-margin-waterfall.html) - Explain product contribution margin after discounts, fulfillment, returns, and fees.
+- [Inventory Heatmap](ecommerce/inventory-heatmap.html) - Reveal stockout and overstock risk by SKU family and fulfillment region.
+- [Shopper Cohort Retention](ecommerce/customer-cohort-retention.html) - Track repeat purchase retention by acquisition cohort and first-order channel.
+- [LTV CAC KPI](ecommerce/ltv-cac-kpi.html) - Compare LTV, CAC, payback, contribution margin, and repeat rate.
+- [Basket Affinity Sankey](ecommerce/basket-affinity-sankey.html) - Show basket paths from anchor products into bundles, add-ons, and repeat purchases.
+- [SKU Performance Treemap](ecommerce/sku-performance-treemap.html) - Map SKU contribution, hero products, and long-tail drag by product family.
+- [Promo Sensitivity Tornado](ecommerce/promo-sensitivity-tornado.html) - Rank discount, free shipping, return rate, and ad-spend assumptions by profit effect.
 
 ### Social
 

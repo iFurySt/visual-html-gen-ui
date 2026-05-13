@@ -14224,8 +14224,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Revenue Line example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Ecommerce Revenue Line for gross merchandise value&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative USD thousands / ecommerce sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Campaign GMV trend&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;daily gross merchandise value with promotion lift markers&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;ecommerce/revenue-line&lt;/div&gt;
     &lt;/div&gt;
@@ -14248,14 +14248,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Show gross merchandise value or revenue trend over time.&lt;/p&gt;
+        &lt;p&gt;Use this when merchandising and growth teams need to separate baseline demand from campaign-driven lift.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;trend&lt;/li&gt;
+          &lt;li&gt;GMV trend&lt;/li&gt;
+&lt;li&gt;promo lift&lt;/li&gt;
 &lt;li&gt;seasonality&lt;/li&gt;
-&lt;li&gt;campaign lift&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -14266,8 +14266,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Revenue Line</div>
-          <div class="desc">Show gross merchandise value or revenue trend over time.</div>
-          <div class="signals"><span>revenue</span><span>line</span></div>
+          <div class="desc">Track daily GMV and promotion lift across a campaign window.</div>
+          <div class="signals"><span>GMV</span><span>promo lift</span><span>campaign</span></div>
           <div class="file"><span>ecommerce/revenue-line.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -14443,8 +14443,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Checkout Funnel example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Ecommerce purchase to payment&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative USD thousands / ecommerce sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Checkout conversion funnel&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;shopper sessions from product view to completed purchase&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;ecommerce/checkout-funnel&lt;/div&gt;
     &lt;/div&gt;
@@ -14459,14 +14459,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Track shoppers through product view, cart, checkout, payment, and purchase.&lt;/p&gt;
+        &lt;p&gt;Use this to locate friction in add-to-cart, checkout, payment authorization, or order completion.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;conversion&lt;/li&gt;
-&lt;li&gt;drop-off&lt;/li&gt;
-&lt;li&gt;friction&lt;/li&gt;
+          &lt;li&gt;cart drop-off&lt;/li&gt;
+&lt;li&gt;payment friction&lt;/li&gt;
+&lt;li&gt;purchase rate&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -14477,8 +14477,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Checkout Funnel</div>
-          <div class="desc">Track shoppers through product view, cart, checkout, payment, and purchase.</div>
-          <div class="signals"><span>checkout</span><span>funnel</span></div>
+          <div class="desc">Track shoppers from product view through cart, checkout, payment, and purchase.</div>
+          <div class="signals"><span>cart</span><span>payment</span><span>purchase</span></div>
           <div class="file"><span>ecommerce/checkout-funnel.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -14654,8 +14654,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Category Sales Stacked Bar example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Ecommerce category sales stacked bar example&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative USD thousands / ecommerce sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Category revenue mix by channel&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;category sales split across owned site, marketplace, and store-assisted orders&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;ecommerce/category-sales-stacked-bar&lt;/div&gt;
     &lt;/div&gt;
@@ -14691,14 +14691,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Break sales into category, channel, or region components.&lt;/p&gt;
+        &lt;p&gt;Use this when category managers need to understand whether growth is coming from channel mix or actual category demand.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;mix&lt;/li&gt;
-&lt;li&gt;scale&lt;/li&gt;
-&lt;li&gt;shift&lt;/li&gt;
+          &lt;li&gt;channel mix&lt;/li&gt;
+&lt;li&gt;category scale&lt;/li&gt;
+&lt;li&gt;share shift&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -14709,8 +14709,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Category Sales Stacked Bar</div>
-          <div class="desc">Break sales into category, channel, or region components.</div>
-          <div class="signals"><span>category</span><span>sales</span><span>stacked</span></div>
+          <div class="desc">Break category sales by online, marketplace, and store-assisted channels.</div>
+          <div class="signals"><span>channels</span><span>category</span><span>mix</span></div>
           <div class="file"><span>ecommerce/category-sales-stacked-bar.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -14886,8 +14886,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Product Margin Waterfall example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Ecommerce product margin waterfall example&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative USD thousands / ecommerce sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Product contribution margin bridge&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;unit margin from list price to contribution after discounts, fulfillment, and returns&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;ecommerce/product-margin-waterfall&lt;/div&gt;
     &lt;/div&gt;
@@ -14910,14 +14910,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Explain margin from list price through discounts, shipping, returns, and fees.&lt;/p&gt;
+        &lt;p&gt;Use this when a product looks like a revenue winner but discounts, returns, or fulfillment costs may erase contribution.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;margin driver&lt;/li&gt;
-&lt;li&gt;cost leak&lt;/li&gt;
-&lt;li&gt;profitability&lt;/li&gt;
+          &lt;li&gt;discount drag&lt;/li&gt;
+&lt;li&gt;return cost&lt;/li&gt;
+&lt;li&gt;contribution margin&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -14928,8 +14928,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Product Margin Waterfall</div>
-          <div class="desc">Explain margin from list price through discounts, shipping, returns, and fees.</div>
-          <div class="signals"><span>product</span><span>margin</span><span>waterfall</span></div>
+          <div class="desc">Explain product contribution margin after discounts, fulfillment, returns, and fees.</div>
+          <div class="signals"><span>discounts</span><span>returns</span><span>margin</span></div>
           <div class="file"><span>ecommerce/product-margin-waterfall.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -15105,8 +15105,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Inventory Heatmap example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Ecommerce inventory heatmap example&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative USD thousands / ecommerce sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Inventory coverage risk by region&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;weeks of cover and stockout risk by SKU family and warehouse region&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;ecommerce/inventory-heatmap&lt;/div&gt;
     &lt;/div&gt;
@@ -15157,14 +15157,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Reveal stock risk by SKU and warehouse or region.&lt;/p&gt;
+        &lt;p&gt;Use this before replenishment decisions to see where demand may outpace stock or where capital is trapped in overstock.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;stockout&lt;/li&gt;
-&lt;li&gt;overstock&lt;/li&gt;
-&lt;li&gt;coverage&lt;/li&gt;
+          &lt;li&gt;stockout risk&lt;/li&gt;
+&lt;li&gt;overstock risk&lt;/li&gt;
+&lt;li&gt;weeks of cover&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -15175,8 +15175,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Inventory Heatmap</div>
-          <div class="desc">Reveal stock risk by SKU and warehouse or region.</div>
-          <div class="signals"><span>inventory</span><span>heatmap</span></div>
+          <div class="desc">Reveal stockout and overstock risk by SKU family and fulfillment region.</div>
+          <div class="signals"><span>stockout</span><span>overstock</span><span>coverage</span></div>
           <div class="file"><span>ecommerce/inventory-heatmap.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -15352,8 +15352,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Shopper Cohort Retention example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Ecommerce shopper cohort retention example&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative USD thousands / ecommerce sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Repeat purchase retention by acquisition cohort&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;retained shoppers by cohort age and acquisition month&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;ecommerce/customer-cohort-retention&lt;/div&gt;
     &lt;/div&gt;
@@ -15369,14 +15369,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Track repeat purchase retention by acquisition cohort.&lt;/p&gt;
+        &lt;p&gt;Use this when growth teams need to know whether a campaign brought durable customers or one-time promo buyers.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;retention&lt;/li&gt;
-&lt;li&gt;loyalty&lt;/li&gt;
-&lt;li&gt;payback&lt;/li&gt;
+          &lt;li&gt;repeat rate&lt;/li&gt;
+&lt;li&gt;loyalty decay&lt;/li&gt;
+&lt;li&gt;payback quality&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -15387,8 +15387,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Shopper Cohort Retention</div>
-          <div class="desc">Track repeat purchase retention by acquisition cohort.</div>
-          <div class="signals"><span>customer</span><span>cohort</span><span>retention</span></div>
+          <div class="desc">Track repeat purchase retention by acquisition cohort and first-order channel.</div>
+          <div class="signals"><span>repeat rate</span><span>cohorts</span><span>payback</span></div>
           <div class="file"><span>ecommerce/customer-cohort-retention.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -15564,8 +15564,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;LTV CAC KPI example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Ecommerce operating KPI snapshot&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative USD thousands / ecommerce sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Acquisition efficiency KPI snapshot&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;LTV, CAC, payback, contribution margin, and repeat rate&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;ecommerce/ltv-cac-kpi&lt;/div&gt;
     &lt;/div&gt;
@@ -15584,14 +15584,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Compare acquisition efficiency, LTV, payback, and contribution margin.&lt;/p&gt;
+        &lt;p&gt;Use this to decide whether paid acquisition is scaling with healthy payback and contribution economics.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;unit economics&lt;/li&gt;
-&lt;li&gt;payback&lt;/li&gt;
-&lt;li&gt;quality&lt;/li&gt;
+          &lt;li&gt;LTV/CAC&lt;/li&gt;
+&lt;li&gt;payback window&lt;/li&gt;
+&lt;li&gt;repeat quality&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -15602,8 +15602,8 @@ body {
         </div>
         <div class="body">
           <div class="title">LTV CAC KPI</div>
-          <div class="desc">Compare acquisition efficiency, LTV, payback, and contribution margin.</div>
-          <div class="signals"><span>ltv</span><span>cac</span><span>kpi</span></div>
+          <div class="desc">Compare LTV, CAC, payback, contribution margin, and repeat rate.</div>
+          <div class="signals"><span>LTV/CAC</span><span>payback</span><span>repeat</span></div>
           <div class="file"><span>ecommerce/ltv-cac-kpi.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -15779,8 +15779,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Basket Affinity Sankey example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Ecommerce flow between bundle and cart&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative USD thousands / ecommerce sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Basket affinity and add-on flow&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;order paths from anchor category to bundle, add-on, checkout, and repeat purchase&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;ecommerce/basket-affinity-sankey&lt;/div&gt;
     &lt;/div&gt;
@@ -15801,14 +15801,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Show product pairings and category paths in baskets.&lt;/p&gt;
+        &lt;p&gt;Use this to identify cross-sell paths that should become bundles, recommendations, or merchandising rules.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;affinity&lt;/li&gt;
-&lt;li&gt;cross-sell&lt;/li&gt;
-&lt;li&gt;bundle path&lt;/li&gt;
+          &lt;li&gt;basket affinity&lt;/li&gt;
+&lt;li&gt;cross-sell path&lt;/li&gt;
+&lt;li&gt;bundle lift&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -15819,8 +15819,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Basket Affinity Sankey</div>
-          <div class="desc">Show product pairings and category paths in baskets.</div>
-          <div class="signals"><span>basket</span><span>affinity</span><span>sankey</span></div>
+          <div class="desc">Show basket paths from anchor products into bundles, add-ons, and repeat purchases.</div>
+          <div class="signals"><span>affinity</span><span>cross-sell</span><span>bundle</span></div>
           <div class="file"><span>ecommerce/basket-affinity-sankey.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -15996,8 +15996,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;SKU Performance Treemap example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Ecommerce sku performance treemap example&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative USD thousands / ecommerce sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;SKU contribution concentration&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;product family contribution and long-tail SKU exposure&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;ecommerce/sku-performance-treemap&lt;/div&gt;
     &lt;/div&gt;
@@ -16013,14 +16013,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Map SKU revenue or contribution by product family.&lt;/p&gt;
+        &lt;p&gt;Use this to decide which products deserve merchandising focus, inventory protection, or pruning from the assortment.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;concentration&lt;/li&gt;
-&lt;li&gt;hero SKU&lt;/li&gt;
-&lt;li&gt;long tail&lt;/li&gt;
+          &lt;li&gt;hero SKU&lt;/li&gt;
+&lt;li&gt;long-tail drag&lt;/li&gt;
+&lt;li&gt;assortment focus&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -16031,8 +16031,8 @@ body {
         </div>
         <div class="body">
           <div class="title">SKU Performance Treemap</div>
-          <div class="desc">Map SKU revenue or contribution by product family.</div>
-          <div class="signals"><span>sku</span><span>performance</span><span>treemap</span></div>
+          <div class="desc">Map SKU contribution, hero products, and long-tail drag by product family.</div>
+          <div class="signals"><span>hero SKU</span><span>long tail</span><span>assortment</span></div>
           <div class="file"><span>ecommerce/sku-performance-treemap.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -16208,8 +16208,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Promo Sensitivity Tornado example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Ecommerce promo sensitivity tornado example&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative USD thousands / ecommerce sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Promotion profit sensitivity&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;profit swing from discount depth, free shipping, return rate, and paid media&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;ecommerce/promo-sensitivity-tornado&lt;/div&gt;
     &lt;/div&gt;
@@ -16221,14 +16221,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Rank price, discount, shipping, and ad spend assumptions by profit effect.&lt;/p&gt;
+        &lt;p&gt;Use this before approving a promotion so teams can see which lever can destroy margin fastest.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;sensitivity&lt;/li&gt;
-&lt;li&gt;promo risk&lt;/li&gt;
-&lt;li&gt;key driver&lt;/li&gt;
+          &lt;li&gt;discount depth&lt;/li&gt;
+&lt;li&gt;shipping subsidy&lt;/li&gt;
+&lt;li&gt;profit risk&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -16239,8 +16239,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Promo Sensitivity Tornado</div>
-          <div class="desc">Rank price, discount, shipping, and ad spend assumptions by profit effect.</div>
-          <div class="signals"><span>promo</span><span>sensitivity</span><span>tornado</span></div>
+          <div class="desc">Rank discount, free shipping, return rate, and ad-spend assumptions by profit effect.</div>
+          <div class="signals"><span>discounts</span><span>shipping</span><span>profit</span></div>
           <div class="file"><span>ecommerce/promo-sensitivity-tornado.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
