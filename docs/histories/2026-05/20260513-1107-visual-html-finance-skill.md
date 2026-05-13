@@ -43,6 +43,7 @@ low-saturation clay/olive/oat/slate colors.
 - Gaming
 - Content Creation
 - Enterprise Services
+- Cybersecurity
 
 ### Files Modified
 

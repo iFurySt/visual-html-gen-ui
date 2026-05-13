@@ -1394,6 +1394,123 @@
           ]
         }
       ]
+    },
+    {
+      "slug": "cybersecurity",
+      "name": "Cybersecurity",
+      "summary": "Threat detection, incidents, vulnerability management, risk posture, response operations, and control health.",
+      "charts": [
+        {
+          "slug": "incident-line",
+          "title": "Incident Line",
+          "type": "line",
+          "purpose": "Track incidents, alerts, or suspicious activity through time.",
+          "signals": [
+            "trend",
+            "spike",
+            "response load"
+          ]
+        },
+        {
+          "slug": "severity-stacked-bar",
+          "title": "Severity Stacked Bar",
+          "type": "stacked-bar",
+          "purpose": "Break findings into critical, high, medium, and low severity.",
+          "signals": [
+            "risk mix",
+            "volume",
+            "trend"
+          ]
+        },
+        {
+          "slug": "attack-path-sankey",
+          "title": "Attack Path Sankey",
+          "type": "sankey",
+          "purpose": "Show attacker movement from entry vector to lateral movement and objective.",
+          "signals": [
+            "path",
+            "control gap",
+            "blast radius"
+          ]
+        },
+        {
+          "slug": "vulnerability-heatmap",
+          "title": "Vulnerability Heatmap",
+          "type": "heatmap",
+          "purpose": "Map vulnerability count or risk by asset class and severity.",
+          "signals": [
+            "exposure",
+            "hotspot",
+            "priority"
+          ]
+        },
+        {
+          "slug": "response-funnel",
+          "title": "Response Funnel",
+          "type": "funnel",
+          "purpose": "Track alerts from triggered to triaged, investigated, contained, and resolved.",
+          "signals": [
+            "triage loss",
+            "response flow",
+            "bottleneck"
+          ]
+        },
+        {
+          "slug": "asset-risk-treemap",
+          "title": "Asset Risk Treemap",
+          "type": "treemap",
+          "purpose": "Map risk contribution by application, host, or business unit.",
+          "signals": [
+            "concentration",
+            "critical asset",
+            "coverage"
+          ]
+        },
+        {
+          "slug": "control-maturity-radar",
+          "title": "Control Maturity Radar",
+          "type": "radar",
+          "purpose": "Score identity, endpoint, network, detection, backup, and training controls.",
+          "signals": [
+            "maturity",
+            "weak control",
+            "balance"
+          ]
+        },
+        {
+          "slug": "phishing-calendar",
+          "title": "Phishing Calendar",
+          "type": "calendar",
+          "purpose": "Reveal phishing activity or training completion by day.",
+          "signals": [
+            "campaign cluster",
+            "training load",
+            "seasonality"
+          ]
+        },
+        {
+          "slug": "risk-reduction-waterfall",
+          "title": "Risk Reduction Waterfall",
+          "type": "waterfall",
+          "purpose": "Explain risk movement from new findings, patches, compensating controls, and exceptions.",
+          "signals": [
+            "driver",
+            "residual risk",
+            "control impact"
+          ]
+        },
+        {
+          "slug": "breach-stress-test",
+          "title": "Breach Stress Test",
+          "type": "stress",
+          "purpose": "Compare estimated losses under baseline, ransomware, data leak, and outage scenarios.",
+          "signals": [
+            "tail loss",
+            "scenario gap",
+            "capital need"
+          ]
+        }
+      ]
     }
   ]
 }

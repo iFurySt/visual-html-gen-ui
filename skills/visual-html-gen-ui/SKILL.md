@@ -193,6 +193,21 @@ B2B sales, delivery, support, customer success, implementation, and account heal
 - [Portfolio Treemap](enterprise-services/portfolio-treemap/index.html) - Map revenue or effort by account, segment, or service line.
 - [Sales Efficiency KPI](enterprise-services/sales-efficiency-kpi/index.html) - Compare CAC, payback, expansion, win rate, and burn efficiency.
 
+### Cybersecurity
+
+Threat detection, incidents, vulnerability management, risk posture, response operations, and control health.
+
+- [Incident Line](cybersecurity/incident-line/index.html) - Track incidents, alerts, or suspicious activity through time.
+- [Severity Stacked Bar](cybersecurity/severity-stacked-bar/index.html) - Break findings into critical, high, medium, and low severity.
+- [Attack Path Sankey](cybersecurity/attack-path-sankey/index.html) - Show attacker movement from entry vector to lateral movement and objective.
+- [Vulnerability Heatmap](cybersecurity/vulnerability-heatmap/index.html) - Map vulnerability count or risk by asset class and severity.
+- [Response Funnel](cybersecurity/response-funnel/index.html) - Track alerts from triggered to triaged, investigated, contained, and resolved.
+- [Asset Risk Treemap](cybersecurity/asset-risk-treemap/index.html) - Map risk contribution by application, host, or business unit.
+- [Control Maturity Radar](cybersecurity/control-maturity-radar/index.html) - Score identity, endpoint, network, detection, backup, and training controls.
+- [Phishing Calendar](cybersecurity/phishing-calendar/index.html) - Reveal phishing activity or training completion by day.
+- [Risk Reduction Waterfall](cybersecurity/risk-reduction-waterfall/index.html) - Explain risk movement from new findings, patches, compensating controls, and exceptions.
+- [Breach Stress Test](cybersecurity/breach-stress-test/index.html) - Compare estimated losses under baseline, ransomware, data leak, and outage scenarios.
+
 ## Maintenance
 
 Maintainers should edit `catalog.json`, run

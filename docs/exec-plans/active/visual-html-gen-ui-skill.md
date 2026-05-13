@@ -87,7 +87,7 @@ without loading every example into context.
 - [x] Gaming
 - [x] Content Creation
 - [x] Enterprise Services
-- [ ] Cybersecurity
+- [x] Cybersecurity
 - [ ] AI Agent
 - [ ] Real Estate
 - [ ] HR
