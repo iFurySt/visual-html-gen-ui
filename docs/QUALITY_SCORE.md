@@ -14,7 +14,7 @@ Track quality by product area and architectural layer so agents can prioritize t
 | Area | Score | Why | Next Step |
 | --- | --- | --- | --- |
 | Product surface | B | Skill surface covers all requested domains with 280 standalone chart examples. | Add targeted visual smoke checks for representative chart families. |
-| Architecture docs | B | Architecture documents the skill catalog, flat chart HTML outputs, and validation flow. | Keep this updated as the skill structure evolves. |
-| Testing | C | Skill validation checks catalog/link/output drift and is wired into CI. | Add visual smoke checks if generated HTML becomes more interactive. |
+| Architecture docs | B | Architecture documents the hand-maintained skill index, gallery, and flat chart HTML outputs. | Keep this updated as the skill structure evolves. |
+| Testing | C | Repository checks cover docs, hygiene, action pinning, and shell syntax; chart/gallery review is manual. | Add targeted checks only if they support the manual review workflow instead of replacing it. |
 | Observability | D | No local stack or conventions yet. | Document logs, metrics, traces, and local access. |
 | Security | C | Defaults are documented, implementation is pending. | Add real auth, secret, and dependency rules. |

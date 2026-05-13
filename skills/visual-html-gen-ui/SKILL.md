@@ -11,7 +11,7 @@ chart, then open only that chart's HTML file.
 
 The examples are self-contained HTML documents using inline CSS and
 SVG. They are intended as visual references that agents can adapt into
-product screens, reports, dashboards, and generated artifacts.
+product screens, reports, dashboards, and deliverables.
 
 ## How To Use
 
@@ -435,6 +435,6 @@ Pet health, care routines, marketplace behavior, adoption, insurance, services, 
 
 ## Maintenance
 
-Maintainers should edit `catalog.json`, run
-`python3 scripts/build_charts.py`, then run
-`python3 scripts/validate_skill.py` before committing.
+Maintainers should add or edit chart HTML files one at a time, update this
+index by hand, and update the matching gallery card in `index.html` in the
+same change.

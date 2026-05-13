@@ -1,6 +1,6 @@
 # visual-html-gen-ui
 
-`visual-html-gen-ui` is a repository-local Codex skill for generating and
+`visual-html-gen-ui` is a repository-local Codex skill for maintaining and
 adapting standalone, domain-specific HTML chart examples.
 
 ## Intro
@@ -10,19 +10,13 @@ and works as a table of contents. Agents should open only the domain/chart
 example they need, then adapt that standalone HTML file into the target
 project.
 
-The public gallery is generated at the repository root as `index.html` for
-GitHub Pages.
+The public gallery lives at the repository root as `index.html` for GitHub
+Pages. It is maintained by hand alongside `SKILL.md`.
 
 ## Quick Start
 
-Regenerate and validate the skill and gallery after editing the catalog:
-
-```sh
-python3 skills/visual-html-gen-ui/scripts/build_charts.py
-python3 scripts/build-gallery.py
-python3 skills/visual-html-gen-ui/scripts/validate_skill.py
-python3 scripts/validate-gallery.py
-```
+After adding or editing a chart, update the chart HTML, `SKILL.md`, and
+`index.html` together in the same small change.
 
 Run repository checks:
 
@@ -34,9 +28,9 @@ make ci
 
 - GitHub Pages: <https://ifuryst.com/visual-html-gen-ui/>
 - Source: `index.html`
-- Generator: `scripts/build-gallery.py`
+- Maintenance: manual, kept in sync with `skills/visual-html-gen-ui/SKILL.md`
 
-## Current Catalog
+## Current Skill Index
 
 - Finance: 30 chart examples.
 - Office: 10 chart examples.

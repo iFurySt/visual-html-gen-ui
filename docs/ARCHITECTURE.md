@@ -9,34 +9,31 @@ globally so agents can review, extend, validate, and commit it in small slices.
 - `skills/visual-html-gen-ui/`: the skill consumed by agents.
 - `skills/visual-html-gen-ui/SKILL.md`: compact table of contents and usage
   entry point.
-- `skills/visual-html-gen-ui/catalog.json`: source catalog for domains and
-  charts.
-- `skills/visual-html-gen-ui/<domain>/<chart>.html`: generated,
+- `skills/visual-html-gen-ui/<domain>/<chart>.html`: hand-maintained,
   standalone chart examples.
-- `skills/visual-html-gen-ui/scripts/`: generation and validation utilities.
-- `index.html`: generated GitHub Pages gallery, grouped by domain.
-- `scripts/build-gallery.py`: root gallery generator.
-- `scripts/validate-gallery.py`: gallery link and structure validator.
+- `index.html`: hand-maintained GitHub Pages gallery, grouped by domain.
 - `docs/`: collaboration guides, execution plans, histories, and quality notes.
 
 ## Boundary Rules
 
-- Keep `SKILL.md` as navigation only; detailed examples belong in individual
-  chart HTML files.
-- Edit `catalog.json` for domain and chart changes, then regenerate outputs
-  with `scripts/build_charts.py`.
-- Generated chart examples should remain dependency-free HTML/CSS/SVG and
-  follow the visual baseline from `~/projects/github/html-effectiveness`.
-- Validation belongs in executable scripts so future agents can detect catalog,
-  link, and output drift.
+- Keep `SKILL.md` as the hand-maintained navigation index; detailed examples
+  belong in individual chart HTML files.
+- Add and revise chart HTML files one at a time, then update `SKILL.md` and
+  `index.html` with the matching domain section and link.
+- Chart examples should remain dependency-free HTML/CSS/SVG and follow the
+  visual baseline from `~/projects/github/html-effectiveness`.
+- Review belongs at the artifact level: inspect the touched chart HTML, the
+  skill index entry, and the gallery card together before committing.
 
 ## Data Flow
 
-1. Maintainer edits `skills/visual-html-gen-ui/catalog.json`.
-2. `scripts/build_charts.py` generates `SKILL.md` and every chart HTML file.
-3. `scripts/build-gallery.py` generates the GitHub Pages `index.html` gallery.
-4. `scripts/validate_skill.py` checks frontmatter, catalog uniqueness, chart
-   files, links, standalone HTML shape, and title coverage.
-5. `scripts/validate-gallery.py` checks gallery links and domain sections.
-6. `make ci` runs repository-level checks, including skill and gallery
-   validation.
+1. Maintainer creates or edits one chart HTML file under
+   `skills/visual-html-gen-ui/<domain>/`.
+2. Maintainer updates `skills/visual-html-gen-ui/SKILL.md` by hand with the
+   domain summary and chart link.
+3. Maintainer updates `index.html` by hand so the public gallery matches the
+   same chart set.
+4. Maintainer reviews the changed domain in the browser or by inspecting the
+   standalone HTML and gallery snippet.
+5. `make ci` runs repository-level checks for docs, hygiene, action pinning,
+   and shell syntax.
