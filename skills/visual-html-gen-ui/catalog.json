@@ -1,0 +1,226 @@
+{
+  "skill": {
+    "name": "visual-html-gen-ui",
+    "displayName": "Visual HTML Gen UI",
+    "description": "Use when an agent needs standalone HTML chart examples for a specific domain, especially to design data-rich UI artifacts without loading a large chart library into context."
+  },
+  "domains": [
+    {
+      "slug": "finance",
+      "name": "Finance",
+      "summary": "Capital markets, investment research, portfolio analytics, risk, and private-market operating metrics.",
+      "charts": [
+        {
+          "slug": "line-chart",
+          "title": "Line Chart",
+          "type": "line",
+          "purpose": "Show price, NAV, revenue, or macro trend changes over time.",
+          "signals": ["trend", "turning points", "run rate"]
+        },
+        {
+          "slug": "area-chart",
+          "title": "Area Chart",
+          "type": "area",
+          "purpose": "Emphasize accumulated scale such as AUM, deposits, or net inflows.",
+          "signals": ["scale", "direction", "base effect"]
+        },
+        {
+          "slug": "grouped-bar-chart",
+          "title": "Grouped Bar Chart",
+          "type": "grouped-bar",
+          "purpose": "Compare multiple companies, quarters, or scenarios side by side.",
+          "signals": ["peer comparison", "quarterly delta", "mix"]
+        },
+        {
+          "slug": "stacked-bar-chart",
+          "title": "Stacked Bar Chart",
+          "type": "stacked-bar",
+          "purpose": "Break revenue, holdings, or portfolio exposure into components.",
+          "signals": ["composition", "absolute size", "mix shift"]
+        },
+        {
+          "slug": "donut-allocation",
+          "title": "Donut Allocation",
+          "type": "donut",
+          "purpose": "Summarize asset allocation, sector weight, or capital deployment.",
+          "signals": ["share", "concentration", "balance"]
+        },
+        {
+          "slug": "risk-return-scatter",
+          "title": "Risk Return Scatter",
+          "type": "scatter",
+          "purpose": "Position strategies or assets by volatility and return.",
+          "signals": ["efficient candidates", "outliers", "risk budget"]
+        },
+        {
+          "slug": "valuation-bubble",
+          "title": "Valuation Bubble",
+          "type": "bubble",
+          "purpose": "Compare valuation, growth, and market capitalization in one view.",
+          "signals": ["multiple", "growth", "scale"]
+        },
+        {
+          "slug": "sector-rotation-heatmap",
+          "title": "Sector Rotation Heatmap",
+          "type": "heatmap",
+          "purpose": "Track sector strength, factor rotation, or weekly flows.",
+          "signals": ["momentum", "breadth", "regime"]
+        },
+        {
+          "slug": "market-map-treemap",
+          "title": "Market Map Treemap",
+          "type": "treemap",
+          "purpose": "Show market capitalization or portfolio weight by company and sector.",
+          "signals": ["weight", "winner concentration", "laggards"]
+        },
+        {
+          "slug": "candlestick-chart",
+          "title": "Candlestick Chart",
+          "type": "candlestick",
+          "purpose": "Display OHLC market action for trader-facing views.",
+          "signals": ["range", "close location", "trend pressure"]
+        },
+        {
+          "slug": "depth-chart",
+          "title": "Depth Chart",
+          "type": "depth",
+          "purpose": "Visualize bid and ask liquidity around the current price.",
+          "signals": ["liquidity wall", "spread", "slippage"]
+        },
+        {
+          "slug": "drawdown-chart",
+          "title": "Drawdown Chart",
+          "type": "drawdown",
+          "purpose": "Expose peak-to-trough losses for a fund or strategy.",
+          "signals": ["max drawdown", "recovery", "risk period"]
+        },
+        {
+          "slug": "equity-curve",
+          "title": "Equity Curve",
+          "type": "line",
+          "purpose": "Show cumulative strategy or fund growth over time.",
+          "signals": ["compounding", "regime change", "consistency"]
+        },
+        {
+          "slug": "rolling-sharpe",
+          "title": "Rolling Sharpe",
+          "type": "line",
+          "purpose": "Track risk-adjusted return quality through time.",
+          "signals": ["quality decay", "stability", "risk reward"]
+        },
+        {
+          "slug": "efficient-frontier",
+          "title": "Efficient Frontier",
+          "type": "frontier",
+          "purpose": "Compare portfolio choices by expected return and volatility.",
+          "signals": ["optimal set", "dominated portfolios", "target risk"]
+        },
+        {
+          "slug": "monte-carlo-fan",
+          "title": "Monte Carlo Fan",
+          "type": "fan",
+          "purpose": "Present a range of possible future portfolio paths.",
+          "signals": ["uncertainty", "tail risk", "median path"]
+        },
+        {
+          "slug": "deal-funnel",
+          "title": "Deal Funnel",
+          "type": "funnel",
+          "purpose": "Summarize VC or lending pipeline conversion by stage.",
+          "signals": ["conversion", "drop-off", "bottleneck"]
+        },
+        {
+          "slug": "capital-flow-sankey",
+          "title": "Capital Flow Sankey",
+          "type": "sankey",
+          "purpose": "Show how capital moves between sources, vehicles, and uses.",
+          "signals": ["source mix", "allocation path", "leakage"]
+        },
+        {
+          "slug": "correlation-matrix",
+          "title": "Correlation Matrix",
+          "type": "matrix",
+          "purpose": "Expose relationships between assets, factors, or sectors.",
+          "signals": ["diversification", "cluster", "hidden beta"]
+        },
+        {
+          "slug": "factor-exposure",
+          "title": "Factor Exposure",
+          "type": "horizontal-bar",
+          "purpose": "Show portfolio sensitivity to value, momentum, quality, and size.",
+          "signals": ["style tilt", "crowding", "risk source"]
+        },
+        {
+          "slug": "risk-attribution",
+          "title": "Risk Attribution",
+          "type": "stacked-bar",
+          "purpose": "Break total risk into sector, factor, security, and currency drivers.",
+          "signals": ["risk source", "concentration", "hedge target"]
+        },
+        {
+          "slug": "waterfall-profit-bridge",
+          "title": "Waterfall Profit Bridge",
+          "type": "waterfall",
+          "purpose": "Explain movement from revenue to net income or EBITDA.",
+          "signals": ["driver contribution", "margin bridge", "one-offs"]
+        },
+        {
+          "slug": "tornado-sensitivity",
+          "title": "Tornado Sensitivity",
+          "type": "tornado",
+          "purpose": "Rank model assumptions by effect on valuation or IRR.",
+          "signals": ["sensitivity", "assumption risk", "key driver"]
+        },
+        {
+          "slug": "company-score-radar",
+          "title": "Company Score Radar",
+          "type": "radar",
+          "purpose": "Score a company or fund across multiple qualitative dimensions.",
+          "signals": ["profile", "balance", "weak dimension"]
+        },
+        {
+          "slug": "calendar-heatmap",
+          "title": "Calendar Heatmap",
+          "type": "calendar",
+          "purpose": "Show daily returns, trading activity, or cash movement intensity.",
+          "signals": ["seasonality", "clusters", "active days"]
+        },
+        {
+          "slug": "yield-curve",
+          "title": "Yield Curve",
+          "type": "line",
+          "purpose": "Display rates across maturities for macro and fixed-income analysis.",
+          "signals": ["slope", "inversion", "term premium"]
+        },
+        {
+          "slug": "cap-table",
+          "title": "Cap Table",
+          "type": "table",
+          "purpose": "Present ownership, share classes, and dilution after financing.",
+          "signals": ["ownership", "preference", "dilution"]
+        },
+        {
+          "slug": "cohort-retention",
+          "title": "Cohort Retention",
+          "type": "cohort",
+          "purpose": "Analyze customer or portfolio cohort quality over time.",
+          "signals": ["retention", "payback", "cohort strength"]
+        },
+        {
+          "slug": "unit-economics",
+          "title": "Unit Economics",
+          "type": "kpi",
+          "purpose": "Compare CAC, LTV, payback, gross margin, and burn efficiency.",
+          "signals": ["efficiency", "payback", "growth quality"]
+        },
+        {
+          "slug": "var-stress-test",
+          "title": "VaR Stress Test",
+          "type": "stress",
+          "purpose": "Show expected loss bands under normal and stressed scenarios.",
+          "signals": ["tail loss", "scenario gap", "capital need"]
+        }
+      ]
+    }
+  ]
+}

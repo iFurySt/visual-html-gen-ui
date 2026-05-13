@@ -1,37 +1,36 @@
 # visual-html-gen-ui
 
-中文版本：[`visual-html-gen-ui-cn`](https://github.com/iFurySt/visual-html-gen-ui-cn)
+`visual-html-gen-ui` is a repository-local Codex skill for generating and
+adapting standalone, domain-specific HTML chart examples.
 
 ## Intro
 
-An agent-first base repo template for building any product you want.
+The skill lives at `skills/visual-html-gen-ui`. Its `SKILL.md` stays compact
+and works as a table of contents. Agents should open only the domain/chart
+example they need, then adapt that standalone HTML file into the target
+project.
 
 ## Quick Start
 
-Use GitHub's template flow from the top right of this repository:
-
-1. Select **Use this template**.
-2. Select [**Create a new repository**](https://github.com/new?template_name=visual-html-gen-ui&template_owner=iFurySt).
-
-Or initialize a new or existing repository with [`harness-cli`](https://github.com/iFurySt/harness-cli).
-Install it from npm first:
+Regenerate and validate the skill after editing the catalog:
 
 ```sh
-npm install -g @ifuryst/harness-cli
+python3 skills/visual-html-gen-ui/scripts/build_charts.py
+python3 skills/visual-html-gen-ui/scripts/validate_skill.py
 ```
 
-Then run:
+Run repository checks:
 
 ```sh
-harness-cli init --language en
+make ci
 ```
 
-`harness-cli` requires Node.js 18+ and Go on your `PATH`.
+## Current Catalog
+
+- Finance: 30 chart examples covering time series, allocation, trading,
+  risk, portfolio construction, private-market funnels, cap tables, cohorts,
+  and operating efficiency.
 
 ## License
 
 [MIT](LICENSE)
-
-## Note
-
-This approach comes from our own exploration, while also drawing on some ideas from OpenAI's [harness engineering write-up](https://openai.com/index/harness-engineering/).

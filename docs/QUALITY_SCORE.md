@@ -13,8 +13,8 @@ Track quality by product area and architectural layer so agents can prioritize t
 
 | Area | Score | Why | Next Step |
 | --- | --- | --- | --- |
-| Product surface | D | Not yet defined. | Define the first user journey and acceptance criteria. |
-| Architecture docs | C | Base scaffold exists but needs project-specific content. | Fill in `docs/ARCHITECTURE.md`. |
-| Testing | D | No stack-specific tests yet. | Add a minimal smoke path with one real command. |
+| Product surface | C | Initial skill surface exists with a finance catalog and standalone chart examples. | Add the remaining requested domains one domain per commit. |
+| Architecture docs | B | Architecture now documents the skill catalog, generated outputs, and validation flow. | Keep this updated as the skill structure evolves. |
+| Testing | C | Skill validation checks catalog/link/output drift and is wired into CI. | Add visual smoke checks if generated HTML becomes more interactive. |
 | Observability | D | No local stack or conventions yet. | Document logs, metrics, traces, and local access. |
 | Security | C | Defaults are documented, implementation is pending. | Add real auth, secret, and dependency rules. |

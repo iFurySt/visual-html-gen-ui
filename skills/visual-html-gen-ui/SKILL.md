@@ -1,0 +1,65 @@
+---
+name: visual-html-gen-ui
+description: Use when an agent needs standalone HTML chart examples for a specific domain, especially to design data-rich UI artifacts without loading a large chart library into context.
+---
+
+# Visual HTML Gen UI
+
+Use this skill when you need a standalone HTML chart example for a
+specific product domain. Start here, choose the relevant domain and
+chart, then open only that chart's `index.html` file.
+
+The examples are self-contained HTML documents using inline CSS and
+SVG. They are intended as visual references that agents can adapt into
+product screens, reports, dashboards, and generated artifacts.
+
+## How To Use
+
+1. Pick the domain that matches the user's problem.
+2. Open the linked chart file, not the whole skill directory.
+3. Reuse the chart structure, labels, spacing, and interaction pattern
+   as a starting point.
+4. Replace sample data, copy, and colors with project-specific values.
+
+## Domain Catalog
+
+### Finance
+
+Capital markets, investment research, portfolio analytics, risk, and private-market operating metrics.
+
+- [Line Chart](finance/line-chart/index.html) - Show price, NAV, revenue, or macro trend changes over time.
+- [Area Chart](finance/area-chart/index.html) - Emphasize accumulated scale such as AUM, deposits, or net inflows.
+- [Grouped Bar Chart](finance/grouped-bar-chart/index.html) - Compare multiple companies, quarters, or scenarios side by side.
+- [Stacked Bar Chart](finance/stacked-bar-chart/index.html) - Break revenue, holdings, or portfolio exposure into components.
+- [Donut Allocation](finance/donut-allocation/index.html) - Summarize asset allocation, sector weight, or capital deployment.
+- [Risk Return Scatter](finance/risk-return-scatter/index.html) - Position strategies or assets by volatility and return.
+- [Valuation Bubble](finance/valuation-bubble/index.html) - Compare valuation, growth, and market capitalization in one view.
+- [Sector Rotation Heatmap](finance/sector-rotation-heatmap/index.html) - Track sector strength, factor rotation, or weekly flows.
+- [Market Map Treemap](finance/market-map-treemap/index.html) - Show market capitalization or portfolio weight by company and sector.
+- [Candlestick Chart](finance/candlestick-chart/index.html) - Display OHLC market action for trader-facing views.
+- [Depth Chart](finance/depth-chart/index.html) - Visualize bid and ask liquidity around the current price.
+- [Drawdown Chart](finance/drawdown-chart/index.html) - Expose peak-to-trough losses for a fund or strategy.
+- [Equity Curve](finance/equity-curve/index.html) - Show cumulative strategy or fund growth over time.
+- [Rolling Sharpe](finance/rolling-sharpe/index.html) - Track risk-adjusted return quality through time.
+- [Efficient Frontier](finance/efficient-frontier/index.html) - Compare portfolio choices by expected return and volatility.
+- [Monte Carlo Fan](finance/monte-carlo-fan/index.html) - Present a range of possible future portfolio paths.
+- [Deal Funnel](finance/deal-funnel/index.html) - Summarize VC or lending pipeline conversion by stage.
+- [Capital Flow Sankey](finance/capital-flow-sankey/index.html) - Show how capital moves between sources, vehicles, and uses.
+- [Correlation Matrix](finance/correlation-matrix/index.html) - Expose relationships between assets, factors, or sectors.
+- [Factor Exposure](finance/factor-exposure/index.html) - Show portfolio sensitivity to value, momentum, quality, and size.
+- [Risk Attribution](finance/risk-attribution/index.html) - Break total risk into sector, factor, security, and currency drivers.
+- [Waterfall Profit Bridge](finance/waterfall-profit-bridge/index.html) - Explain movement from revenue to net income or EBITDA.
+- [Tornado Sensitivity](finance/tornado-sensitivity/index.html) - Rank model assumptions by effect on valuation or IRR.
+- [Company Score Radar](finance/company-score-radar/index.html) - Score a company or fund across multiple qualitative dimensions.
+- [Calendar Heatmap](finance/calendar-heatmap/index.html) - Show daily returns, trading activity, or cash movement intensity.
+- [Yield Curve](finance/yield-curve/index.html) - Display rates across maturities for macro and fixed-income analysis.
+- [Cap Table](finance/cap-table/index.html) - Present ownership, share classes, and dilution after financing.
+- [Cohort Retention](finance/cohort-retention/index.html) - Analyze customer or portfolio cohort quality over time.
+- [Unit Economics](finance/unit-economics/index.html) - Compare CAC, LTV, payback, gross margin, and burn efficiency.
+- [VaR Stress Test](finance/var-stress-test/index.html) - Show expected loss bands under normal and stressed scenarios.
+
+## Maintenance
+
+Maintainers should edit `catalog.json`, run
+`python3 scripts/build_charts.py`, then run
+`python3 scripts/validate_skill.py` before committing.

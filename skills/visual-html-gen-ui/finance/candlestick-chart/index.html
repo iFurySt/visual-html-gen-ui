@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Finance - Candlestick Chart</title>
+<style>
+  :root {
+    --ivory: #FAF9F5;
+    --paper: #FFFFFF;
+    --slate: #141413;
+    --clay: #D97757;
+    --rust: #B04A3F;
+    --oat: #E3DACC;
+    --olive: #788C5D;
+    --teal: #4D8A8B;
+    --blue: #5277A3;
+    --gold: #C99A42;
+    --gray-100: #F0EEE6;
+    --gray-300: #D1CFC5;
+    --gray-500: #87867F;
+    --gray-700: #3D3D3A;
+    --serif: ui-serif, Georgia, "Times New Roman", serif;
+    --sans: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --mono: ui-monospace, "SF Mono", Menlo, Monaco, Consolas, monospace;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--ivory);
+    color: var(--slate);
+    font-family: var(--sans);
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+  .page {
+    width: min(1120px, calc(100vw - 40px));
+    margin: 0 auto;
+    padding: 56px 0 96px;
+  }
+  header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 24px;
+    align-items: end;
+    margin-bottom: 28px;
+    border-bottom: 1.5px solid var(--gray-300);
+    padding-bottom: 22px;
+  }
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--gray-500);
+    margin-bottom: 10px;
+  }
+  h1 {
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: clamp(34px, 5vw, 56px);
+    line-height: 1.04;
+    letter-spacing: 0;
+    margin: 0;
+  }
+  .purpose {
+    max-width: 620px;
+    margin: 16px 0 0;
+    color: var(--gray-700);
+    font-size: 16px;
+  }
+  .stamp {
+    border: 1.5px solid var(--gray-300);
+    background: var(--paper);
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--gray-700);
+    white-space: nowrap;
+  }
+  .frame {
+    background: var(--paper);
+    border: 1.5px solid var(--gray-300);
+    border-radius: 8px;
+    padding: 22px;
+  }
+  .chart-head {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    align-items: start;
+    margin-bottom: 16px;
+  }
+  .chart-title {
+    font-family: var(--serif);
+    font-size: 26px;
+    line-height: 1.15;
+    margin: 0;
+    font-weight: 500;
+  }
+  .chart-meta {
+    font-family: var(--mono);
+    color: var(--gray-500);
+    font-size: 12px;
+  }
+  svg {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .note-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 18px;
+    margin-top: 22px;
+  }
+  .note {
+    border-top: 1.5px solid var(--gray-300);
+    padding-top: 16px;
+    color: var(--gray-700);
+  }
+  .note h2 {
+    font-family: var(--mono);
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--gray-500);
+    margin: 0 0 8px;
+  }
+  .note p, .note ul { margin: 0; }
+  .note ul { padding-left: 18px; }
+  .axis { stroke: var(--gray-300); stroke-width: 1.5; }
+  .grid { stroke: var(--gray-100); stroke-width: 1.5; }
+  .label {
+    fill: var(--gray-500);
+    font: 12px var(--mono);
+  }
+  .small {
+    fill: var(--gray-700);
+    font: 13px var(--sans);
+  }
+  @media (max-width: 760px) {
+    .page { width: min(100vw - 28px, 1120px); padding-top: 32px; }
+    header, .note-grid { grid-template-columns: 1fr; }
+    .stamp { width: fit-content; }
+    .frame { padding: 16px; }
+    .chart-head { flex-direction: column; }
+  }
+</style>
+</head>
+<body>
+<main class="page">
+  <header>
+    <div>
+      <div class="eyebrow">Finance / candlestick</div>
+      <h1>Candlestick Chart</h1>
+      <p class="purpose">Display OHLC market action for trader-facing views.</p>
+    </div>
+    <div class="stamp">standalone html</div>
+  </header>
+
+  <section class="frame" aria-label="Candlestick Chart example">
+    <div class="chart-head">
+      <div>
+        <h2 class="chart-title">Sample candlestick chart</h2>
+        <div class="chart-meta">illustrative data / replace with project values</div>
+      </div>
+      <div class="chart-meta">finance/candlestick-chart</div>
+    </div>
+    <svg viewBox="0 0 960 430" role="img" aria-label="Chart preview">
+  <rect x="0" y="0" width="960" height="430" rx="8" fill="#FAF9F5"/>
+  <line class="grid" x1="82" y1="54.0" x2="902" y2="54.0"/>
+  <line class="grid" x1="82" y1="129.0" x2="902" y2="129.0"/>
+  <line class="grid" x1="82" y1="204.0" x2="902" y2="204.0"/>
+  <line class="grid" x1="82" y1="279.0" x2="902" y2="279.0"/>
+  <line class="grid" x1="82" y1="354.0" x2="902" y2="354.0"/>
+  <line class="axis" x1="82" y1="354" x2="902" y2="354"/>
+  <line class="axis" x1="82" y1="54" x2="82" y2="354"/>
+  <line x1="104" y1="78" x2="104" y2="196" stroke="#B04A3F" stroke-width="3"/><rect x="92" y="120" width="24" height="53" rx="3" fill="#B04A3F"/>
+  <line x1="160" y1="97" x2="160" y2="226" stroke="#4D8A8B" stroke-width="3"/><rect x="148" y="151" width="24" height="18" rx="3" fill="#4D8A8B"/>
+  <line x1="216" y1="116" x2="216" y2="256" stroke="#B04A3F" stroke-width="3"/><rect x="204" y="184" width="24" height="18" rx="3" fill="#B04A3F"/>
+  <line x1="272" y1="135" x2="272" y2="286" stroke="#B04A3F" stroke-width="3"/><rect x="260" y="216" width="24" height="18" rx="3" fill="#B04A3F"/>
+  <line x1="328" y1="154" x2="328" y2="316" stroke="#B04A3F" stroke-width="3"/><rect x="316" y="200" width="24" height="18" rx="3" fill="#B04A3F"/>
+  <line x1="384" y1="79" x2="384" y2="198" stroke="#B04A3F" stroke-width="3"/><rect x="372" y="138" width="24" height="18" rx="3" fill="#B04A3F"/>
+  <line x1="440" y1="98" x2="440" y2="228" stroke="#B04A3F" stroke-width="3"/><rect x="428" y="170" width="24" height="18" rx="3" fill="#B04A3F"/>
+  <line x1="496" y1="117" x2="496" y2="258" stroke="#B04A3F" stroke-width="3"/><rect x="484" y="202" width="24" height="18" rx="3" fill="#B04A3F"/>
+  <line x1="552" y1="136" x2="552" y2="288" stroke="#B04A3F" stroke-width="3"/><rect x="540" y="186" width="24" height="18" rx="3" fill="#B04A3F"/>
+  <line x1="608" y1="155" x2="608" y2="318" stroke="#B04A3F" stroke-width="3"/><rect x="596" y="218" width="24" height="18" rx="3" fill="#B04A3F"/>
+  <line x1="664" y1="80" x2="664" y2="200" stroke="#B04A3F" stroke-width="3"/><rect x="652" y="156" width="24" height="18" rx="3" fill="#B04A3F"/>
+  <line x1="720" y1="99" x2="720" y2="230" stroke="#4D8A8B" stroke-width="3"/><rect x="708" y="149" width="24" height="39" rx="3" fill="#4D8A8B"/>
+  <line x1="776" y1="118" x2="776" y2="260" stroke="#B04A3F" stroke-width="3"/><rect x="764" y="172" width="24" height="18" rx="3" fill="#B04A3F"/>
+  <line x1="832" y1="137" x2="832" y2="290" stroke="#B04A3F" stroke-width="3"/><rect x="820" y="204" width="24" height="18" rx="3" fill="#B04A3F"/>
+</svg>
+    <div class="note-grid">
+      <div class="note">
+        <h2>Use When</h2>
+        <p>Display OHLC market action for trader-facing views.</p>
+      </div>
+      <div class="note">
+        <h2>Signals</h2>
+        <ul>
+          <li>range</li>
+<li>close location</li>
+<li>trend pressure</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+</body>
+</html>
