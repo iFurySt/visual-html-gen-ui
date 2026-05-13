@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Content Creation - Monetization KPI</title>
+<style>
+  :root {
+    --ivory: #FAF9F5;
+    --paper: #FFFFFF;
+    --slate: #141413;
+    --clay: #D97757;
+    --rust: #B04A3F;
+    --oat: #E3DACC;
+    --olive: #788C5D;
+    --teal: #4D8A8B;
+    --blue: #5277A3;
+    --gold: #C99A42;
+    --gray-100: #F0EEE6;
+    --gray-300: #D1CFC5;
+    --gray-500: #87867F;
+    --gray-700: #3D3D3A;
+    --serif: ui-serif, Georgia, "Times New Roman", serif;
+    --sans: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --mono: ui-monospace, "SF Mono", Menlo, Monaco, Consolas, monospace;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--ivory);
+    color: var(--slate);
+    font-family: var(--sans);
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+  .page {
+    width: min(1120px, calc(100vw - 40px));
+    margin: 0 auto;
+    padding: 56px 0 96px;
+  }
+  header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 24px;
+    align-items: end;
+    margin-bottom: 28px;
+    border-bottom: 1.5px solid var(--gray-300);
+    padding-bottom: 22px;
+  }
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--gray-500);
+    margin-bottom: 10px;
+  }
+  h1 {
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: clamp(34px, 5vw, 56px);
+    line-height: 1.04;
+    letter-spacing: 0;
+    margin: 0;
+  }
+  .purpose {
+    max-width: 620px;
+    margin: 16px 0 0;
+    color: var(--gray-700);
+    font-size: 16px;
+  }
+  .stamp {
+    border: 1.5px solid var(--gray-300);
+    background: var(--paper);
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--gray-700);
+    white-space: nowrap;
+  }
+  .frame {
+    background: var(--paper);
+    border: 1.5px solid var(--gray-300);
+    border-radius: 8px;
+    padding: 22px;
+  }
+  .chart-head {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    align-items: start;
+    margin-bottom: 16px;
+  }
+  .chart-title {
+    font-family: var(--serif);
+    font-size: 26px;
+    line-height: 1.15;
+    margin: 0;
+    font-weight: 500;
+  }
+  .chart-meta {
+    font-family: var(--mono);
+    color: var(--gray-500);
+    font-size: 12px;
+  }
+  svg {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .note-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 18px;
+    margin-top: 22px;
+  }
+  .note {
+    border-top: 1.5px solid var(--gray-300);
+    padding-top: 16px;
+    color: var(--gray-700);
+  }
+  .note h2 {
+    font-family: var(--mono);
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--gray-500);
+    margin: 0 0 8px;
+  }
+  .note p, .note ul { margin: 0; }
+  .note ul { padding-left: 18px; }
+  .axis { stroke: var(--gray-300); stroke-width: 1.5; }
+  .grid { stroke: var(--gray-100); stroke-width: 1.5; }
+  .label {
+    fill: var(--gray-500);
+    font: 12px var(--mono);
+  }
+  .small {
+    fill: var(--gray-700);
+    font: 13px var(--sans);
+  }
+  @media (max-width: 760px) {
+    .page { width: min(100vw - 28px, 1120px); padding-top: 32px; }
+    header, .note-grid { grid-template-columns: 1fr; }
+    .stamp { width: fit-content; }
+    .frame { padding: 16px; }
+    .chart-head { flex-direction: column; }
+  }
+</style>
+</head>
+<body>
+<main class="page">
+  <header>
+    <div>
+      <div class="eyebrow">Content Creation / kpi</div>
+      <h1>Monetization KPI</h1>
+      <p class="purpose">Compare RPM, conversion, paid support, payback, and revenue per fan.</p>
+    </div>
+    <div class="stamp">standalone html</div>
+  </header>
+
+  <section class="frame" aria-label="Monetization KPI example">
+    <div class="chart-head">
+      <div>
+        <h2 class="chart-title">Sample monetization kpi</h2>
+        <div class="chart-meta">illustrative data / replace with project values</div>
+      </div>
+      <div class="chart-meta">content-creation/monetization-kpi</div>
+    </div>
+    <div class="kpi-grid"><div class="kpi"><span>CAC</span><strong>$4.2k</strong><em>-8% q/q</em></div>
+<div class="kpi"><span>LTV</span><strong>$31.8k</strong><em>7.6x CAC</em></div>
+<div class="kpi"><span>Payback</span><strong>9.4 mo</strong><em>healthy</em></div>
+<div class="kpi"><span>Burn multiple</span><strong>1.3x</strong><em>improving</em></div></div>
+<style>
+  .kpi-grid { display:grid; grid-template-columns:repeat(4, 1fr); gap:14px; }
+  .kpi { border:1.5px solid #D1CFC5; border-radius:8px; padding:18px; background:#FAF9F5; }
+  .kpi span { display:block; font:12px var(--mono); color:#87867F; text-transform:uppercase; letter-spacing:.06em; }
+  .kpi strong { display:block; font:500 34px var(--serif); color:#141413; margin:8px 0; }
+  .kpi em { font-style:normal; color:#788C5D; font:13px var(--mono); }
+  @media (max-width:760px) { .kpi-grid { grid-template-columns:1fr 1fr; } }
+</style>
+    <div class="note-grid">
+      <div class="note">
+        <h2>Use When</h2>
+        <p>Compare RPM, conversion, paid support, payback, and revenue per fan.</p>
+      </div>
+      <div class="note">
+        <h2>Signals</h2>
+        <ul>
+          <li>efficiency</li>
+<li>monetization</li>
+<li>quality</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+</body>
+</html>

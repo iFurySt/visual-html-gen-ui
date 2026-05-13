@@ -85,7 +85,7 @@ without loading every example into context.
 - [x] Social
 - [x] Entertainment
 - [x] Gaming
-- [ ] Content Creation
+- [x] Content Creation
 - [ ] Enterprise Services
 - [ ] Cybersecurity
 - [ ] AI Agent

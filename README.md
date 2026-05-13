@@ -35,6 +35,7 @@ make ci
 - Social: 10 chart examples.
 - Entertainment: 10 chart examples.
 - Gaming: 10 chart examples.
+- Content Creation: 10 chart examples.
 
 ## License
 

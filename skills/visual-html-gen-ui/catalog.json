@@ -1160,6 +1160,123 @@
           ]
         }
       ]
+    },
+    {
+      "slug": "content-creation",
+      "name": "Content Creation",
+      "summary": "Creator workflow, publishing cadence, audience growth, monetization, editorial planning, and performance.",
+      "charts": [
+        {
+          "slug": "publishing-cadence-line",
+          "title": "Publishing Cadence Line",
+          "type": "line",
+          "purpose": "Track posts, videos, newsletters, or assets shipped over time.",
+          "signals": [
+            "cadence",
+            "consistency",
+            "output trend"
+          ]
+        },
+        {
+          "slug": "content-pipeline-funnel",
+          "title": "Content Pipeline Funnel",
+          "type": "funnel",
+          "purpose": "Track ideas through draft, edit, review, scheduled, and published.",
+          "signals": [
+            "pipeline",
+            "drop-off",
+            "throughput"
+          ]
+        },
+        {
+          "slug": "channel-mix-donut",
+          "title": "Channel Mix Donut",
+          "type": "donut",
+          "purpose": "Summarize output or revenue by channel.",
+          "signals": [
+            "mix",
+            "concentration",
+            "platform dependence"
+          ]
+        },
+        {
+          "slug": "audience-growth-area",
+          "title": "Audience Growth Area",
+          "type": "area",
+          "purpose": "Emphasize accumulated followers, subscribers, or reach.",
+          "signals": [
+            "growth",
+            "scale",
+            "momentum"
+          ]
+        },
+        {
+          "slug": "editorial-calendar-heatmap",
+          "title": "Editorial Calendar Heatmap",
+          "type": "calendar",
+          "purpose": "Show publishing load and gaps by day.",
+          "signals": [
+            "cadence",
+            "gaps",
+            "campaign pressure"
+          ]
+        },
+        {
+          "slug": "content-performance-treemap",
+          "title": "Content Performance Treemap",
+          "type": "treemap",
+          "purpose": "Map views, revenue, or engagement by content piece or series.",
+          "signals": [
+            "hit concentration",
+            "portfolio",
+            "long tail"
+          ]
+        },
+        {
+          "slug": "creator-retention-cohort",
+          "title": "Creator Retention Cohort",
+          "type": "cohort",
+          "purpose": "Track repeat viewers, subscribers, or paid supporters by cohort.",
+          "signals": [
+            "retention",
+            "loyalty",
+            "quality"
+          ]
+        },
+        {
+          "slug": "platform-flow-sankey",
+          "title": "Platform Flow Sankey",
+          "type": "sankey",
+          "purpose": "Show audience movement across discovery, follow, email, community, and purchase.",
+          "signals": [
+            "journey",
+            "owned audience",
+            "leakage"
+          ]
+        },
+        {
+          "slug": "monetization-kpi",
+          "title": "Monetization KPI",
+          "type": "kpi",
+          "purpose": "Compare RPM, conversion, paid support, payback, and revenue per fan.",
+          "signals": [
+            "efficiency",
+            "monetization",
+            "quality"
+          ]
+        },
+        {
+          "slug": "format-score-radar",
+          "title": "Format Score Radar",
+          "type": "radar",
+          "purpose": "Score formats across reach, depth, effort, reuse, and monetization.",
+          "signals": [
+            "format fit",
+            "tradeoff",
+            "weak dimension"
+          ]
+        }
+      ]
     }
   ]
 }

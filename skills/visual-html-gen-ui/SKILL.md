@@ -163,6 +163,21 @@ Game telemetry, player progression, economy balance, monetization, matchmaking, 
 - [Balance Tornado](gaming/balance-tornado/index.html) - Rank tuning variables by effect on win rate or progression speed.
 - [Player Segment Radar](gaming/player-segment-radar/index.html) - Compare player segments across skill, spend, social, completion, and risk.
 
+### Content Creation
+
+Creator workflow, publishing cadence, audience growth, monetization, editorial planning, and performance.
+
+- [Publishing Cadence Line](content-creation/publishing-cadence-line/index.html) - Track posts, videos, newsletters, or assets shipped over time.
+- [Content Pipeline Funnel](content-creation/content-pipeline-funnel/index.html) - Track ideas through draft, edit, review, scheduled, and published.
+- [Channel Mix Donut](content-creation/channel-mix-donut/index.html) - Summarize output or revenue by channel.
+- [Audience Growth Area](content-creation/audience-growth-area/index.html) - Emphasize accumulated followers, subscribers, or reach.
+- [Editorial Calendar Heatmap](content-creation/editorial-calendar-heatmap/index.html) - Show publishing load and gaps by day.
+- [Content Performance Treemap](content-creation/content-performance-treemap/index.html) - Map views, revenue, or engagement by content piece or series.
+- [Creator Retention Cohort](content-creation/creator-retention-cohort/index.html) - Track repeat viewers, subscribers, or paid supporters by cohort.
+- [Platform Flow Sankey](content-creation/platform-flow-sankey/index.html) - Show audience movement across discovery, follow, email, community, and purchase.
+- [Monetization KPI](content-creation/monetization-kpi/index.html) - Compare RPM, conversion, paid support, payback, and revenue per fan.
+- [Format Score Radar](content-creation/format-score-radar/index.html) - Score formats across reach, depth, effort, reuse, and monetization.
+
 ## Maintenance
 
 Maintainers should edit `catalog.json`, run
