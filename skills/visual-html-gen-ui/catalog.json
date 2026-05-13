@@ -1277,6 +1277,123 @@
           ]
         }
       ]
+    },
+    {
+      "slug": "enterprise-services",
+      "name": "Enterprise Services",
+      "summary": "B2B sales, delivery, support, customer success, implementation, and account health analytics.",
+      "charts": [
+        {
+          "slug": "arr-line",
+          "title": "ARR Line",
+          "type": "line",
+          "purpose": "Track recurring revenue or contracted backlog over time.",
+          "signals": [
+            "growth",
+            "run rate",
+            "seasonality"
+          ]
+        },
+        {
+          "slug": "sales-pipeline-funnel",
+          "title": "Sales Pipeline Funnel",
+          "type": "funnel",
+          "purpose": "Summarize leads, qualified opportunities, proposals, negotiation, and closed won.",
+          "signals": [
+            "conversion",
+            "velocity",
+            "bottleneck"
+          ]
+        },
+        {
+          "slug": "implementation-sankey",
+          "title": "Implementation Sankey",
+          "type": "sankey",
+          "purpose": "Show customer movement across kickoff, setup, integration, training, and go-live.",
+          "signals": [
+            "handoff",
+            "implementation path",
+            "leakage"
+          ]
+        },
+        {
+          "slug": "ticket-heatmap",
+          "title": "Ticket Heatmap",
+          "type": "heatmap",
+          "purpose": "Reveal support load by severity and product area.",
+          "signals": [
+            "load",
+            "hotspot",
+            "quality gap"
+          ]
+        },
+        {
+          "slug": "account-health-radar",
+          "title": "Account Health Radar",
+          "type": "radar",
+          "purpose": "Score customers across adoption, support, expansion, sentiment, and renewal risk.",
+          "signals": [
+            "health profile",
+            "risk",
+            "expansion"
+          ]
+        },
+        {
+          "slug": "service-margin-waterfall",
+          "title": "Service Margin Waterfall",
+          "type": "waterfall",
+          "purpose": "Explain gross margin from contract value through labor, travel, support, and overrun.",
+          "signals": [
+            "margin driver",
+            "cost leak",
+            "profitability"
+          ]
+        },
+        {
+          "slug": "customer-retention-cohort",
+          "title": "Customer Retention Cohort",
+          "type": "cohort",
+          "purpose": "Track logo or revenue retention by contract cohort.",
+          "signals": [
+            "retention",
+            "renewal",
+            "quality"
+          ]
+        },
+        {
+          "slug": "sla-calendar",
+          "title": "SLA Calendar",
+          "type": "calendar",
+          "purpose": "Show SLA breaches or incident pressure by day.",
+          "signals": [
+            "breach cluster",
+            "operational pressure",
+            "trend"
+          ]
+        },
+        {
+          "slug": "portfolio-treemap",
+          "title": "Portfolio Treemap",
+          "type": "treemap",
+          "purpose": "Map revenue or effort by account, segment, or service line.",
+          "signals": [
+            "concentration",
+            "key accounts",
+            "service mix"
+          ]
+        },
+        {
+          "slug": "sales-efficiency-kpi",
+          "title": "Sales Efficiency KPI",
+          "type": "kpi",
+          "purpose": "Compare CAC, payback, expansion, win rate, and burn efficiency.",
+          "signals": [
+            "efficiency",
+            "payback",
+            "quality"
+          ]
+        }
+      ]
     }
   ]
 }

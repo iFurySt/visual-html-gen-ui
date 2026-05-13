@@ -178,6 +178,21 @@ Creator workflow, publishing cadence, audience growth, monetization, editorial p
 - [Monetization KPI](content-creation/monetization-kpi/index.html) - Compare RPM, conversion, paid support, payback, and revenue per fan.
 - [Format Score Radar](content-creation/format-score-radar/index.html) - Score formats across reach, depth, effort, reuse, and monetization.
 
+### Enterprise Services
+
+B2B sales, delivery, support, customer success, implementation, and account health analytics.
+
+- [ARR Line](enterprise-services/arr-line/index.html) - Track recurring revenue or contracted backlog over time.
+- [Sales Pipeline Funnel](enterprise-services/sales-pipeline-funnel/index.html) - Summarize leads, qualified opportunities, proposals, negotiation, and closed won.
+- [Implementation Sankey](enterprise-services/implementation-sankey/index.html) - Show customer movement across kickoff, setup, integration, training, and go-live.
+- [Ticket Heatmap](enterprise-services/ticket-heatmap/index.html) - Reveal support load by severity and product area.
+- [Account Health Radar](enterprise-services/account-health-radar/index.html) - Score customers across adoption, support, expansion, sentiment, and renewal risk.
+- [Service Margin Waterfall](enterprise-services/service-margin-waterfall/index.html) - Explain gross margin from contract value through labor, travel, support, and overrun.
+- [Customer Retention Cohort](enterprise-services/customer-retention-cohort/index.html) - Track logo or revenue retention by contract cohort.
+- [SLA Calendar](enterprise-services/sla-calendar/index.html) - Show SLA breaches or incident pressure by day.
+- [Portfolio Treemap](enterprise-services/portfolio-treemap/index.html) - Map revenue or effort by account, segment, or service line.
+- [Sales Efficiency KPI](enterprise-services/sales-efficiency-kpi/index.html) - Compare CAC, payback, expansion, win rate, and burn efficiency.
+
 ## Maintenance
 
 Maintainers should edit `catalog.json`, run

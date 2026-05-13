@@ -36,6 +36,7 @@ make ci
 - Entertainment: 10 chart examples.
 - Gaming: 10 chart examples.
 - Content Creation: 10 chart examples.
+- Enterprise Services: 10 chart examples.
 
 ## License
 
