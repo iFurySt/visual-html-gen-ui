@@ -51,10 +51,10 @@ Capital markets, investment research, portfolio analytics, risk, and private-mar
 - [Waterfall Profit Bridge](finance/waterfall-profit-bridge.html) - Explain movement from revenue to net income or EBITDA.
 - [Tornado Sensitivity](finance/tornado-sensitivity.html) - Rank model assumptions by effect on valuation or IRR.
 - [Company Score Radar](finance/company-score-radar.html) - Score a company or fund across multiple qualitative dimensions.
-- [Calendar Heatmap](finance/calendar-heatmap.html) - Show daily returns, trading activity, or cash movement intensity.
+- [Trading Calendar Heatmap](finance/calendar-heatmap.html) - Show daily returns, trading activity, or cash movement intensity.
 - [Yield Curve](finance/yield-curve.html) - Display rates across maturities for macro and fixed-income analysis.
 - [Cap Table](finance/cap-table.html) - Present ownership, share classes, and dilution after financing.
-- [Cohort Retention](finance/cohort-retention.html) - Analyze customer or portfolio cohort quality over time.
+- [Capital Cohort Retention](finance/cohort-retention.html) - Analyze customer or portfolio cohort quality over time.
 - [Unit Economics](finance/unit-economics.html) - Compare CAC, LTV, payback, gross margin, and burn efficiency.
 - [VaR Stress Test](finance/var-stress-test.html) - Show expected loss bands under normal and stressed scenarios.
 
@@ -64,7 +64,7 @@ Workplace productivity, meetings, task execution, communication, approvals, and 
 
 - [Meeting Load Timeline](office/meeting-load-timeline.html) - Show how meeting hours change by week or team.
 - [Task Status Stacked Bar](office/task-status-stacked-bar.html) - Break planned work into done, in progress, blocked, and deferred states.
-- [Calendar Heatmap](office/calendar-heatmap.html) - Reveal high-pressure days for meetings, deadlines, or handoffs.
+- [Workspace Calendar Heatmap](office/calendar-heatmap.html) - Reveal high-pressure days for meetings, deadlines, or handoffs.
 - [Email Response Funnel](office/email-response-funnel.html) - Track message conversion from sent to opened, replied, and resolved.
 - [Document Flow Sankey](office/document-flow-sankey.html) - Visualize how documents move between draft, review, approval, and archive.
 - [Team Capacity Bars](office/team-capacity-bars.html) - Compare available capacity against committed workload by team.
@@ -81,7 +81,7 @@ Learning progress, classroom operations, curriculum quality, assessment, and stu
 - [Grade Distribution Bars](education/grade-distribution-bars.html) - Compare score bands across classes, sections, or terms.
 - [Mastery Heatmap](education/mastery-heatmap.html) - Map skill mastery by module and learner group.
 - [Attendance Calendar](education/attendance-calendar.html) - Reveal daily attendance, absence, or participation intensity.
-- [Cohort Retention](education/cohort-retention.html) - Track student retention or course completion by intake cohort.
+- [Learner Cohort Retention](education/cohort-retention.html) - Track student retention or course completion by intake cohort.
 - [Curriculum Coverage Treemap](education/curriculum-coverage-treemap.html) - Show instructional time or content weight by curriculum area.
 - [Intervention Funnel](education/intervention-funnel.html) - Track students from flagged risk to outreach, support, and recovery.
 - [Learning Path Sankey](education/learning-path-sankey.html) - Show how learners move across tracks, modules, and outcomes.
@@ -112,7 +112,7 @@ Online retail conversion, merchandising, inventory, customer value, promotions, 
 - [Category Sales Stacked Bar](ecommerce/category-sales-stacked-bar.html) - Break sales into category, channel, or region components.
 - [Product Margin Waterfall](ecommerce/product-margin-waterfall.html) - Explain margin from list price through discounts, shipping, returns, and fees.
 - [Inventory Heatmap](ecommerce/inventory-heatmap.html) - Reveal stock risk by SKU and warehouse or region.
-- [Customer Cohort Retention](ecommerce/customer-cohort-retention.html) - Track repeat purchase retention by acquisition cohort.
+- [Shopper Cohort Retention](ecommerce/customer-cohort-retention.html) - Track repeat purchase retention by acquisition cohort.
 - [LTV CAC KPI](ecommerce/ltv-cac-kpi.html) - Compare acquisition efficiency, LTV, payback, and contribution margin.
 - [Basket Affinity Sankey](ecommerce/basket-affinity-sankey.html) - Show product pairings and category paths in baskets.
 - [SKU Performance Treemap](ecommerce/sku-performance-treemap.html) - Map SKU revenue or contribution by product family.
@@ -190,7 +190,7 @@ B2B sales, delivery, support, customer success, implementation, and account heal
 - [Service Margin Waterfall](enterprise-services/service-margin-waterfall.html) - Explain gross margin from contract value through labor, travel, support, and overrun.
 - [Customer Retention Cohort](enterprise-services/customer-retention-cohort.html) - Track logo or revenue retention by contract cohort.
 - [SLA Calendar](enterprise-services/sla-calendar.html) - Show SLA breaches or incident pressure by day.
-- [Portfolio Treemap](enterprise-services/portfolio-treemap.html) - Map revenue or effort by account, segment, or service line.
+- [Account Portfolio Treemap](enterprise-services/portfolio-treemap.html) - Map revenue or effort by account, segment, or service line.
 - [Sales Efficiency KPI](enterprise-services/sales-efficiency-kpi.html) - Compare CAC, payback, expansion, win rate, and burn efficiency.
 
 ### Cybersecurity
@@ -230,7 +230,7 @@ Property valuation, leasing, occupancy, market supply, rent, cap rates, and asse
 - [Price Index Line](real-estate/price-index-line.html) - Track property price, rent index, or cap-rate movement over time.
 - [Occupancy Area](real-estate/occupancy-area.html) - Emphasize leased area or occupancy scale through time.
 - [Lease Funnel](real-estate/lease-funnel.html) - Track prospects through inquiry, tour, offer, lease, and move-in.
-- [Portfolio Treemap](real-estate/portfolio-treemap.html) - Map NOI, value, or square footage by asset and submarket.
+- [Asset Portfolio Treemap](real-estate/portfolio-treemap.html) - Map NOI, value, or square footage by asset and submarket.
 - [Market Heatmap](real-estate/market-heatmap.html) - Show rent growth, vacancy, or absorption by market and property type.
 - [Development Waterfall](real-estate/development-waterfall.html) - Explain project return from land, construction, financing, lease-up, and exit.
 - [Tenant Cohort Retention](real-estate/tenant-cohort-retention.html) - Track tenant renewal and retention by lease-start cohort.
@@ -260,7 +260,7 @@ Urban mobility, ride hailing, fleet operations, routing, utilization, safety, an
 - [Trip Volume Line](mobility/trip-volume-line.html) - Track rides, deliveries, or passenger trips over time.
 - [Fleet Utilization Area](mobility/fleet-utilization-area.html) - Emphasize active vehicles, idle capacity, or utilization scale.
 - [Dispatch Funnel](mobility/dispatch-funnel.html) - Track requests through matched, accepted, arrived, completed, and rated.
-- [Route Heatmap](mobility/route-heatmap.html) - Reveal demand or congestion by zone and time block.
+- [Mobility Route Heatmap](mobility/route-heatmap.html) - Reveal demand or congestion by zone and time block.
 - [Mode Share Donut](mobility/mode-share-donut.html) - Summarize trips by car, bike, transit, walking, or scooter.
 - [Station Treemap](mobility/station-treemap.html) - Map usage by station, depot, or zone.
 - [Driver Cohort Retention](mobility/driver-cohort-retention.html) - Track driver or rider retention by activation cohort.
@@ -277,7 +277,7 @@ Trips, bookings, destinations, itinerary planning, hospitality, demand forecasti
 - [Booking Funnel](travel/booking-funnel.html) - Track search, quote, checkout, payment, confirmation, and check-in.
 - [Itinerary Sankey](travel/itinerary-sankey.html) - Show traveler movement across origin, destination, lodging, activity, and return.
 - [Seasonality Calendar](travel/seasonality-calendar.html) - Reveal booking or travel intensity by day.
-- [Route Heatmap](travel/route-heatmap.html) - Map demand, occupancy, or price by route and month.
+- [Travel Route Heatmap](travel/route-heatmap.html) - Map demand, occupancy, or price by route and month.
 - [Hotel Portfolio Treemap](travel/hotel-portfolio-treemap.html) - Map revenue or nights by hotel, destination, or brand.
 - [Traveler Retention Cohort](travel/traveler-retention-cohort.html) - Track repeat bookings by acquisition cohort.
 - [Trip Margin Waterfall](travel/trip-margin-waterfall.html) - Explain margin from gross booking through discounts, fees, supplier cost, and support.
@@ -291,7 +291,7 @@ Drug discovery, clinical trials, lab operations, biomarkers, pipelines, safety, 
 - [Trial Enrollment Funnel](biotech/trial-enrollment-funnel.html) - Track screened, eligible, consented, randomized, and completed subjects.
 - [Pipeline Sankey](biotech/pipeline-sankey.html) - Show candidate movement through discovery, preclinical, phase, and approval stages.
 - [Assay Heatmap](biotech/assay-heatmap.html) - Map assay response by compound and target.
-- [Portfolio Treemap](biotech/portfolio-treemap.html) - Map program value, risk, or spend by therapeutic area.
+- [Program Portfolio Treemap](biotech/portfolio-treemap.html) - Map program value, risk, or spend by therapeutic area.
 - [Dose Response Scatter](biotech/dose-response-scatter.html) - Position cohorts by dose and response or adverse event rate.
 - [Patient Cohort Retention](biotech/patient-cohort-retention.html) - Track follow-up, adherence, or endpoint capture by cohort.
 - [R and D Waterfall](biotech/r-and-d-waterfall.html) - Explain R&D cash movement from funding, spend, milestones, grants, and runway.

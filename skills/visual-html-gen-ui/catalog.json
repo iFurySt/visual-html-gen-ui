@@ -276,7 +276,7 @@
         },
         {
           "slug": "calendar-heatmap",
-          "title": "Calendar Heatmap",
+          "title": "Trading Calendar Heatmap",
           "type": "calendar",
           "purpose": "Show daily returns, trading activity, or cash movement intensity.",
           "signals": [
@@ -309,7 +309,7 @@
         },
         {
           "slug": "cohort-retention",
-          "title": "Cohort Retention",
+          "title": "Capital Cohort Retention",
           "type": "cohort",
           "purpose": "Analyze customer or portfolio cohort quality over time.",
           "signals": [
@@ -371,7 +371,7 @@
         },
         {
           "slug": "calendar-heatmap",
-          "title": "Calendar Heatmap",
+          "title": "Workspace Calendar Heatmap",
           "type": "calendar",
           "purpose": "Reveal high-pressure days for meetings, deadlines, or handoffs.",
           "signals": [
@@ -510,7 +510,7 @@
         },
         {
           "slug": "cohort-retention",
-          "title": "Cohort Retention",
+          "title": "Learner Cohort Retention",
           "type": "cohort",
           "purpose": "Track student retention or course completion by intake cohort.",
           "signals": [
@@ -755,7 +755,7 @@
         },
         {
           "slug": "customer-cohort-retention",
-          "title": "Customer Cohort Retention",
+          "title": "Shopper Cohort Retention",
           "type": "cohort",
           "purpose": "Track repeat purchase retention by acquisition cohort.",
           "signals": [
@@ -1373,7 +1373,7 @@
         },
         {
           "slug": "portfolio-treemap",
-          "title": "Portfolio Treemap",
+          "title": "Account Portfolio Treemap",
           "type": "treemap",
           "purpose": "Map revenue or effort by account, segment, or service line.",
           "signals": [
@@ -1669,7 +1669,7 @@
         },
         {
           "slug": "portfolio-treemap",
-          "title": "Portfolio Treemap",
+          "title": "Asset Portfolio Treemap",
           "type": "treemap",
           "purpose": "Map NOI, value, or square footage by asset and submarket.",
           "signals": [
@@ -1903,7 +1903,7 @@
         },
         {
           "slug": "route-heatmap",
-          "title": "Route Heatmap",
+          "title": "Mobility Route Heatmap",
           "type": "heatmap",
           "purpose": "Reveal demand or congestion by zone and time block.",
           "signals": [
@@ -2042,7 +2042,7 @@
         },
         {
           "slug": "route-heatmap",
-          "title": "Route Heatmap",
+          "title": "Travel Route Heatmap",
           "type": "heatmap",
           "purpose": "Map demand, occupancy, or price by route and month.",
           "signals": [
@@ -2148,7 +2148,7 @@
         },
         {
           "slug": "portfolio-treemap",
-          "title": "Portfolio Treemap",
+          "title": "Program Portfolio Treemap",
           "type": "treemap",
           "purpose": "Map program value, risk, or spend by therapeutic area.",
           "signals": [

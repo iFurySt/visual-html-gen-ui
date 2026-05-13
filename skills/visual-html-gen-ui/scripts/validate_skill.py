@@ -21,6 +21,8 @@ def main() -> int:
 
     seen_domains: set[str] = set()
     seen_charts: set[tuple[str, str]] = set()
+    seen_titles: dict[str, str] = {}
+    seen_sample_titles: dict[str, str] = {}
 
     for domain in catalog["domains"]:
         domain_slug = domain["slug"]
@@ -35,6 +37,11 @@ def main() -> int:
             if key in seen_charts:
                 failures.append(f"duplicate chart slug: {domain_slug}/{chart['slug']}")
             seen_charts.add(key)
+            if chart["title"] in seen_titles:
+                failures.append(
+                    f"duplicate chart title: {chart['title']} in {seen_titles[chart['title']]} and {domain_slug}/{chart['slug']}"
+                )
+            seen_titles[chart["title"]] = f"{domain_slug}/{chart['slug']}"
 
             path = ROOT / domain_slug / f"{chart['slug']}.html"
             link = f"{domain_slug}/{chart['slug']}.html"
@@ -50,6 +57,22 @@ def main() -> int:
                 failures.append(f"chart link missing from SKILL.md: {link}")
             if chart["title"] not in content:
                 failures.append(f"chart title missing in HTML: {link}")
+            chart_title_matches = re.findall(r'<h2 class="chart-title">([^<]+)</h2>', content)
+            if chart_title_matches and chart_title_matches[0].startswith("Sample "):
+                failures.append(f"chart uses generic sample title: {link}")
+            if chart_title_matches and domain["name"] not in chart_title_matches[0]:
+                failures.append(f"chart sample title is not domain-specific: {link}")
+            if chart_title_matches:
+                sample_title = chart_title_matches[0]
+                if sample_title in seen_sample_titles:
+                    failures.append(
+                        f"duplicate chart sample title: {sample_title} in {seen_sample_titles[sample_title]} and {link}"
+                    )
+                seen_sample_titles[sample_title] = link
+            if "illustrative data / replace with project values" in content:
+                failures.append(f"chart uses generic sample metadata: {link}")
+            if f"{domain_slug} sample data" not in content:
+                failures.append(f"chart metadata is not domain-specific: {link}")
 
     linked = set(re.findall(r"\(([^)]+\.html)\)", skill))
     expected = {
