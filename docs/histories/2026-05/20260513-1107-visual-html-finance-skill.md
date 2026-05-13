@@ -46,6 +46,7 @@ low-saturation clay/olive/oat/slate colors.
 - Cybersecurity
 - AI Agent
 - Real Estate
+- HR
 
 ### Files Modified
 

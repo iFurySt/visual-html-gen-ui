@@ -238,6 +238,21 @@ Property valuation, leasing, occupancy, market supply, rent, cap rates, and asse
 - [Asset Score Radar](real-estate/asset-score-radar/index.html) - Score a property by location, income, condition, tenant quality, and risk.
 - [Cashflow Stress Test](real-estate/cashflow-stress-test/index.html) - Compare cashflow under vacancy, rate shock, construction delay, and recession scenarios.
 
+### HR
+
+Workforce planning, recruiting, performance, retention, engagement, compensation, and people operations.
+
+- [Headcount Line](hr/headcount-line/index.html) - Track headcount, openings, or hiring plan over time.
+- [Recruiting Funnel](hr/recruiting-funnel/index.html) - Track candidates from sourced to screen, onsite, offer, and accepted.
+- [Department Mix Stacked Bar](hr/department-mix-stacked-bar/index.html) - Break workforce by function, location, level, or employment type.
+- [Attrition Calendar](hr/attrition-calendar/index.html) - Reveal resignation or absence patterns by day or month.
+- [Engagement Heatmap](hr/engagement-heatmap/index.html) - Map engagement or survey scores by team and dimension.
+- [Compensation Scatter](hr/compensation-scatter/index.html) - Position employees or roles by compensation and performance band.
+- [Promotion Cohort](hr/promotion-cohort/index.html) - Track career progression and promotion rates by starting cohort.
+- [Org Treemap](hr/org-treemap/index.html) - Map headcount or payroll by organization unit.
+- [Performance Radar](hr/performance-radar/index.html) - Score a role or team across impact, collaboration, craft, ownership, and growth.
+- [Workforce Risk Stress Test](hr/workforce-risk-stress-test/index.html) - Compare staffing gaps under attrition, hiring freeze, demand spike, and reorg scenarios.
+
 ## Maintenance
 
 Maintainers should edit `catalog.json`, run

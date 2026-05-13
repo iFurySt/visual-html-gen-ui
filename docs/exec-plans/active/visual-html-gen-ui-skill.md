@@ -90,7 +90,7 @@ without loading every example into context.
 - [x] Cybersecurity
 - [x] AI Agent
 - [x] Real Estate
-- [ ] HR
+- [x] HR
 - [ ] Mobility
 - [ ] Travel
 - [ ] Biotech

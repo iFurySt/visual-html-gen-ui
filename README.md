@@ -40,6 +40,7 @@ make ci
 - Cybersecurity: 10 chart examples.
 - AI Agent: 10 chart examples.
 - Real Estate: 10 chart examples.
+- HR: 10 chart examples.
 
 ## License
 

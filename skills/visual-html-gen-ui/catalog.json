@@ -1745,6 +1745,123 @@
           ]
         }
       ]
+    },
+    {
+      "slug": "hr",
+      "name": "HR",
+      "summary": "Workforce planning, recruiting, performance, retention, engagement, compensation, and people operations.",
+      "charts": [
+        {
+          "slug": "headcount-line",
+          "title": "Headcount Line",
+          "type": "line",
+          "purpose": "Track headcount, openings, or hiring plan over time.",
+          "signals": [
+            "growth",
+            "plan variance",
+            "seasonality"
+          ]
+        },
+        {
+          "slug": "recruiting-funnel",
+          "title": "Recruiting Funnel",
+          "type": "funnel",
+          "purpose": "Track candidates from sourced to screen, onsite, offer, and accepted.",
+          "signals": [
+            "conversion",
+            "bottleneck",
+            "quality"
+          ]
+        },
+        {
+          "slug": "department-mix-stacked-bar",
+          "title": "Department Mix Stacked Bar",
+          "type": "stacked-bar",
+          "purpose": "Break workforce by function, location, level, or employment type.",
+          "signals": [
+            "mix",
+            "scale",
+            "shift"
+          ]
+        },
+        {
+          "slug": "attrition-calendar",
+          "title": "Attrition Calendar",
+          "type": "calendar",
+          "purpose": "Reveal resignation or absence patterns by day or month.",
+          "signals": [
+            "cluster",
+            "seasonality",
+            "risk period"
+          ]
+        },
+        {
+          "slug": "engagement-heatmap",
+          "title": "Engagement Heatmap",
+          "type": "heatmap",
+          "purpose": "Map engagement or survey scores by team and dimension.",
+          "signals": [
+            "hotspot",
+            "sentiment",
+            "intervention"
+          ]
+        },
+        {
+          "slug": "compensation-scatter",
+          "title": "Compensation Scatter",
+          "type": "scatter",
+          "purpose": "Position employees or roles by compensation and performance band.",
+          "signals": [
+            "equity",
+            "outlier",
+            "pay band"
+          ]
+        },
+        {
+          "slug": "promotion-cohort",
+          "title": "Promotion Cohort",
+          "type": "cohort",
+          "purpose": "Track career progression and promotion rates by starting cohort.",
+          "signals": [
+            "mobility",
+            "retention",
+            "equity"
+          ]
+        },
+        {
+          "slug": "org-treemap",
+          "title": "Org Treemap",
+          "type": "treemap",
+          "purpose": "Map headcount or payroll by organization unit.",
+          "signals": [
+            "org weight",
+            "span",
+            "concentration"
+          ]
+        },
+        {
+          "slug": "performance-radar",
+          "title": "Performance Radar",
+          "type": "radar",
+          "purpose": "Score a role or team across impact, collaboration, craft, ownership, and growth.",
+          "signals": [
+            "profile",
+            "strength",
+            "gap"
+          ]
+        },
+        {
+          "slug": "workforce-risk-stress-test",
+          "title": "Workforce Risk Stress Test",
+          "type": "stress",
+          "purpose": "Compare staffing gaps under attrition, hiring freeze, demand spike, and reorg scenarios.",
+          "signals": [
+            "capacity risk",
+            "scenario gap",
+            "resilience"
+          ]
+        }
+      ]
     }
   ]
 }
