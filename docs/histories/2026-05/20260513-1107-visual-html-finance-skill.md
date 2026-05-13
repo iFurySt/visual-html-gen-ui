@@ -54,6 +54,7 @@ low-saturation clay/olive/oat/slate colors.
 - Government
 - Manufacturing
 - Energy
+- Retail
 
 ### Files Modified
 

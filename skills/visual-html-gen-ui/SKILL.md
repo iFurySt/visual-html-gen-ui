@@ -358,6 +358,21 @@ Generation, demand, grid operations, trading, storage, renewables, emissions, an
 - [Project Sensitivity Tornado](energy/project-sensitivity-tornado/index.html) - Rank price, capex, capacity factor, and financing assumptions by project return effect.
 - [Supply Stress Test](energy/supply-stress-test/index.html) - Compare reserve margin under outage, heat wave, fuel shock, and demand spike scenarios.
 
+### Retail
+
+Store operations, category management, merchandising, footfall, inventory, promotions, and basket analytics.
+
+- [Same Store Sales Line](retail/same-store-sales-line/index.html) - Track same-store sales, footfall, or conversion over time.
+- [Category Mix Stacked Bar](retail/category-mix-stacked-bar/index.html) - Break store sales into category or department components.
+- [Store Traffic Calendar](retail/store-traffic-calendar/index.html) - Reveal footfall or transaction pressure by day.
+- [Shelf Availability Heatmap](retail/shelf-availability-heatmap/index.html) - Map availability or stockout risk by store and category.
+- [Basket Sankey](retail/basket-sankey/index.html) - Show basket flow between entry category, attached items, and checkout.
+- [Store Treemap](retail/store-treemap/index.html) - Map revenue, margin, or traffic by store.
+- [Promotion Funnel](retail/promotion-funnel/index.html) - Track shoppers from exposure to redemption, purchase, repeat, and loyalty.
+- [Loyalty Cohort Retention](retail/loyalty-cohort-retention/index.html) - Track repeat shopping by loyalty cohort.
+- [Margin Waterfall](retail/margin-waterfall/index.html) - Explain gross margin from sales through markdowns, shrink, labor, and logistics.
+- [Store Score Radar](retail/store-score-radar/index.html) - Score a store across traffic, conversion, availability, service, and shrink.
+
 ## Maintenance
 
 Maintainers should edit `catalog.json`, run

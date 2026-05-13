@@ -2681,6 +2681,123 @@
           ]
         }
       ]
+    },
+    {
+      "slug": "retail",
+      "name": "Retail",
+      "summary": "Store operations, category management, merchandising, footfall, inventory, promotions, and basket analytics.",
+      "charts": [
+        {
+          "slug": "same-store-sales-line",
+          "title": "Same Store Sales Line",
+          "type": "line",
+          "purpose": "Track same-store sales, footfall, or conversion over time.",
+          "signals": [
+            "trend",
+            "seasonality",
+            "campaign lift"
+          ]
+        },
+        {
+          "slug": "category-mix-stacked-bar",
+          "title": "Category Mix Stacked Bar",
+          "type": "stacked-bar",
+          "purpose": "Break store sales into category or department components.",
+          "signals": [
+            "mix",
+            "scale",
+            "shift"
+          ]
+        },
+        {
+          "slug": "store-traffic-calendar",
+          "title": "Store Traffic Calendar",
+          "type": "calendar",
+          "purpose": "Reveal footfall or transaction pressure by day.",
+          "signals": [
+            "traffic cluster",
+            "seasonality",
+            "staffing"
+          ]
+        },
+        {
+          "slug": "shelf-availability-heatmap",
+          "title": "Shelf Availability Heatmap",
+          "type": "heatmap",
+          "purpose": "Map availability or stockout risk by store and category.",
+          "signals": [
+            "stockout",
+            "execution gap",
+            "priority"
+          ]
+        },
+        {
+          "slug": "basket-sankey",
+          "title": "Basket Sankey",
+          "type": "sankey",
+          "purpose": "Show basket flow between entry category, attached items, and checkout.",
+          "signals": [
+            "attachment",
+            "basket path",
+            "cross-sell"
+          ]
+        },
+        {
+          "slug": "store-treemap",
+          "title": "Store Treemap",
+          "type": "treemap",
+          "purpose": "Map revenue, margin, or traffic by store.",
+          "signals": [
+            "store weight",
+            "concentration",
+            "outlier"
+          ]
+        },
+        {
+          "slug": "promotion-funnel",
+          "title": "Promotion Funnel",
+          "type": "funnel",
+          "purpose": "Track shoppers from exposure to redemption, purchase, repeat, and loyalty.",
+          "signals": [
+            "conversion",
+            "promo quality",
+            "drop-off"
+          ]
+        },
+        {
+          "slug": "loyalty-cohort-retention",
+          "title": "Loyalty Cohort Retention",
+          "type": "cohort",
+          "purpose": "Track repeat shopping by loyalty cohort.",
+          "signals": [
+            "retention",
+            "loyalty",
+            "cohort quality"
+          ]
+        },
+        {
+          "slug": "margin-waterfall",
+          "title": "Margin Waterfall",
+          "type": "waterfall",
+          "purpose": "Explain gross margin from sales through markdowns, shrink, labor, and logistics.",
+          "signals": [
+            "margin driver",
+            "loss",
+            "profitability"
+          ]
+        },
+        {
+          "slug": "store-score-radar",
+          "title": "Store Score Radar",
+          "type": "radar",
+          "purpose": "Score a store across traffic, conversion, availability, service, and shrink.",
+          "signals": [
+            "store profile",
+            "weak dimension",
+            "balance"
+          ]
+        }
+      ]
     }
   ]
 }
