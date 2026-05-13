@@ -36,8 +36,8 @@ def main() -> int:
                 failures.append(f"duplicate chart slug: {domain_slug}/{chart['slug']}")
             seen_charts.add(key)
 
-            path = ROOT / domain_slug / chart["slug"] / "index.html"
-            link = f"{domain_slug}/{chart['slug']}/index.html"
+            path = ROOT / domain_slug / f"{chart['slug']}.html"
+            link = f"{domain_slug}/{chart['slug']}.html"
             if not path.is_file():
                 failures.append(f"missing chart file: {link}")
                 continue
@@ -51,9 +51,9 @@ def main() -> int:
             if chart["title"] not in content:
                 failures.append(f"chart title missing in HTML: {link}")
 
-    linked = set(re.findall(r"\(([^)]+/index\.html)\)", skill))
+    linked = set(re.findall(r"\(([^)]+\.html)\)", skill))
     expected = {
-        f"{domain['slug']}/{chart['slug']}/index.html"
+        f"{domain['slug']}/{chart['slug']}.html"
         for domain in catalog["domains"]
         for chart in domain["charts"]
     }

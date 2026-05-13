@@ -107,7 +107,7 @@ without loading every example into context.
 ## Decision Log
 
 - 2026-05-13: Use generated standalone HTML under
-  `skills/visual-html-gen-ui/<domain>/<chart>/index.html` so the chart tree
+  `skills/visual-html-gen-ui/<domain>/<chart>.html` so the chart tree
   matches the requested skill shape while keeping maintenance centralized in a
   catalog.
 - 2026-05-13: Treat `~/projects/github/html-effectiveness` as the strict visual
@@ -122,7 +122,7 @@ without loading every example into context.
 - 2026-05-13: `skills/visual-html-gen-ui/SKILL.md` lists every generated domain
   and chart link as a compact table of contents.
 - 2026-05-13: Every catalog chart has a generated standalone
-  `<domain>/<chart>/index.html` file.
+  `<domain>/<chart>.html` file.
 - 2026-05-13: Git history contains one commit for each requested domain slice.
 - 2026-05-13: Final validation passed:
   `python3 skills/visual-html-gen-ui/scripts/validate_skill.py` and `make ci`.

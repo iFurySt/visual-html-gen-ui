@@ -11,7 +11,7 @@ globally so agents can review, extend, validate, and commit it in small slices.
   entry point.
 - `skills/visual-html-gen-ui/catalog.json`: source catalog for domains and
   charts.
-- `skills/visual-html-gen-ui/<domain>/<chart>/index.html`: generated,
+- `skills/visual-html-gen-ui/<domain>/<chart>.html`: generated,
   standalone chart examples.
 - `skills/visual-html-gen-ui/scripts/`: generation and validation utilities.
 - `docs/`: collaboration guides, execution plans, histories, and quality notes.
@@ -30,8 +30,7 @@ globally so agents can review, extend, validate, and commit it in small slices.
 ## Data Flow
 
 1. Maintainer edits `skills/visual-html-gen-ui/catalog.json`.
-2. `scripts/build_charts.py` generates `SKILL.md` and every chart
-   `index.html`.
+2. `scripts/build_charts.py` generates `SKILL.md` and every chart HTML file.
 3. `scripts/validate_skill.py` checks frontmatter, catalog uniqueness, chart
    files, links, standalone HTML shape, and title coverage.
 4. `make ci` runs repository-level checks, including skill validation.

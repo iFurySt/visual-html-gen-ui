@@ -72,4 +72,4 @@ low-saturation clay/olive/oat/slate colors.
 - `skills/visual-html-gen-ui/catalog.json`
 - `skills/visual-html-gen-ui/scripts/build_charts.py`
 - `skills/visual-html-gen-ui/scripts/validate_skill.py`
-- `skills/visual-html-gen-ui/<domain>/<chart>/index.html`
+- `skills/visual-html-gen-ui/<domain>/<chart>.html`

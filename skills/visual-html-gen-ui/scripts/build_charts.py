@@ -36,9 +36,9 @@ def main() -> None:
     clean_domain_dirs(catalog)
     for domain in catalog["domains"]:
         for chart in domain["charts"]:
-            chart_dir = ROOT / domain["slug"] / chart["slug"]
-            chart_dir.mkdir(parents=True, exist_ok=True)
-            (chart_dir / "index.html").write_text(
+            domain_dir = ROOT / domain["slug"]
+            domain_dir.mkdir(parents=True, exist_ok=True)
+            (domain_dir / f"{chart['slug']}.html").write_text(
                 render_chart_page(domain, chart),
                 encoding="utf-8",
             )
@@ -55,6 +55,18 @@ def clean_domain_dirs(catalog: dict) -> None:
             continue
         shutil.rmtree(child)
 
+    for domain in catalog["domains"]:
+        domain_dir = ROOT / domain["slug"]
+        if not domain_dir.exists():
+            continue
+        expected = {f"{chart['slug']}.html" for chart in domain["charts"]}
+        for child in domain_dir.iterdir():
+            if child.is_dir():
+                shutil.rmtree(child)
+                continue
+            if child.suffix == ".html" and child.name not in expected:
+                child.unlink()
+
 
 def render_skill(catalog: dict) -> str:
     lines = [
@@ -67,7 +79,7 @@ def render_skill(catalog: dict) -> str:
         "",
         "Use this skill when you need a standalone HTML chart example for a",
         "specific product domain. Start here, choose the relevant domain and",
-        "chart, then open only that chart's `index.html` file.",
+        "chart, then open only that chart's HTML file.",
         "",
         "The examples are self-contained HTML documents using inline CSS and",
         "SVG. They are intended as visual references that agents can adapt into",
@@ -95,7 +107,7 @@ def render_skill(catalog: dict) -> str:
             ]
         )
         for chart in domain["charts"]:
-            path = f"{domain['slug']}/{chart['slug']}/index.html"
+            path = f"{domain['slug']}/{chart['slug']}.html"
             lines.append(f"- [{chart['title']}]({path}) - {chart['purpose']}")
         lines.append("")
 

@@ -13,8 +13,8 @@ Track quality by product area and architectural layer so agents can prioritize t
 
 | Area | Score | Why | Next Step |
 | --- | --- | --- | --- |
-| Product surface | C | Initial skill surface exists with a finance catalog and standalone chart examples. | Add the remaining requested domains one domain per commit. |
-| Architecture docs | B | Architecture now documents the skill catalog, generated outputs, and validation flow. | Keep this updated as the skill structure evolves. |
+| Product surface | B | Skill surface covers all requested domains with 280 standalone chart examples. | Add targeted visual smoke checks for representative chart families. |
+| Architecture docs | B | Architecture documents the skill catalog, flat chart HTML outputs, and validation flow. | Keep this updated as the skill structure evolves. |
 | Testing | C | Skill validation checks catalog/link/output drift and is wired into CI. | Add visual smoke checks if generated HTML becomes more interactive. |
 | Observability | D | No local stack or conventions yet. | Document logs, metrics, traces, and local access. |
 | Security | C | Defaults are documented, implementation is pending. | Add real auth, secret, and dependency rules. |
