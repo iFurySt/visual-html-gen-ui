@@ -302,16 +302,16 @@ Drug discovery, clinical trials, lab operations, biomarkers, pipelines, safety, 
 
 Matter management, contracts, litigation, compliance, risk, billing, and legal operations dashboards.
 
-- [Matter Volume Line](legal/matter-volume-line.html) - Track opened, closed, or active matters over time.
-- [Contract Review Funnel](legal/contract-review-funnel.html) - Track contracts from intake to redline, negotiation, approval, and signature.
-- [Case Stage Sankey](legal/case-stage-sankey.html) - Show matters moving through investigation, filing, discovery, settlement, and close.
-- [Risk Heatmap](legal/risk-heatmap.html) - Map legal risk by business unit and issue type.
-- [Billing Waterfall](legal/billing-waterfall.html) - Explain spend from budget through outside counsel, discounts, accruals, and variance.
-- [Clause Treemap](legal/clause-treemap.html) - Map contract clause frequency or negotiation effort by clause type.
-- [Compliance Calendar](legal/compliance-calendar.html) - Show filings, deadlines, audits, and policy updates by date.
-- [Matter Cohort](legal/matter-cohort.html) - Track matter resolution or aging by intake cohort.
-- [Case Merit Radar](legal/case-merit-radar.html) - Score matters across evidence, damages, precedent, cost, timing, and risk.
-- [Litigation Stress Test](legal/litigation-stress-test.html) - Compare exposure under settlement, trial, appeal, and adverse judgment scenarios.
+- [Matter Volume Line](legal/matter-volume-line.html) - Track new matters, closures, active backlog, aging, and outside-counsel escalation by week or month.
+- [Contract Review Funnel](legal/contract-review-funnel.html) - Track contracts from intake through triage, redline, negotiation, approval, signature, and obligation handoff.
+- [Case Stage Sankey](legal/case-stage-sankey.html) - Show matters moving across intake, investigation, filing, discovery, mediation, settlement, trial, and close.
+- [Risk Heatmap](legal/risk-heatmap.html) - Map legal exposure, urgency, control weakness, and owner accountability by business unit and issue type.
+- [Billing Waterfall](legal/billing-waterfall.html) - Explain legal spend from budget through outside counsel fees, alternative fee credits, accruals, discounts, reserves, and variance.
+- [Clause Treemap](legal/clause-treemap.html) - Map clause negotiation effort, fallback usage, approval burden, and risk exceptions by clause family.
+- [Compliance Calendar](legal/compliance-calendar.html) - Show regulatory filings, audit windows, policy attestations, renewal deadlines, and remediation due dates.
+- [Matter Cohort](legal/matter-cohort.html) - Track resolution speed, reopen rate, escalation, and aging risk by matter intake cohort.
+- [Case Merit Radar](legal/case-merit-radar.html) - Score case posture across evidence strength, damages exposure, precedent, venue, cost, timing, and settlement leverage.
+- [Litigation Stress Test](legal/litigation-stress-test.html) - Compare reserve and exposure under early settlement, extended discovery, trial loss, appeal, and adverse judgment scenarios.
 
 ### Government
 
