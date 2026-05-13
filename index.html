@@ -16425,8 +16425,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Active Users Line example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Social Active Users Line for active users&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative daily users / social sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Daily active users after launch moments&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;DAU trend with campaign and notification-change context&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;social/active-users-line&lt;/div&gt;
     &lt;/div&gt;
@@ -16449,13 +16449,13 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Track DAU, WAU, or MAU growth across a period.&lt;/p&gt;
+        &lt;p&gt;Use this when growth and community teams need to separate product lift from temporary campaign spikes.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;growth&lt;/li&gt;
-&lt;li&gt;seasonality&lt;/li&gt;
+          &lt;li&gt;DAU trend&lt;/li&gt;
+&lt;li&gt;campaign spike&lt;/li&gt;
 &lt;li&gt;retention pressure&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
@@ -16467,8 +16467,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Active Users Line</div>
-          <div class="desc">Track DAU, WAU, or MAU growth across a period.</div>
-          <div class="signals"><span>active</span><span>users</span><span>line</span></div>
+          <div class="desc">Track daily active users around launches, notification changes, and creator campaigns.</div>
+          <div class="signals"><span>DAU</span><span>campaigns</span><span>retention</span></div>
           <div class="file"><span>social/active-users-line.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -16644,8 +16644,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Engagement Area example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Social cumulative active users&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative daily users / social sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Cumulative engagement after content launch&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;engagement volume across reactions, comments, shares, and saves&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;social/engagement-area&lt;/div&gt;
     &lt;/div&gt;
@@ -16668,14 +16668,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Emphasize accumulated sessions, reactions, comments, or shares.&lt;/p&gt;
+        &lt;p&gt;Use this when content teams need to see whether engagement keeps compounding or fades after the first burst.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;engagement load&lt;/li&gt;
+          &lt;li&gt;engagement volume&lt;/li&gt;
 &lt;li&gt;momentum&lt;/li&gt;
-&lt;li&gt;scale&lt;/li&gt;
+&lt;li&gt;decay point&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -16686,8 +16686,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Engagement Area</div>
-          <div class="desc">Emphasize accumulated sessions, reactions, comments, or shares.</div>
-          <div class="signals"><span>engagement</span><span>area</span></div>
+          <div class="desc">Emphasize accumulated reactions, comments, shares, and saves after content launches.</div>
+          <div class="signals"><span>engagement</span><span>shares</span><span>decay</span></div>
           <div class="file"><span>social/engagement-area.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -16863,8 +16863,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Activation Funnel example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Social follow to profile&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative daily users / social sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;New user activation funnel&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;onboarding conversion from signup to first return&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;social/activation-funnel&lt;/div&gt;
     &lt;/div&gt;
@@ -16879,14 +16879,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Track users from signup to profile completion, first follow, first post, and return.&lt;/p&gt;
+        &lt;p&gt;Use this to find which onboarding step prevents new users from reaching a meaningful first session.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;activation&lt;/li&gt;
-&lt;li&gt;drop-off&lt;/li&gt;
-&lt;li&gt;onboarding&lt;/li&gt;
+          &lt;li&gt;profile setup&lt;/li&gt;
+&lt;li&gt;first action&lt;/li&gt;
+&lt;li&gt;day-7 return&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -16897,8 +16897,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Activation Funnel</div>
-          <div class="desc">Track users from signup to profile completion, first follow, first post, and return.</div>
-          <div class="signals"><span>activation</span><span>funnel</span></div>
+          <div class="desc">Track new users from signup through profile setup, first follow, first post, and day-7 return.</div>
+          <div class="signals"><span>onboarding</span><span>first action</span><span>D7</span></div>
           <div class="file"><span>social/activation-funnel.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -17074,8 +17074,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Creator Network Sankey example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Social flow between community and topic&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative daily users / social sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Creator-to-community audience flow&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;audience paths between creators, topics, communities, follows, and shares&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;social/creator-network-sankey&lt;/div&gt;
     &lt;/div&gt;
@@ -17096,14 +17096,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Show audience movement between creators, topics, and communities.&lt;/p&gt;
+        &lt;p&gt;Use this when recommendations or creator programs need to understand where audiences migrate after discovery.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;flow&lt;/li&gt;
-&lt;li&gt;affinity&lt;/li&gt;
-&lt;li&gt;migration&lt;/li&gt;
+          &lt;li&gt;creator affinity&lt;/li&gt;
+&lt;li&gt;topic migration&lt;/li&gt;
+&lt;li&gt;community lift&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -17114,8 +17114,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Creator Network Sankey</div>
-          <div class="desc">Show audience movement between creators, topics, and communities.</div>
-          <div class="signals"><span>creator</span><span>network</span><span>sankey</span></div>
+          <div class="desc">Show audience movement from creators into topics, communities, follows, and shares.</div>
+          <div class="signals"><span>creators</span><span>topics</span><span>communities</span></div>
           <div class="file"><span>social/creator-network-sankey.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -17291,8 +17291,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Topic Heatmap example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Social topic heatmap example&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative daily users / social sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Topic momentum by community segment&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;daily topic activity across creator, group, and moderation-sensitive segments&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;social/topic-heatmap&lt;/div&gt;
     &lt;/div&gt;
@@ -17343,14 +17343,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Reveal topic momentum by day or community segment.&lt;/p&gt;
+        &lt;p&gt;Use this to spot emerging topics before they become either growth opportunities or moderation events.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;momentum&lt;/li&gt;
-&lt;li&gt;clusters&lt;/li&gt;
-&lt;li&gt;topic shift&lt;/li&gt;
+          &lt;li&gt;topic momentum&lt;/li&gt;
+&lt;li&gt;segment cluster&lt;/li&gt;
+&lt;li&gt;moderation watch&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -17361,8 +17361,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Topic Heatmap</div>
-          <div class="desc">Reveal topic momentum by day or community segment.</div>
-          <div class="signals"><span>topic</span><span>heatmap</span></div>
+          <div class="desc">Reveal topic momentum by day, community segment, and moderation sensitivity.</div>
+          <div class="signals"><span>topics</span><span>segments</span><span>moderation</span></div>
           <div class="file"><span>social/topic-heatmap.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -17538,8 +17538,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Community Treemap example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Social community treemap example&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative daily users / social sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Community scale and moderation load&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;active members, post volume, and moderation effort by community&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;social/community-treemap&lt;/div&gt;
     &lt;/div&gt;
@@ -17555,14 +17555,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Map communities by active users, posts, or moderation load.&lt;/p&gt;
+        &lt;p&gt;Use this to decide which communities need more moderators, better tooling, or creator support.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;concentration&lt;/li&gt;
-&lt;li&gt;community health&lt;/li&gt;
-&lt;li&gt;load&lt;/li&gt;
+          &lt;li&gt;member scale&lt;/li&gt;
+&lt;li&gt;post volume&lt;/li&gt;
+&lt;li&gt;moderation load&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -17573,8 +17573,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Community Treemap</div>
-          <div class="desc">Map communities by active users, posts, or moderation load.</div>
-          <div class="signals"><span>community</span><span>treemap</span></div>
+          <div class="desc">Map communities by active members, post volume, and moderation workload.</div>
+          <div class="signals"><span>members</span><span>posts</span><span>moderation</span></div>
           <div class="file"><span>social/community-treemap.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -17750,8 +17750,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;User Cohort Retention example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Social user cohort retention example&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative daily users / social sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Signup cohort retention by lifecycle day&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;retained users by signup month and cohort age&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;social/user-cohort-retention&lt;/div&gt;
     &lt;/div&gt;
@@ -17767,12 +17767,12 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Track retained users by signup cohort and age.&lt;/p&gt;
+        &lt;p&gt;Use this to see whether product changes are improving durable retention or just moving signup volume.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;retention&lt;/li&gt;
+          &lt;li&gt;D7 retention&lt;/li&gt;
 &lt;li&gt;stickiness&lt;/li&gt;
 &lt;li&gt;cohort quality&lt;/li&gt;
         &lt;/ul&gt;
@@ -17785,8 +17785,8 @@ body {
         </div>
         <div class="body">
           <div class="title">User Cohort Retention</div>
-          <div class="desc">Track retained users by signup cohort and age.</div>
-          <div class="signals"><span>user</span><span>cohort</span><span>retention</span></div>
+          <div class="desc">Track retained users by signup cohort, lifecycle age, and first community joined.</div>
+          <div class="signals"><span>D7</span><span>cohorts</span><span>stickiness</span></div>
           <div class="file"><span>social/user-cohort-retention.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -17962,8 +17962,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Influence Bubble example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Social influence bubble example&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative daily users / social sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Creator reach vs engagement quality&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;creator audience size, engagement rate, reach, and trust-review priority&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;social/influence-bubble&lt;/div&gt;
     &lt;/div&gt;
@@ -17983,14 +17983,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Compare creators by reach, engagement rate, and audience size.&lt;/p&gt;
+        &lt;p&gt;Use this when creator partnerships need to balance raw reach with engagement quality and brand-safety review.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;reach&lt;/li&gt;
-&lt;li&gt;quality&lt;/li&gt;
-&lt;li&gt;scale&lt;/li&gt;
+          &lt;li&gt;creator reach&lt;/li&gt;
+&lt;li&gt;engagement quality&lt;/li&gt;
+&lt;li&gt;trust review&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -18001,8 +18001,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Influence Bubble</div>
-          <div class="desc">Compare creators by reach, engagement rate, and audience size.</div>
-          <div class="signals"><span>influence</span><span>bubble</span></div>
+          <div class="desc">Compare creators by reach, engagement quality, audience size, and trust risk.</div>
+          <div class="signals"><span>creators</span><span>engagement</span><span>trust</span></div>
           <div class="file"><span>social/influence-bubble.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -18178,8 +18178,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Moderation Waterfall example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Social moderation waterfall example&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative daily users / social sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Moderation queue movement bridge&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;report backlog movement from inflow, automation, review, appeals, and resolved actions&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;social/moderation-waterfall&lt;/div&gt;
     &lt;/div&gt;
@@ -18202,14 +18202,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Explain report queue changes from inflow, automation, review, appeals, and backlog.&lt;/p&gt;
+        &lt;p&gt;Use this when trust and safety teams need to explain why backlog grew or shrank during a policy or spam event.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;queue driver&lt;/li&gt;
+          &lt;li&gt;report inflow&lt;/li&gt;
 &lt;li&gt;automation impact&lt;/li&gt;
-&lt;li&gt;backlog&lt;/li&gt;
+&lt;li&gt;appeal backlog&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -18220,8 +18220,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Moderation Waterfall</div>
-          <div class="desc">Explain report queue changes from inflow, automation, review, appeals, and backlog.</div>
-          <div class="signals"><span>moderation</span><span>waterfall</span></div>
+          <div class="desc">Explain moderation queue changes from report inflow, automation, review, appeals, and backlog.</div>
+          <div class="signals"><span>reports</span><span>automation</span><span>backlog</span></div>
           <div class="file"><span>social/moderation-waterfall.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>
@@ -18397,8 +18397,8 @@ body {
 &lt;section id=&quot;chart-preview&quot; class=&quot;frame&quot; aria-label=&quot;Community Health Radar example&quot;&gt;
     &lt;div class=&quot;chart-head&quot;&gt;
       &lt;div&gt;
-        &lt;h2 class=&quot;chart-title&quot;&gt;Social community health radar example&lt;/h2&gt;
-        &lt;div class=&quot;chart-meta&quot;&gt;illustrative daily users / social sample data&lt;/div&gt;
+        &lt;h2 class=&quot;chart-title&quot;&gt;Community health review profile&lt;/h2&gt;
+        &lt;div class=&quot;chart-meta&quot;&gt;health score across safety, activity, diversity, creator supply, retention, and trust&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;chart-meta&quot;&gt;social/community-health-radar&lt;/div&gt;
     &lt;/div&gt;
@@ -18418,14 +18418,14 @@ body {
     &lt;div class=&quot;note-grid&quot;&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Use When&lt;/h2&gt;
-        &lt;p&gt;Score safety, activity, diversity, creator supply, and retention.&lt;/p&gt;
+        &lt;p&gt;Use this in community reviews when a group is growing but safety, creator concentration, or retention may be weakening.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=&quot;note&quot;&gt;
         &lt;h2&gt;Signals&lt;/h2&gt;
         &lt;ul&gt;
-          &lt;li&gt;health profile&lt;/li&gt;
-&lt;li&gt;balance&lt;/li&gt;
-&lt;li&gt;risk&lt;/li&gt;
+          &lt;li&gt;safety balance&lt;/li&gt;
+&lt;li&gt;creator supply&lt;/li&gt;
+&lt;li&gt;trust risk&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -18436,8 +18436,8 @@ body {
         </div>
         <div class="body">
           <div class="title">Community Health Radar</div>
-          <div class="desc">Score safety, activity, diversity, creator supply, and retention.</div>
-          <div class="signals"><span>community</span><span>health</span><span>radar</span></div>
+          <div class="desc">Score community health across safety, activity, diversity, creator supply, retention, and trust.</div>
+          <div class="signals"><span>safety</span><span>creators</span><span>trust</span></div>
           <div class="file"><span>social/community-health-radar.html</span><span class="arrow">-&gt;</span></div>
         </div>
       </a>

@@ -122,16 +122,16 @@ Online retail conversion, merchandising, inventory, customer value, promotions, 
 
 Community growth, engagement, creator networks, moderation, content propagation, and retention.
 
-- [Active Users Line](social/active-users-line.html) - Track DAU, WAU, or MAU growth across a period.
-- [Engagement Area](social/engagement-area.html) - Emphasize accumulated sessions, reactions, comments, or shares.
-- [Activation Funnel](social/activation-funnel.html) - Track users from signup to profile completion, first follow, first post, and return.
-- [Creator Network Sankey](social/creator-network-sankey.html) - Show audience movement between creators, topics, and communities.
-- [Topic Heatmap](social/topic-heatmap.html) - Reveal topic momentum by day or community segment.
-- [Community Treemap](social/community-treemap.html) - Map communities by active users, posts, or moderation load.
-- [User Cohort Retention](social/user-cohort-retention.html) - Track retained users by signup cohort and age.
-- [Influence Bubble](social/influence-bubble.html) - Compare creators by reach, engagement rate, and audience size.
-- [Moderation Waterfall](social/moderation-waterfall.html) - Explain report queue changes from inflow, automation, review, appeals, and backlog.
-- [Community Health Radar](social/community-health-radar.html) - Score safety, activity, diversity, creator supply, and retention.
+- [Active Users Line](social/active-users-line.html) - Track daily active users around launches, notification changes, and creator campaigns.
+- [Engagement Area](social/engagement-area.html) - Emphasize accumulated reactions, comments, shares, and saves after content launches.
+- [Activation Funnel](social/activation-funnel.html) - Track new users from signup through profile setup, first follow, first post, and day-7 return.
+- [Creator Network Sankey](social/creator-network-sankey.html) - Show audience movement from creators into topics, communities, follows, and shares.
+- [Topic Heatmap](social/topic-heatmap.html) - Reveal topic momentum by day, community segment, and moderation sensitivity.
+- [Community Treemap](social/community-treemap.html) - Map communities by active members, post volume, and moderation workload.
+- [User Cohort Retention](social/user-cohort-retention.html) - Track retained users by signup cohort, lifecycle age, and first community joined.
+- [Influence Bubble](social/influence-bubble.html) - Compare creators by reach, engagement quality, audience size, and trust risk.
+- [Moderation Waterfall](social/moderation-waterfall.html) - Explain moderation queue changes from report inflow, automation, review, appeals, and backlog.
+- [Community Health Radar](social/community-health-radar.html) - Score community health across safety, activity, diversity, creator supply, retention, and trust.
 
 ### Entertainment
 
