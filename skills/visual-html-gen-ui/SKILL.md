@@ -167,16 +167,16 @@ Game telemetry, player progression, economy balance, monetization, matchmaking, 
 
 Creator workflow, publishing cadence, audience growth, monetization, editorial planning, and performance.
 
-- [Publishing Cadence Line](content-creation/publishing-cadence-line.html) - Track posts, videos, newsletters, or assets shipped over time.
-- [Content Pipeline Funnel](content-creation/content-pipeline-funnel.html) - Track ideas through draft, edit, review, scheduled, and published.
-- [Channel Mix Donut](content-creation/channel-mix-donut.html) - Summarize output or revenue by channel.
-- [Audience Growth Area](content-creation/audience-growth-area.html) - Emphasize accumulated followers, subscribers, or reach.
-- [Editorial Calendar Heatmap](content-creation/editorial-calendar-heatmap.html) - Show publishing load and gaps by day.
-- [Content Performance Treemap](content-creation/content-performance-treemap.html) - Map views, revenue, or engagement by content piece or series.
-- [Creator Retention Cohort](content-creation/creator-retention-cohort.html) - Track repeat viewers, subscribers, or paid supporters by cohort.
-- [Platform Flow Sankey](content-creation/platform-flow-sankey.html) - Show audience movement across discovery, follow, email, community, and purchase.
-- [Monetization KPI](content-creation/monetization-kpi.html) - Compare RPM, conversion, paid support, payback, and revenue per fan.
-- [Format Score Radar](content-creation/format-score-radar.html) - Score formats across reach, depth, effort, reuse, and monetization.
+- [Publishing Cadence Line](content-creation/publishing-cadence-line.html) - Track publishing cadence across shorts, long-form, newsletters, and campaign assets.
+- [Content Pipeline Funnel](content-creation/content-pipeline-funnel.html) - Track ideas through brief, draft, edit, review, scheduled, and published steps.
+- [Channel Mix Donut](content-creation/channel-mix-donut.html) - Summarize audience reach or revenue by platform, owned channel, and paid surface.
+- [Audience Growth Area](content-creation/audience-growth-area.html) - Emphasize cumulative followers, subscribers, and email capture after launches and collaborations.
+- [Editorial Calendar Heatmap](content-creation/editorial-calendar-heatmap.html) - Show publishing load, review collisions, and campaign gaps by day.
+- [Content Performance Treemap](content-creation/content-performance-treemap.html) - Map views, revenue, and engagement by series or format to reveal hits and long-tail shelves.
+- [Creator Retention Cohort](content-creation/creator-retention-cohort.html) - Track repeat viewers, subscribers, and paid supporters by acquisition cohort and first content touch.
+- [Platform Flow Sankey](content-creation/platform-flow-sankey.html) - Show audience movement from discovery platforms into follows, email, community, paid support, and purchase.
+- [Monetization KPI](content-creation/monetization-kpi.html) - Compare RPM, support conversion, paid community mix, payback, and revenue per fan after a campaign.
+- [Format Score Radar](content-creation/format-score-radar.html) - Score formats across reach, depth, effort, reuse, monetization, and audience fit for editorial planning.
 
 ### Enterprise Services
 
