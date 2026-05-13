@@ -227,16 +227,16 @@ Agent workflows, model performance, tool use, evaluation, cost, latency, safety,
 
 Property valuation, leasing, occupancy, market supply, rent, cap rates, and asset operations.
 
-- [Price Index Line](real-estate/price-index-line.html) - Track property price, rent index, or cap-rate movement over time.
-- [Occupancy Area](real-estate/occupancy-area.html) - Emphasize leased area or occupancy scale through time.
-- [Lease Funnel](real-estate/lease-funnel.html) - Track prospects through inquiry, tour, offer, lease, and move-in.
-- [Asset Portfolio Treemap](real-estate/portfolio-treemap.html) - Map NOI, value, or square footage by asset and submarket.
-- [Market Heatmap](real-estate/market-heatmap.html) - Show rent growth, vacancy, or absorption by market and property type.
-- [Development Waterfall](real-estate/development-waterfall.html) - Explain project return from land, construction, financing, lease-up, and exit.
-- [Tenant Cohort Retention](real-estate/tenant-cohort-retention.html) - Track tenant renewal and retention by lease-start cohort.
-- [Valuation Sensitivity Tornado](real-estate/valuation-sensitivity-tornado.html) - Rank cap rate, rent growth, vacancy, and financing assumptions by value impact.
-- [Asset Score Radar](real-estate/asset-score-radar.html) - Score a property by location, income, condition, tenant quality, and risk.
-- [Cashflow Stress Test](real-estate/cashflow-stress-test.html) - Compare cashflow under vacancy, rate shock, construction delay, and recession scenarios.
+- [Price Index Line](real-estate/price-index-line.html) - Track rent index, achieved rent, and cap-rate pressure across submarkets and lease cycles.
+- [Occupancy Area](real-estate/occupancy-area.html) - Show leased area and physical occupancy buildup after deliveries, renewals, and move-ins.
+- [Lease Funnel](real-estate/lease-funnel.html) - Track prospects from inquiry through tour, application, offer, lease signing, and move-in.
+- [Asset Portfolio Treemap](real-estate/portfolio-treemap.html) - Map NOI, valuation, and square-foot exposure by asset, submarket, and property type.
+- [Market Heatmap](real-estate/market-heatmap.html) - Compare rent growth, vacancy, absorption, and concession pressure by market and property type.
+- [Development Waterfall](real-estate/development-waterfall.html) - Explain development return from land basis through hard costs, financing, lease-up, incentives, and exit value.
+- [Tenant Cohort Retention](real-estate/tenant-cohort-retention.html) - Track tenant renewal, expansion, contraction, and move-out patterns by lease-start cohort.
+- [Valuation Sensitivity Tornado](real-estate/valuation-sensitivity-tornado.html) - Rank value sensitivity to cap rate, market rent growth, vacancy, downtime, and debt cost assumptions.
+- [Asset Score Radar](real-estate/asset-score-radar.html) - Score acquisition or hold decisions across location, income durability, asset condition, tenant quality, liquidity, and risk.
+- [Cashflow Stress Test](real-estate/cashflow-stress-test.html) - Compare cashflow resilience under vacancy shock, rate reset, construction delay, refinancing gap, and recession scenarios.
 
 ### HR
 
