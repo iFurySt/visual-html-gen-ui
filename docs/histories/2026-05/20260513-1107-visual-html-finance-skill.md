@@ -58,6 +58,7 @@ low-saturation clay/olive/oat/slate colors.
 - Crypto
 - Fashion
 - Sports
+- Pets
 
 ### Files Modified
 

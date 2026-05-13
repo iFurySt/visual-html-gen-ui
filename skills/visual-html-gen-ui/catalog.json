@@ -3149,6 +3149,123 @@
           ]
         }
       ]
+    },
+    {
+      "slug": "pets",
+      "name": "Pets",
+      "summary": "Pet health, care routines, marketplace behavior, adoption, insurance, services, and owner engagement.",
+      "charts": [
+        {
+          "slug": "wellness-line",
+          "title": "Wellness Line",
+          "type": "line",
+          "purpose": "Track weight, activity, symptoms, or wellness score over time.",
+          "signals": [
+            "trend",
+            "threshold",
+            "routine impact"
+          ]
+        },
+        {
+          "slug": "care-calendar",
+          "title": "Care Calendar",
+          "type": "calendar",
+          "purpose": "Show feeding, medication, grooming, vaccination, or visit adherence by day.",
+          "signals": [
+            "adherence",
+            "routine gap",
+            "cluster"
+          ]
+        },
+        {
+          "slug": "adoption-funnel",
+          "title": "Adoption Funnel",
+          "type": "funnel",
+          "purpose": "Track pets from listed to viewed, applied, visited, approved, and adopted.",
+          "signals": [
+            "conversion",
+            "drop-off",
+            "adoption flow"
+          ]
+        },
+        {
+          "slug": "service-mix-donut",
+          "title": "Service Mix Donut",
+          "type": "donut",
+          "purpose": "Summarize spending or bookings by grooming, vet, food, insurance, and toys.",
+          "signals": [
+            "spend mix",
+            "balance",
+            "need"
+          ]
+        },
+        {
+          "slug": "clinic-flow-sankey",
+          "title": "Clinic Flow Sankey",
+          "type": "sankey",
+          "purpose": "Show movement from appointment reason to diagnosis, treatment, and follow-up.",
+          "signals": [
+            "care path",
+            "handoff",
+            "follow-up"
+          ]
+        },
+        {
+          "slug": "breed-health-heatmap",
+          "title": "Breed Health Heatmap",
+          "type": "heatmap",
+          "purpose": "Map common risk or care metrics by breed and age group.",
+          "signals": [
+            "risk hotspot",
+            "age pattern",
+            "prevention"
+          ]
+        },
+        {
+          "slug": "subscription-cohort-retention",
+          "title": "Subscription Cohort Retention",
+          "type": "cohort",
+          "purpose": "Track repeat orders or plan retention by signup cohort.",
+          "signals": [
+            "retention",
+            "loyalty",
+            "cohort quality"
+          ]
+        },
+        {
+          "slug": "product-treemap",
+          "title": "Product Treemap",
+          "type": "treemap",
+          "purpose": "Map pet product revenue by category or brand.",
+          "signals": [
+            "category weight",
+            "hero SKU",
+            "long tail"
+          ]
+        },
+        {
+          "slug": "claim-waterfall",
+          "title": "Claim Waterfall",
+          "type": "waterfall",
+          "purpose": "Explain insurance claim value from invoice, deductible, exclusions, copay, and reimbursement.",
+          "signals": [
+            "claim driver",
+            "coverage gap",
+            "reimbursement"
+          ]
+        },
+        {
+          "slug": "pet-profile-radar",
+          "title": "Pet Profile Radar",
+          "type": "radar",
+          "purpose": "Score care needs across activity, diet, grooming, medical, training, and socialization.",
+          "signals": [
+            "care profile",
+            "balance",
+            "weak dimension"
+          ]
+        }
+      ]
     }
   ]
 }

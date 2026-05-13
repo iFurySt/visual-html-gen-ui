@@ -418,6 +418,21 @@ Team performance, player development, game operations, fan engagement, training,
 - [Match Flow Sankey](sports/match-flow-sankey/index.html) - Show possession or play flow between zones and outcomes.
 - [Athlete Score Radar](sports/athlete-score-radar/index.html) - Score an athlete across skill, speed, endurance, decision, and availability.
 
+### Pets
+
+Pet health, care routines, marketplace behavior, adoption, insurance, services, and owner engagement.
+
+- [Wellness Line](pets/wellness-line/index.html) - Track weight, activity, symptoms, or wellness score over time.
+- [Care Calendar](pets/care-calendar/index.html) - Show feeding, medication, grooming, vaccination, or visit adherence by day.
+- [Adoption Funnel](pets/adoption-funnel/index.html) - Track pets from listed to viewed, applied, visited, approved, and adopted.
+- [Service Mix Donut](pets/service-mix-donut/index.html) - Summarize spending or bookings by grooming, vet, food, insurance, and toys.
+- [Clinic Flow Sankey](pets/clinic-flow-sankey/index.html) - Show movement from appointment reason to diagnosis, treatment, and follow-up.
+- [Breed Health Heatmap](pets/breed-health-heatmap/index.html) - Map common risk or care metrics by breed and age group.
+- [Subscription Cohort Retention](pets/subscription-cohort-retention/index.html) - Track repeat orders or plan retention by signup cohort.
+- [Product Treemap](pets/product-treemap/index.html) - Map pet product revenue by category or brand.
+- [Claim Waterfall](pets/claim-waterfall/index.html) - Explain insurance claim value from invoice, deductible, exclusions, copay, and reimbursement.
+- [Pet Profile Radar](pets/pet-profile-radar/index.html) - Score care needs across activity, diet, grooming, medical, training, and socialization.
+
 ## Maintenance
 
 Maintainers should edit `catalog.json`, run

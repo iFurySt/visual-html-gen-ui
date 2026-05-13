@@ -102,7 +102,7 @@ without loading every example into context.
 - [x] Crypto
 - [x] Fashion
 - [x] Sports
-- [ ] Pets
+- [x] Pets
 
 ## Decision Log
 

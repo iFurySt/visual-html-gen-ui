@@ -52,6 +52,7 @@ make ci
 - Crypto: 10 chart examples.
 - Fashion: 10 chart examples.
 - Sports: 10 chart examples.
+- Pets: 10 chart examples.
 
 ## License
 
