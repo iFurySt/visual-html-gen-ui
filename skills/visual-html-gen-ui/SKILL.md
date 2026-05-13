@@ -242,16 +242,16 @@ Property valuation, leasing, occupancy, market supply, rent, cap rates, and asse
 
 Workforce planning, recruiting, performance, retention, engagement, compensation, and people operations.
 
-- [Headcount Line](hr/headcount-line.html) - Track headcount, openings, or hiring plan over time.
-- [Recruiting Funnel](hr/recruiting-funnel.html) - Track candidates from sourced to screen, onsite, offer, and accepted.
-- [Department Mix Stacked Bar](hr/department-mix-stacked-bar.html) - Break workforce by function, location, level, or employment type.
-- [Attrition Calendar](hr/attrition-calendar.html) - Reveal resignation or absence patterns by day or month.
-- [Engagement Heatmap](hr/engagement-heatmap.html) - Map engagement or survey scores by team and dimension.
-- [Compensation Scatter](hr/compensation-scatter.html) - Position employees or roles by compensation and performance band.
-- [Promotion Cohort](hr/promotion-cohort.html) - Track career progression and promotion rates by starting cohort.
-- [Org Treemap](hr/org-treemap.html) - Map headcount or payroll by organization unit.
-- [Performance Radar](hr/performance-radar.html) - Score a role or team across impact, collaboration, craft, ownership, and growth.
-- [Workforce Risk Stress Test](hr/workforce-risk-stress-test.html) - Compare staffing gaps under attrition, hiring freeze, demand spike, and reorg scenarios.
+- [Headcount Line](hr/headcount-line.html) - Track approved headcount, open requisitions, starts, exits, and hiring-plan variance by month.
+- [Recruiting Funnel](hr/recruiting-funnel.html) - Track candidates from sourced through recruiter screen, hiring-manager review, onsite, offer, accepted, and start.
+- [Department Mix Stacked Bar](hr/department-mix-stacked-bar.html) - Break workforce mix by function, level, location, employment type, and manager span.
+- [Attrition Calendar](hr/attrition-calendar.html) - Reveal resignation, absence, PTO, and backfill risk patterns by week, month, team, or location.
+- [Engagement Heatmap](hr/engagement-heatmap.html) - Map survey engagement scores, manager trust, workload, inclusion, and growth sentiment by team.
+- [Compensation Scatter](hr/compensation-scatter.html) - Position employees or roles by compa-ratio, pay band, performance, tenure, and equity review priority.
+- [Promotion Cohort](hr/promotion-cohort.html) - Track promotion, lateral move, retention, and time-in-level patterns by starting cohort and demographic segment.
+- [Org Treemap](hr/org-treemap.html) - Map headcount, payroll, manager span, and open requisition load by org unit.
+- [Performance Radar](hr/performance-radar.html) - Score a team or role family across impact, collaboration, execution, craft, ownership, and growth readiness.
+- [Workforce Risk Stress Test](hr/workforce-risk-stress-test.html) - Compare staffing resilience under attrition shock, hiring freeze, demand spike, reorg, and skills-gap scenarios.
 
 ### Mobility
 
