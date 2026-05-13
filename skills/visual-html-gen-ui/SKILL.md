@@ -407,16 +407,16 @@ Collections, merchandising, trend signals, inventory, brand performance, runway,
 
 Team performance, player development, game operations, fan engagement, training, and commercial sports metrics.
 
-- [Performance Line](sports/performance-line.html) - Track wins, points, pace, or rating across games and weeks.
-- [Player Usage Stacked Bar](sports/player-usage-stacked-bar.html) - Break minutes, touches, or possessions by player or role.
-- [Shot Heatmap](sports/shot-heatmap.html) - Map shot quality, attempts, or scoring zones.
-- [Training Calendar](sports/training-calendar.html) - Reveal training load, recovery, or match congestion by day.
-- [Fan Funnel](sports/fan-funnel.html) - Track fans from reach to engagement, ticket intent, purchase, and loyalty.
-- [Roster Treemap](sports/roster-treemap.html) - Map salary, minutes, or contribution by player group.
-- [Injury Risk Scatter](sports/injury-risk-scatter.html) - Position players by workload and injury risk or fatigue score.
-- [Season Ticket Cohort](sports/season-ticket-cohort.html) - Track renewal or attendance by buyer cohort.
-- [Match Flow Sankey](sports/match-flow-sankey.html) - Show possession or play flow between zones and outcomes.
-- [Athlete Score Radar](sports/athlete-score-radar.html) - Score an athlete across skill, speed, endurance, decision, and availability.
+- [Performance Line](sports/performance-line.html) - Track team rating, expected points, pace, win probability, rest days, and opponent strength across games and weeks.
+- [Player Usage Stacked Bar](sports/player-usage-stacked-bar.html) - Break minutes, touches, possessions, shot attempts, defensive assignments, and load by player, role, and unit.
+- [Shot Heatmap](sports/shot-heatmap.html) - Map shot quality, attempt volume, expected value, scoring zones, defensive pressure, and conversion rate.
+- [Training Calendar](sports/training-calendar.html) - Reveal training load, recovery score, travel, match congestion, soreness flags, and readiness by day.
+- [Fan Funnel](sports/fan-funnel.html) - Track fans from reach through engagement, content click, ticket intent, purchase, attendance, and loyalty membership.
+- [Roster Treemap](sports/roster-treemap.html) - Map salary, minutes, availability, contribution, upside, contract length, and positional depth by player group.
+- [Injury Risk Scatter](sports/injury-risk-scatter.html) - Position athletes by acute load, chronic load, fatigue, soreness, prior injury, and availability risk.
+- [Season Ticket Cohort](sports/season-ticket-cohort.html) - Track renewals, attendance, resale activity, upgrades, churn, and revenue per seat by buyer cohort.
+- [Match Flow Sankey](sports/match-flow-sankey.html) - Show possession flow from build-up through progression, final third, shot creation, turnover, transition, and goal outcome.
+- [Athlete Score Radar](sports/athlete-score-radar.html) - Score an athlete across technical skill, speed, endurance, decision quality, availability, tactical fit, and development upside.
 
 ### Pets
 
