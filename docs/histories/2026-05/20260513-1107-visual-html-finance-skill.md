@@ -50,6 +50,7 @@ low-saturation clay/olive/oat/slate colors.
 - Mobility
 - Travel
 - Biotech
+- Legal
 
 ### Files Modified
 

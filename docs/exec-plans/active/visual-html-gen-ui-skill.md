@@ -94,7 +94,7 @@ without loading every example into context.
 - [x] Mobility
 - [x] Travel
 - [x] Biotech
-- [ ] Legal
+- [x] Legal
 - [ ] Government
 - [ ] Manufacturing
 - [ ] Energy

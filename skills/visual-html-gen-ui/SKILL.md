@@ -298,6 +298,21 @@ Drug discovery, clinical trials, lab operations, biomarkers, pipelines, safety, 
 - [Program Risk Radar](biotech/program-risk-radar/index.html) - Score a program across efficacy, safety, CMC, regulatory, IP, and market fit.
 - [Clinical Stress Test](biotech/clinical-stress-test/index.html) - Compare timeline or cash need under enrollment delay, safety signal, and regulatory scenarios.
 
+### Legal
+
+Matter management, contracts, litigation, compliance, risk, billing, and legal operations dashboards.
+
+- [Matter Volume Line](legal/matter-volume-line/index.html) - Track opened, closed, or active matters over time.
+- [Contract Review Funnel](legal/contract-review-funnel/index.html) - Track contracts from intake to redline, negotiation, approval, and signature.
+- [Case Stage Sankey](legal/case-stage-sankey/index.html) - Show matters moving through investigation, filing, discovery, settlement, and close.
+- [Risk Heatmap](legal/risk-heatmap/index.html) - Map legal risk by business unit and issue type.
+- [Billing Waterfall](legal/billing-waterfall/index.html) - Explain spend from budget through outside counsel, discounts, accruals, and variance.
+- [Clause Treemap](legal/clause-treemap/index.html) - Map contract clause frequency or negotiation effort by clause type.
+- [Compliance Calendar](legal/compliance-calendar/index.html) - Show filings, deadlines, audits, and policy updates by date.
+- [Matter Cohort](legal/matter-cohort/index.html) - Track matter resolution or aging by intake cohort.
+- [Case Merit Radar](legal/case-merit-radar/index.html) - Score matters across evidence, damages, precedent, cost, timing, and risk.
+- [Litigation Stress Test](legal/litigation-stress-test/index.html) - Compare exposure under settlement, trial, appeal, and adverse judgment scenarios.
+
 ## Maintenance
 
 Maintainers should edit `catalog.json`, run

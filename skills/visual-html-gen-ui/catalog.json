@@ -2213,6 +2213,123 @@
           ]
         }
       ]
+    },
+    {
+      "slug": "legal",
+      "name": "Legal",
+      "summary": "Matter management, contracts, litigation, compliance, risk, billing, and legal operations dashboards.",
+      "charts": [
+        {
+          "slug": "matter-volume-line",
+          "title": "Matter Volume Line",
+          "type": "line",
+          "purpose": "Track opened, closed, or active matters over time.",
+          "signals": [
+            "volume",
+            "trend",
+            "backlog"
+          ]
+        },
+        {
+          "slug": "contract-review-funnel",
+          "title": "Contract Review Funnel",
+          "type": "funnel",
+          "purpose": "Track contracts from intake to redline, negotiation, approval, and signature.",
+          "signals": [
+            "cycle time",
+            "drop-off",
+            "bottleneck"
+          ]
+        },
+        {
+          "slug": "case-stage-sankey",
+          "title": "Case Stage Sankey",
+          "type": "sankey",
+          "purpose": "Show matters moving through investigation, filing, discovery, settlement, and close.",
+          "signals": [
+            "path",
+            "stage mix",
+            "leakage"
+          ]
+        },
+        {
+          "slug": "risk-heatmap",
+          "title": "Risk Heatmap",
+          "type": "heatmap",
+          "purpose": "Map legal risk by business unit and issue type.",
+          "signals": [
+            "hotspot",
+            "exposure",
+            "priority"
+          ]
+        },
+        {
+          "slug": "billing-waterfall",
+          "title": "Billing Waterfall",
+          "type": "waterfall",
+          "purpose": "Explain spend from budget through outside counsel, discounts, accruals, and variance.",
+          "signals": [
+            "spend driver",
+            "variance",
+            "savings"
+          ]
+        },
+        {
+          "slug": "clause-treemap",
+          "title": "Clause Treemap",
+          "type": "treemap",
+          "purpose": "Map contract clause frequency or negotiation effort by clause type.",
+          "signals": [
+            "clause load",
+            "risk area",
+            "standardization"
+          ]
+        },
+        {
+          "slug": "compliance-calendar",
+          "title": "Compliance Calendar",
+          "type": "calendar",
+          "purpose": "Show filings, deadlines, audits, and policy updates by date.",
+          "signals": [
+            "deadline cluster",
+            "calendar risk",
+            "workload"
+          ]
+        },
+        {
+          "slug": "matter-cohort",
+          "title": "Matter Cohort",
+          "type": "cohort",
+          "purpose": "Track matter resolution or aging by intake cohort.",
+          "signals": [
+            "resolution",
+            "aging",
+            "quality"
+          ]
+        },
+        {
+          "slug": "case-merit-radar",
+          "title": "Case Merit Radar",
+          "type": "radar",
+          "purpose": "Score matters across evidence, damages, precedent, cost, timing, and risk.",
+          "signals": [
+            "case profile",
+            "tradeoff",
+            "weak dimension"
+          ]
+        },
+        {
+          "slug": "litigation-stress-test",
+          "title": "Litigation Stress Test",
+          "type": "stress",
+          "purpose": "Compare exposure under settlement, trial, appeal, and adverse judgment scenarios.",
+          "signals": [
+            "tail loss",
+            "scenario gap",
+            "reserve need"
+          ]
+        }
+      ]
     }
   ]
 }
