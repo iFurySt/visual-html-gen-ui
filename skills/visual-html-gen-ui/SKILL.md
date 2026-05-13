@@ -377,16 +377,16 @@ Store operations, category management, merchandising, footfall, inventory, promo
 
 Token markets, DeFi liquidity, wallets, protocol revenue, on-chain behavior, risk, and exchange operations.
 
-- [Token Price Line](crypto/token-price-line.html) - Track token price, index level, or protocol metric over time.
-- [Liquidity Depth Chart](crypto/liquidity-depth-chart.html) - Visualize bid and ask liquidity around the current token price.
-- [Wallet Cohort Retention](crypto/wallet-cohort-retention.html) - Track active wallet retention by first transaction cohort.
-- [DeFi Flow Sankey](crypto/defi-flow-sankey.html) - Show value movement between wallets, pools, bridges, and protocols.
-- [Protocol Treemap](crypto/protocol-treemap.html) - Map TVL, fees, or volume by protocol or chain.
-- [Chain Heatmap](crypto/chain-heatmap.html) - Reveal transaction, gas, or fee intensity by chain and day.
-- [Portfolio Donut](crypto/portfolio-donut.html) - Summarize wallet, fund, or treasury allocation by asset.
-- [Yield Risk Scatter](crypto/yield-risk-scatter.html) - Position pools by yield and risk or impermanent loss.
-- [Liquidation Waterfall](crypto/liquidation-waterfall.html) - Explain collateral movement from price shock, margin call, liquidation, fees, and residual.
-- [Protocol Stress Test](crypto/protocol-stress-test.html) - Compare losses under depeg, oracle failure, bridge exploit, and liquidity drain scenarios.
+- [Token Price Line](crypto/token-price-line.html) - Track token price, realized volatility, volume, active addresses, exchange netflow, and protocol revenue over time.
+- [Liquidity Depth Chart](crypto/liquidity-depth-chart.html) - Visualize bid and ask depth, spread, slippage, liquidity walls, and order-book imbalance around current price.
+- [Wallet Cohort Retention](crypto/wallet-cohort-retention.html) - Track active wallets, repeat transactions, retained balances, gas spend, and protocol usage by first-transaction cohort.
+- [DeFi Flow Sankey](crypto/defi-flow-sankey.html) - Show value movement from wallets through swaps, lending pools, staking, bridges, liquidations, and protocol fees.
+- [Protocol Treemap](crypto/protocol-treemap.html) - Map TVL, volume, fees, active users, incentives, and chain exposure by protocol.
+- [Chain Heatmap](crypto/chain-heatmap.html) - Reveal transactions, active addresses, gas price, failed transactions, bridge inflow, and fee intensity by chain and day.
+- [Portfolio Donut](crypto/portfolio-donut.html) - Summarize wallet, fund, or treasury allocation by asset, stablecoin exposure, liquid staking, DeFi positions, and cash runway.
+- [Yield Risk Scatter](crypto/yield-risk-scatter.html) - Position pools by APY, TVL depth, impermanent loss, smart-contract risk, liquidity lockup, and reward sustainability.
+- [Liquidation Waterfall](crypto/liquidation-waterfall.html) - Explain collateral movement from oracle shock, collateral drawdown, margin call, liquidation discount, fees, bad debt, and residual equity.
+- [Protocol Stress Test](crypto/protocol-stress-test.html) - Compare losses under stablecoin depeg, oracle failure, bridge exploit, liquidity drain, governance attack, and validator outage scenarios.
 
 ### Fashion
 
