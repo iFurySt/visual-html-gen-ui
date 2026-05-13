@@ -31,6 +31,7 @@ make ci
 - Office: 10 chart examples.
 - Education: 10 chart examples.
 - Health: 10 chart examples.
+- Ecommerce: 10 chart examples.
 
 ## License
 

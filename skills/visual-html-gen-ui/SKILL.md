@@ -103,6 +103,21 @@ Patient monitoring, care operations, population health, appointment flow, and cl
 - [Clinical Quality Radar](health/clinical-quality-radar/index.html) - Score a program across safety, access, experience, efficacy, and cost.
 - [Readmission Stress Test](health/readmission-stress-test/index.html) - Compare expected readmission or complication losses under stress scenarios.
 
+### Ecommerce
+
+Online retail conversion, merchandising, inventory, customer value, promotions, and fulfillment analytics.
+
+- [Revenue Line](ecommerce/revenue-line/index.html) - Show gross merchandise value or revenue trend over time.
+- [Checkout Funnel](ecommerce/checkout-funnel/index.html) - Track shoppers through product view, cart, checkout, payment, and purchase.
+- [Category Sales Stacked Bar](ecommerce/category-sales-stacked-bar/index.html) - Break sales into category, channel, or region components.
+- [Product Margin Waterfall](ecommerce/product-margin-waterfall/index.html) - Explain margin from list price through discounts, shipping, returns, and fees.
+- [Inventory Heatmap](ecommerce/inventory-heatmap/index.html) - Reveal stock risk by SKU and warehouse or region.
+- [Customer Cohort Retention](ecommerce/customer-cohort-retention/index.html) - Track repeat purchase retention by acquisition cohort.
+- [LTV CAC KPI](ecommerce/ltv-cac-kpi/index.html) - Compare acquisition efficiency, LTV, payback, and contribution margin.
+- [Basket Affinity Sankey](ecommerce/basket-affinity-sankey/index.html) - Show product pairings and category paths in baskets.
+- [SKU Performance Treemap](ecommerce/sku-performance-treemap/index.html) - Map SKU revenue or contribution by product family.
+- [Promo Sensitivity Tornado](ecommerce/promo-sensitivity-tornado/index.html) - Rank price, discount, shipping, and ad spend assumptions by profit effect.
+
 ## Maintenance
 
 Maintainers should edit `catalog.json`, run

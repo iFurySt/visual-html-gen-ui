@@ -81,7 +81,7 @@ without loading every example into context.
 - [x] Office
 - [x] Education
 - [x] Health
-- [ ] Ecommerce
+- [x] Ecommerce
 - [ ] Social
 - [ ] Entertainment
 - [ ] Gaming

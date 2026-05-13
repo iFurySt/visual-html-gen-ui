@@ -692,6 +692,123 @@
           ]
         }
       ]
+    },
+    {
+      "slug": "ecommerce",
+      "name": "Ecommerce",
+      "summary": "Online retail conversion, merchandising, inventory, customer value, promotions, and fulfillment analytics.",
+      "charts": [
+        {
+          "slug": "revenue-line",
+          "title": "Revenue Line",
+          "type": "line",
+          "purpose": "Show gross merchandise value or revenue trend over time.",
+          "signals": [
+            "trend",
+            "seasonality",
+            "campaign lift"
+          ]
+        },
+        {
+          "slug": "checkout-funnel",
+          "title": "Checkout Funnel",
+          "type": "funnel",
+          "purpose": "Track shoppers through product view, cart, checkout, payment, and purchase.",
+          "signals": [
+            "conversion",
+            "drop-off",
+            "friction"
+          ]
+        },
+        {
+          "slug": "category-sales-stacked-bar",
+          "title": "Category Sales Stacked Bar",
+          "type": "stacked-bar",
+          "purpose": "Break sales into category, channel, or region components.",
+          "signals": [
+            "mix",
+            "scale",
+            "shift"
+          ]
+        },
+        {
+          "slug": "product-margin-waterfall",
+          "title": "Product Margin Waterfall",
+          "type": "waterfall",
+          "purpose": "Explain margin from list price through discounts, shipping, returns, and fees.",
+          "signals": [
+            "margin driver",
+            "cost leak",
+            "profitability"
+          ]
+        },
+        {
+          "slug": "inventory-heatmap",
+          "title": "Inventory Heatmap",
+          "type": "heatmap",
+          "purpose": "Reveal stock risk by SKU and warehouse or region.",
+          "signals": [
+            "stockout",
+            "overstock",
+            "coverage"
+          ]
+        },
+        {
+          "slug": "customer-cohort-retention",
+          "title": "Customer Cohort Retention",
+          "type": "cohort",
+          "purpose": "Track repeat purchase retention by acquisition cohort.",
+          "signals": [
+            "retention",
+            "loyalty",
+            "payback"
+          ]
+        },
+        {
+          "slug": "ltv-cac-kpi",
+          "title": "LTV CAC KPI",
+          "type": "kpi",
+          "purpose": "Compare acquisition efficiency, LTV, payback, and contribution margin.",
+          "signals": [
+            "unit economics",
+            "payback",
+            "quality"
+          ]
+        },
+        {
+          "slug": "basket-affinity-sankey",
+          "title": "Basket Affinity Sankey",
+          "type": "sankey",
+          "purpose": "Show product pairings and category paths in baskets.",
+          "signals": [
+            "affinity",
+            "cross-sell",
+            "bundle path"
+          ]
+        },
+        {
+          "slug": "sku-performance-treemap",
+          "title": "SKU Performance Treemap",
+          "type": "treemap",
+          "purpose": "Map SKU revenue or contribution by product family.",
+          "signals": [
+            "concentration",
+            "hero SKU",
+            "long tail"
+          ]
+        },
+        {
+          "slug": "promo-sensitivity-tornado",
+          "title": "Promo Sensitivity Tornado",
+          "type": "tornado",
+          "purpose": "Rank price, discount, shipping, and ad spend assumptions by profit effect.",
+          "signals": [
+            "sensitivity",
+            "promo risk",
+            "key driver"
+          ]
+        }
+      ]
     }
   ]
 }
