@@ -809,6 +809,123 @@
           ]
         }
       ]
+    },
+    {
+      "slug": "social",
+      "name": "Social",
+      "summary": "Community growth, engagement, creator networks, moderation, content propagation, and retention.",
+      "charts": [
+        {
+          "slug": "active-users-line",
+          "title": "Active Users Line",
+          "type": "line",
+          "purpose": "Track DAU, WAU, or MAU growth across a period.",
+          "signals": [
+            "growth",
+            "seasonality",
+            "retention pressure"
+          ]
+        },
+        {
+          "slug": "engagement-area",
+          "title": "Engagement Area",
+          "type": "area",
+          "purpose": "Emphasize accumulated sessions, reactions, comments, or shares.",
+          "signals": [
+            "engagement load",
+            "momentum",
+            "scale"
+          ]
+        },
+        {
+          "slug": "activation-funnel",
+          "title": "Activation Funnel",
+          "type": "funnel",
+          "purpose": "Track users from signup to profile completion, first follow, first post, and return.",
+          "signals": [
+            "activation",
+            "drop-off",
+            "onboarding"
+          ]
+        },
+        {
+          "slug": "creator-network-sankey",
+          "title": "Creator Network Sankey",
+          "type": "sankey",
+          "purpose": "Show audience movement between creators, topics, and communities.",
+          "signals": [
+            "flow",
+            "affinity",
+            "migration"
+          ]
+        },
+        {
+          "slug": "topic-heatmap",
+          "title": "Topic Heatmap",
+          "type": "heatmap",
+          "purpose": "Reveal topic momentum by day or community segment.",
+          "signals": [
+            "momentum",
+            "clusters",
+            "topic shift"
+          ]
+        },
+        {
+          "slug": "community-treemap",
+          "title": "Community Treemap",
+          "type": "treemap",
+          "purpose": "Map communities by active users, posts, or moderation load.",
+          "signals": [
+            "concentration",
+            "community health",
+            "load"
+          ]
+        },
+        {
+          "slug": "user-cohort-retention",
+          "title": "User Cohort Retention",
+          "type": "cohort",
+          "purpose": "Track retained users by signup cohort and age.",
+          "signals": [
+            "retention",
+            "stickiness",
+            "cohort quality"
+          ]
+        },
+        {
+          "slug": "influence-bubble",
+          "title": "Influence Bubble",
+          "type": "bubble",
+          "purpose": "Compare creators by reach, engagement rate, and audience size.",
+          "signals": [
+            "reach",
+            "quality",
+            "scale"
+          ]
+        },
+        {
+          "slug": "moderation-waterfall",
+          "title": "Moderation Waterfall",
+          "type": "waterfall",
+          "purpose": "Explain report queue changes from inflow, automation, review, appeals, and backlog.",
+          "signals": [
+            "queue driver",
+            "automation impact",
+            "backlog"
+          ]
+        },
+        {
+          "slug": "community-health-radar",
+          "title": "Community Health Radar",
+          "type": "radar",
+          "purpose": "Score safety, activity, diversity, creator supply, and retention.",
+          "signals": [
+            "health profile",
+            "balance",
+            "risk"
+          ]
+        }
+      ]
     }
   ]
 }

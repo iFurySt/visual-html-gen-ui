@@ -32,6 +32,7 @@ make ci
 - Education: 10 chart examples.
 - Health: 10 chart examples.
 - Ecommerce: 10 chart examples.
+- Social: 10 chart examples.
 
 ## License
 

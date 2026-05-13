@@ -118,6 +118,21 @@ Online retail conversion, merchandising, inventory, customer value, promotions, 
 - [SKU Performance Treemap](ecommerce/sku-performance-treemap/index.html) - Map SKU revenue or contribution by product family.
 - [Promo Sensitivity Tornado](ecommerce/promo-sensitivity-tornado/index.html) - Rank price, discount, shipping, and ad spend assumptions by profit effect.
 
+### Social
+
+Community growth, engagement, creator networks, moderation, content propagation, and retention.
+
+- [Active Users Line](social/active-users-line/index.html) - Track DAU, WAU, or MAU growth across a period.
+- [Engagement Area](social/engagement-area/index.html) - Emphasize accumulated sessions, reactions, comments, or shares.
+- [Activation Funnel](social/activation-funnel/index.html) - Track users from signup to profile completion, first follow, first post, and return.
+- [Creator Network Sankey](social/creator-network-sankey/index.html) - Show audience movement between creators, topics, and communities.
+- [Topic Heatmap](social/topic-heatmap/index.html) - Reveal topic momentum by day or community segment.
+- [Community Treemap](social/community-treemap/index.html) - Map communities by active users, posts, or moderation load.
+- [User Cohort Retention](social/user-cohort-retention/index.html) - Track retained users by signup cohort and age.
+- [Influence Bubble](social/influence-bubble/index.html) - Compare creators by reach, engagement rate, and audience size.
+- [Moderation Waterfall](social/moderation-waterfall/index.html) - Explain report queue changes from inflow, automation, review, appeals, and backlog.
+- [Community Health Radar](social/community-health-radar/index.html) - Score safety, activity, diversity, creator supply, and retention.
+
 ## Maintenance
 
 Maintainers should edit `catalog.json`, run

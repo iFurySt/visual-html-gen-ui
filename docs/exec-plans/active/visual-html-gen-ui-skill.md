@@ -82,7 +82,7 @@ without loading every example into context.
 - [x] Education
 - [x] Health
 - [x] Ecommerce
-- [ ] Social
+- [x] Social
 - [ ] Entertainment
 - [ ] Gaming
 - [ ] Content Creation
