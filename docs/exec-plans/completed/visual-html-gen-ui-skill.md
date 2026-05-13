@@ -71,9 +71,9 @@ without loading every example into context.
 
 - [x] Confirm repository conventions and required docs.
 - [x] Implement the first domain slice: finance.
-- [ ] Commit the first domain slice.
-- [ ] Add remaining requested domains one domain per commit.
-- [ ] Run final validation and completion audit.
+- [x] Commit the first domain slice.
+- [x] Add remaining requested domains one domain per commit.
+- [x] Run final validation and completion audit.
 
 ## Domain Completion Log
 
@@ -114,3 +114,15 @@ without loading every example into context.
   baseline: ivory paper background, restrained serif headings, mono metadata,
   1.5px rules, low-saturation clay/olive/oat/slate palette, and dependency-free
   static HTML/SVG examples.
+
+## Completion Audit
+
+- 2026-05-13: `skills/visual-html-gen-ui/catalog.json` contains all 26 requested
+  domains and 280 chart entries.
+- 2026-05-13: `skills/visual-html-gen-ui/SKILL.md` lists every generated domain
+  and chart link as a compact table of contents.
+- 2026-05-13: Every catalog chart has a generated standalone
+  `<domain>/<chart>/index.html` file.
+- 2026-05-13: Git history contains one commit for each requested domain slice.
+- 2026-05-13: Final validation passed:
+  `python3 skills/visual-html-gen-ui/scripts/validate_skill.py` and `make ci`.

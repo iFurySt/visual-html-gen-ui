@@ -1,4 +1,4 @@
-## [2026-05-13 11:07] | Task: Visual HTML finance skill slice
+## [2026-05-13 11:07] | Task: Visual HTML skill domain catalog
 
 ### Execution Context
 
@@ -17,7 +17,7 @@
 - Area: `skills/visual-html-gen-ui`
 - Key actions:
   - Added a catalog-driven skill scaffold.
-  - Generated 40 standalone chart HTML examples across 2 domains.
+  - Generated 280 standalone chart HTML examples across 26 domains.
   - Added generation and validation scripts.
   - Wired skill validation into CI.
   - Updated repository docs to describe the actual skill architecture.
@@ -72,4 +72,4 @@ low-saturation clay/olive/oat/slate colors.
 - `skills/visual-html-gen-ui/catalog.json`
 - `skills/visual-html-gen-ui/scripts/build_charts.py`
 - `skills/visual-html-gen-ui/scripts/validate_skill.py`
-- `skills/visual-html-gen-ui/finance/*/index.html`
+- `skills/visual-html-gen-ui/<domain>/<chart>/index.html`
