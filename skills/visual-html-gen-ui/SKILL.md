@@ -91,6 +91,7 @@ Learning progress, classroom operations, curriculum quality, assessment, and stu
 - [Learning Path Sankey](education/learning-path-sankey.html) - Show learners moving from diagnostic placement through modules, retakes, and outcomes.
 - [Rubric Score Radar](education/rubric-score-radar.html) - Summarize writing or project performance across rubric dimensions.
 - [Assessment Stress Test](education/assessment-stress-test.html) - Compare expected performance under timed, supported, remote, and advanced assessment conditions.
+- [Resource Equity Matrix](education/resource-equity-matrix.html) - Compare student need with actual access to teachers, tutoring, devices, and support minutes.
 
 ### Health
 
