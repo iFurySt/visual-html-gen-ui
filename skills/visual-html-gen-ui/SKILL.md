@@ -283,6 +283,7 @@ Urban mobility, ride hailing, fleet operations, routing, utilization, safety, an
 - [Fare Waterfall](mobility/fare-waterfall.html) - Explain rider fare and driver earnings from base, time, distance, surge, incentives, fees, tolls, and platform margin.
 - [Safety Radar](mobility/safety-radar.html) - Score operations across crash rate, harsh braking, compliance, training, vehicle health, and incident response.
 - [Demand Stress Test](mobility/demand-stress-test.html) - Compare service capacity under storm, event surge, transit outage, driver shortage, and app incident scenarios.
+- [Charger Utilization Heatmap](mobility/charger-utilization-heatmap.html) - Reveal EV fleet charging constraints by depot and daypart.
 
 ### Travel
 
@@ -298,6 +299,7 @@ Trips, bookings, destinations, itinerary planning, hospitality, demand forecasti
 - [Traveler Retention Cohort](travel/traveler-retention-cohort.html) - Track repeat booking, reactivation, loyalty tier movement, and destination switching by acquisition cohort.
 - [Trip Margin Waterfall](travel/trip-margin-waterfall.html) - Explain trip margin from gross booking value through discounts, taxes, supplier cost, payment fees, support, refunds, and attach revenue.
 - [Experience Radar](travel/experience-radar.html) - Score traveler experience across price transparency, itinerary convenience, disruption support, supplier quality, flexibility, and loyalty value.
+- [Occupancy RevPAR Matrix](travel/occupancy-revpar-matrix.html) - Compare hotels or destinations by occupancy, RevPAR, room nights, and cancellation pressure.
 
 ### Biotech
 
@@ -313,6 +315,7 @@ Drug discovery, clinical trials, lab operations, biomarkers, pipelines, safety, 
 - [R&D Runway Waterfall](biotech/r-and-d-waterfall.html) - Explain cash runway from financing, trial spend, CMC, milestones, grants, partnership revenue, and operating burn.
 - [Program Risk Radar](biotech/program-risk-radar.html) - Score program risk across efficacy evidence, safety margin, CMC readiness, regulatory path, IP, competition, and market fit.
 - [Clinical Stress Test](biotech/clinical-stress-test.html) - Compare timeline, cash need, and probability impact under enrollment delay, safety signal, CMC slip, and regulatory hold scenarios.
+- [Adverse Event Incidence](biotech/adverse-event-incidence.html) - Compare treatment-emergent adverse events by dose arm and severity.
 
 ### Legal
 
@@ -328,6 +331,7 @@ Matter management, contracts, litigation, compliance, risk, billing, and legal o
 - [Matter Cohort](legal/matter-cohort.html) - Track resolution speed, reopen rate, escalation, and aging risk by matter intake cohort.
 - [Case Merit Radar](legal/case-merit-radar.html) - Score case posture across evidence strength, damages exposure, precedent, venue, cost, timing, and settlement leverage.
 - [Litigation Stress Test](legal/litigation-stress-test.html) - Compare reserve and exposure under early settlement, extended discovery, trial loss, appeal, and adverse judgment scenarios.
+- [Discovery Review Burndown](legal/discovery-review-burndown.html) - Track document review progress, privilege queue, and production deadline risk.
 
 ### Government
 
@@ -343,6 +347,7 @@ Public services, budgets, case queues, civic operations, policy outcomes, and in
 - [Outcome Cohort](government/outcome-cohort.html) - Track participant outcomes, recertification, benefits continuity, service completion, and follow-up by intake cohort.
 - [Policy Score Radar](government/policy-score-radar.html) - Score policy options across cost, coverage, equity impact, implementation complexity, legal risk, and public acceptance.
 - [Budget Stress Test](government/budget-stress-test.html) - Compare fund balance, service capacity, reserve draw, and deficit risk under inflation, revenue decline, demand spike, disaster response, and grant loss scenarios.
+- [Service Backlog Aging](government/service-backlog-aging.html) - Show constituent service case aging by department and SLA risk band.
 
 ### Manufacturing
 
@@ -358,6 +363,7 @@ Production, quality, supply chain, maintenance, throughput, yield, and factory o
 - [Maintenance Funnel](manufacturing/maintenance-funnel.html) - Track maintenance work orders from detection through triage, parts readiness, scheduling, completion, verification, and recurrence monitoring.
 - [Cost Waterfall](manufacturing/cost-waterfall.html) - Explain unit cost movement from material price, labor efficiency, energy, scrap, rework, freight, overtime, and yield recovery.
 - [Factory Risk Radar](manufacturing/factory-risk-radar.html) - Score a plant across safety incidents, quality risk, capacity headroom, maintenance health, supply resilience, cost pressure, and staffing coverage.
+- [Process Control Chart](manufacturing/process-control-chart.html) - Monitor production measurements against centerline and control limits.
 
 ### Energy
 
