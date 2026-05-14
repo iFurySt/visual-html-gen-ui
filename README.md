@@ -4,12 +4,13 @@
 [![简体中文](https://img.shields.io/badge/简体中文-点击查看-orange)](./README.zh-CN.md)
 [![Gallery](https://img.shields.io/badge/Gallery-GitHub%20Pages-blue)](https://ifuryst.com/visual-html-gen-ui/)
 [![Skill](https://img.shields.io/badge/Skill-111827)](./skills/visual-html-gen-ui/SKILL.md)
-[![Standalone HTML](https://img.shields.io/badge/Standalone-HTML%2FSVG-10b981)](./skills/visual-html-gen-ui)
 [![License](https://img.shields.io/badge/License-MIT-green)](./LICENSE)
 
 `visual-html-gen-ui` is a Skill for generating standalone HTML charts for specific business domains. It is mainly used for Gen-UI (Generative UI), and can also be applied to website generation, PPT (HTML) generation, and similar workflows.
 
 The benefit is that the visual style stays fixed and common chart types are prepared ahead of time. It works a bit like a traditional UI component library, except this one exists to help AI generate UI that matches our expectations more easily.
+
+![Visual HTML Gen UI gallery preview](./docs/generated/readme-assets/gallery-preview.png)
 
 ## Quick Start
 
