@@ -7,31 +7,28 @@
 [![Standalone HTML](https://img.shields.io/badge/Standalone-HTML%2FSVG-10b981)](./skills/visual-html-gen-ui)
 [![License](https://img.shields.io/badge/License-MIT-green)](./LICENSE)
 
-`visual-html-gen-ui` is a Skill for generating standalone HTML charts for specific business domains. It is mainly used for Gen-UI (Generative UI), and can also be applied to website generation, PPT (HTML) generation, and similar workflows.
+`visual-html-gen-ui` 是一个面向具体业务领域生成独立HTML图表的Skill。一般用于Gen-UI(Generative UI)，也可以套用在诸如网页生成、PPT(HTML)生成上。
 
-The benefit is that the visual style stays fixed and common chart types are prepared ahead of time. It works a bit like a traditional UI component library, except this one exists to help AI generate UI that matches our expectations more easily.
+好处在于风格固定，提前预设一些类型的图表，有点像是以前的UI库的组件，只不过现在这个是用于让AI轻松的Gen出符合我们需求而存在的。
 
-## Quick Start
-
-Install into Codex:
+## 快速开始
+安装到codex
 
 ```
 npx skills add iFurySt/visual-html-gen-ui -g -a codex --skill visual-html-gen-ui -y
 ```
-
-Install into Claude Code:
+安装到Claude Code
 
 ```
 npx skills add iFurySt/visual-html-gen-ui -g -a claude-code --skill visual-html-gen-ui -y
 ```
 
-Update:
-
+更新
 ```
 npx skills update open-browser-use -g -y
 ```
 
-For other Agents, download `./skills/visual-html-gen-ui` and install it manually.
+其他Agent自己下载`./skills/visual-html-gen-ui`安装
 
 ## License
 
