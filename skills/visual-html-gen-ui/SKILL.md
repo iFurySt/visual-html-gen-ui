@@ -379,6 +379,7 @@ Generation, demand, grid operations, trading, storage, renewables, emissions, an
 - [Emissions Waterfall](energy/emissions-waterfall.html) - Explain emissions movement from demand growth, efficiency, renewables, storage, fuel switching, offsets, and curtailment.
 - [Project Sensitivity Tornado](energy/project-sensitivity-tornado.html) - Rank power price, capex, capacity factor, degradation, interconnect cost, tax credits, and financing assumptions by project return impact.
 - [Supply Stress Test](energy/supply-stress-test.html) - Compare reserve margin, unserved load, storage duration, fuel availability, and price spike exposure under outage, heat wave, fuel shock, demand spike, and transmission constraint scenarios.
+- [Battery Dispatch Profile](energy/battery-dispatch-profile.html) - Show storage charging, discharging, and state of charge against grid signals.
 
 ### Retail
 
@@ -394,6 +395,7 @@ Store operations, category management, merchandising, footfall, inventory, promo
 - [Loyalty Cohort Retention](retail/loyalty-cohort-retention.html) - Track repeat shopping, churn, average order value, rewards usage, and category expansion by loyalty cohort.
 - [Margin Waterfall](retail/margin-waterfall.html) - Explain gross margin movement from sales mix, markdowns, vendor funding, shrink, labor, fulfillment, freight, and returns.
 - [Store Score Radar](retail/store-score-radar.html) - Score a store across traffic quality, conversion, availability, service level, shrink control, staffing, and local demand.
+- [Inventory Aging Buckets](retail/inventory-aging-buckets.html) - Show inventory value aging by category to guide markdown, transfer, or replenishment action.
 
 ### Crypto
 
@@ -409,6 +411,7 @@ Token markets, DeFi liquidity, wallets, protocol revenue, on-chain behavior, ris
 - [Yield Risk Scatter](crypto/yield-risk-scatter.html) - Position pools by APY, TVL depth, impermanent loss, smart-contract risk, liquidity lockup, and reward sustainability.
 - [Liquidation Waterfall](crypto/liquidation-waterfall.html) - Explain collateral movement from oracle shock, collateral drawdown, margin call, liquidation discount, fees, bad debt, and residual equity.
 - [Protocol Stress Test](crypto/protocol-stress-test.html) - Compare losses under stablecoin depeg, oracle failure, bridge exploit, liquidity drain, governance attack, and validator outage scenarios.
+- [Token Unlock Schedule](crypto/token-unlock-schedule.html) - Visualize scheduled token supply unlocks by investor, team, ecosystem, and treasury cohorts.
 
 ### Fashion
 
@@ -424,6 +427,7 @@ Collections, merchandising, trend signals, inventory, brand performance, runway,
 - [Brand Affinity Sankey](fashion/brand-affinity-sankey.html) - Show movement from inspiration source through category browse, collection preference, size availability, cart, and purchase.
 - [Markdown Waterfall](fashion/markdown-waterfall.html) - Explain margin movement from full-price sales through markdowns, returns, inventory carrying cost, freight, duties, and liquidation.
 - [Style Score Radar](fashion/style-score-radar.html) - Score a look across trend relevance, fit confidence, gross margin, availability, size coverage, brand fit, and return risk.
+- [Size Availability Curve](fashion/size-availability-curve.html) - Compare size-curve demand with available units before launch or reorder decisions.
 
 ### Sports
 
@@ -439,6 +443,7 @@ Team performance, player development, game operations, fan engagement, training,
 - [Season Ticket Cohort](sports/season-ticket-cohort.html) - Track renewals, attendance, resale activity, upgrades, churn, and revenue per seat by buyer cohort.
 - [Match Flow Sankey](sports/match-flow-sankey.html) - Show possession flow from build-up through progression, final third, shot creation, turnover, transition, and goal outcome.
 - [Athlete Score Radar](sports/athlete-score-radar.html) - Score an athlete across technical skill, speed, endurance, decision quality, availability, tactical fit, and development upside.
+- [Lineup Net Rating Matrix](sports/lineup-net-rating-matrix.html) - Compare player-pair lineup combinations by net rating and shared minutes.
 
 ### Pets
 
@@ -454,6 +459,7 @@ Pet health, care routines, marketplace behavior, adoption, insurance, services, 
 - [Product Treemap](pets/product-treemap.html) - Map product revenue, units, margin, repeat purchase, inventory risk, and brand concentration by category.
 - [Claim Waterfall](pets/claim-waterfall.html) - Explain claim value from invoice through deductible, exclusions, copay, policy limit, reimbursement, and owner out-of-pocket.
 - [Pet Profile Radar](pets/pet-profile-radar.html) - Score care needs across activity, diet, grooming, medical risk, behavior training, socialization, and preventive care.
+- [Appointment Capacity Calendar](pets/appointment-capacity-calendar.html) - Show clinic appointment capacity, urgent slots, grooming demand, and overbook risk by day.
 
 ## Maintenance
 
