@@ -107,6 +107,7 @@ Patient monitoring, care operations, population health, appointment flow, and cl
 - [Treatment Response Cohort](health/treatment-response-cohort.html) - Track treatment response and adherence by start-month cohort.
 - [Clinical Quality Radar](health/clinical-quality-radar.html) - Score clinical quality across safety, access, experience, outcomes, equity, and cost.
 - [Readmission Stress Test](health/readmission-stress-test.html) - Compare readmission risk under staffing, follow-up, and surge scenarios.
+- [Claims Denial Waterfall](health/claims-denial-waterfall.html) - Explain billed charges, denial leakage, appeal recovery, and net collection.
 
 ### Ecommerce
 
