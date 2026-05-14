@@ -72,6 +72,10 @@ Workplace productivity, meetings, task execution, communication, approvals, and 
 - [Workspace Utilization Heatmap](office/workspace-utilization-heatmap.html) - Show room, desk, and focus-space usage by daypart.
 - [Knowledge Base Treemap](office/knowledge-base-treemap.html) - Map documentation coverage, stale-doc risk, and ownership gaps by operating area.
 - [Workload Risk Radar](office/workload-risk-radar.html) - Score operating risk across urgency, ambiguity, dependencies, load, focus, and morale.
+- [Decision Latency Control](office/decision-latency-control.html) - Monitor decision cycle time against target and escalation limits.
+- [Dependency Risk Matrix](office/dependency-risk-matrix.html) - Map cross-team blockers by requesting team and dependency owner.
+- [Work Intake Aging Histogram](office/work-intake-aging-histogram.html) - Show whether requests are aging before they become visible delivery risks.
+- [Stakeholder Alignment Map](office/stakeholder-alignment-map.html) - Place stakeholders by support, influence, and affected headcount before a rollout.
 
 ### Education
 

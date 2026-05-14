@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Office Work Intake Aging Histogram</title>
+<style>
+  :root {
+    --ivory: #FAF9F5;
+    --paper: #FFFFFF;
+    --slate: #141413;
+    --clay: #D97757;
+    --rust: #B04A3F;
+    --olive: #788C5D;
+    --teal: #4D8A8B;
+    --gold: #C99A42;
+    --gray-100: #F0EEE6;
+    --gray-300: #D1CFC5;
+    --gray-500: #87867F;
+    --gray-700: #3D3D3A;
+    --serif: ui-serif, Georgia, "Times New Roman", serif;
+    --sans: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --mono: ui-monospace, "SF Mono", Menlo, Monaco, Consolas, monospace;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--ivory); color: var(--slate); font-family: var(--sans); line-height: 1.55; }
+  .page { width: min(1120px, calc(100vw - 40px)); margin: 0 auto; padding: 56px 0 96px; }
+  header { display: grid; grid-template-columns: 1fr auto; gap: 24px; align-items: end; margin-bottom: 28px; border-bottom: 1.5px solid var(--gray-300); padding-bottom: 22px; }
+  .eyebrow, .chart-meta, .label { font-family: var(--mono); color: var(--gray-500); font-size: 12px; }
+  .eyebrow { letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 10px; }
+  h1 { font-family: var(--serif); font-weight: 500; font-size: clamp(34px, 5vw, 56px); line-height: 1.04; margin: 0; }
+  .purpose { max-width: 650px; margin: 16px 0 0; color: var(--gray-700); font-size: 16px; }
+  .stamp { border: 1.5px solid var(--gray-300); background: var(--paper); border-radius: 8px; padding: 10px 12px; font-family: var(--mono); font-size: 12px; color: var(--gray-700); white-space: nowrap; }
+  .frame { background: var(--paper); border: 1.5px solid var(--gray-300); border-radius: 8px; padding: 22px; }
+  .chart-head { display: flex; justify-content: space-between; gap: 16px; align-items: start; margin-bottom: 16px; }
+  .chart-title { font-family: var(--serif); font-size: 26px; line-height: 1.15; margin: 0; font-weight: 500; }
+  svg { display: block; width: 100%; height: auto; }
+  .grid { stroke: var(--gray-100); stroke-width: 1.5; }
+  .axis { stroke: var(--gray-300); stroke-width: 1.5; }
+  .small { fill: var(--gray-700); font: 13px var(--sans); }
+  .note-grid { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 18px; margin-top: 22px; }
+  .note { border-top: 1.5px solid var(--gray-300); padding-top: 16px; color: var(--gray-700); }
+  .note h2 { font-family: var(--mono); font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--gray-500); margin: 0 0 8px; }
+  .note p, .note ul { margin: 0; }
+  .note ul { padding-left: 18px; }
+  @media (max-width: 760px) {
+    .page { width: min(100vw - 28px, 1120px); padding-top: 32px; }
+    header, .note-grid { grid-template-columns: 1fr; }
+    .stamp { width: fit-content; }
+    .chart-head { flex-direction: column; }
+    .frame { padding: 16px; }
+  }
+</style>
+</head>
+<body>
+  <main class="page">
+    <header>
+      <div>
+        <div class="eyebrow">Visual HTML Gen UI / Office</div>
+        <h1>Work Intake Aging Histogram</h1>
+        <p class="purpose">Show whether requests are aging in the intake queue before they become visible as blocked tasks or missed commitments.</p>
+      </div>
+      <div class="stamp">Standalone HTML + SVG</div>
+    </header>
+
+    <section id="chart-preview" class="frame" aria-label="Work Intake Aging Histogram example">
+      <div class="chart-head">
+        <div>
+          <h2 class="chart-title">Open intake by age bucket</h2>
+          <div class="chart-meta">requests awaiting triage across people ops, workplace, legal, finance, and IT</div>
+        </div>
+        <div class="chart-meta">office/work-intake-aging-histogram</div>
+      </div>
+      <svg viewBox="0 0 960 430" role="img" aria-label="Histogram of office work intake age buckets">
+        <rect x="0" y="0" width="960" height="430" rx="8" fill="#FAF9F5"/>
+        <line class="grid" x1="82" y1="70" x2="902" y2="70"/><line class="grid" x1="82" y1="140" x2="902" y2="140"/>
+        <line class="grid" x1="82" y1="210" x2="902" y2="210"/><line class="grid" x1="82" y1="280" x2="902" y2="280"/>
+        <line class="axis" x1="82" y1="350" x2="902" y2="350"/><line class="axis" x1="82" y1="70" x2="82" y2="350"/>
+        <rect x="130" y="126" width="84" height="224" rx="5" fill="#4D8A8B"/><rect x="240" y="166" width="84" height="184" rx="5" fill="#4D8A8B"/>
+        <rect x="350" y="218" width="84" height="132" rx="5" fill="#C99A42"/><rect x="460" y="246" width="84" height="104" rx="5" fill="#C99A42"/>
+        <rect x="570" y="198" width="84" height="152" rx="5" fill="#D97757"/><rect x="680" y="94" width="84" height="256" rx="5" fill="#B04A3F"/>
+        <rect x="790" y="158" width="84" height="192" rx="5" fill="#B04A3F"/>
+        <text class="label" x="134" y="382">0-1d</text><text class="label" x="244" y="382">2-3d</text><text class="label" x="354" y="382">4-5d</text>
+        <text class="label" x="464" y="382">6-7d</text><text class="label" x="574" y="382">8-10d</text><text class="label" x="684" y="382">11-14d</text><text class="label" x="794" y="382">15d+</text>
+        <text class="label" x="40" y="75">80</text><text class="label" x="40" y="215">40</text><text class="label" x="48" y="354">0</text>
+        <line x1="82" y1="245" x2="902" y2="245" stroke="#B04A3F" stroke-width="2" stroke-dasharray="8 8"/>
+        <text class="small" x="636" y="236">aging threshold</text>
+      </svg>
+      <div class="note-grid">
+        <div class="note">
+          <h2>Use When</h2>
+          <p>Use this when intake volume looks stable but old requests are quietly piling up behind unclear ownership or missing decision criteria.</p>
+        </div>
+        <div class="note">
+          <h2>Signals</h2>
+          <ul>
+            <li>triage aging</li>
+            <li>hidden backlog</li>
+            <li>service health</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Office Stakeholder Alignment Map</title>
+<style>
+  :root {
+    --ivory: #FAF9F5;
+    --paper: #FFFFFF;
+    --slate: #141413;
+    --clay: #D97757;
+    --rust: #B04A3F;
+    --olive: #788C5D;
+    --teal: #4D8A8B;
+    --blue: #5277A3;
+    --gold: #C99A42;
+    --gray-100: #F0EEE6;
+    --gray-300: #D1CFC5;
+    --gray-500: #87867F;
+    --gray-700: #3D3D3A;
+    --serif: ui-serif, Georgia, "Times New Roman", serif;
+    --sans: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --mono: ui-monospace, "SF Mono", Menlo, Monaco, Consolas, monospace;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--ivory); color: var(--slate); font-family: var(--sans); line-height: 1.55; }
+  .page { width: min(1120px, calc(100vw - 40px)); margin: 0 auto; padding: 56px 0 96px; }
+  header { display: grid; grid-template-columns: 1fr auto; gap: 24px; align-items: end; margin-bottom: 28px; border-bottom: 1.5px solid var(--gray-300); padding-bottom: 22px; }
+  .eyebrow, .chart-meta, .label { font-family: var(--mono); color: var(--gray-500); font-size: 12px; }
+  .eyebrow { letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 10px; }
+  h1 { font-family: var(--serif); font-weight: 500; font-size: clamp(34px, 5vw, 56px); line-height: 1.04; margin: 0; }
+  .purpose { max-width: 650px; margin: 16px 0 0; color: var(--gray-700); font-size: 16px; }
+  .stamp { border: 1.5px solid var(--gray-300); background: var(--paper); border-radius: 8px; padding: 10px 12px; font-family: var(--mono); font-size: 12px; color: var(--gray-700); white-space: nowrap; }
+  .frame { background: var(--paper); border: 1.5px solid var(--gray-300); border-radius: 8px; padding: 22px; }
+  .chart-head { display: flex; justify-content: space-between; gap: 16px; align-items: start; margin-bottom: 16px; }
+  .chart-title { font-family: var(--serif); font-size: 26px; line-height: 1.15; margin: 0; font-weight: 500; }
+  svg { display: block; width: 100%; height: auto; }
+  .grid { stroke: var(--gray-100); stroke-width: 1.5; }
+  .axis { stroke: var(--gray-300); stroke-width: 1.5; }
+  .small { fill: var(--gray-700); font: 13px var(--sans); }
+  .note-grid { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 18px; margin-top: 22px; }
+  .note { border-top: 1.5px solid var(--gray-300); padding-top: 16px; color: var(--gray-700); }
+  .note h2 { font-family: var(--mono); font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--gray-500); margin: 0 0 8px; }
+  .note p, .note ul { margin: 0; }
+  .note ul { padding-left: 18px; }
+  @media (max-width: 760px) {
+    .page { width: min(100vw - 28px, 1120px); padding-top: 32px; }
+    header, .note-grid { grid-template-columns: 1fr; }
+    .stamp { width: fit-content; }
+    .chart-head { flex-direction: column; }
+    .frame { padding: 16px; }
+  }
+</style>
+</head>
+<body>
+  <main class="page">
+    <header>
+      <div>
+        <div class="eyebrow">Visual HTML Gen UI / Office</div>
+        <h1>Stakeholder Alignment Map</h1>
+        <p class="purpose">Place stakeholders by influence and support before a policy rollout, workspace change, or operating-model decision.</p>
+      </div>
+      <div class="stamp">Standalone HTML + SVG</div>
+    </header>
+
+    <section id="chart-preview" class="frame" aria-label="Stakeholder Alignment Map example">
+      <div class="chart-head">
+        <div>
+          <h2 class="chart-title">Influence vs support before rollout</h2>
+          <div class="chart-meta">bubble size represents affected headcount for each stakeholder group</div>
+        </div>
+        <div class="chart-meta">office/stakeholder-alignment-map</div>
+      </div>
+      <svg viewBox="0 0 960 430" role="img" aria-label="Stakeholder influence and support bubble map">
+        <rect x="0" y="0" width="960" height="430" rx="8" fill="#FAF9F5"/>
+        <line class="grid" x1="120" y1="70" x2="120" y2="350"/><line class="grid" x1="300" y1="70" x2="300" y2="350"/><line class="grid" x1="480" y1="70" x2="480" y2="350"/><line class="grid" x1="660" y1="70" x2="660" y2="350"/><line class="grid" x1="840" y1="70" x2="840" y2="350"/>
+        <line class="grid" x1="120" y1="70" x2="840" y2="70"/><line class="grid" x1="120" y1="140" x2="840" y2="140"/><line class="grid" x1="120" y1="210" x2="840" y2="210"/><line class="grid" x1="120" y1="280" x2="840" y2="280"/><line class="grid" x1="120" y1="350" x2="840" y2="350"/>
+        <line class="axis" x1="120" y1="350" x2="840" y2="350"/><line class="axis" x1="120" y1="350" x2="120" y2="70"/>
+        <line x1="480" y1="70" x2="480" y2="350" stroke="#D1CFC5" stroke-width="2" stroke-dasharray="7 7"/>
+        <line x1="120" y1="210" x2="840" y2="210" stroke="#D1CFC5" stroke-width="2" stroke-dasharray="7 7"/>
+        <circle cx="690" cy="124" r="34" fill="#4D8A8B" opacity="0.82"/><text class="small" x="640" y="116">People</text>
+        <circle cx="612" cy="170" r="27" fill="#788C5D" opacity="0.84"/><text class="small" x="634" y="180">Finance</text>
+        <circle cx="410" cy="156" r="25" fill="#C99A42" opacity="0.84"/><text class="small" x="330" y="150">Legal</text>
+        <circle cx="324" cy="268" r="31" fill="#D97757" opacity="0.84"/><text class="small" x="344" y="276">Managers</text>
+        <circle cx="720" cy="282" r="23" fill="#5277A3" opacity="0.84"/><text class="small" x="742" y="288">IT</text>
+        <circle cx="514" cy="248" r="19" fill="#B04A3F" opacity="0.84"/><text class="small" x="432" y="246">Facilities</text>
+        <text class="label" x="396" y="392">Support</text><text class="label" x="820" y="392">High</text><text class="label" x="52" y="76">High influence</text><text class="label" x="52" y="352">Low</text>
+        <text class="label" x="602" y="92">activate champions</text><text class="label" x="190" y="236">resolve objections</text>
+      </svg>
+      <div class="note-grid">
+        <div class="note">
+          <h2>Use When</h2>
+          <p>Use this before sending a broad policy or workflow change so the team can identify champions, resistant owners, and groups that need tighter briefings.</p>
+        </div>
+        <div class="note">
+          <h2>Signals</h2>
+          <ul>
+            <li>stakeholder support</li>
+            <li>change influence</li>
+            <li>rollout risk</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
