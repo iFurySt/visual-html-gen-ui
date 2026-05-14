@@ -203,6 +203,7 @@ B2B sales, delivery, support, customer success, implementation, and account heal
 - [SLA Calendar](enterprise-services/sla-calendar.html) - Show SLA breaches, incident pressure, and response-risk clusters by day.
 - [Account Portfolio Treemap](enterprise-services/portfolio-treemap.html) - Map revenue and delivery effort by account segment or service line to spot concentration.
 - [Sales Efficiency KPI](enterprise-services/sales-efficiency-kpi.html) - Compare CAC, payback, expansion, win rate, and sales-capacity efficiency for enterprise motions.
+- [Renewal Forecast Ladder](enterprise-services/renewal-forecast-ladder.html) - Separate committed, likely, at-risk, and expansion renewal value by quarter.
 
 ### Cybersecurity
 
@@ -218,6 +219,7 @@ Threat detection, incidents, vulnerability management, risk posture, response op
 - [Phishing Calendar](cybersecurity/phishing-calendar.html) - Reveal phishing simulations, reported messages, and training completion pressure by day.
 - [Risk Reduction Waterfall](cybersecurity/risk-reduction-waterfall.html) - Explain residual risk movement from new findings, patches, control improvements, exceptions, and accepted risk.
 - [Breach Stress Test](cybersecurity/breach-stress-test.html) - Compare estimated loss, downtime, and response capacity under ransomware, data leak, and outage scenarios.
+- [Vulnerability Aging Burndown](cybersecurity/vulnerability-aging-burndown.html) - Track whether exploitable findings are aging out before SLA and exception risk rises.
 
 ### AI Agent
 
@@ -233,6 +235,7 @@ Agent workflows, model performance, tool use, evaluation, cost, latency, safety,
 - [Capability Radar](ai-agent/capability-radar.html) - Score an agent across planning, tool use, coding, browsing, safety, memory, and verification.
 - [Token Waterfall](ai-agent/token-waterfall.html) - Explain token use from system context, retrieved docs, reasoning, tool output, scratch state, and final answer.
 - [Safety Stress Test](ai-agent/safety-stress-test.html) - Compare failure rates under normal, adversarial, long-context, stale-context, and tool-error scenarios.
+- [Fallback Taxonomy Treemap](ai-agent/fallback-taxonomy-treemap.html) - Group agent fallbacks by model, tool, policy, environment, and handoff root cause.
 
 ### Real Estate
 
@@ -248,6 +251,7 @@ Property valuation, leasing, occupancy, market supply, rent, cap rates, and asse
 - [Valuation Sensitivity Tornado](real-estate/valuation-sensitivity-tornado.html) - Rank value sensitivity to cap rate, market rent growth, vacancy, downtime, and debt cost assumptions.
 - [Asset Score Radar](real-estate/asset-score-radar.html) - Score acquisition or hold decisions across location, income durability, asset condition, tenant quality, liquidity, and risk.
 - [Cashflow Stress Test](real-estate/cashflow-stress-test.html) - Compare cashflow resilience under vacancy shock, rate reset, construction delay, refinancing gap, and recession scenarios.
+- [Lease Expiry Ladder](real-estate/lease-expiry-ladder.html) - Show upcoming lease expirations by rent exposure, renewal confidence, and vacancy risk.
 
 ### HR
 
@@ -263,6 +267,7 @@ Workforce planning, recruiting, performance, retention, engagement, compensation
 - [Org Treemap](hr/org-treemap.html) - Map headcount, payroll, manager span, and open requisition load by org unit.
 - [Performance Radar](hr/performance-radar.html) - Score a team or role family across impact, collaboration, execution, craft, ownership, and growth readiness.
 - [Workforce Risk Stress Test](hr/workforce-risk-stress-test.html) - Compare staffing resilience under attrition shock, hiring freeze, demand spike, reorg, and skills-gap scenarios.
+- [Pay Equity Boxplot](hr/pay-equity-boxplot.html) - Compare compensation distributions by level and cohort before calibration closes.
 
 ### Mobility
 
