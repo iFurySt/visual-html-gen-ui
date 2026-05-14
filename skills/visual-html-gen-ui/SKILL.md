@@ -123,6 +123,7 @@ Online retail conversion, merchandising, inventory, customer value, promotions, 
 - [Basket Affinity Sankey](ecommerce/basket-affinity-sankey.html) - Show basket paths from anchor products into bundles, add-ons, and repeat purchases.
 - [SKU Performance Treemap](ecommerce/sku-performance-treemap.html) - Map SKU contribution, hero products, and long-tail drag by product family.
 - [Promo Sensitivity Tornado](ecommerce/promo-sensitivity-tornado.html) - Rank discount, free shipping, return rate, and ad-spend assumptions by profit effect.
+- [Returns Reason Pareto](ecommerce/returns-reason-pareto.html) - Prioritize product, fit, logistics, and expectation gaps by return volume.
 
 ### Social
 
@@ -138,6 +139,7 @@ Community growth, engagement, creator networks, moderation, content propagation,
 - [Influence Bubble](social/influence-bubble.html) - Compare creators by reach, engagement quality, audience size, and trust risk.
 - [Moderation Waterfall](social/moderation-waterfall.html) - Explain moderation queue changes from report inflow, automation, review, appeals, and backlog.
 - [Community Health Radar](social/community-health-radar.html) - Score community health across safety, activity, diversity, creator supply, retention, and trust.
+- [Moderation Aging Queue](social/moderation-aging-queue.html) - Show trust-and-safety report backlog by age, policy area, and SLA risk.
 
 ### Entertainment
 
@@ -153,6 +155,7 @@ Streaming, music, film, live events, audience behavior, releases, and catalog pe
 - [Talent Score Radar](entertainment/talent-score-radar.html) - Score talent or titles before greenlight, booking, sponsorship, or cross-promotion decisions.
 - [Campaign Funnel](entertainment/campaign-funnel.html) - Track a title campaign from audience follow-through to trailer exposure, intent, and purchase.
 - [Title Portfolio Treemap](entertainment/title-portfolio-treemap.html) - Map catalog portfolio weight by genre to find hit concentration and underused long-tail shelves.
+- [Rights Windowing Timeline](entertainment/rights-windowing-timeline.html) - Coordinate theatrical, transactional, streaming, and international rights windows.
 
 ### Gaming
 
@@ -168,6 +171,7 @@ Game telemetry, player progression, economy balance, monetization, matchmaking, 
 - [Item Sales Treemap](gaming/item-sales-treemap.html) - Map monetization contribution by mode and social surface to separate store demand from gameplay-driven purchases.
 - [Balance Tornado](gaming/balance-tornado.html) - Rank tuning variables by expected impact on match fairness, progression speed, and reward pacing.
 - [Player Segment Radar](gaming/player-segment-radar.html) - Compare target player segments across risk, retention, skill, spend, social behavior, and completion.
+- [Economy Inflation Band](gaming/economy-inflation-band.html) - Track wallet balances and price index against healthy economy bands.
 
 ### Content Creation
 
@@ -183,6 +187,7 @@ Creator workflow, publishing cadence, audience growth, monetization, editorial p
 - [Platform Flow Sankey](content-creation/platform-flow-sankey.html) - Show audience movement from discovery platforms into follows, email, community, paid support, and purchase.
 - [Monetization KPI](content-creation/monetization-kpi.html) - Compare RPM, support conversion, paid community mix, payback, and revenue per fan after a campaign.
 - [Format Score Radar](content-creation/format-score-radar.html) - Score formats across reach, depth, effort, reuse, monetization, and audience fit for editorial planning.
+- [Sponsorship Pipeline Forecast](content-creation/sponsorship-pipeline-forecast.html) - Forecast sponsored-content revenue by deal stage, content slot, and close probability.
 
 ### Enterprise Services
 
