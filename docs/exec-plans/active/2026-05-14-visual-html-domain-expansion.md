@@ -102,8 +102,19 @@ Likely high-value gaps to consider by domain:
 - [x] Confirmed current baseline: Finance 30, all other domains 10.
 - [x] Removed catalog-driven generation workflow in the earlier cleanup.
 - [x] Implement and validate the Office expansion slice.
-- [ ] Continue domain slices by priority.
-- [ ] Run full final validation and push.
+- [x] Continue domain slices by priority.
+- [x] Run full final validation.
+- [ ] Push completed branch.
+
+## Validation Results
+
+- 2026-05-14: `make ci` passed.
+- 2026-05-14: Parsed `index.html` and all 308 chart pages successfully.
+- 2026-05-14: Verified every chart page includes `id="chart-preview"`.
+- 2026-05-14: Verified file counts match `SKILL.md` links and gallery cards for every domain.
+- 2026-05-14: Verified no non-finance domain remains at exactly 10 chart examples.
+- 2026-05-14: Verified no `catalog.json`, `build_charts.py`, `build-gallery.py`, `validate_skill.py`, or `validate-gallery.py` files exist.
+- 2026-05-14: Browser audit confirmed gallery section card counts match labels and final added cards are present; standalone `pets/appointment-capacity-calendar.html` rendered a non-empty SVG.
 
 ## Decision Log
 
