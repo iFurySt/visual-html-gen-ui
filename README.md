@@ -6,6 +6,11 @@
 [![Skill](https://img.shields.io/badge/Skill-111827)](./skills/visual-html-gen-ui/SKILL.md)
 [![License](https://img.shields.io/badge/License-MIT-green)](./LICENSE)
 
+---
+
+> [!TIP]
+> Interested in streaming Gen-UI? Check out [open-claude-gen-ui](https://github.com/usoonees/open-claude-gen-ui).
+
 `visual-html-gen-ui` is a Skill for generating standalone HTML charts for specific business domains. It is mainly used for Gen-UI (Generative UI), and can also be applied to website generation, PPT (HTML) generation, and similar workflows.
 
 The benefit is that the visual style stays fixed and common chart types are prepared ahead of time. It works a bit like a traditional UI component library, except this one exists to help AI generate UI that matches our expectations more easily.

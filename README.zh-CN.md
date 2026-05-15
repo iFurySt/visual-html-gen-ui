@@ -6,6 +6,11 @@
 [![Skill](https://img.shields.io/badge/Skill-111827)](./skills/visual-html-gen-ui/SKILL.md)
 [![License](https://img.shields.io/badge/License-MIT-green)](./LICENSE)
 
+---
+
+> [!TIP]
+> 对流式 Gen-UI 感兴趣的话，可以看看 [open-claude-gen-ui](https://github.com/usoonees/open-claude-gen-ui)。
+
 `visual-html-gen-ui` 是一个面向具体业务领域生成独立HTML图表的Skill。一般用于Gen-UI(Generative UI)，也可以套用在诸如网页生成、PPT(HTML)生成上。
 
 好处在于风格固定，提前预设一些类型的图表，有点像是以前的UI库的组件，只不过现在这个是用于让AI轻松的Gen出符合我们需求而存在的。
